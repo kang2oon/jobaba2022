@@ -1,0 +1,293 @@
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+     font-family: 'S-CoreDream-5Medium';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
+.f20 {font-size: 20px}
+.f16{font-size: 16px}
+
+.gFont { font-family: 'GmarketSansBold','Noto Sans KR';}
+.sCore { font-family: 'S-CoreDream-5Medium','Noto Sans KR';}
+
+/*--- 메인 ---*/
+.mtu_tit{font-size: 24px;font-weight: 400;margin-bottom: 15px}
+.mtu_tit span{font-weight: bold;}
+.mtu_tit02{font-size: 20px;font-weight: 400;margin-bottom:  15px}
+.mtu_tit .f_red{color: #fe1822 !important;font-weight: bold}
+.mg50{margin: 50px 0}
+.mg30{margin: 30px 0}
+.pd50{padding: 50px 0}
+.bold_hr{height: 2px;background: #000;border: 0;display: block;}
+.mtu_header{background: url(../images/matchup/header_bg.jpg) no-repeat center;background-size: cover;}
+.mtu_header .txt{display: flex;align-items: center;max-width: calc(100% - 500px);text-align: center;justify-content: center}
+.mtu_header h3 {font-size: 50px;margin-right: 20px;color: #073582}
+.mtu_header .f20 {color: #003e64;font-weight: bold}
+.mtu_header .f16 {font-weight: bold;color: #0554a4;margin-top: 5px}
+.mtu_header .containerNew{padding: 100px 0;background: url(../images/matchup/header_img.png) no-repeat right bottom}
+
+/* 인재정보 */
+.matchup_main .hot_hr_cont{display: flex;}
+.matchup_main .hot_hr_cont .item{border: 1px solid #e6e6e6;background: #fff;border-radius: 15px;flex:  1 ;margin-right: 20px;padding: 20px;min-width: 0;}
+.matchup_main .hot_hr_cont .item:last-child{margin-right: 0}
+.matchup_main .hot_hr_cont .item .top{display: flex;align-items: center}
+.matchup_wrap .like{display: block;background: none;background: url(../images/matchup/like_btn_off.png) no-repeat;width: 19px;height: 17px;text-indent: -999999999999999999999999999px;}
+.matchup_wrap .like.active{background: url(../images/matchup/like_btn.png) no-repeat;}
+.matchup_main .hot_hr_cont .item .top {margin-bottom: 10px}
+.matchup_main .hot_hr_cont .item .top .name_area{width: calc(100% - 100px);display: flex;align-items: center;}
+.matchup_main .hot_hr_cont .item .top .career{margin-left: auto;}
+.matchup_main .hot_hr_cont .item .top .name{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;margin-left: 5px}
+.matchup_main .career{font-size: 12px;color: #fff;background: #00af5b;border-radius: 3px;padding: 1px 5px}
+
+.matchup_main .career.green{background: #00af5b}
+.matchup_main .career.blue{background: #005db7}
+.matchup_main .desc{white-space: nowrap;width: 100%;overflow: hidden;text-overflow: ellipsis;margin-bottom: 5px}
+.matchup_main .hot_hr_cont .desc,
+.matchup_wrap .etc{font-size: 14px;color: #999;margin-top: auto;}
+.matchup_main .etc{width: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap}
+.matchup_wrap .etc span{display: inline-block;}
+.matchup_wrap .etc span:after{content:'';width: 1px;height: 10px;background: #999;display:inline-block;margin: 0 3px 0 5px  }
+.matchup_wrap .etc span:last-child:after{display: none}
+
+/* 기업지원정책 */
+.cpn_support .cs_list .item .img{border-radius: 15px;overflow: hidden}
+.cpn_support .cs_list .item .img img{width: 100%;height: 100%;}
+.cpn_support .cs_list .item .txt{margin-top: 20px;line-height: 1.6rem;height: 3.2rem;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;
+  -webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.cpn_support .cs_list .item .txt,
+.cpn_support .cs_list .item .date{text-align:center}
+.cpn_support .cs_list .item .date{margin-top: 5px;font-size: 16px;color:#999;}
+.cpn_support .cs_list .item .txt{font-size:18px;}
+.cpn_support .slick-track{margin-left: 0;margin-right: 0}
+.cpn_support .slick-list{margin: 0 -5px }
+.cpn_support .cs_list .slick-slide{margin: 0 5px }
+.matchup_wrap .slick-dots li{margin: 0 5px}
+.matchup_wrap .slick-dots li button{width: 18px;height: 18px;opacity: 1;background: #e5e5e5}
+.matchup_wrap .slick-dots li.slick-active button{background: #00a8cd}
+.matchup_wrap .slick-dots{position: static;margin-top: 20px}
+
+/* 인재상세검색 */
+.hr_scr{background: url(../images/matchup/hr_scr_bg.png) no-repeat bottom;background-size: cover}
+.hr_scr .job_detail.des_detailWrap {display: block;margin: 20px 0 15px 0}
+.hr_scr .des_detailWrap{margin:0;padding: 15px}
+.hr_scr .job_detail.des_detailWrap .item_wrap{display: flex;}
+.hr_scr .job_detail.des_detailWrap .tit {text-align: center;}
+.hr_scr .des_detailWrap .scr{max-height: 126px;}
+.hr_scr .item div.radio{margin: 10px 0;line-height: 1.4}
+.hr_scr div.radio span.text{font-size:13px}
+
+.hr_scr .bt{display: flex;justify-content:space-between;margin-top: 30px}
+.hr_scr .select_list{width: calc(100% - 350px);}
+
+.hr_scr .select_list ul{display: flex;flex-wrap: wrap;;width: 100%}
+.hr_scr .select_list .item{display: flex;margin:5px 10px 0 0 ;align-items: center;}
+.hr_scr .select_list li {font-size: 14px;color: #666666;}
+.hr_scr .select_list span{background: url(../images/matchup/close_btn.png) no-repeat center #ffd4da;border: 1px solid #ffbdc6;width: 18px;height: 18px;text-indent: -9999px;margin-left: 5px;display: block;}
+
+/* 채용정보 상세 */
+.empmn_scr .des_detailArea{padding:20px}
+.empmn_scr{background: none;}
+.contents-wrap .list-wrap .list_con-wrap .empmn_scr .tit{font-size: 15px;font-weight: normal;margin: 0 auto 10px auto}
+.empmn_scr #desDtl{width: 100%;border: 0 !important}
+
+/* 인재 리스트 */
+.matchup_wrap .green_btn{background: #69c3be;font-size: 14px;color:#fff;width: 160px;padding: 10px;border-radius: 5px;}
+.matchup_sub .gray_btn{background: #a6a6a6;font-size: 14px;color:#fff;width: 74px;padding: 10px;border-radius: 5px;}
+.matchup_wrap select {border: 1px solid #e6e6e6;padding: 5px 50px 5px 15px;font-size: 14px ;color: #787878;letter-spacing: -0.5px; background: url(../images/matchup/select_arrow.png) no-repeat right 15px center;-webkit-appearance:none; /* 크롬 화살표 없애기 */
+    -moz-appearance:none; /* 파이어폭스 화살표 없애기 */
+    appearance:none /* 화살표 없애기 */;}
+.hr_list_top{display: flex;justify-content: space-between;align-items: center;border-bottom: 1px solid #000;padding-bottom: 10px;margin-bottom: 15px}
+.hr_list_top .right_area{display: flex;align-items: center}
+.hr_list_top .right_area > * + *{margin-left: 10px}
+.hr_list_top  div.radio{margin-bottom: 0}
+.hr_list_top  input[type=checkbox]~.text:before{top: -3px;}
+
+.hr_list_area .item{border: 1px solid #e6e6e6;padding: 20px;display: flex;justify-content: space-between;margin-bottom: 10px;align-items: flex-start}
+.hr_list_area .item:last-child{margin-bottom: 0}
+.hr_list_area .item .left_area{width: 220px;}
+.hr_list_area .item .left_area .career{display: inline-block}
+.hr_list_area .item .right_area{width: calc(100% - 220px - 260px);}
+.hr_list_area .item  .green_btn{margin-top: auto}
+.hr_list_area .item .etc{font-size: 14px;color: #999}
+.hr_list_area .item .top{display: flex;margin-bottom: 10px;align-items: center}
+.hr_list_area .item .top button{margin-right: 10px}
+
+/*--- sub ---*/
+.matchup_sub .resumeHeader{background: url(../images/matchup/sub_bg.png) no-repeat;background-size: cover;}
+.matchup_sub .rs_top{padding-left: 45px;color: #003281;font-size: 24px;border-bottom: 3px solid #003281;padding-bottom: 20px;margin-bottom: 20px;position: relative;}
+.matchup_sub .rs_top:before{content: '';background: url(../images/matchup/top_ico.png) no-repeat left center;width: 36px;height: 28px;position: absolute;left: 0;top: 5px}
+.matchup_sub .list_area{background: #fff;border-top: 3px solid #38bab2;border-bottom: 1px solid #38bab2;}
+.matchup_sub .list_area .item{padding: 20px}
+.matchup_sub .resumeHeader .list_area .etc{max-width: calc(100% - 110px)}
+.matchup_sub .resumeHeader .list_area .item .desc{font-size:20px; }
+.matchup_sub .resumeHeader .list_area .item .bottom{display: flex;align-items: center;margin-top: 10px}
+.matchup_sub .resumeHeader .list_area .item .desc{font-size:20px; }
+.matchup_sub .resumeHeader .list_area .item .name_area{display: flex;align-items: center;width: 110px;}
+.matchup_sub .resumeHeader .list_area .item .like{margin-right: 10px}
+.matchup_wrap .etc{margin-top: 0}
+
+.matchup_sub .list_wrap .list_area .item {display: flex;justify-content:space-between;border-bottom: 1px solid #e6e6e6;align-items: center;}
+.matchup_sub .list_wrap .list_area .item:last-child{border-bottom: 0}
+.matchup_sub .list_wrap .list_area .item .tit{width: 300px;}
+.matchup_sub .list_wrap .list_area .item .cont{width: calc(100% - 320px)}
+.matchup_sub .list_wrap .list_area .item .term{font-weight: 500;font-size: 16px;}
+.matchup_sub .list_wrap .list_area .item .tit > * + *{margin-top: 5px}
+.matchup_sub .list_wrap .list_area .item .name{font-weight: 500}
+.matchup_sub .list_wrap .list_area .item .line{font-size: 14px;color: #999}
+.matchup_sub .list_wrap .list_area .item .cont > * + *{margin-top: 5px}
+
+.matchup_sub .list_wrap .list_area.table_sty .item {padding: 0;align-items: center;}
+.matchup_sub .list_wrap .list_area.table_sty .item .tit{padding: 20px ;}
+.matchup_sub .list_wrap .list_area.table_sty .item .cont{padding: 20px ;border-left: 1px solid #e6e6e6}
+
+.add_txt {display: flex;align-items: baseline}
+.add_txt span{font-size: 16px;margin-left: 15px}
+
+.matchup_sub .sign{text-align: right;font-size: 20px}
+.matchup_sub .sign .date{margin: 10px 0 30px 0 }
+.matchup_sub .warning{background: #f7f7f7;padding: 20px;margin: 30px 0}
+.matchup_sub .warning .tit{font-size: 20px;font-weight: bold;margin-bottom: 10px}
+.matchup_sub .bar_list li{position: relative;padding-left: 10px;margin-bottom: 5px;font-size: 15px;color: #4b4b4b}
+.matchup_sub .bar_list li:last-child{margin-bottom: 0}
+.matchup_sub .bar_list li:before{content: '-';position: absolute;left: 0;top: 0;}
+.matchup_sub .btn_wrap {text-align: center;margin-top: 60px}
+.matchup_sub .btn_wrap:after{content: '';display: block;clear: both}
+.matchup_sub .btn_wrap  .gray_btn{float: right}
+
+.hr_scr .active{display:none}
+
+@media all and (max-width:1260px){
+    .mtu_header .txt{display: block;text-align: left}
+    .matchup_main .hot_hr_cont .item .top{flex-direction: column-reverse;align-items: flex-start;}
+    .matchup_main .hot_hr_cont .item .top .name_area{width: 100%;}
+    .matchup_main .hot_hr_cont .item .top .career{margin-left: 0;margin-bottom: 5px}
+    .matchup_main .hot_hr_cont .item{margin-right: 15px}
+}
+
+@media all and (max-width:1024px){
+    .mtu_header .containerNew{background-size: 350px;padding: 70px 0}
+    .mtu_header .txt{max-width: calc(100% - 400px)}
+
+    .hr_scr .bt{display: block;}
+    .hr_scr .select_list{width: 100%;margin-bottom: 20px}
+
+    .hr_list_area .item .left_area{width: 100px}
+    .hr_list_area .item .right_area{width: calc(100% - 260px - 100px)}
+
+    .matchup_main .hot_hr_cont{display: block}
+    .matchup_main .hot_hr_cont .slick-list{margin: 0 -5px}
+    .matchup_main .hot_hr_cont .slick-slide{margin: 0 5px}
+
+    .matchup_main .hot_hr_cont .item{min-width: 100%;flex:none;width:100%;margin-bottom: 10px}
+    .matchup_main .hot_hr_cont .item:last-child{margin-bottom: 0}
+
+}
+
+@media all and (max-width:768px){
+    .pd50{padding: 40p 0}
+    .mg50{margin: 40px 0}
+    .mg30{margin: 25px 0}
+    .f20 {font-size: 15px}
+    .f16{font-size: 13px}
+
+    .mtu_tit{font-size: 20px}
+    .mtu_tit02{font-size: 15px;margin-bottom: 10px}
+    .mtu_header .containerNew{padding: 30px 0;background-size: 250px}
+    .mtu_header h3{font-size: 24px}
+
+    .matchup_main .hot_hr_cont .desc, .matchup_wrap .etc{font-size: 13px}
+    /*--- sub ---*/
+    .matchup_sub .rs_top{font-size: 18px;margin-bottom: 15px;padding-bottom: 10px;border-width: 2px}
+    .matchup_sub .rs_top{padding-left: 35px}
+    .matchup_sub .rs_top:before{background-size: 26px;width: 26px;height: 20px}
+    .matchup_sub .list_area .item{padding: 10px }
+    .matchup_sub .resumeHeader .list_area .etc{max-width: 100%;}
+    .matchup_sub .resumeHeader .list_area .item .desc{font-size: 17px;}
+    .matchup_sub .resumeHeader .list_area .item .bottom{display: block;}
+    .matchup_sub .resumeHeader .list_area .item .name_area{width: 100%;margin-bottom: 10px;}
+    .matchup_sub .resumeHeader .list_area .item .like{right: 5px;}
+    .matchup_sub .list_wrap .list_area .item .name,
+    .matchup_sub .list_wrap .list_area .item .term{font-size: 14px}
+    .matchup_sub .list_wrap .list_area.table_sty .item .tit {padding: 10px 10px 0 10px}
+    .matchup_sub .list_wrap .list_area.table_sty .item .cont{padding: 0 10px 10px 10px}
+    .matchup_sub .list_wrap .list_area.table_sty .item .cont .name{font-weight: 400}
+    .matchup_sub .list_wrap .list_area .item{display: block;}
+    .matchup_sub .list_wrap .list_area .item .tit{width: 100%;margin-bottom: 5px}
+    .matchup_sub .list_wrap .list_area .item .cont{width: 100%;}
+    .matchup_sub .list_wrap .list_area.table_sty .item .cont{border-left: 0;}
+    .matchup_sub .list_wrap .list_area .item .line{font-size: 13px}
+    .matchup_sub .list_area{border-top-width: 2px}
+    .matchup_sub .sign{font-size: 15px;}
+    .matchup_sub .sign .date{margin: 5px 0 10px 0}
+    .matchup_sub .warning{padding: 10px;margin: 20px 0}
+    .matchup_sub .warning .tit{font-size: 14px}
+    .matchup_sub .bar_list li{font-size: 13px}
+    .matchup_sub .btn_wrap{margin-top: 30px}
+    .matchup_sub .green_btn,
+    .matchup_sub .gray_btn{font-size: 13px;padding: 6px}
+    .matchup_wrap .green_btn{max-width: 120px;font-size: 13px;padding: 6px}
+    .matchup_sub .gray_btn{max-width: 60px}
+    .matchup_sub .btn_wrap .gray_btn{float: none;}
+    .add_txt span{font-size: 13px;margin-left: 5px}
+
+    .matchup_main .hot_hr_cont{display: block}
+    .matchup_main .hot_hr_cont .slick-list{margin: 0 -5px}
+    .matchup_main .hot_hr_cont .slick-slide{margin: 0 5px}
+    .matchup_wrap .slick-dots{margin-top: 10px}
+    .matchup_wrap .slick-dots li button{width: 15px;height: 15px}
+
+    .mtu_header .containerNew{background: none}
+    .mtu_header .txt{max-width: 100%;}
+    .matchup_main .hot_hr_cont .item{padding: 15px}
+
+    .hr_scr .select_list li{font-size: 12px}
+
+    .hr_list_top{flex-direction: column;align-items: flex-start}
+    .hr_list_top .right_area{margin-left: auto}
+
+    .hr_list_area .item{flex-direction: column;}
+    .hr_list_area .item .left_area{width: 100%;display: flex;flex-direction: column-reverse;align-items: flex-start}
+    .hr_list_area .item .top{margin-top: 10px;margin-bottom: 5px}
+    .hr_list_area .item .right_area{width: 100%;margin-bottom: 20px}
+    .hr_list_area .item .left_area {text-align: center}
+    .matchup_main .desc{font-size: 14px}
+    .hr_list_area .item .etc{font-size: 13px}
+    .cpn_support .cs_list .item .txt{margin-top: 10px}
+    .hr_list_area .item .green_btn{margin: auto}
+
+    .matchup_wrap select{font-size: 13px;padding: 5px 30px 5px 10px;background-position: right 10px center}
+
+    .hr_scr .select_list span{width: 15px;height: 15px;background-size: 8px}
+    .hr_list_area .item{padding: 15px}
+
+
+
+
+
+}
+
+@media all and (max-width:640px){
+
+    .hr_scr .job_detail.des_detailWrap .item_wrap{display: block}
+    .cate-select-scr .scr.scroll-wrapper{display: block}
+    .cate-select-scr .m_select{position: relative;border: 1px solid #dcdcdc;cursor: pointer;}
+	.cate-select-scr .m_select.open .scr {display: block;padding: 0}
+	.cate-select-scr .active{padding: 10px 30px 10px 10px;background:#fff url('https://www.jobaba.net/resource/images/col-listpluimo.png') no-repeat center right 10px; background-size:10px;font-size: 13px;display:block}
+	.cate-select-scr .scr .radio{padding: 10px;border-bottom: 1px solid #e6e6e6;}
+    .cate-select-scr .scr .radio:last-child{border-bottom: 0}
+	.cate-select-scr .active label{padding: 0 !important;margin: 0 !important}
+	.cate-select-scr .scr  {display: none;margin: 0;}
+    .cate-select-scr .hide{display: block;text-indent: 0;font-size: 14px;line-height: 1;margin-bottom: 10px;font-weight: 500}
+    .cate-select-scr .item{margin-bottom: 15px;padding-top: 15px;padding-right:0}
+    .cate-select-scr .item:last-child{}
+
+    .cate-select-scr .m_select.open .scr{border-top: 1px solid #e6e6e6}
+    .hr_scr .job_detail  .item div.radio{margin: 0}
+}
