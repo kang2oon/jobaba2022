@@ -218,8 +218,15 @@ z-index: 1}
 .section06 .box_area .top_tit .ico{background: url(../resource/images/thema/220602/tit_img06.png) no-repeat bottom #a206be;}
 
 .emp_txt{background: #004abe;padding: 20px;border-radius: 5px;margin: 30px 0}
+.emp_txt.item01{background: #004abe}
+.emp_txt.item02{background: #ff4a79}
+.emp_txt.item03{background: #00ab30}
+.emp_txt.item04{background: #fd6114}
+.emp_txt.item05{background: #a206be}
 .emp_txt .tit{font-size: 22px;font-weight: bold;color: #fff767;margin-bottom: 5px}
 .emp_txt .desc{font-size: 16px;color: #fff;}
+.emp_txt > div{display:none;}
+.emp_txt > div:nth-child(1){display:block;}
 .section07{padding: 50px 0;background: url(../resource/images/thema/220602/bg6.png) bottom center no-repeat #ebf6ff;}
 .section07 .item_wrap{display: flex;flex-wrap: wrap;}
 .section07 .item{text-align: center;width: calc(33.333% - 46.666px);margin-right: 70px;margin-top: 40px}

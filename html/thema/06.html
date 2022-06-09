@@ -87,9 +87,27 @@
                     
                     
                     
-                    <div class="emp_txt">
-                        <p class="tit">청년 지원금 끝판왕!</p>
-                        <p class="desc">경기도 청년기본소득 / 복지포인트 사업 / 학자금대출 장기연체자 신용회복 지원사업 /  장병내일준비적금 / 보호종료아동 자립수당 지급</p>
+                    <div class="emp_txt item01">
+                        <div class="item01">
+                            <p class="tit">청년 지원금 끝판왕!</p>
+                            <p class="desc">경기도 청년기본소득 / 복지포인트 사업 / 학자금대출 장기연체자 신용회복 지원사업 /  장병내일준비적금 / 보호종료아동 자립수당 지급</p>
+                        </div>
+                        <div class="item02">
+                            <p class="tit">여성의 사회진출, 출산 완벽 지원정책!</p>
+                            <p class="desc">경기여성취업지원금 / 임신 출산 진료비 지원제도 / 가정폭력 방지 및 피해자 지원 / 경기도 산후조리비 지원 사업/ 고위험임산부 의료비 지원사업 / 출산 전후휴가</p>
+                        </div>
+                        <div class="item03">
+                            <p class="tit">전국민 건강 안전망 구축을 위해!</p>
+                            <p class="desc">의료급여수급권자 일반건강검진비 지원 / 노인 무릎인공관절 수술 지원 사업</p>
+                        </div>
+                        <div class="item04">
+                            <p class="tit">열심히 일한 자! 누려라!</p>
+                            <p class="desc">산재근로자 생활안정자금융자 / 생활안정자금 융자 / 코로나19 가족돌봄비용 긴급지원</p>
+                        </div>
+                        <div class="item05">
+                            <p class="tit">모두 다 같이 힘냅시다! 취약계층 지원금 정책</p>
+                            <p class="desc">취약계층 의료비 지원사업 / 저소득층 기저귀·조제분유 지원사업</p>
+                        </div>
                     </div>
                     
                     <div class="section02 box_area target" id="focus01">
@@ -1947,6 +1965,15 @@ EX) 부모의 교통사고 사망으로 인하여 입소하여 보호종료되�
 				$(this).parent().addClass('on');
 				$(this).parent().siblings().removeClass('on');
 			});
+
+            $('.quick_area > div').on('mouseover, mouseenter', function(){
+                cnt = $(this).attr('class');
+                //console.log(cnt);
+                $('.emp_txt').removeClass('item01 item02 item03 item04 item05');
+                $('.emp_txt > div').hide();
+                $('.emp_txt').addClass(cnt);
+                $('.emp_txt > div.'+cnt).show();
+            });
         
 			// target 위치 표시와, 이동 
 			var
