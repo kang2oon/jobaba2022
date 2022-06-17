@@ -21,6 +21,7 @@
 	<!-- //잡아바 css-->
 
 	<!--추가 css-->
+	<link rel="stylesheet" href="css/sunrise.css">
 	<link rel="stylesheet" href="css/uep.css">
 </head>
 
@@ -56,7 +57,16 @@
                     <img src="./images/uep/img_test.jpg" alt="" />
                 </div> -->
                 <div class="sample">
-					<a href="javascript:void(0)">결과지 샘플보기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→</a>
+					<a href="javascript:void(0)" onclick="smp_pop = sunrise({target:'#smp_report'})">결과지 샘플보기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→</a>
+				</div>
+				<div id="smp_report" class="modal_pop" style="display:none;">
+					<div class="area_title">
+						기업인적성검사 결과지 샘플
+						<div class="close"><button onclick="smp_pop.sunrise('closePopup');"><img src="./images/close_23x23_white.png" alt="닫기"></button></div>
+					</div>
+					<div class="area_contents">
+						<img src="./images/uep/img_smp_report.png" alt=""/>
+					</div>
 				</div>
 			</div>
 			<div class="target_com_wrap">
@@ -130,6 +140,7 @@
 
 	<!--잡아바 js-->
 	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/sunrise.js"></script>
 	<script>	
 		
 	</script>

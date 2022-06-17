@@ -24,6 +24,7 @@
     #uep_wrap .test_info_wrap .sample{text-align:center;margin-top:50px;}
     #uep_wrap .test_info_wrap a{display:inline-block;color:#333;font-size:16px;border:2px solid #333;border-radius:48px;padding:16px 32px;}
     #uep_wrap .test_info_wrap a:hover, #uep_wrap .test_info_wrap a:focus{background-color:#333;color:#fff;}
+    #uep_wrap #smp_report.modal_pop{width:940px;}
 
 #uep_wrap .target_com_wrap{background-color:#f5f5f5;padding:80px 0;}
     #uep_wrap .target_com_wrap h3{text-align:center;font-size:32px;margin-bottom:32px;}
@@ -64,6 +65,10 @@
     #uep_wrap .process_wrap .goto{text-align:center;padding:16px 0 80px;}
     #uep_wrap .process_wrap a{display:inline-block;color:#38bab2;font-size:18px;border:3px solid #38bab2;border-radius:48px;padding:24px 42px;}
     #uep_wrap .process_wrap a:hover, #uep_wrap .process_wrap a:focus{background-color:#38bab2;color:#fff;}
+
+.sunrise-frame{padding:0;}
+.modal_pop .area_title{position:relative;background-color:#38bab2;color:#fff;padding:16px 24px;font-size:18px;}
+    .modal_pop .area_title .close{position:absolute;top:16px;right:24px;}
 
 @media all and (max-width:1024px){
     .containerNew2{width:calc(100% - 80px);}
