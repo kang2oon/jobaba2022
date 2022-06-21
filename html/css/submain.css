@@ -5,6 +5,7 @@
     }
     #subMain .header.sm01{background-image:url(../images/submain/bg_header1.jpg);}
     #subMain .header.sm02{background-image:url(../images/submain/bg_header2.jpg);}
+    #subMain .header.sm03{background-image:url(../images/submain/bg_header3.jpg);}
     #subMain .header h2{font-size:50px;color:#003281;text-align:center;}
     #subMain .header h2::before{content:"";background:url(../images/publicJob/mv_ico.png) no-repeat;display:block;width:54px;height:44px;margin:0 auto 10px;}
     #subMain .header .pg_info{font-size:18px;color:#003281;text-align:center;margin-top:16px;}
@@ -69,6 +70,11 @@
     #subMain .test-wrap > a.aiview::before{width:270px;height:200px;background-image:url(../images/submain/bg_test_aiview.png);}
     #subMain .test-wrap > a.mento::before{width:200px;height:300px;background-image:url(../images/submain/bg_test_mento.png);}
     #subMain .test-wrap > a.csting::before{width:360px;height:300px;background-image:url(../images/submain/bg_test_csting.png);}
+    #subMain .test-wrap > a.talent{background-color:#f9dc30;}
+    #subMain .test-wrap > a.talent::before{width:300px;height:360px;background-image:url(../images/submain/bg_test_talent.png);}
+    #subMain .test-wrap > a.company::before{width:300px;height:300px;background-image:url(../images/submain/bg_test_company.png);}
+    #subMain .test-wrap > a.uep::before{width:240px;height:300px;background-image:url(../images/submain/bg_test_uep.png);}
+    #subMain .test-wrap > a.comedu::before{width:300px;height:260px;background-image:url(../images/submain/bg_test_comedu.png);}
     #subMain .test-wrap > a h4{font-size:24px;}
     #subMain .test-wrap > a p{font-size:14px;width:calc(100% - 80px);margin-top:16px;color:inherit;opacity:.75;}
     #subMain .test-wrap > a .dummy_btn{
@@ -88,6 +94,16 @@
     #subMain .recomm-wrap > a p{margin-top:16px;}
     #subMain .recomm-wrap > a p span{font-weight:700;color:#00a8cd;}
 
+    #subMain .support_policy{margin:24px 0 120px;}
+    #subMain .support_policy .slick-list{margin:0 -16px;}
+    #subMain .support_policy .slick-slide{margin:0 16px;}
+    #subMain .support_policy .thumb{border:1px solid #ddd;border-radius:16px;overflow:hidden;margin-bottom:16px;text-align:center;height:165px;}
+    #subMain .support_policy h4{font-size:16px;margin-bottom:8px;font-weight:400;}
+    #subMain .support_policy .duedate{font-size:14px;color:#858585;}
+    #subMain .support_policy .slick-dots{bottom:-60px;}
+    #subMain .support_policy .slick-dots li button{width:14px;height:14px;background:#e5e5e5;opacity:1;}
+    #subMain .support_policy .slick-dots li.slick-active button{background:#00a8cd;}
+
 @media all and (max-width:1024px){
     #subMain .header .sv_goto > a+a{margin-left:32px;}
     #subMain .level1, #subMain .level3, #subMain .recomm{padding:60px 0;}
@@ -101,6 +117,8 @@
     #subMain .test-wrap > a.jobpos::before{width:220px;height:180px;background-size:160%;}
     #subMain .test-wrap > a.jobncs::before{width:180px;height:160px;background-size:100%;}
     #subMain .test-wrap > a.jobtra::before, #subMain .test-wrap > a.jobatv::before, #subMain .test-wrap > a.jobedu::before{width:180px;height:160px;background-size:100%;}
+    #subMain .test-wrap > a.uep::before{height:210px;}
+    #subMain .test-wrap > a.comedu::before{width:280px;}
 }
 
 @media all and (max-width:820px){
@@ -125,4 +143,5 @@
     #subMain .test-wrap > a.jobexp::before{background-image:url(../images/submain/bg_test_jobexp.png)!important;background-size:100%;width:180px;height:110px;}
     #subMain .test-wrap > a.mento::before{background-image:url(../images/submain/bg_test_mento.png)!important;background-size:100%;width:180px;height:150px;}
     #subMain .test-wrap > a.csting::before{background-image:url(../images/submain/bg_test_csting.png)!important;background-size:100%;width:200px;height:180px;}
+    #subMain .support_policy .thumb{height:240px;}
 }
