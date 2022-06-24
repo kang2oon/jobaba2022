@@ -7,11 +7,12 @@
     #uep_wrap .header h2{font-size:36px;color:#285f74;}
     #uep_wrap .header .desc{font-size:16px;color:#285f74;margin-top:20px;}
     #uep_wrap .header .desc em{font-weight:700;}
-    #uep_wrap .header a{
+    #uep_wrap .header a{display:inline-block;padding:16px 32px;font-size:18px;margin-top:60px;border-radius:30px;background-color:#38bab2;color:#fff;}
+    /*#uep_wrap .header a{
         display:inline-block;padding:15px 25px;font-size:16px;color:#000;margin-top:48px;
         background-color:#fff;border-radius:30px;box-shadow:0 0 5px 3px rgba(0,0,0,.1);
     }
-    #uep_wrap .header a:hover, #uep_wrap .header a:focus{background-color:#38bab2;color:#fff;box-shadow:none;}
+    #uep_wrap .header a:hover, #uep_wrap .header a:focus{background-color:#38bab2;color:#fff;box-shadow:none;}*/
 
  #uep_wrap .test_info_wrap{margin:80px auto;}
     #uep_wrap .test_info_wrap .tit{font-size:32px;font-weight:300;}

@@ -45,18 +45,18 @@
 
     #subMain .test-wrap{display:flex;justify-content:space-between;margin-top:48px;}
     #subMain .test-wrap > a{
-        position:relative;display:block;flex:1;padding:36px;background:#fff;border-radius:16px;box-shadow:0 0 5px 3px rgba(0,0,0,.035);min-height:360px;overflow:hidden;
+        position:relative;display:block;flex:1;padding:36px;background:#fff;border-radius:16px;box-shadow:0 0 5px 3px rgba(0,0,0,.035);min-height:280px;overflow:hidden;
     }
     #subMain .level2 .test-wrap > a{background-color:#f5f5f5;box-shadow:none;}
     #subMain .test-wrap > a+a, #subMain .recomm-wrap > a+a{margin-left:24px;}
     #subMain .test-wrap > a.pretest{
         background:linear-gradient(180deg, rgb(60,105,195) 0%, rgb(33,89,152));background-repeat:no-repeat;color:#fff;
     }
-    #subMain .test-wrap > a::before{content:"";position:absolute;bottom:0;right:0;background-repeat:no-repeat;background-position:0 0;}
+    /*#subMain .test-wrap > a::before{content:"";position:absolute;bottom:0;right:0;background-repeat:no-repeat;background-position:0 0;}
     #subMain .test-wrap > a.pretest::before{width:300px;height:150px;background-image:url(../images/submain/bg_test_pretest.png);}
-    #subMain .test-wrap > a.jobfav::before{width:200px;height:200px;background-image:url(../images/submain/bg_test_jobfav.png);}
-    #subMain .test-wrap > a.jobexp{background-color:#74fcba;}
-    #subMain .test-wrap > a.jobexp::before{width:240px;height:200px;background-image:url(../images/submain/bg_test_jobexp.png);}
+    #subMain .test-wrap > a.jobfav::before{width:200px;height:200px;background-image:url(../images/submain/bg_test_jobfav.png);}*/
+    #subMain .test-wrap > a.jobexp{background-color:#f0f8ff;}
+    /*#subMain .test-wrap > a.jobexp::before{width:240px;height:200px;background-image:url(../images/submain/bg_test_jobexp.png);}
     #subMain .test-wrap > a.jobrdy::before{width:200px;height:200px;background-image:url(../images/submain/bg_test_jobrdy.png);}
     #subMain .test-wrap > a.jobpos::before{width:280px;height:200px;background-image:url(../images/submain/bg_test_jobpos.png);}
     #subMain .test-wrap > a.jobncs::before{width:220px;height:200px;background-image:url(../images/submain/bg_test_jobncs.png);}
@@ -74,14 +74,33 @@
     #subMain .test-wrap > a.talent::before{width:300px;height:360px;background-image:url(../images/submain/bg_test_talent.png);}
     #subMain .test-wrap > a.company::before{width:300px;height:300px;background-image:url(../images/submain/bg_test_company.png);}
     #subMain .test-wrap > a.uep::before{width:240px;height:300px;background-image:url(../images/submain/bg_test_uep.png);}
-    #subMain .test-wrap > a.comedu::before{width:300px;height:260px;background-image:url(../images/submain/bg_test_comedu.png);}
+    #subMain .test-wrap > a.comedu::before{width:300px;height:260px;background-image:url(../images/submain/bg_test_comedu.png);}*/
+    #subMain .test-wrap > a.jobrdy{background-color:#dbdddf;}
+    #subMain .test-wrap > a.jobncs, #subMain .test-wrap > a.csting, #subMain .test-wrap > a.comedu{
+        background:linear-gradient(180deg, rgb(49,49,49) 0%, rgb(51,51,51));background-repeat:no-repeat;color:#fff;
+    }
+    #subMain .test-wrap > a.jobtra{background:linear-gradient(180deg, rgb(225,34,49) 0%, rgb(223,37,52));background-repeat:no-repeat;color:#fff;}
+    #subMain .test-wrap > a.jobedu{background-color:#ffe2e4;}
+    #subMain .test-wrap > a.resume{background:#dce6ff;color:#3a5497;}
+    #subMain .test-wrap > a.talent{background:linear-gradient(180deg, rgb(208,234,233) 0%, rgb(198,226,242));background-repeat:no-repeat;color:rgb(49,88,125);}
+    #subMain .test-wrap > a.company{background-color:#c8e4e3;color:#2a6767;}
     #subMain .test-wrap > a h4{font-size:24px;}
-    #subMain .test-wrap > a p{font-size:14px;width:calc(100% - 80px);margin-top:16px;color:inherit;opacity:.75;}
+    #subMain .test-wrap > a p{font-size:14px;/*width:calc(100% - 80px);*/margin-top:16px;color:inherit;opacity:.75;}
+    #subMain .test-wrap > a p i{display:block;}
+    #subMain .test-wrap > a .dummy_btn{position:absolute;bottom:36px;right:36px;border-bottom:1px solid rgba(0,0,0,.8);padding:10px;font-size:16px;}
+    /*#subMain .test-wrap > a .dummy_btn{display:inline-block;padding:10px 25px;border-radius:30px;font-size:16px;border:1px solid rgba(0,0,0,.8);margin-top:40px;}
     #subMain .test-wrap > a .dummy_btn{
         position:absolute;bottom:48px;left:36px;border:1px solid rgba(0,0,0,.8);
-        padding:8px 20px;border-radius:30px;font-size:14px;
+        padding:10px 25px;border-radius:30px;font-size:16px;
+    }*/
+    /*#subMain .test-wrap > a.pretest .dummy_btn, #subMain .test-wrap > a.jobtra .dummy_btn{border:1px solid rgba(255,255,255,.8);background:rgba(255,255,255,.15);}*/
+    #subMain .test-wrap > a.pretest .dummy_btn, #subMain .test-wrap > a.jobncs .dummy_btn, 
+    #subMain .test-wrap > a.jobtra .dummy_btn, #subMain .test-wrap > a.csting .dummy_btn, #subMain .test-wrap > a.comedu .dummy_btn{
+        border-color:rgba(255,255,255,.8);
     }
-    #subMain .test-wrap > a.pretest .dummy_btn, #subMain .test-wrap > a.jobtra .dummy_btn{border:1px solid rgba(255,255,255,.8);background:rgba(255,255,255,.15);}
+    #subMain .test-wrap > a.resume .dummy_btn{border-color:rgba(58,84,151,.8);}
+    #subMain .test-wrap > a.talent .dummy_btn{border-color:rgba(49,88,125,.8);}
+    #subMain .test-wrap > a.company .dummy_btn{border-color:rgba(42,103,103,.8);}
     #subMain .recomm-wrap{display:flex;justify-content:space-between;margin-top:24px;}
     #subMain .recomm-wrap > a{
         position:relative;display:block;flex:1;padding:36px;background:#fff;border-radius:16px;overflow:hidden;border:1px solid #ddd;
@@ -90,7 +109,7 @@
     #subMain .recomm-wrap > a:nth-child(1)::before{background-position:0 0;}
     #subMain .recomm-wrap > a:nth-child(2)::before{background-position:-48px 0;}
     #subMain .recomm-wrap > a:nth-child(3)::before{background-position:-96px 0;}
-    #subMain .recomm-wrap > a h4{font-size:20px;}
+    #subMain .recomm-wrap > a h4{font-size:24px;}
     #subMain .recomm-wrap > a p{margin-top:16px;}
     #subMain .recomm-wrap > a p span{font-weight:700;color:#00a8cd;}
 
@@ -119,6 +138,7 @@
     #subMain .test-wrap > a.jobtra::before, #subMain .test-wrap > a.jobatv::before, #subMain .test-wrap > a.jobedu::before{width:180px;height:160px;background-size:100%;}
     #subMain .test-wrap > a.uep::before{height:210px;}
     #subMain .test-wrap > a.comedu::before{width:280px;}
+    #subMain .test-wrap > a p i{display:inline;}
 }
 
 @media all and (max-width:820px){
@@ -128,7 +148,7 @@
     #subMain .test-wrap > a::before{background-image:none!important;}
     #subMain .test-wrap > a h4{font-size:21px;letter-spacing:-1px;}
     #subMain .test-wrap > a p{width:100%;}
-    #subMain .test-wrap > a .dummy_btn{left:24px;bottom:36px;}
+    #subMain .test-wrap > a .dummy_btn{right:24px;bottom:36px;}
 }
 
 @media all and (max-width:480px){
@@ -138,7 +158,7 @@
     #subMain .test-wrap, #subMain .recomm-wrap{flex-direction:column;}
     #subMain .test-wrap > a{padding:30px;min-height:240px;}
     #subMain .test-wrap > a+a, #subMain .recomm-wrap > a+a{margin-left:0;margin-top:16px;}
-    #subMain .test-wrap > a .dummy_btn{left:30px;bottom:36px;}
+    #subMain .test-wrap > a .dummy_btn{right:30px;bottom:36px;}
     #subMain .test-wrap > a.pretest::before{background-image:url(../images/submain/bg_test_pretest.png)!important;background-size:100%;height:100px;}
     #subMain .test-wrap > a.jobexp::before{background-image:url(../images/submain/bg_test_jobexp.png)!important;background-size:100%;width:180px;height:110px;}
     #subMain .test-wrap > a.mento::before{background-image:url(../images/submain/bg_test_mento.png)!important;background-size:100%;width:180px;height:150px;}
