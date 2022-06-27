@@ -133,6 +133,15 @@ input[type="checkbox"]+label::after{
 input[type="checkbox"]:checked+label::after{
     content:"✔";font-size:12px;line-height:16px;background:#38bab2;color:#fff;border-color:#38bab2;text-align:center;
 }
+    #comRecruit .search_wrap .radio{margin:10px 8px;font-size:14px;color:#999;}
+    #comRecruit .search_wrap .radio+.radio{margin-top:14px;}
+    #comRecruit .search_wrap .radio span{font-size:14px;color:#333;padding-left:24px;}
+    #comRecruit .search_wrap .radio input[type="checkbox"]+span::before{
+        content:"";width:16px;height:16px;background:#fdfdfd;border:1px solid #ddd;position:absolute;left:0;top:1px;border-radius:3px;
+    }
+    #comRecruit .search_wrap .radio input[type="checkbox"]:checked+span::before{
+        content:"✔";font-size:12px;line-height:16px;background:#38bab2;color:#fff;border-color:#38bab2;text-align:center;font-weight:400;
+    }
 
 @media all and (max-width:1024px){
     #comRecruit .hotrc_wrap>div{flex:1 1 40%;}
