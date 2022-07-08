@@ -1,3 +1,6 @@
+#life_cycle h2, #ncs_edu h2, #job_edu h2, #announce h2, #covetous h2, #mov_news h2{position:relative;font-size:24px;font-weight:400;margin:0;}
+#life_cycle h2 a, #ncs_edu h2 a, #job_edu h2 a, #announce h2 a, #covetous h2 a, #mov_news h2 a{position:absolute;top:8px;right:0;font-size:16px;color:#aaa;}
+
 #goto_service{padding:56px 0;background-color:#f9f9f9;}
     #goto_service .count_wrap{float:right;width:240px;}
     #goto_service .count_wrap>div+div{margin-top:16px;}
@@ -70,3 +73,53 @@
         display:inline-block;border:1px solid #38bab2;padding:2px 8px;background-color:#fff;border-radius:4px;color:#38bab2;margin-top:16px;
     }
 #life_cycle{margin:60px auto 0;}
+#ncs_edu{margin:60px auto 0;}
+#job_edu{margin:60px auto 0;}
+    #job_edu .job_edu_list{display:flex;justify-content:space-between;margin-top:24px;}
+    #job_edu .job_edu_list>a{flex:1;}
+    #job_edu .job_edu_list>a+a{margin-left:24px;}
+    #job_edu .job_edu_list>a .thumb{border-radius:8px;overflow:hidden;line-height:1;position:relative;}
+    #job_edu .job_edu_list>a .thumb::after{
+        content:"";width:35px;height:35px;background-image:url(https://www.jobaba.net/resource/images/main/play_btn.png);
+        position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+    }
+    #job_edu .job_edu_list>a .badge{margin:16px 0 4px;}
+    #job_edu .job_edu_list>a .badge span{display:inline-block;font-size:12px;padding:2px 8px;border-radius:16px;}
+    #job_edu .job_edu_list>a .badge span+span{margin-left:4px;}
+    #job_edu .job_edu_list>a .badge span:nth-child(1){border:1px solid #333;background-color:#333;color:#fff;}
+    #job_edu .job_edu_list>a .badge span:nth-child(2){border:1px solid #ff835f;color:#ff835f;}
+    #job_edu .job_edu_list>a h3{font-size:20px;font-weight:400;letter-spacing:-1px;}
+#announce{margin:60px auto 0;display:flex;justify-content:space-between;}
+    #announce>div{flex:1;}
+    #announce>div+div{margin-left:40px;}
+#covetous{margin:60px auto 0;padding-bottom:20px;}
+    #covetous .covetous_com{margin:24px -8px 0;}
+    #covetous .covetous_com .slick-slide>div>a{padding:0 8px;vertical-align:top;}
+    #covetous .covetous_com .slick-slide>div>a>div{position:relative;border:1px solid #e0e0e0;border-radius:16px;padding:20px;height:230px;}
+    #covetous .covetous_com .slick-slide>div>a:hover>div, #covetous .covetous_com .slick-slide>div>a:focus>div{border-color:#38bab2;border-width:2px;}
+    #covetous .covetous_com .slick-slide>div>a>div h3{font-size:22px;font-weight:400;letter-spacing:-1px;margin-bottom:16px;max-width:calc(100% - 24px);}
+    #covetous .covetous_com .slick-slide>div>a>div p{color:#999;font-size:14px;}
+    #covetous .covetous_com .slick-slide>div>a>div .logo{position:absolute;bottom:20px;left:20px;max-width:66%;filter:grayscale(100%);opacity:.5;}
+    #covetous .covetous_com .slick-slide>div>a:hover>div .logo, #covetous .covetous_com .slick-slide>div>a:focus>div .logo{opacity:1;filter:grayscale(0%);}
+    #covetous .covetous_com .slick-slide>div>a>div .favorite{
+        position:absolute;top:20px;right:20px;width:16px;height:15px;background-image:url(https://www.jobaba.net/resource/images/main/heart_off.png);
+    }
+    #covetous .covetous_com .slick-slide>div>a>div .favorite.on{background-image:url(https://www.jobaba.net/resource/images/main/heart_on.png);}
+
+    #covetous .covetous_com .slick-dots, #mov_news .movnews .slick-dots{bottom:-32px;}
+    #covetous .covetous_com .slick-dots li, #mov_news .movnews .slick-dots li{width:12px;height:12px;margin:0 4px;}
+    #covetous .covetous_com .slick-dots li button, #mov_news .movnews .slick-dots li button{opacity:.2;width:12px;height:12px;}
+    #covetous .covetous_com .slick-dots li.slick-active button, #mov_news .movnews .slick-dots li.slick-active button{opacity:.75;background-color:#003281;}
+#mov_news{margin:60px auto 0;padding-bottom:80px;}
+    #mov_news h2 a::before{content:"\f16a  ";font-family:'FontAwesome';}
+    #mov_news .movnews{margin:24px -12px 0;}
+    #mov_news .movnews .slick-slide>div>a{padding:0 12px;vertical-align:top;}
+    #mov_news .movnews .slick-slide>div>a .thumb{border-radius:8px;overflow:hidden;line-height:1;position:relative;max-height:166px}
+    #mov_news .movnews .slick-slide>div>a .thumb img{transform:translateY(-14.06%);}
+    #mov_news .movnews .slick-slide>div>a .thumb::after{
+        content:"";width:35px;height:35px;background-image:url(https://www.jobaba.net/resource/images/main/play_btn.png);
+        position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+    }
+    #mov_news .movnews .slick-slide>div>a h3{font-size:20px;font-weight:400;letter-spacing:-1px;margin:16px 0 4px;}
+    #mov_news .movnews .slick-slide>div>a p{color:#999;font-size:14px;}
+    
