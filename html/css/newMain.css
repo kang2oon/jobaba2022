@@ -229,4 +229,8 @@
     }
     #mov_news .movnews .slick-slide>div>a h3{font-size:20px;font-weight:400;letter-spacing:-1px;margin:16px 0 4px;}
     #mov_news .movnews .slick-slide>div>a p{color:#999;font-size:14px;}
+
+@media all and (max-width:1366px){
+    
+}
     
