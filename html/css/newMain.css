@@ -74,6 +74,48 @@
     }
 #life_cycle{margin:60px auto 0;}
 #ncs_edu{margin:60px auto 0;}
+    #ncs_edu .ncs_tab_wrap{margin-top:24px;}
+    #ncs_edu .ncs_tab_wrap .tab{text-align:center;}
+    #ncs_edu .ncs_tab_wrap .tab span{display:inline-block;font-size:18px;padding:8px 24px;border:1px solid #d4d4d4;border-radius:32px;cursor:pointer;}
+    #ncs_edu .ncs_tab_wrap .tab span.active{border-color:#38bab2;background-color:#38bab2;color:#fff;}
+    #ncs_edu .ncs_tab_wrap .tab span.active::before{content:"#";}
+    #ncs_edu .ncs_tab_wrap .tab span+span{margin-left:8px;}
+    #ncs_edu .ncs_tab_wrap .tab_cont{/*display:none;*/margin:0 -12px;height:0;overflow:hidden;}
+    #ncs_edu .ncs_tab_wrap .tab_cont.active{/*display:block;*/height:auto;overflow:visible;margin:24px -12px 0;}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div{padding:0 12px;}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box{border:1px solid #d4d4d4;border-radius:8px;overflow:hidden;}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area{font-size:20px;letter-spacing:-1px;text-align:center;padding:56px 0;color:#fff;background-position:50% 50%;background-size:cover;}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu11{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc1_1.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu12{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc1_2.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu13{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc1_3.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu14{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc1_4.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu15{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc1_5.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu16{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc1_6.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu21{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc2_1.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu22{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc2_2.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu23{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc2_3.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu24{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc2_4.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu25{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc2_5.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu31{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc3_1.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu32{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc3_2.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu33{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc3_3.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu34{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc3_4.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu41{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc4_1.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu42{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc4_2.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu43{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc4_3.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu44{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc4_4.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu51{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc5_1.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu52{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc5_2.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu61{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc6_1.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .tit_area.edu62{background-image:url(https://www.jobaba.net/resource/images/main/img_nsc7_1.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .lecture{padding:24px;height:184px;}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .lecture a{display:block;font-size:16px;}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .lecture a:hover, #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .lecture a:focus{color:#003281;font-weight:700;}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .lecture a+a{margin-top:12px;}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-slide>div .edu_box .lecture a span{display:inline-block;font-size:14px;margin-right:8px;background-color:#003281;color:#fff;padding:2px 8px;border-radius:4px;}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-prev, #ncs_edu .ncs_tab_wrap .tab_cont .slick-next{width:21px;height:41px;background:url(../images/newMain/arrow_slick.png);}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-prev:before, #ncs_edu .ncs_tab_wrap .tab_cont .slick-next:before{content:"";}
+    #ncs_edu .ncs_tab_wrap .tab_cont .slick-next{background-position:-21px 0;}
 #job_edu{margin:60px auto 0;}
     #job_edu .job_edu_list{display:flex;justify-content:space-between;margin-top:24px;}
     #job_edu .job_edu_list>a{flex:1;}
