@@ -176,6 +176,35 @@
             </ul>
         </div>
         <div>
+            <h3>맞춤정보<a href="javascript:void(0);">전체보기 →</a></h3>
+            <div class="recomm_policy">
+                <a href="javascript:void();">
+                    <div class="thumb"><img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4LwKguOI/KoR9bu2eAacYYNAYcZydel9H16ChCAurOJup"  alt="" /></div>
+                    <div class="label">
+                        <span class="new">NEW</span>
+                        <span class="dday">D-5</span>
+                    </div>
+                    <div class="poltit">싱가포르 오픈이노베이션 Global FinTech Hackcelerator2022</div>
+                </a>
+                <a href="javascript:void();">
+                    <div class="thumb"><img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L4B2A7lO5epscJjE4jHIfPuJNCAPdzcjm8AuSdQnCGzM"  alt="" /></div>
+                    <div class="label">
+                        <span class="new">NEW</span>
+                        <span class="dday">D-3</span>
+                    </div>
+                    <div class="poltit">2022년 초고성능컴퓨팅 활용 고도화사업 신규과제 공모</div>
+                </a>
+                <a href="javascript:void();">
+                    <div class="thumb"><img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4LzDfbeojqEnJBo+ZKHQR70Q525Qg7bzWVWnnlP3XTFls"  alt="" /></div>
+                    <div class="label">
+                        <span class="new">NEW</span>
+                        <span class="dday">D-3</span>
+                    </div>
+                    <div class="poltit">2022년 일본 오사카 선물용품 전시회 한국관 참가기업 모집</div>
+                </a>
+            </div>
+        </div>
+        <div>
             <h3>기업추천</h3>
             <div class="recomm_company">
                 <a href="javascript:void();">
@@ -207,35 +236,6 @@
                     <div class="logo"><img src="https://www.jobaba.net/file/image.do?filePath=STyQPhrHysIAYkYhAQRZSRDsLLBefPlc4lR+0r5P3AVO/8ENQBDBNYhbZkIt68y2" alt="(주)엔스테이지" /></div>
                     <div class="comNm">(주)엔스테이지</div>
                     <div class="rc_cnt">진행중인 공고 : <span>2</span>건</div>
-                </a>
-            </div>
-        </div>
-        <div>
-            <h3>맞춤정보<a href="javascript:void(0);">전체보기 →</a></h3>
-            <div class="recomm_policy">
-                <a href="javascript:void();">
-                    <div class="thumb"><img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4LwKguOI/KoR9bu2eAacYYNAYcZydel9H16ChCAurOJup"  alt="" /></div>
-                    <div class="label">
-                        <span class="new">NEW</span>
-                        <span class="dday">D-5</span>
-                    </div>
-                    <div class="poltit">싱가포르 오픈이노베이션 Global FinTech Hackcelerator2022</div>
-                </a>
-                <a href="javascript:void();">
-                    <div class="thumb"><img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L4B2A7lO5epscJjE4jHIfPuJNCAPdzcjm8AuSdQnCGzM"  alt="" /></div>
-                    <div class="label">
-                        <span class="new">NEW</span>
-                        <span class="dday">D-3</span>
-                    </div>
-                    <div class="poltit">2022년 초고성능컴퓨팅 활용 고도화사업 신규과제 공모</div>
-                </a>
-                <a href="javascript:void();">
-                    <div class="thumb"><img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4LzDfbeojqEnJBo+ZKHQR70Q525Qg7bzWVWnnlP3XTFls"  alt="" /></div>
-                    <div class="label">
-                        <span class="new">NEW</span>
-                        <span class="dday">D-3</span>
-                    </div>
-                    <div class="poltit">2022년 일본 오사카 선물용품 전시회 한국관 참가기업 모집</div>
                 </a>
             </div>
         </div>
@@ -1339,9 +1339,11 @@
 <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/script.js"></script>
 <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/jquery.vticker-min.js"></script>
 <script src="https://kit.fontawesome.com/68ace2d14b.js" crossorigin="anonymous"></script>
-<script>	
-    $(document).ready(function(){
-        $('.recomm_company').slick({
+<script>
+    dw = $(document).width();
+    $(document).on('ready load resize', function(){
+        var recomm_company = $('.recomm_company');
+        recomm_company.slick({
             dots: true,
             arrows: false,
             rows: 2
@@ -1366,7 +1368,8 @@
                 return  (i + 1) + '/' + slider.slideCount;
             }
         });
-        $('.covetous_com').slick({
+        var covetous_slide = $('.covetous_com');
+        covetous_slide.slick({
             dots: true,
             arrows: false,
             slidesToShow: 5,
@@ -1400,6 +1403,24 @@
         $('.favorite').click(function(){
             $(this).toggleClass('on');
         });
+        
+        if(dw <= 1024){
+            covetous_slide.slick('unslick');
+            recomm_company.slick('unslick');
+            covetous_slide.slick({
+                dots: true,
+                arrows: false,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+            });
+            recomm_company.slick({
+                dots: true,
+                arrows: false,
+                rows: 1,
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            });
+        }
     });
 
     $('.ncs_tab_wrap .tab>span').click(function(){

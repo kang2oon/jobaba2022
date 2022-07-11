@@ -260,5 +260,20 @@
     #goto_service .containerNew>div{float:none;width:100%;}
     #goto_service .count_wrap{display:flex;justify-content:space-evenly;margin-bottom:32px;}
     #goto_service .count_wrap>div+div{margin:0;}
+    #person_custom>div:nth-child(1){flex-basis:60%;}
+    #person_custom>div:nth-child(3){margin-top:20px;margin-left:0;}
+    #person_custom>div:nth-child(4){margin-left:20px;}
+    #person_custom>div:nth-child(5){margin-left:0;}
+    #person_custom .recomm_company{max-width:420px;margin-left:-4px;margin-right:-4px;}
+    #person_custom .recomm_company .slick-slide{margin:0 4px;}
+    #life_cycle .lc_wrap .tab_cont.active{flex-direction:column;}
+    #life_cycle .lc_wrap .tab_cont .recomm{display:none;}
+    #life_cycle .lc_wrap .tab_cont>div:nth-child(1){border-right:none;border-bottom:1px solid #d4d4d4;width:100%;}
+    #ncs_edu .ncs_tab_wrap .tab span{margin:4px;}
+    #ncs_edu .ncs_tab_wrap .tab span+span{margin-left:4px;}
+    #job_edu .job_edu_list>a{max-width:217px;}
+    #announce{flex-direction:column;}
+    #announce>div .announce_list{width:calc(100% + 16px);}
+    #announce>div+div{margin-left:0;margin-top:32px;}
 }
     
