@@ -1407,6 +1407,7 @@
         if(dw <= 1024){
             covetous_slide.slick('unslick');
             recomm_company.slick('unslick');
+            ncs_edu.slick('unslick');
             covetous_slide.slick({
                 dots: true,
                 arrows: false,
@@ -1419,6 +1420,12 @@
                 rows: 1,
                 slidesToShow: 2,
                 slidesToScroll: 2,
+            });
+            ncs_edu.slick({
+                dots: false,
+                arrows: true,
+                slidesToShow: 2,
+                slidesToScroll: 1
             });
         }
     });
