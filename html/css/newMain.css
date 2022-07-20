@@ -276,4 +276,20 @@
     #announce>div .announce_list{width:calc(100% + 16px);}
     #announce>div+div{margin-left:0;margin-top:32px;}
 }
+
+@media all and (max-width:820px){
+
+}
+
+@media all and (max-width:768px){
+
+}
+
+@media all and (max-width:480px){
+
+}
+
+
+
+
     
