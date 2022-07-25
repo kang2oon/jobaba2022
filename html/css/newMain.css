@@ -378,10 +378,15 @@
     #person_custom>div:nth-child(4) {
         margin-top: 10px;
         margin-left: 0;
+        max-width: 49.2%;
     }
     #person_custom>div:nth-child(5) {
         margin-left: 10px;
+        max-width: 49.2%;
     }    
+    #person_custom>div:nth-child(6) {
+        max-width: 100%;
+    }
     #person_custom>div:nth-child(5), #person_custom>div:nth-child(6), #person_custom>div:nth-child(8), #person_custom>div:nth-child(9) {
         margin-top: 10px;
     }        
@@ -459,9 +464,6 @@
     #life_cycle {
         margin: 30px auto 0;
     }
-    #life_cycle .lc_wrap {
-        margin-top: 12px;
-    }    
     #life_cycle h2, #ncs_edu h2, #job_edu h2, #announce h2, #covetous h2, #mov_news h2 {
         font-size: 20px;
         letter-spacing: -1px;
@@ -470,17 +472,11 @@
         top: 5px;
         font-size: 13px;
     }
-    #life_cycle .lc_wrap .tab {
-        margin-top: 0;
-        width: 100%;
-        justify-content: flex-start;    
-    } 
+    #life_cycle .lc_wrap .tab span {
+        padding: 12px;
+    }
     #life_cycle .lc_wrap .tab_cont>div {
         padding: 20px 15px;
-    }    
-    #life_cycle .lc_wrap .tab span {
-        padding: 12px;        
-        width: calc(100% / 3);
     }    
     #life_cycle .lc_wrap .tab_cont>div:nth-child(1) {
         padding: 20px 15px;
@@ -491,10 +487,6 @@
     }
     #life_cycle .lc_wrap .tab_cont .pop_tag .tag {
         margin: 8px -4px 0;
-        white-space: nowrap;
-        overflow: hidden;
-        overflow-x: auto;
-        padding-bottom: 10px;
     }
     #life_cycle .lc_wrap .tab_cont .info_wrap1 a {
         flex: none;
@@ -507,9 +499,8 @@
         margin-left: 0;
     }    
     #life_cycle .lc_wrap .tab_cont .info_wrap1 {
-        gap: 0 15px;
-        overflow-x: auto;
-        padding-bottom: 20px;
+        gap: 15px;
+        flex-wrap: wrap;
     }
     #life_cycle .lc_wrap .tab_cont .info_wrap1 .thumb {
         margin-top: 0;
@@ -527,16 +518,13 @@
         font-size: 13px;
     }
     #life_cycle .lc_wrap .tab_cont .info_wrap2 {
-        margin: 0;
-        gap: 0 15px;
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        padding-bottom: 14px;
+        margin: 20px 0 0;
+        gap: 15px;
     }
     #life_cycle .lc_wrap .tab_cont .info_wrap2 a {
         flex: none;
-        margin: 6px 0;
-        width: calc((100% - 20px) / 2);
+        margin: 0;
+        width: calc((100% - 15px) / 2);
     }    
     #life_cycle .lc_wrap .tab_cont .info_wrap2 a div.thumb {
         margin-right: 10px;
@@ -571,11 +559,10 @@
         margin-top: 12px;
     }
     #ncs_edu .ncs_tab_wrap .tab {
-        padding-bottom: 15px;
+        display: flex;
+        flex-wrap: wrap;        
+        gap: 5px;
         text-align: left;
-        white-space: nowrap;
-        overflow: hidden;
-        overflow-x: auto;
     }
     #ncs_edu .ncs_tab_wrap .tab span {
         margin: 0;
@@ -638,10 +625,8 @@
     }
     #job_edu .job_edu_list {
         margin-top: 12px;
-        overflow: hidden;
-        overflow-x: auto;
-        padding-bottom: 20px;
-        gap: 0 20px;
+        flex-wrap: wrap;        
+        gap: 20px;
     }
     #job_edu .job_edu_list>a {
         flex: none;
@@ -749,7 +734,21 @@
     }
     #main_bnr .swiper-button-next, #main_bnr .swiper-button-prev {
         display: none;
-    }    
+    }
+    #person_custom .recomm_company .slick-dots, #person_custom .recomm_policy .slick-dots,
+    #covetous .covetous_com .slick-dots, #mov_news .movnews .slick-dots {
+        bottom: -25px;
+    }
+    #person_custom .recomm_company .slick-dots li, #person_custom .recomm_policy .slick-dots li,
+    #covetous .covetous_com .slick-dots li, #mov_news .movnews .slick-dots li {
+        margin: 0 2px;
+    }
+    #person_custom .recomm_company .slick-dots li button, #person_custom .recomm_policy .slick-dots li button,
+    #person_custom .recomm_company .slick-dots li.slick-active button, #person_custom .recomm_policy .slick-dots li.slick-active button,
+    #covetous .covetous_com .slick-dots li button, #mov_news .movnews .slick-dots li button {
+        width: 8px;
+        height: 8px;
+    } 
     #goto_service {
         padding: 20px 0 0;
     }    
@@ -768,16 +767,17 @@
         letter-spacing: -1px;
     }    
     #goto_service .containerNew>div {
-        overflow-x: scroll;
         padding-bottom: 20px;
     }
     #goto_service .goto_wrap>div {
-        gap: 0 8px;
+        gap: 12px 8px;
+        flex-wrap: wrap;
+        justify-content: center;        
     }
     #goto_service .goto_wrap>div a span {
         width: 60px;
         height: 60px;
-        margin: 0 auto 12px;
+        margin: 0 auto 6px;
     }
     #goto_service .goto_wrap>div a span::after {
         top: 10px;
@@ -802,7 +802,7 @@
     }    
     #goto_service .goto_wrap>div a {
         flex: none;
-        min-width: calc((100% - 24px) / 4);
+        min-width: calc((100% - 16px) / 3);
         font-size: 13px;
     }    
     /* 나의 지원현황 */
@@ -824,6 +824,10 @@
     #person_custom>div:nth-child(5) {
         margin-left: 0;
     }
+    #person_custom>div:nth-child(4),
+    #person_custom>div:nth-child(5) {
+        max-width: 100%;
+    }    
     #person_custom .recomm_company .slick-slide a .comNm {
         font-size: 14px;
         white-space: nowrap;
@@ -870,9 +874,28 @@
     #life_cycle h2, #ncs_edu h2, #job_edu h2, #announce h2, #covetous h2, #mov_news h2 {
         font-size: 16px;
     }
+    #life_cycle .lc_wrap {
+        margin-top: 12px;
+    }    
+    #life_cycle .lc_wrap .tab {
+        margin-top: 0;
+        width: 100%;
+        justify-content: flex-start;    
+    } 
+    #life_cycle .lc_wrap .tab_cont>div {
+        padding: 20px 15px;
+    }    
+    #life_cycle .lc_wrap .tab span {
+        padding: 12px;        
+        width: calc(100% / 3);
+    }      
     #life_cycle .lc_wrap .tab span {
         font-size: 14px;
     }
+    #life_cycle .lc_wrap .tab_cont .pop_tag a {
+        font-size: 12px;
+        margin: 2px;
+    }    
     #life_cycle .lc_wrap .tab_cont>div {
         padding: 15px;
     }
@@ -890,11 +913,14 @@
         font-size: 12px;
     }    
     #life_cycle .lc_wrap .tab_cont .info_wrap1 {
-        gap: 0 8px;
+        gap: 8px;
         padding-bottom: 20px;
     }    
     #life_cycle .lc_wrap .tab_cont .info_wrap1 a {
         width: calc((100% - 8px) / 2);
+    }
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 a:last-child {
+        width: 100%;
     }
     #life_cycle .lc_wrap .tab_cont .info_wrap1 .thumb {
         height: 100px;
@@ -906,9 +932,8 @@
         font-size: 12px;
     }
     #life_cycle .lc_wrap .tab_cont .info_wrap2 {
-        margin: 6px 0 0;
-        gap: 0 8px;
-        padding-bottom: 10px;
+        margin: 0;
+        gap: 8px;
     }
     #life_cycle .lc_wrap .tab_cont .info_wrap2 a {
         flex-direction: column;
@@ -945,7 +970,7 @@
     }    
     #job_edu .job_edu_list {
         margin-top: 12px;
-        gap: 0 8px;
+        gap: 12px 8px;
     }
     #job_edu .job_edu_list>a {
         width: calc((100% - 8px) / 2);
