@@ -182,22 +182,19 @@
     #announce>div{flex:1;position:relative;}
     #announce>div+div{margin-left:32px;}
     #announce>div .announce_list{width:630px;margin:16px -8px 0;position:relative;}
-    #announce>div .announce_list .slick-slide>div>a{padding:8px;vertical-align:top;}
-    #announce>div .announce_list .slick-slide>div>a>div{position:relative;border:1px solid #e0e0e0;border-radius:8px;padding:20px;}
-    #announce>div .announce_list .slick-slide>div>a:hover>div, #covetous .covetous_com .slick-slide>div>a:focus>div{border-color:#38bab2;border-width:2px;}
-    #announce>div .announce_list .slick-slide>div>a>div .com_nm{font-size:13px;color:#787878;max-width:calc(100% - 24px);}
-    #announce>div .announce_list .slick-slide>div>a>div .job_tit{
-        font-size:18px;margin:8px 0 16px;letter-spacing:-1px;height:52px;text-overflow:ellipsis;overflow:hidden;width:100%;
-        display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-wrap:break-word;
-    }
-    #announce>div .announce_list .slick-slide>div>a>div .condition, #announce>div .announce_list .slick-slide>div>a>div .due_date{
-        font-size:13px;color:#787878;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;width:100%;display:block;
-    }
-    #announce>div .announce_list .slick-slide>div>a>div hr{border-style:solid none none;border-width:1px;border-color:#e6e6e6;margin:16px 0;}
-    #announce>div .announce_list .slick-slide>div>a>div .favorite{
-        position:absolute;top:20px;right:20px;width:16px;height:15px;background-image:url(https://www.jobaba.net/resource/images/main/heart_off.png);
-    }
-    #announce>div .announce_list .slick-slide>div>a>div .favorite.on{background-image:url(https://www.jobaba.net/resource/images/main/heart_on.png);}
+    /**/
+    #announce>div .announce_list .slick-slide>div>div {position: relative;padding: 8px;vertical-align: top;}
+    #announce>div .announce_list .slick-slide>div>div .favorite {padding: 15px;position: absolute;top: 20px;right: 20px;width: 16px;height: 15px;background: url(https://www.jobaba.net/resource/images/main/heart_off.png) center no-repeat;z-index: 10;cursor: pointer;}
+    #announce>div .announce_list .slick-slide>div>div .favorite.on {background: url(https://www.jobaba.net/resource/images/main/heart_on.png) center no-repeat;}
+    #announce>div .announce_list .slick-slide>div>div>a {display: block;width: 100%;height: inherit;    position: relative;border: 1px solid #e0e0e0;border-radius: 8px;padding: 20px;}
+    #announce>div .announce_list .slick-slide>div>div>a .com_nm {font-size: 13px;color: #787878;max-width: calc(100% - 24px);}
+    #announce>div .announce_list .slick-slide>div>div>a .job_tit {font-size: 18px;margin: 8px 0 16px;letter-spacing: -1px;height: 52px;text-overflow: ellipsis;overflow: hidden;width: 100%;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;word-wrap: break-word;}
+    #announce>div .announce_list .slick-slide>div>div>a .condition, 
+    #announce>div .announce_list .slick-slide>div>div>a .due_date {font-size: 13px;color: #787878;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;width: 100%;display: block;}
+    #announce>div .announce_list .slick-slide>div>div>a hr {border-style: solid none none;border-width: 1px;border-color: #e6e6e6;margin: 16px 0;}
+    #announce>div .announce_list .slick-slide>div>div:hover>a, 
+    #covetous .covetous_com .slick-slide>div>div:focus>a {border-color: #38bab2;border-width: 2px;}
+    /**/
     #announce>div .announce_list .slick-dots{display:inline-block!important;width:auto;top:-44px;right:30px;bottom:auto;}
     #announce>div .announce_list .slick-dots li{width:36px;height:24px;line-height:24px;font-size:14px;letter-spacing:2px;display:none;}
     #announce>div .announce_list .slick-dots li.slick-active{display:inline-block;}
@@ -652,12 +649,14 @@
     #announce>div .announce_list {
         margin: 8px -8px 0;
     }
-    #announce>div .announce_list .slick-slide>div>a>div .job_tit {
+    /**/
+    #announce>div .announce_list .slick-slide>div>div>a .job_tit {
         margin: 4px 0 8px;
     }
-    #announce>div .announce_list .slick-slide>div>a>div hr {
+    #announce>div .announce_list .slick-slide>div>div>a hr {
         margin: 10px 0;
-    }        
+    }
+    /**/     
     #announce>div .announce_list .slick-dots {
         top: -30px;
     }
@@ -1007,33 +1006,39 @@
     }    
     #announce>div+div {
         margin-top: 10px;
-    }    
-    #announce>div .announce_list .slick-slide>div>a {
+    }
+    /**/
+    #announce>div .announce_list .slick-slide>div>div {
         padding: 4px;
-    }    
-    #announce>div .announce_list .slick-slide>div>a>div .favorite {
-        top: 16px;
-        right: 10px;
-    }    
-    #announce>div .announce_list .slick-slide>div>a>div .com_nm {
+    }
+    #announce>div .announce_list .slick-slide>div>div .favorite {
+        top: 13px;
+        right: 8px;
+    }
+    #announce>div .announce_list .slick-slide>div>div>a {
+        padding: 15px 10px;
+    }
+    #announce>div .announce_list .slick-slide>div>div>a .com_nm {
         max-width: calc(100% - 20px);
         font-size: 12px;
         white-space: nowrap;
         text-overflow: ellipsis;
-        overflow: hidden;        
-    }    
-    #announce>div .announce_list .slick-slide>div>a>div {
-        padding: 15px 10px;
-    }    
-    #announce>div .announce_list .slick-slide>div>a>div .job_tit {
+        overflow: hidden;
+    }
+    #announce>div .announce_list .slick-slide>div>div>a .job_tit {
         margin: 8px 0;
         height: 38px;
         font-size: 14px;
         line-height: 18px;
     }
-    #announce>div .announce_list .slick-slide>div>a>div .condition, #announce>div .announce_list .slick-slide>div>a>div .due_date {
+    #announce>div .announce_list .slick-slide>div>div>a .condition, 
+    #announce>div .announce_list .slick-slide>div>div>a .due_date {
         font-size: 12px;
     }
+    #announce>div .announce_list .slick-slide>div>div>a hr {
+        margin: 10px 0;
+    }
+    /**/
     /* 탐나는 기업 TOP30 */
     #covetous {
         margin: 20px auto 0;
