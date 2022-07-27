@@ -203,18 +203,16 @@
     #announce>div .navi span.prev{margin-right:48px;}
 #covetous{margin:60px auto 0;padding-bottom:20px;}
     #covetous .covetous_com{margin:24px -8px 0;}
-    #covetous .covetous_com .slick-slide>div>a{padding:0 8px;vertical-align:top;}
-    #covetous .covetous_com .slick-slide>div>a>div{position:relative;border:1px solid #e0e0e0;border-radius:16px;padding:20px;height:230px;}
-    #covetous .covetous_com .slick-slide>div>a:hover>div, #covetous .covetous_com .slick-slide>div>a:focus>div{border-color:#38bab2;border-width:2px;}
-    #covetous .covetous_com .slick-slide>div>a>div h3{font-size:22px;font-weight:400;letter-spacing:-1px;margin-bottom:16px;max-width:calc(100% - 24px);}
-    #covetous .covetous_com .slick-slide>div>a>div p{color:#999;font-size:14px;}
-    #covetous .covetous_com .slick-slide>div>a>div .logo{position:absolute;bottom:20px;left:20px;max-width:66%;filter:grayscale(100%);opacity:.5;}
-    #covetous .covetous_com .slick-slide>div>a:hover>div .logo, #covetous .covetous_com .slick-slide>div>a:focus>div .logo{opacity:1;filter:grayscale(0%);}
-    #covetous .covetous_com .slick-slide>div>a>div .favorite{
-        position:absolute;top:20px;right:20px;width:16px;height:15px;background-image:url(https://www.jobaba.net/resource/images/main/heart_off.png);
-    }
-    #covetous .covetous_com .slick-slide>div>a>div .favorite.on{background-image:url(https://www.jobaba.net/resource/images/main/heart_on.png);}
-
+    /**/
+    #covetous .covetous_com .slick-slide>div>div {position: relative;padding: 0 8px;vertical-align: top;}
+    #covetous .covetous_com .slick-slide>div>div .favorite {padding: 15px;position: absolute;top: 15px;right: 25px;width: 16px;height: 15px;background: url(https://www.jobaba.net/resource/images/main/heart_off.png) center no-repeat;z-index: 10;cursor: pointer;}
+    #covetous .covetous_com .slick-slide>div>div .favorite.on {background: url(https://www.jobaba.net/resource/images/main/heart_on.png) center no-repeat;}
+    #covetous .covetous_com .slick-slide>div>div>a {position: relative;display: block;width: 100%;height: inherit;border: 1px solid #e0e0e0;border-radius: 16px;padding: 20px;height: 230px;}
+    #covetous .covetous_com .slick-slide>div>div>a h3 {font-size: 22px;font-weight: 400;letter-spacing: -1px;margin-bottom: 16px;max-width: calc(100% - 24px);}
+    #covetous .covetous_com .slick-slide>div>div>a p {color: #999;font-size: 14px;}
+    #covetous .covetous_com .slick-slide>div>div>a .logo {position: absolute;bottom: 20px;left: 20px;max-width: 66%;filter: grayscale(100%);opacity: .5;}
+    #covetous .covetous_com .slick-slide>div>div:hover>a, #covetous .covetous_com .slick-slide>div>div:focus>a {border-color: #38bab2;border-width: 2px;}
+    /**/
     #covetous .covetous_com .slick-dots, #mov_news .movnews .slick-dots{bottom:-32px;}
     #covetous .covetous_com .slick-dots li, #mov_news .movnews .slick-dots li{width:12px;height:12px;margin:0 4px;}
     #covetous .covetous_com .slick-dots li button, #mov_news .movnews .slick-dots li button{opacity:.2;width:12px;height:12px;}
@@ -649,14 +647,12 @@
     #announce>div .announce_list {
         margin: 8px -8px 0;
     }
-    /**/
     #announce>div .announce_list .slick-slide>div>div>a .job_tit {
         margin: 4px 0 8px;
     }
     #announce>div .announce_list .slick-slide>div>div>a hr {
         margin: 10px 0;
     }
-    /**/     
     #announce>div .announce_list .slick-dots {
         top: -30px;
     }
@@ -664,20 +660,22 @@
     #covetous {
         margin: 30px auto 0;
     }
-    #covetous .covetous_com .slick-slide>div>a>div {
+    /**/
+    #covetous .covetous_com .slick-slide>div>div>a {
         padding: 20px;
         border-radius: 8px;
         height: 170px;
-    }    
-    #covetous .covetous_com .slick-slide>div>a>div h3 {
+    }
+    #covetous .covetous_com .slick-slide>div>div .favorite {
+        top: 18px;
+        right: 20px;
+    }
+    #covetous .covetous_com .slick-slide>div>div>a h3 {
         font-size: 17px;
         margin-bottom: 8px;
         max-width: calc(100% - 24px);
     }
-    #covetous .covetous_com {
-        margin: 12px -8px 0;
-    }
-    #covetous .covetous_com .slick-slide>div>a>div p {
+    #covetous .covetous_com .slick-slide>div>div>a p {
         font-size: 13px;
         height: 38px;
         text-overflow: ellipsis;
@@ -688,11 +686,12 @@
         -webkit-box-orient: vertical;
         word-break: break-all;
     }
-    #covetous .covetous_com .slick-slide>div>a>div .logo {
+    #covetous .covetous_com .slick-slide>div>div>a .logo {
         margin-top: 12px;
         position: static;
         max-width: 55%;
-    }    
+    }
+    /**/
     /* 일자리 소식 */
     #mov_news {
         margin: 40px auto 0;
@@ -707,9 +706,6 @@
         margin: 10px 0 0;
         font-size: 16px;
     }
-    #covetous .covetous_com .slick-slide>div>a>div .favorite {
-        top: 25px;
-    }    
     #mov_news .movnews .slick-slide>div>a p {
         font-size: 13px;
     }    
@@ -1007,7 +1003,6 @@
     #announce>div+div {
         margin-top: 10px;
     }
-    /**/
     #announce>div .announce_list .slick-slide>div>div {
         padding: 4px;
     }
@@ -1038,37 +1033,35 @@
     #announce>div .announce_list .slick-slide>div>div>a hr {
         margin: 10px 0;
     }
-    /**/
     /* 탐나는 기업 TOP30 */
     #covetous {
         margin: 20px auto 0;
-    }    
-    #covetous .covetous_com .slick-slide>div>a>div {
+    }
+    /**/
+    #covetous .covetous_com .slick-slide>div>div>a {
         padding: 15px 10px;
         height: 140px;
     }
-    #covetous .covetous_com .slick-slide>div>a {
-        padding: 0 4px;
-    }    
-    #covetous .covetous_com .slick-slide>div>a>div .favorite {
-        top: 16px;
-        right: 10px;
+    #covetous .covetous_com .slick-slide>div>div .favorite {
+        top: 11px;
+        right: 12px;
     }
-    #covetous .covetous_com .slick-slide>div>a>div h3 {
+    #covetous .covetous_com .slick-slide>div>div>a h3 {
         max-width: calc(100% - 20px);
         font-size: 14px;
         line-height: 18px;
         white-space: nowrap;
         text-overflow: ellipsis;
-        overflow: hidden;        
+        overflow: hidden;
     }
-    #covetous .covetous_com .slick-slide>div>a>div p {
+    #covetous .covetous_com .slick-slide>div>div>a p {
         font-size: 12px;
         height: 36px;
-    }    
-    #covetous .covetous_com .slick-slide>div>a>div .logo {
+    }
+    #covetous .covetous_com .slick-slide>div>div>a .logo {
         margin-top: 0;
     }
+    /**/
     /* 일자리 소식 */
     #mov_news {
         margin: 30px auto 0;
