@@ -10,8 +10,9 @@
 ** common 
 */
 /* background color */
-.bgYellow {background: #fbe140 !important;}
-.bgOrange {background: #ffaa15 !important;}
+.bgYellow {background-color: #fbe140 !important;}
+.bgOrange {background-color: #ffaa15 !important;}
+.bgOrange02 {background-color: #faec95 !important;}
 /* text color */
 .txtBlack {color: #000 !important;}
 .txtWhite {color: #fff !important;}
@@ -37,11 +38,14 @@
 .title > em {
     font-family: inherit;
     font-size: 24px;
-    font-weight: inherit;
+    font-weight: 700;
 }
+.imageTitleWrap,
 .imageWrap {
+    position: relative;
     text-align: center;
 }
+.imageTitleWrap img,
 .imageWrap img {
     height: inherit;
     object-fit: cover;
@@ -81,12 +85,30 @@ ul.warningList li::before {
 /* section 01 */
 .section01 {
     padding: 30px 0 0;
+    background: url(../resource/images/eventImg/202208/background01.png) top center no-repeat;
+    background-size: contain;
+}
+.section01 .imageTitleWrap {
+    margin: 50px 0 0;
 }
 .section01 .imageWrap {
-    margin: 55px 0 0;
+    margin: 15px 0 0;
+    z-index: 1;
+}
+.section01 .imageWrap::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../resource/images/eventImg/202208/background02.png) center no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 .section01 .eventPeriod {
     top: -50px;
+    z-index: 1;
 }
 .eventPeriod {
     position: relative;
@@ -168,6 +190,7 @@ ul.warningList li::before {
     font-weight: 500;
 }
 .eventGift ul.eventList {
+    border-left: 1px d;
     display: flex;
     flex-wrap: wrap;
     gap: 30px 40px;
@@ -208,7 +231,8 @@ ul.warningList li::before {
 /* section 03 */
 .section03 {
     padding: 40px 0 0;
-    background: url(../resource/images/eventImg/202208/back03.png) center no-repeat;
+    background: url(../resource/images/eventImg/202208/background03.png) top center no-repeat;
+    background-size: contain;
 }
 .section03 .imageWrap {
     height: 136px;
@@ -250,7 +274,6 @@ ul.warningList li::before {
     justify-content: center;
     font-size: 20px;
     font-weight: 700;
-    background: #faec95;
     border-radius: 10px;
 }
 .eventStep ul.stepList li p {
@@ -269,14 +292,13 @@ ul.warningList li::before {
     font-weight: 700;
     background: #60a827;
     border-radius: 10px;
-    text-shadow: 3px 2px 1px #000, 3px 2px 1px #000;
+    text-shadow: 2px 3px 1px #000, 3px 1px 1px #000;
 }
 .eventStep .tipWrap {
     display: flex;
     align-items: center;
     gap: 0 20px;
 }
-.eventStep .tipWrap .imageWrap {}
 .eventStep .tipWrap ol.winningTipList {
     padding: 12px 20px 12px 40px;
     display: flex;
@@ -296,7 +318,6 @@ ul.warningList li::before {
 /* section 04 */
 .section04 {
     padding: 60px 0 90px;
-    background: #faec95;
 }
 .section04 .imageWrap {
     margin: 35px auto 30px;
@@ -333,6 +354,10 @@ ul.warningList li::before {
     display: flex;
     gap: 0 30px;
 }
+.eventReview ul.reviewList .slick-list {
+    width: 100%;
+    height: 75px !important;
+}
 .eventReview ul.reviewList .slick-prev, .slick-next {
     display: none !important;
 }
@@ -346,9 +371,11 @@ ul.warningList li::before {
 ** media query
 */
 @media all and (max-width: 1024px){
-
+    .innerSection {
+        padding: 0 20px;
+        max-width: 100%;
+    }
 }
-
 @media all and (max-width: 640px){
 
 }
