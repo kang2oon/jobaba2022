@@ -57,6 +57,7 @@
     #person_custom .recomm_company .slick-dots li button, #person_custom .recomm_policy .slick-dots li button{opacity:.2;}
     #person_custom .recomm_company .slick-dots li.slick-active button, #person_custom .recomm_policy .slick-dots li.slick-active button{opacity:.75;background-color:#003281;}
     #person_custom .recomm_policy .slick-slide a .thumb{position:relative;border:1px solid #ddd;border-radius:8px;overflow:hidden;}
+    #person_custom .recomm_policy .slick-slide a .thumb>img{object-fit:cover;width:100%;height:100%;}
     #person_custom .recomm_policy .slick-slide a .label{margin:16px 0 8px;font-size:12px;line-height:1.1;}
     #person_custom .recomm_policy .slick-slide a .label span{display:inline-block;border-width:1px;border-style:solid;border-color:#666;padding:1px 6px 2px;border-radius:10px;}
     #person_custom .recomm_policy .slick-slide a .label span+span{margin-left:4px;}
@@ -115,9 +116,11 @@
         font-size:14px;color:#999;width:100%;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;margin:4px 0 0;
     }
     #life_cycle .lc_wrap .tab_cont .info_wrap1 .thumb{margin-top:8px;border-radius:8px;overflow:hidden;line-height:1;height:140px;}
+    #life_cycle .lc_wrap .tab_cont .info_wrap1 .thumb>img{object-fit:cover;width:100%;height:100%;}    
     #life_cycle .lc_wrap .tab_cont .info_wrap2{display:flex;justify-content:space-between;flex-wrap:wrap;margin:32px -12px -12px;}
     #life_cycle .lc_wrap .tab_cont .info_wrap2 a{flex:1 1 40%;margin:12px;display:flex;align-items:center;}
     #life_cycle .lc_wrap .tab_cont .info_wrap2 a div.thumb{flex-shrink:0;width:150px;height:120px;margin-right:16px;border-radius:8px;overflow:hidden;line-height:1;}
+    #life_cycle .lc_wrap .tab_cont .info_wrap2 a div.thumb>img{object-fit:cover;width:100%;height:100%;}
     #life_cycle .lc_wrap .tab_cont .info_wrap2 a h3{flex-grow:1;font-weight:400;font-size:18px;color:#000;}
     #life_cycle .lc_wrap .tab_cont .info_wrap2 a h3 span{display:block;margin-top:8px;font-size:14px;color:#999;}
 #ncs_edu{margin:60px auto 0;}
@@ -168,6 +171,7 @@
     #job_edu .job_edu_list>a{flex:1;}
     #job_edu .job_edu_list>a+a{margin-left:24px;}
     #job_edu .job_edu_list>a .thumb{border-radius:8px;overflow:hidden;line-height:1;position:relative;height:150px;}
+    #job_edu .job_edu_list>a .thumb>img{object-fit:cover;width:100%;height:100%;}
     #job_edu .job_edu_list>a .thumb::after{
         content:"";width:35px;height:35px;background-image:url(https://www.jobaba.net/resource/images/main/play_btn.png);
         position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
@@ -194,7 +198,6 @@
     #announce>div .announce_list .slick-slide>div>div>a hr {border-style: solid none none;border-width: 1px;border-color: #e6e6e6;margin: 16px 0;}
     #announce>div .announce_list .slick-slide>div>div:hover>a, 
     #covetous .covetous_com .slick-slide>div>div:focus>a {border-color: #38bab2;border-width: 2px;}
-    /**/
     #announce>div .announce_list .slick-dots{display:inline-block!important;width:auto;top:-44px;right:30px;bottom:auto;}
     #announce>div .announce_list .slick-dots li{width:36px;height:24px;line-height:24px;font-size:14px;letter-spacing:2px;display:none;}
     #announce>div .announce_list .slick-dots li.slick-active{display:inline-block;}
@@ -221,7 +224,7 @@
     #mov_news .movnews{margin:24px -12px 0;}
     #mov_news .movnews .slick-slide>div>a{padding:0 12px;vertical-align:top;}
     #mov_news .movnews .slick-slide>div>a .thumb{border-radius:8px;overflow:hidden;line-height:1;position:relative;height:166px}
-    #mov_news .movnews .slick-slide>div>a .thumb img{transform:translateY(-14.06%);}
+    #mov_news .movnews .slick-slide>div>a .thumb>img{object-fit:cover;width:100%;height:100%;}
     #mov_news .movnews .slick-slide>div>a .thumb::after{
         content:"";width:35px;height:35px;background-image:url(https://www.jobaba.net/resource/images/main/play_btn.png);
         position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
