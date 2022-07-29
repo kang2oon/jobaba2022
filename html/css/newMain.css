@@ -755,12 +755,17 @@
     #covetous .covetous_com .slick-dots li, #mov_news .movnews .slick-dots li {
         margin: 0 2px;
     }
+    
     #person_custom .recomm_company .slick-dots li button, #person_custom .recomm_policy .slick-dots li button,
     #person_custom .recomm_company .slick-dots li.slick-active button, #person_custom .recomm_policy .slick-dots li.slick-active button,
     #covetous .covetous_com .slick-dots li button, #mov_news .movnews .slick-dots li button {
         width: 8px;
         height: 8px;
     } 
+
+    #covetous .covetous_com .slick-dots li{display:none;}
+    #covetous .covetous_com .slick-dots li.slick-active{display:inline-block;}
+
     #goto_service {
         padding: 20px 0 0;
     }    
