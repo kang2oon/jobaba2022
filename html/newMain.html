@@ -1337,6 +1337,10 @@
                 </a>
             </div>
         </div>
+        <div class="navi">
+            <span class="prev" onclick="prev_arrow();">←</span>
+            <span class="newx" onclick="next_arrow()">→</span>
+        </div>        
     </div>
 
     <div id="mov_news"  class="containerNew">
@@ -1464,7 +1468,7 @@
                         slidesToScroll: 1,
                     }
                 }
-            ]            
+            ]
         });
         $('.announce_list.popular, .announce_list.lasted').slick({
             dots: true,
@@ -1480,6 +1484,9 @@
             arrows: false,
             slidesToShow: 5,
             slidesToScroll: 5,
+            customPaging: function (slider, i) {
+                return  (i + 1) + '/' + slider.slideCount;
+            },
             responsive: [
                 {
                     breakpoint: 1024,
@@ -1503,7 +1510,7 @@
                     }
                 }
             ]            
-        });          
+        });
         $('.movnews').slick({
             dots: true,
             arrows: false,
@@ -1567,5 +1574,11 @@
     function next_last(){
         $('.announce_list.lasted').slick('slickNext');
     }
+    function prev_arrow(){
+        $('.covetous_com').slick('slickPrev');
+    }
+    function next_arrow(){
+        $('.covetous_com').slick('slickNext');
+    }    
 </script>
 </body></html>
