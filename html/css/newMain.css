@@ -690,25 +690,11 @@
     }
     #covetous .covetous_com .slick-slide>div>div>a .logo {
         margin-top: 12px;
-        position: static;
+        position: relative;
+        bottom: 0;
+        left: 0;
         max-width: 55%;
     }
-    #covetous .navi {
-        display: block;
-        position: absolute;
-        bottom: -15px;
-        left: 50%;
-        margin-left: -45px;
-        max-width: 90px;
-    }
-    #covetous .navi span {
-        display: inline-block;
-        font-size: 18px;
-        cursor: pointer;
-    }
-    #covetous .navi span.prev {
-        margin-right: 48px;
-    } 
     /* 일자리 소식 */
     #mov_news {
         margin: 40px auto 0;
@@ -755,17 +741,12 @@
     #covetous .covetous_com .slick-dots li, #mov_news .movnews .slick-dots li {
         margin: 0 2px;
     }
-    
     #person_custom .recomm_company .slick-dots li button, #person_custom .recomm_policy .slick-dots li button,
     #person_custom .recomm_company .slick-dots li.slick-active button, #person_custom .recomm_policy .slick-dots li.slick-active button,
     #covetous .covetous_com .slick-dots li button, #mov_news .movnews .slick-dots li button {
         width: 8px;
         height: 8px;
-    } 
-
-    #covetous .covetous_com .slick-dots li{display:none;}
-    #covetous .covetous_com .slick-dots li.slick-active{display:inline-block;}
-
+    }
     #goto_service {
         padding: 20px 0 0;
     }    
@@ -1081,6 +1062,35 @@
     }
     #covetous .covetous_com .slick-slide>div>div>a .logo {
         margin-top: 0;
+    }
+    #covetous .covetous_com .slick-dots {
+        bottom: -32px;        
+        margin: 0 auto;
+    }    
+    #covetous .covetous_com .slick-dots li{
+        display: none;
+    }
+    #covetous .covetous_com .slick-dots li.slick-active {
+        display: inline-block;
+        width: auto;
+        font-size: 12px;
+        line-height: 20px;
+    }     
+    #covetous .navi {
+        display: block;
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        margin-left: -45px;
+        max-width: 90px;
+    }
+    #covetous .navi span {
+        display: inline-block;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    #covetous .navi span.prev {
+        margin-right: 48px;
     }
     /* 일자리 소식 */
     #mov_news {
