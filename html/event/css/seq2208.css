@@ -432,6 +432,9 @@ ul.warningList li::before {
         gap: 30px 40px;
         max-width: 100%;
     }
+    .eventGift ul.eventList li {
+        width: calc((100% - 120px) / 4);
+    }    
     .eventStep ul.stepList {
         gap: 20px;
     }
@@ -455,6 +458,9 @@ ul.warningList li::before {
     .section03::after {
         background-size: contain;
     }
+    .eventGift ul.eventList li {
+        width: calc((100% - 40px) / 2);
+    }    
 }
 @media all and (max-width: 640px){
     .eventWrap .logoList img {
@@ -516,6 +522,7 @@ ul.warningList li::before {
     }    
     .eventGift .giftInfo p {
         font-size: 14px;
+        text-align: center;
     }
     .eventGift ul.eventList {
         gap: 20px;
