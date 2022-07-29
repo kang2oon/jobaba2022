@@ -1067,8 +1067,11 @@
         bottom: -32px;        
         margin: 0 auto;
     }    
-    #covetous .covetous_com .slick-dots li{
+    #covetous .covetous_com .slick-dots li {
         display: none;
+    }
+    #covetous .covetous_com .slick-dots li button {
+        width: auto;
     }
     #covetous .covetous_com .slick-dots li.slick-active {
         display: inline-block;

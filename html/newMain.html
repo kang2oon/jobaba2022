@@ -1484,9 +1484,6 @@
             arrows: false,
             slidesToShow: 5,
             slidesToScroll: 5,
-            customPaging: function (slider, i) {
-                return  (i + 1) + '/' + slider.slideCount;
-            },
             responsive: [
                 {
                     breakpoint: 1024,
@@ -1503,11 +1500,14 @@
                     }
                 },
                 {
-                    breakpoint: 640,
+                    breakpoint: 640,              
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 1,
-                    }
+                        customPaging: function (slider, i) {
+                            return  (i + 1) + '/' + slider.slideCount;
+                        },                        
+                    },
                 }
             ]            
         });
