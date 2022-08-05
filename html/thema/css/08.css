@@ -1,0 +1,386 @@
+@charset "utf-8";
+
+/*
+** layout
+*/
+
+.themaWrap {
+    letter-spacing: -1px;
+}
+.themaWrap .red {
+    color: #ff4d5c;
+}
+.themaWrap .innerSection {
+    position: relative;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+.themaWrap .titleWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px 0;
+}
+.themaWrap .titleWrap strong {
+    color: #000;
+    font-size: 26px;
+    font-weight: bold;
+}
+.themaWrap .titleWrap p {
+    color: #000;
+    font-size: 16px;
+}
+.bgType01 {
+    background: url(../resource/images/thema/2208/bg_type01.png) no-repeat;
+    background-size: cover;
+}
+.bgType02 {
+    background: url(../resource/images/thema/2208/bg_type02.png) no-repeat;
+    background-size: cover;
+}
+
+/*
+** contents
+*/
+
+/* 맞춤 이용 방법 */
+.userInfoWrap {
+    position: relative;
+    padding: 65px 70px;
+    background: #f1f1f1;
+    border-radius: 300px 0 0 0;
+}
+.userInfoWrap .innerSection::after {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    width: 384px;
+    height: 308px;
+    background: url(../resource/images/thema/2208/bg_character01.png) center no-repeat;
+    background-size: contain;
+    z-index: 1;        
+}    
+ul.useInfoList {
+    margin: 50px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 50px;
+}
+ul.useInfoList li {
+    width: calc((100% - 100px) / 3);
+}
+ul.useInfoList li > a {
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    width: 100%;
+    height: 200px;
+    background: #fff;
+    border-radius: 15px;
+}
+ul.useInfoList li > a::after {
+    content: "→";
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    font-size: 20px;        
+    background: #d6d6d6;
+    border-radius: 100%;
+}
+ul.useInfoList li .label {
+    padding: 0 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    max-width: 100px;
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+    background: #006cff;
+    border-radius: 15px;
+}
+ul.useInfoList li p {
+    font-size: 16px;
+    font-weight: 500;
+}
+ul.useInfoList li > a:hover::after {
+    background: #50bbff;
+}
+ul.useInfoList li > a:hover::before {
+    content: "";
+    position: absolute;
+    right: 60px;
+    bottom: 20px;
+    width: 60px;
+    height: 73px;
+    background: url(../resource/images/thema/2208/icon_character.png) center no-repeat;
+    background-size: contain;
+}
+ul.useInfoList li > a:hover {
+    box-shadow: 0 0 0 3px #006cff inset;
+}
+ul.useInfoList li > a:hover p > span {
+    box-shadow: inset 0 -5px 0 0 #fcff00;
+}
+
+/* 지원정책 */
+.userPolicyWrap {
+    position: relative;
+    padding: 70px 0;
+}
+.userPolicyWrap .innerSection {
+    display: flex;
+}
+.leftMenu {
+    width: 320px;
+}
+ul.menuList {
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0;
+}
+ul.menuList li {}
+ul.menuList li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    color: #848484;
+    font-size: 16px;
+    font-weight: 500;
+    background: #fff;
+    border-radius: 20px;
+}
+ul.menuList li.on a {
+    color: #000;
+    font-weight: 700;
+    background: #fcff00;
+}
+ul.menuList li.on a:nth-child(even) {
+    background: #aefffa;
+}
+.menuContents {
+    display: none;
+    flex-direction: column;
+    gap: 30px 0;    
+}
+.menuContents.on {
+    display: flex;
+}
+.rightContents {
+    width: calc(100% - 320px);
+}
+.userContentsWrap {
+    position: relative;
+    padding: 40px 55px 50px;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 5px 5px 30px #4198d0;
+}
+.menuContents:nth-child(1) .userContentsWrap::after {
+    content: "";
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    background: url(../resource/images/thema/2208/bg_character02.png) center no-repeat;
+    width: 170px;
+    height: 175px;
+}
+.menuContents:nth-child(2) .userContentsWrap::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    bottom: 25px;    
+    background: url(../resource/images/thema/2208/bg_character03.png) center no-repeat;
+    width: 226px;
+    height: 145px;
+}
+.menuContents:nth-child(3) .userContentsWrap::after {
+    content: "";
+    position: absolute;
+    right: 30px;
+    bottom: 30px;    
+    background: url(../resource/images/thema/2208/bg_character04.png) center no-repeat;
+    width: 180px;
+    height: 183px;
+}
+.menuContents:nth-child(4) .userContentsWrap::after {
+    content: "";
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%); 
+    background: url(../resource/images/thema/2208/bg_character05.png) center no-repeat;
+    width: 220px;
+    height: 135px;
+}
+.menuContents:nth-child(5) .userContentsWrap::after {
+    content: "";
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(../resource/images/thema/2208/bg_character06.png) center no-repeat;
+    width: 150px;
+    height: 208px;
+}
+.userContentsWrap .badge {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    background: #ff4d5c;
+    width: 50px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+}
+.userContentsWrap .badge::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    border-bottom: 24px solid #fff;
+    border-top: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+}
+.badge::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+}
+.badge.type01::before {
+    background: url(../resource/images/thema/2208/icon_badge01.png) center no-repeat;
+}
+.badge.type02::before {
+    background: url(../resource/images/thema/2208/icon_badge02.png) center no-repeat;
+}
+.badge.type03::before {
+    background: url(../resource/images/thema/2208/icon_badge03.png) center no-repeat;
+}
+.badge.type04::before {
+    background: url(../resource/images/thema/2208/icon_badge04.png) center no-repeat;
+}
+.badge.type05::before {
+    background: url(../resource/images/thema/2208/icon_badge05.png) center no-repeat;
+}
+.userContentsWrap .title {
+    color: #006cff;
+    font-size: 42px;
+    letter-spacing: -4px;
+    box-shadow: inset 0 -16px 0 #dfedff;        
+}
+.userContentsWrap ul.contentsList {
+    margin: 45px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    max-width: calc(100% - 140px);
+}
+.userContentsWrap ul.contentsList li {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+.userContentsWrap ul.contentsList li::before {
+    content: "";
+    flex: none;
+    width: 38px;
+    height: 38px;
+    background: url(../resource/images/thema/2208/icon_check.png) center no-repeat;
+    background-size: contain;
+}
+.userContentsWrap ul.contentsList li > span {
+    color: #007dff;
+    font-size: 20px;
+}
+.userContentsWrap ul.contentsList li > span > em {
+    font-weight: 700;
+}
+.menuContents:nth-child(even) .userTipWrap {
+    background: #aefffa;
+}
+.userTipWrap {
+    padding: 45px 65px;
+    background: #fcff00;
+    border-radius: 50px;
+    box-shadow: 5px 5px 30px #4198d0;
+}
+.userTipWrap .label {
+    padding: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 5px;
+    min-width: 200px;
+    max-width: 200px;
+    height: 40px;
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+    background: #fff;
+    border-radius: 20px;
+}
+.userTipWrap .text {
+    margin: 20px 0 0;
+    color: #000;
+    font-size: 18px;
+}
+.userTipWrap ul.userTipList {
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px 15px;
+}
+.userTipWrap ul.userTipList.double {
+    max-width: 550px;
+}
+.userTipWrap ul.userTipList li {
+    width: calc((100% - 30px) / 3);
+}
+.userTipWrap ul.userTipList.double li {
+    width: calc((100% - 15px) / 2);
+}
+.userTipWrap ul.userTipList li > a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px 0;
+}
+.userTipWrap ul.userTipList li .imageWrap {
+    max-width: 220px;
+    min-height: 160px;
+    max-height: 160px;
+    background: #fff;        
+    border-radius: 15px;
+    overflow: hidden;
+}
+.userTipWrap ul.userTipList li .imageWrap > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .2s ease-in-out;        
+}
+.userTipWrap ul.userTipList li p {
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+}
+.userTipWrap ul.userTipList li > a:hover .imageWrap > img {
+    transform: scale(1.05);
+}
+.userTipWrap ul.userTipList li > a:hover p {
+    box-shadow: inset 0 -10px 0 #fff;
+}
