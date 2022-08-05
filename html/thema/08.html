@@ -20,27 +20,22 @@
 	<link type="text/css" rel="stylesheet"  href="https://www.jobaba.net/resource/css/main/mobile.css">
     <link type="text/css" rel="stylesheet"  href="https://www.jobaba.net/resource/css/new/style.css">
 	<!-- //잡아바 css-->
+
 	<!--추가 css-->
-    <link rel="stylesheet" href="./css/07.css">
     <link rel="stylesheet" href="./css/08.css">
 </head>
 
 <body>
-
 <div class="themaWrap">
-
-
-
     <div class="twentytwenty_wrap">
-        <div class="twentytwenty-wrapper twentytwenty-horizontal">
-            <div id="container1" class="twentytwenty-container" style="height: 563px;">
-            <img src="./images/renew_ev_img03.png" alt="워라밸링크 리뉴얼 전" class="twentytwenty-before" style="clip: rect(0px, 554.5px, 563px, 0px);">
-            <img src="./images/renew_ev_img04.png" alt="워라밸링크 리뉴얼 후" class="twentytwenty-after" style="clip: rect(0px, 940px, 563px, 554.5px);">
-        <div class="twentytwenty-overlay"><div class="twentytwenty-before-label" data-content="Before"></div><div class="twentytwenty-after-label" data-content="After"></div></div><div class="twentytwenty-handle" style="left: 554.5px;"><span class="twentytwenty-left-arrow"></span><span class="twentytwenty-right-arrow"></span></div></div></div>
+        <div id="twentytwenty" class="twentytwenty-container">
+            <img src="resource/images/thema/2208/bg_renewal01.png" alt="잡아바 변경 전">
+            <img src="resource/images/thema/2208/bg_renewal02.png" alt="잡아바 변경 후">
+        </div>
+        <p class="tct blue f20 mt20 bold02">
+            ※ 마우스를 드래그하여 리뉴얼 전과 후를 비교해 보세요.
+        </p>
     </div>
-
-
-
     <article class="userInfoWrap">
         <div class="innerSection">
             <div class="titleWrap">
@@ -107,20 +102,20 @@
         </div>
     </article>
 
-    <article class="userPolicyWrap bgType01">
-        <div class="innerSection">
-            <div class="leftMenu">
-                <ul class="menuList">
-                    <li class="on"><a title="지원정책 이동" href="javascript:;">지원정책</a></li>
-                    <li><a title="교육/행사 이동" href="javascript:;">교육/행사</a></li>
-                    <li><a title="취업역량강화 이동" href="javascript:;">취업역량강화</a></li>
-                    <li><a title="채용공고 이동" href="javascript:;">채용공고</a></li>
-                    <li><a title="기업지원 이동" href="javascript:;">기업지원</a></li>
-                </ul>
-            </div>
-            <div class="rightContents">
-                <!-- 지원정책 -->
-                <div class="menuContents on">
+    <div class="userPolicy">
+        <div class="leftMenu">
+            <ul class="menuList">
+                <li class="on"><a title="지원정책 이동" href="#moveTo01">지원정책</a></li>
+                <li><a title="교육/행사 이동" href="#moveTo02">교육/행사</a></li>
+                <li><a title="취업역량강화 이동" href="#moveTo03">취업역량강화</a></li>
+                <li><a title="채용공고 이동" href="#moveTo04">채용공고</a></li>
+                <li><a title="기업지원 이동" href="#moveTo05">기업지원</a></li>
+            </ul>
+        </div>
+        <!-- 지원정책 -->
+        <article id="moveTo01" class="userPolicyWrap bgType01">
+            <div class="innerSection">
+                <div class="userPolicyContents">
                     <div class="userContentsWrap">
                         <i class="badge type01"></i>
                         <strong class="title">지원정책.</strong>
@@ -161,7 +156,7 @@
                             <li>
                                 <a title="지원정책 리스트 바로가기" href="#" target="_blank">
                                     <div class="imageWrap">
-                                        <img src="https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/220706/img_illust4.png" alt="">
+                                        <img src="resource/images/thema/2208/bg_tip01.png" alt="지원정책 리스트 바로가기">
                                     </div>
                                     <p>지원정책 리스트 바로가기 →</p>
                                 </a>
@@ -169,7 +164,7 @@
                             <li>
                                 <a title="나를 위한 맞춤정책 찾기 바로가기" href="#" target="_blank">
                                     <div class="imageWrap">
-                                        <img src="https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/220706/img_illust3.png" alt="">
+                                        <img src="resource/images/thema/2208/bg_tip02.png" alt="나를 위한 맞춤정책 찾기 바로가기">
                                     </div>
                                     <p>나를 위한 맞춤정책 찾기 바로가기 →</p>
                                 </a>
@@ -177,18 +172,21 @@
                             <li>
                                 <a title="지원정책 등록 바로가기" href="#" target="_blank">
                                     <div class="imageWrap">
-                                        <img src="https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/220706/bg_cwork.png" alt="">
+                                        <img src="resource/images/thema/2208/bg_tip03.png" alt="지원정책 등록 바로가기">
                                     </div>
                                     <p>지원정책 등록 바로가기 →</p>
                                 </a>
                             </li>                        
                         </ul>
                     </div>
-                </div>
-                <!-- // 지원정책 -->
-
-                <!-- 교육/행사 -->
-                <div class="menuContents">
+                </div>            
+            </div>
+        </article>
+        <!-- // 지원정책 -->
+        <!-- 교육/행사 -->
+        <article id="moveTo02" class="userPolicyWrap bgType02">
+            <div class="innerSection">
+                <div class="userPolicyContents">
                     <div class="userContentsWrap">
                         <i class="badge type02"></i>                        
                         <strong class="title">교육/행사.</strong>
@@ -214,7 +212,7 @@
                             <li>
                                 <a title="교육정보 리스트 바로가기" href="#" target="_blank">
                                     <div class="imageWrap">
-                                        <img src="https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/220706/img_illust4.png" alt="">
+                                        <img src="resource/images/thema/2208/bg_tip04.png" alt="교육정보 리스트 바로가기">
                                     </div>
                                     <p>교육정보 리스트 바로가기 →</p>
                                 </a>
@@ -222,7 +220,7 @@
                             <li>
                                 <a title="대외활동 리스트 바로가기" href="#" target="_blank">
                                     <div class="imageWrap">
-                                        <img src="https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/220706/img_illust3.png" alt="">
+                                        <img src="resource/images/thema/2208/bg_tip05.png" alt="대외활동 리스트 바로가기">
                                     </div>
                                     <p>대외활동 리스트 바로가기 →</p>
                                 </a>
@@ -230,18 +228,21 @@
                             <li>
                                 <a title="온라인 적업교육 무료 수강 바로가기" href="#" target="_blank">
                                     <div class="imageWrap">
-                                        <img src="https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/220706/bg_cwork.png" alt="">
+                                        <img src="resource/images/thema/2208/bg_tip06.png" alt="온라인 적업교육 무료 수강">
                                     </div>
                                     <p>온라인 적업교육 무료 수강 →</p>
                                 </a>
                             </li>                        
                         </ul>
                     </div>
-                </div>
-                <!-- // 교육/행사 -->
-
-                <!-- 취업역량강화 -->
-                <div class="menuContents">
+                </div>            
+            </div>
+        </article>
+        <!-- // 교육/행사 -->
+        <!-- 취업역량강화 -->
+        <article id="moveTo03" class="userPolicyWrap bgType01">
+            <div class="innerSection">
+                <div class="userPolicyContents">
                     <div class="userContentsWrap">
                         <i class="badge type03"></i>                        
                         <strong class="title">취업역량강화.</strong>
@@ -257,13 +258,13 @@
                             </li>
                             <li>
                                 <span>
-                                    자신감,목표,불안감, 그리고 나를 위한 마음의 힐링<br>
+                                    자신감,목표,불안감, 그리고 나를 위한 마음의 힐링<br class="forMobile">
                                     <em class="red">전문 직업상담사와 솔직한 상담을 통해 고민 해결!</em>
                                 </span>
                             </li>
                             <li>
                                 <span>
-                                    취업정보, 업무상담! 업계 선배들이 든든한 멘토가 되어드립니다.<br>
+                                    취업정보, 업무상담! 업계 선배들이 든든한 멘토가 되어드립니다.<br class="forMobile">
                                     <em class="red">잡아바 현직 멘토 70여명 대기중!</em>
                                 </span>
                             </li>
@@ -278,7 +279,7 @@
                             <li>
                                 <a title="취업 진단검사 바로가기" href="#" target="_blank">
                                     <div class="imageWrap">
-                                        <img src="https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/220706/img_illust4.png" alt="">
+                                        <img src="resource/images/thema/2208/bg_tip07.png" alt="취업 진단검사 받으러 가기">
                                     </div>
                                     <p>취업 진단검사 받으러 가기 →</p>
                                 </a>
@@ -286,25 +287,28 @@
                             <li>
                                 <a title="취업 컨설팅 바로가기" href="#" target="_blank">
                                     <div class="imageWrap">
-                                        <img src="https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/220706/img_illust3.png" alt="">
+                                        <img src="resource/images/thema/2208/bg_tip08.png" alt="취업 컨설팅 받으러 가기">
                                     </div>
                                     <p>취업 컨설팅 받으러 가기 →</p>
                                 </a>
                             </li>
                         </ul>
-                    </div>
-                </div>
-                <!-- // 취업역량강화 -->
-                
-                <!-- 채용 공고 -->
-                <div class="menuContents">
+                    </div>     
+                </div>            
+            </div>
+        </article>
+        <!-- // 취업역량강화 -->
+        <!-- 채용 공고 -->
+        <article id="moveTo04" class="userPolicyWrap bgType02">
+            <div class="innerSection">
+                <div class="userPolicyContents">
                     <div class="userContentsWrap">
                         <i class="badge type04"></i>                        
                         <strong class="title">채용 공고.</strong>
                         <ul class="contentsList">
                             <li>
                                 <span>
-                                    매 주 <em class="red">1,000개</em>의 <em class="red">공공일자리!</em><br>
+                                    매 주 <em class="red">1,000개</em>의 <em class="red">공공일자리!</em><br class="forMobile"> 
                                     매 월 <em class="red">50,000개</em>의 <em class="red">채용 정보!</em>
                                 </span>
                             </li>
@@ -313,7 +317,7 @@
                             </li>
                             <li>
                                 <span>
-                                    탐나는기업의 <em class="red">상시채용관</em>과<br>
+                                    탐나는기업의 <em class="red">상시채용관</em>과<br class="forMobile">
                                     <em class="red">8월</em>에 예정된 <em class="red">일자리 매치업 박람회</em>도 기대해주세요.
                                 </span>
                             </li>
@@ -329,7 +333,7 @@
                             <li>
                                 <a title="공공일자리 채용 공고 바로가기" href="#" target="_blank">
                                     <div class="imageWrap">
-                                        <img src="https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/220706/img_illust4.png" alt="">
+                                        <img src="resource/images/thema/2208/bg_tip09.png" alt="공공일자리 채용 공고 확인하기">
                                     </div>
                                     <p>공공일자리 채용 공고 확인하기 →</p>
                                 </a>
@@ -337,7 +341,7 @@
                             <li>
                                 <a title="기업 채용 공고 바로가기" href="#" target="_blank">
                                     <div class="imageWrap">
-                                        <img src="https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/220706/img_illust3.png" alt="">
+                                        <img src="resource/images/thema/2208/bg_tip10.png" alt="기업 채용 공고 확인하기">
                                     </div>
                                     <p>기업 채용 공고 확인하기 →</p>
                                 </a>
@@ -345,7 +349,7 @@
                             <li>
                                 <a title="온라인박람회 바로가기" href="#" target="_blank">
                                     <div class="imageWrap">
-                                        <img src="https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/220706/bg_cwork.png" alt="">
+                                        <img src="resource/images/thema/2208/bg_tip11.png" alt="온라인박람회 바로가기">
                                     </div>
                                     <p>온라인박람회 바로가기 →</p>
                                 </a>
@@ -353,37 +357,40 @@
                             <li>
                                 <a title="구직정보 바로가기" href="#" target="_blank">
                                     <div class="imageWrap">
-                                        <img src="https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/220706/bg_cwork.png" alt="">
+                                        <img src="resource/images/thema/2208/bg_tip12.png" alt="구직정보 신청하기">
                                     </div>
                                     <p>구직정보 신청하기 →</p>
                                 </a>
                             </li>                               
                         </ul>
-                    </div>
-                </div>
-                <!-- 채용 공고 -->
-
-                <!-- 기업지원 -->
-                <div class="menuContents">
+                    </div>         
+                </div>            
+            </div>
+        </article>
+        <!-- // 채용 공고 -->
+        <!-- 기업지원 -->
+        <article id="moveTo05" class="userPolicyWrap bgType01">
+            <div class="innerSection">
+                <div class="userPolicyContents">
                     <div class="userContentsWrap">
                         <i class="badge type05"></i>                        
                         <strong class="title">기업지원.</strong>
                         <ul class="contentsList">
                             <li>
                                 <span>
-                                    법인사업자도, 개인사업자도 OK!<br>
+                                    법인사업자도, 개인사업자도 OK!<br class="forMobile">
                                     잡아바에서 <em class="red">무료</em>로 <em class="red">채용공고 등록</em>과 <em class="red">인재</em>를 찾을 수 있습니다.
                                 </span>
                             </li>
                             <li>
                                 <span>
-                                    언택트 시대!<br>
+                                    언택트 시대!<br class="forMobile">
                                     장소와 시간에 구애 받지 않고 면접을 진행 할 수 있습니다.
                                 </span>
                             </li>
                             <li>
                                 <span>
-                                    매주 새로운 지원자를 추천받으세요!<br>
+                                    매주 새로운 지원자를 추천받으세요!<br class="forMobile"> 
                                     잡아바 직업상담사가 <em class="red">기업에 맞는 인재</em>를 <em class="red">추천</em>해드립니다.<br>
                                     적절한 인재 찾기가 어렵다면 잡아바의 전문 직업상담사와 의논해보세요.
                                 </span>
@@ -396,7 +403,7 @@
                             </li>
                             <li>
                                 <span>
-                                    5인 이상 사업장 연 1회 필수 법정의무교육!<br>
+                                    5인 이상 사업장 연 1회 필수 법정의무교육!<br class="forMobile">
                                     잡아바에서 <em class="red">무료</em>로 지원합니다!
                                 </span>
                             </li>                                                        
@@ -411,18 +418,18 @@
                             <li>
                                 <a title="기업지원 서비스 바로가기" href="#" target="_blank">
                                     <div class="imageWrap">
-                                        <img src="https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/220706/img_illust4.png" alt="">
+                                        <img src="resource/images/thema/2208/bg_tip13.png" alt="기업지원 서비스 모아보기">
                                     </div>
                                     <p>기업지원 서비스 모아보기 →</p>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                </div>
-                <!-- 채용공고 -->                
-            </div>            
-        </div>
-    </article>
+                </div>            
+            </div>
+        </article>
+        <!-- // 기업지원 -->
+    </div>
 </div>
 
 
@@ -441,31 +448,49 @@
 <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/bootstrap.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.leanModal.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/imgLiquid-min.js"></script>
-<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/script.js"></script>
+<!-- <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/script.js"></script> -->
 <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/jquery.vticker-min.js"></script>
+
 <!-- 추가 JS -->
-<script type="text/javascript" charset="utf-8" src="https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/js/jquery.rollNumber.js"></script>
-<script>	
+<script src="https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/js/twentytwenty.js"></script>
+
+<script>
     $(document).ready(function(){
+        // twentytwenty api
+        $("#twentytwenty").twentytwenty();
 
-// tab menu
-$("ul.menuList li a").on("click", function(){
-    const num = $("ul.menuList li a").index($(this));
-    $("ul.menuList li").removeClass("on");
-    $(".menuContents").removeClass("on");
-    $('ul.menuList li:eq(' + num + ')').addClass("on");
-    $('.menuContents:eq(' + num + ')').addClass("on");
-});
-
-
-        $('.cwork').slick({
-            speed: 500,
-            dots: false,
-            arrows: true,
-            autoplay: true,
-            autoplaySpeed: 5000,
-            infinite: false
+        // contents move
+        $("ul.menuList li a").click(function(e){
+            $("html,body").animate({scrollTop:$(this.hash).offset().top}, 500);
+            e.preventDefault();
         });
+
+        // floating event
+        const menuOffset = $(".leftMenu").offset();
+        const menu = $(".menuList");
+        const menuHeight = menu.outerHeight();
+        const articles = $(".userPolicyWrap");
+                
+        $(window).scroll(function(){
+            const winScroll = $(this).scrollTop();
+
+            if ($(window).scrollTop() > menuOffset.top){
+                $(".leftMenu").addClass('fixed');
+            }
+            else {
+                $(".leftMenu").removeClass('fixed');
+            }
+            
+            articles.each(function() {
+                const winTop = $(this).offset().top - menuHeight;
+                const winBottom = winTop + $(this).outerHeight();
+                if (winScroll >= winTop && winScroll <= winBottom) {
+                    menu.find("a").parent().removeClass('on');
+                    menu.find('a[href="#' + $(this).attr('id') + '"]').parent().addClass("on");
+                }
+            });
+        });
+
     }); 
 </script>
 </body></html>
