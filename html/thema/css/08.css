@@ -49,7 +49,7 @@
     position: relative;
     padding: 65px 70px;
     background: #f1f1f1;
-    border-radius: 300px 0 0 0;
+    border-radius: 200px 0 0 0;
 }
 .userInfoWrap .innerSection::after {
     content: "";
@@ -413,7 +413,7 @@ ul.useInfoList li > a:hover p > span {
     position: relative;
     background: #fff;
     width: 100%;
-    height: 545px;
+    height: 600px;
     max-width: 100%;
     margin: auto;    
 }
@@ -422,7 +422,7 @@ ul.useInfoList li > a:hover p > span {
 }
 .twentytwentyWrap .twentytwenty-before-label::before {
     content: "※ 마우스를 드래그하여 리뉴얼 전과 후를 비교해 보세요.";
-    margin-top: 50px !important;
+    margin-top: 130px !important;
     position: absolute;
     left: 10vw !important;
     width: auto;
