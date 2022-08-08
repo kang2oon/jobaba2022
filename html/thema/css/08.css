@@ -32,11 +32,11 @@
     font-size: 16px;
 }
 .bgType01 {
-    background: url(../resource/images/thema/2208/bg_type01.png) no-repeat;
+    background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2208/bg_type01.png) no-repeat;
     background-size: cover;
 }
 .bgType02 {
-    background: url(../resource/images/thema/2208/bg_type02.png) no-repeat;
+    background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2208/bg_type02.png) no-repeat;
     background-size: cover;
 }
 
@@ -58,7 +58,7 @@
     right: 0;
     width: 384px;
     height: 308px;
-    background: url(../resource/images/thema/2208/bg_character01.png) center no-repeat;
+    background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2208/bg_character01.png) center no-repeat;
     background-size: contain;
     z-index: 1;        
 }    
@@ -124,7 +124,7 @@ ul.useInfoList li > a:hover::before {
     bottom: 20px;
     width: 60px;
     height: 73px;
-    background: url(../resource/images/thema/2208/icon_character.png) center no-repeat;
+    background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2208/icon_character.png) center no-repeat;
     background-size: contain;
 }
 ul.useInfoList li > a:hover {
@@ -199,7 +199,7 @@ ul.useInfoList li > a:hover p > span {
     position: absolute;
     right: 40px;
     bottom: 40px;
-    background: url(../resource/images/thema/2208/bg_character02.png) center no-repeat;
+    background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2208/bg_character02.png) center no-repeat;
     width: 170px;
     height: 175px;
 }
@@ -208,7 +208,7 @@ ul.useInfoList li > a:hover p > span {
     position: absolute;
     right: 10px;
     bottom: 25px;    
-    background: url(../resource/images/thema/2208/bg_character03.png) center no-repeat;
+    background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2208/bg_character03.png) center no-repeat;
     width: 226px;
     height: 145px;
 }
@@ -217,7 +217,7 @@ ul.useInfoList li > a:hover p > span {
     position: absolute;
     right: 30px;
     bottom: 30px;    
-    background: url(../resource/images/thema/2208/bg_character04.png) center no-repeat;
+    background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2208/bg_character04.png) center no-repeat;
     width: 180px;
     height: 183px;
 }
@@ -227,7 +227,7 @@ ul.useInfoList li > a:hover p > span {
     right: 40px;
     top: 50%;
     transform: translateY(-50%); 
-    background: url(../resource/images/thema/2208/bg_character05.png) center no-repeat;
+    background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2208/bg_character05.png) center no-repeat;
     width: 220px;
     height: 136px;
 }
@@ -237,7 +237,7 @@ ul.useInfoList li > a:hover p > span {
     right: 30px;
     top: 50%;
     transform: translateY(-50%);
-    background: url(../resource/images/thema/2208/bg_character06.png) center no-repeat;
+    background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2208/bg_character06.png) center no-repeat;
     width: 150px;
     height: 208px;
 }
@@ -266,19 +266,19 @@ ul.useInfoList li > a:hover p > span {
     height: 50px;
 }
 .badge.type01::before {
-    background: url(../resource/images/thema/2208/icon_badge01.png) center no-repeat;
+    background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2208/icon_badge01.png) center no-repeat;
 }
 .badge.type02::before {
-    background: url(../resource/images/thema/2208/icon_badge02.png) center no-repeat;
+    background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2208/icon_badge02.png) center no-repeat;
 }
 .badge.type03::before {
-    background: url(../resource/images/thema/2208/icon_badge03.png) center no-repeat;
+    background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2208/icon_badge03.png) center no-repeat;
 }
 .badge.type04::before {
-    background: url(../resource/images/thema/2208/icon_badge04.png) center no-repeat;
+    background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2208/icon_badge04.png) center no-repeat;
 }
 .badge.type05::before {
-    background: url(../resource/images/thema/2208/icon_badge05.png) center no-repeat;
+    background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2208/icon_badge05.png) center no-repeat;
 }
 .userContentsWrap .title {
     color: #006cff;
@@ -303,7 +303,7 @@ ul.useInfoList li > a:hover p > span {
     flex: none;
     width: 38px;
     height: 38px;
-    background: url(../resource/images/thema/2208/icon_check.png) center no-repeat;
+    background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2208/icon_check.png) center no-repeat;
     background-size: contain;
 }
 .userContentsWrap ul.contentsList li > span {
@@ -316,6 +316,9 @@ ul.useInfoList li > a:hover p > span {
 }
 .userPolicyWrap:nth-child(odd) .userTipWrap {
     background: #aefffa;
+}
+.userPolicyWrap:nth-child(odd) .userTipWrap ul.userTipList li p::after {
+    background: #fcff00;
 }
 .userTipWrap {
     padding: 45px 65px;
@@ -405,11 +408,36 @@ ul.useInfoList li > a:hover p > span {
 }
 
 /* twentytwenty */
-.twentytwenty_wrap{
+.twentytwentyWrap {
+    position: relative;
     background: #fff;
     width: 100%;
+    height: 545px;
     max-width: 100%;
     margin: auto;    
+}
+.twentytwentyWrap .twentytwenty-before-label {
+    opacity: 1;
+}
+.twentytwentyWrap .twentytwenty-before-label::before {
+    content: "※ 마우스를 드래그하여 리뉴얼 전과 후를 비교해 보세요.";
+    margin-top: 80px !important;
+    position: absolute;
+    left: 8vw !important;
+    width: auto;
+    height: auto;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Noto Sans KR';
+    text-shadow: 0 0 3px black;
+    background: transparent;
+    letter-spacing: -1px;
+    z-index: 20;
+    opacity: 1;
+}
+.twentytwentyWrap .twentytwenty-container img {
+    width: 100%;
+    object-fit: cover;
 }
 .twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after {
     width: 3px;
@@ -565,11 +593,17 @@ ul.useInfoList li > a:hover p > span {
 
 
 @media all and (max-width: 1024px){
+    .twentytwentyWrap .twentytwenty-before-label::before {
+        margin-top: 40px !important;
+        left: 5vw !important;
+        font-size: 16px;
+    }    
     .themaWrap .innerSection {
         padding: 0 50px;
         max-width: 100%;
     }
     .userInfoWrap {
+        margin-top: -250px;
         padding: 40px 0;
         border-radius: 150px 0 0 0;
     }
@@ -596,7 +630,7 @@ ul.useInfoList li > a:hover p > span {
         top: 0;
         left: 0;
         width: 100%;
-        background: url(../resource/images/thema/2208/bg_type01.png) no-repeat;
+        background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2208/bg_type01.png) no-repeat;
         background-size: cover;        
     }
     .userPolicy .leftMenu.fixed ul.menuList li a {
@@ -729,6 +763,17 @@ ul.useInfoList li > a:hover p > span {
     .forMobile {
         display: none;
     }
+    .twentytwentyWrap {
+        height: 500px;
+    }
+    .twentytwentyWrap .twentytwenty-before-label::before {
+        left: 0 !important;
+        font-size: 14px;
+        margin-top: 0 !important;
+    }
+    .userInfoWrap {
+        margin-top: -280px;
+    }    
     .userContentsWrap .title {
         font-size: 24px;
     }
@@ -777,6 +822,28 @@ ul.useInfoList li > a:hover p > span {
 @media all and (max-width: 640px){
     .themaWrap .innerSection {
         padding: 0 15px;
+    }
+    .twentytwentyWrap {
+        height: 450px;
+    }    
+    .twentytwenty-horizontal, .twentytwenty-container {
+        height: inherit !important;
+    }
+    .twentytwentyWrap .twentytwenty-container img {
+        height: 100%;
+    }    
+    .twentytwentyWrap .twentytwenty-before-label::before {
+        content: none;
+    }
+    .twentytwenty-handle {
+        margin-left: -23px;
+        margin-top: -23px;
+        top: 40%;
+        width: 46px;
+        height: 46px;
+    }    
+    .userInfoWrap {
+        margin-top: -150px;
     }
     .userInfoWrap {
         padding: 40px 0;
@@ -829,7 +896,7 @@ ul.useInfoList li > a:hover p > span {
     .userPolicy .leftMenu.fixed {
         padding: 20px 0 0;        
         position: static;
-        background: url(../resource/images/thema/2208/bg_type01.png) no-repeat;
+        background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2208/bg_type01.png) no-repeat;
         background-size: cover;
     }        
     .userPolicy .leftMenu.fixed ul.menuList {
