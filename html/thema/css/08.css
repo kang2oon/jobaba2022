@@ -149,6 +149,7 @@ ul.useInfoList li > a:hover p > span {
 }
 .userPolicy .leftMenu.fixed {
     position: fixed;
+    top: 100px;
 }
 .leftMenu ul.menuList {
     display: flex;
@@ -633,9 +634,6 @@ ul.useInfoList li > a:hover p > span {
         background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2208/bg_type01.png) no-repeat;
         background-size: cover;        
     }
-    .userPolicy .leftMenu.fixed ul.menuList li a {
-        border-radius: 0;
-    }    
     .leftMenu ul.menuList {
         flex-direction: inherit;
         max-width: 90%;
@@ -649,6 +647,7 @@ ul.useInfoList li > a:hover p > span {
         width: 100%;
     }
     .userPolicy .leftMenu.fixed {
+        position: static;
         left: 0;
         padding: 0;
         background: #fff;

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>2022년 상반기 결산</title>
+	<title>테마 8호 :: 확~ 바뀐! 잡아바 100% 활용법</title>
 	<!-- 잡아바 css-->
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
@@ -41,7 +41,7 @@
             </div>
             <ul class="useInfoList">
                 <li>
-                    <a title="지원정책 이동" href="#" target="_blank">
+                    <a title="지원정책 이동" href="#moveTo01" target="_blank">
                         <i class="label">지원정책</i>
                         <p>
                             <span>
@@ -52,7 +52,7 @@
                     </a>
                 </li>
                 <li>
-                    <a title="교육/행사 이동" href="#" target="_blank">
+                    <a title="교육/행사 이동" href="#moveTo02" target="_blank">
                         <i class="label">교육 / 행사</i>
                         <p>
                             <span>
@@ -63,7 +63,7 @@
                     </a>
                 </li>
                 <li>
-                    <a title="취업역량강화 이동" href="#" target="_blank">
+                    <a title="취업역량강화 이동" href="#moveTo03" target="_blank">
                         <i class="label">취업역량강화</i>
                         <p>
                             <span>
@@ -74,7 +74,7 @@
                     </a>
                 </li>
                 <li>
-                    <a title="채용 공고 이동" href="#" target="_blank">
+                    <a title="채용 공고 이동" href="#moveTo04" target="_blank">
                         <i class="label">채용 공고</i>
                         <p>
                             <span>
@@ -85,7 +85,7 @@
                     </a>
                 </li>
                 <li>
-                    <a title="인재 찾기 이동" href="#" target="_blank">
+                    <a title="인재 찾기 이동" href="#moveTo05" target="_blank">
                         <i class="label">인재 찾기</i>
                         <p>
                             <span>
@@ -464,7 +464,7 @@ $(document).ready(function(){
     });
 
     // contents move
-    $("ul.menuList li a").click(function(e){
+    $("ul.menuList li a, ul.useInfoList li a").click(function(e){
         $("html,body").animate({scrollTop:$(this.hash).offset().top}, 500);
         e.preventDefault();
     });
