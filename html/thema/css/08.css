@@ -421,9 +421,9 @@ ul.useInfoList li > a:hover p > span {
 }
 .twentytwentyWrap .twentytwenty-before-label::before {
     content: "※ 마우스를 드래그하여 리뉴얼 전과 후를 비교해 보세요.";
-    margin-top: 80px !important;
+    margin-top: 50px !important;
     position: absolute;
-    left: 8vw !important;
+    left: 10vw !important;
     width: auto;
     height: auto;
     color: #fff;

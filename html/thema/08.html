@@ -452,49 +452,48 @@
 <script src="https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/js/twentytwenty.js"></script>
 
 <script>
-    $(document).ready(function(){
-        // twentytwenty api
-        $("#twentytwenty").twentytwenty({
-            default_offset_pct: 0.5,
-            orientation: 'horizontal',
-            no_overlay: false,
-            move_slider_on_hover: false,
-            move_with_handle_only: true,
-            click_to_move: false
-        });
+$(document).ready(function(){     
+    // twentytwenty api
+    $("#twentytwenty").twentytwenty({
+        default_offset_pct: 0.5,
+        orientation: 'horizontal',
+        no_overlay: false,
+        move_slider_on_hover: false,
+        move_with_handle_only: true,
+        click_to_move: false
+    });
 
-        // contents move
-        $("ul.menuList li a").click(function(e){
-            $("html,body").animate({scrollTop:$(this.hash).offset().top}, 500);
-            e.preventDefault();
-        });
+    // contents move
+    $("ul.menuList li a").click(function(e){
+        $("html,body").animate({scrollTop:$(this.hash).offset().top}, 500);
+        e.preventDefault();
+    });
 
-        // floating event
-        const menuOffset = $(".leftMenu").offset();
-        const menu = $(".menuList");
-        const menuHeight = menu.outerHeight();
-        const articles = $(".userPolicyWrap");
-                
-        $(window).scroll(function(){
-            const winScroll = $(this).scrollTop();
+    // floating event
+    const menuOffset = $(".leftMenu").offset();
+    const menu = $(".menuList");
+    const menuHeight = menu.outerHeight();
+    const articles = $(".userPolicyWrap");
 
-            if ($(window).scrollTop() > menuOffset.top){
-                $(".leftMenu").addClass('fixed');
+    $(document).scroll(function(){
+        const winScroll = $(this).scrollTop();
+
+        if ($(document).scrollTop() > menuOffset.top){
+            $(".leftMenu").addClass('fixed');
+        }
+        else {
+            $(".leftMenu").removeClass('fixed');
+        }
+        
+        articles.each(function() {
+            const winTop = $(this).offset().top - menuHeight;
+            const winBottom = winTop + $(this).outerHeight();
+            if (winScroll >= winTop && winScroll <= winBottom) {
+                menu.find("a").parent().removeClass('on');
+                menu.find('a[href="#' + $(this).attr('id') + '"]').parent().addClass("on");
             }
-            else {
-                $(".leftMenu").removeClass('fixed');
-            }
-            
-            articles.each(function() {
-                const winTop = $(this).offset().top - menuHeight;
-                const winBottom = winTop + $(this).outerHeight();
-                if (winScroll >= winTop && winScroll <= winBottom) {
-                    menu.find("a").parent().removeClass('on');
-                    menu.find('a[href="#' + $(this).attr('id') + '"]').parent().addClass("on");
-                }
-            });
         });
-
-    }); 
+    });
+});
 </script>
 </body></html>
