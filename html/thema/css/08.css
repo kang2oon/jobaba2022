@@ -149,7 +149,6 @@ ul.useInfoList li > a:hover p > span {
     position: relative;
 }
 .userPolicy .leftMenu {
-    margin-left: 17vw;    
     position: absolute;
     top: 65px;
     left: 0;
@@ -158,6 +157,7 @@ ul.useInfoList li > a:hover p > span {
 }
 .userPolicy .leftMenu.fixed {
     position: fixed;
+    left: auto;
     top: 100px;
 }
 .leftMenu ul.menuList {
@@ -467,6 +467,9 @@ ul.useInfoList li > a:hover p > span {
     .leftMenu ul.menuList li a {
         width: 100%;
     }
+    ul.useInfoList li > a:hover::before {
+        content: none;
+    }        
     .userPolicy .leftMenu.fixed {
         position: static;
         left: 0;
@@ -580,7 +583,28 @@ ul.useInfoList li > a:hover p > span {
 }
 
 @media all and (max-width: 820px){
-    
+    .userInfoWrap .innerSection::after {
+        right: 0px;
+    }    
+    ul.useInfoList {
+        margin: 40px 0 0;
+        gap: 20px;
+    }
+    ul.useInfoList li {
+        width: calc((100% - 40px) / 3);
+    }
+    ul.useInfoList li .label {
+        min-width: 90px;
+        max-width: 90px;
+        font-size: 14px;
+    }    
+    ul.useInfoList li > a {
+        padding: 15px;
+        gap: 10px 0;
+    }
+    ul.useInfoList li p {
+        font-size: 15px;
+    }    
 }
 
 @media all and (max-width: 768px){
@@ -659,7 +683,7 @@ ul.useInfoList li > a:hover p > span {
     }    
     ul.useInfoList {
         margin: 30px 0 0;
-        gap: 10px;
+        gap: 20px;
     }
     ul.useInfoList li {
         width: 100%;
