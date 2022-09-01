@@ -573,7 +573,7 @@
 }
 .consultingWrap ul.consultingList {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 0 45px;
 }
@@ -590,6 +590,11 @@
 }
 .consultingWrap ul.consultingList li > a:hover {
   box-shadow: 0 0 0 3px #132c51 inset;
+}
+.consultingWrap ul.consultingList li .textWrap::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .consultingWrap ul.consultingList li .imageWrap {
   text-align: center;
@@ -625,9 +630,8 @@
   line-height: 28px;
 }
 .consultingWrap ul.consultingList li .textWrap .link {
-  margin-left: auto;
+  float: right;
   padding-bottom: 5px;
-  display: inline-block;
   color: #000;
   font-size: 18px;
   font-weight: 700;
@@ -686,6 +690,10 @@
   }
   .bannerWrap .textWrap strong {
     font-size: 24px;
+  }
+  .consultingWrap ul.consultingList li .textWrap .link {
+    float: none;
+    display: inline-block;
   }
 }
 
@@ -1151,6 +1159,7 @@
     line-height: 22px;
   }
   .consultingWrap ul.consultingList li .textWrap .link {
+    margin-top: 10px;
     font-size: 14px;
   }
 }
