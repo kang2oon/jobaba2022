@@ -639,6 +639,15 @@
   border-bottom: 1px solid #6692cd;
 }
 
+@media all and (max-width: 1800px) {
+  .bannerWrap::before {
+    content: none;
+  }
+  .bannerWrap::after {
+    content: none;
+  }
+}
+
 @media all and (max-width: 1024px) {
   .blindEmploymentWrap ul.qnaList li .answerWrap {
     margin-left: 0;
