@@ -595,6 +595,13 @@
 }
 
 @media all and (max-width: 768px) {
+  .employmentPackage .titleWrap strong {
+    font-size: 20px;
+    word-break: keep-all;
+  }
+  .employmentPackage .titleWrap p {
+    font-size: 18px;
+  }
   .employmentProject .titleWrap p {
     margin-bottom: 10px;
     font-size: 18px;
@@ -668,6 +675,12 @@
 }
 
 @media all and (max-width: 480px) {
+  .employmentPackage .titleWrap strong {
+    font-size: 16px;
+  }
+  .employmentPackage .titleWrap p {
+    font-size: 14px;
+  }
   .businessPlan ul.businessProject .titleWrap strong em {
     width: 30px;
     height: 30px;
