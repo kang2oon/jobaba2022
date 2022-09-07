@@ -617,6 +617,9 @@
 }
 
 @media all and (max-width: 640px) {
+  .themaWrap .innerSection {
+    padding: 0 10px;
+  }
   .employmentProject .businessList li {
     width: calc(100% / 2);
   }
@@ -684,13 +687,13 @@
   .businessPlan ul.businessProject .titleWrap strong em {
     width: 30px;
     height: 30px;
-    font-size: 16px;
+    font-size: 14px;
   }
   .businessPlan ul.businessProject .titleWrap strong {
-    font-size: 16px;
+    font-size: 14px;
   }
   .businessPlan ul.businessProject .titleWrap p {
-    font-size: 16px;
+    font-size: 14px;
   }
   .businessPlan ul.businessProject dl {
     padding: 10px;
