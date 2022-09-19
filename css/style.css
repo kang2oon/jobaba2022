@@ -7,7 +7,7 @@ a{text-decoration:none;color:inherit;}
 .fleft{float:left;}
 .fright{float:right;}
 
-.container{position:realtive;width:1080px;margin:30px auto;}
+.container{position:relative;width:1080px;margin:30px auto;}
 h1{position:relative;font-size:24px;margin:0 auto 20px;}
 	h1 .git{position:absolute;top:0;right:0;}
 	h1 .git a{display:inline-block;padding:5px 13px;background:#333;color:#fff;font-weight:400;font-size:13px;border-radius:8px;}
