@@ -230,6 +230,9 @@
 #youthInformation .customized .innerSection {
     padding: 0;
 }
+#youthInformation .customizedWrap {
+    padding-bottom: 50px;
+}
 #youthInformation .customized .customizedWrap a {
     display: block;
     width: 100%;
@@ -268,8 +271,8 @@
 }
 #youthInformation .customized .btnWrap {
     width: 100%;
-    margin-top: 20px;
-    text-align: center;
+    margin: 20px 0 10px;
+    text-align: right;
 }
 #youthInformation .customized .btnWrap a { 
     color: #31af96;
@@ -279,7 +282,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 0 20px;
     padding-bottom: 20px;
     margin-bottom: 10px;
@@ -314,19 +317,13 @@
     width: 70px;
     height: 36px;
 }
-#youthInformation .searchWrap .navi {
-    bottom: 20px;
-}
-#youthInformation .customized .slick-dots {
-    top: -54px;
-    bottom: auto;
-}
+
 @media all and (max-width:1260px) {
     #youthInformation .innerSection {
         padding: 0 70px;
     }
-    #youthInformation .customized .innerSection .innerWrap {
-        padding: 50px 10px 25px;
+    #youthInformation .customized .innerSection {
+        padding: 0 10px;
     }
 }
 @media all and (max-width:1119px) {
