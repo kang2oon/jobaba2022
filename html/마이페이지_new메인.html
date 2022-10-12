@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Document</title>
+	<!-- 잡아바 css-->
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/common.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/style.jobInfo.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/js/css/jquery-ui.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/style.epmtDiag.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css">
+	<!-- //잡아바 css-->
+
+	<!--추가 css-->
+	<!-- <link rel="stylesheet" href="css/new_entEmpmn.css"> -->
+
+
+
+</head>
+<style>
+	.innerSection {
+		position: relative;
+    	max-width: 1260px;
+    	margin: 0 auto;
+	}
+	.myinfoWrap {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 20px 3px 3px;
+		background: linear-gradient(to bottom, #38bab2, #003281);
+		border-radius: 15px;
+		z-index: 1;
+	}
+	.myinfoWrap:before {
+		content: '';
+		display: block;
+		width: calc(100% - 6px);
+		height: calc(100% - 6px);
+		background: #f7fafd;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		border-radius: 15px;
+		z-index: -1;
+	}
+	.myInfo {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		padding: 0 30px 14px;
+		justify-content: space-between;
+		border-bottom: 1px solid #cbe3e2;
+	}
+	.myInfo .name.nameIcon {padding-left: 22px; background-image: url(./resource/images/mypage_icon01.png); background-position: 5px center;background-repeat: no-repeat;background-size: 13px; }
+
+	.myInfo .name {
+		font-size: 14px;
+		color: #666;
+	}
+	.myInfo .name span {
+		position: relative;
+		margin-left: 20px;
+		color: #000;
+		font-size: 16px;
+	}
+	.myInfo .name span::before {
+		position: absolute;
+		content: "";
+		top: 50%;
+		transform: translateY(-50%);
+		margin-left: -10px;
+		height: 16px;
+		width: 1px;
+		background: #ddd;
+	}
+	.myInfo .btnWrap {
+		margin-left: auto;
+	}
+	.myInfo .btnWrap a {
+		display: inline-block;
+		width: 150px;
+		height: 30px;
+		padding-left: 10px;
+		padding-right: 20px;
+		font-size: 14px;
+		line-height: 26px;
+		color: #666;
+		border: 2px solid #dddddd;
+		border-radius: 6px;
+		position: relative;
+		background: #fff;
+		
+	}
+	.myInfo .btnWrap a span {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		top: -2px;
+		right: -2px;
+		background: #dddddd;
+		width: 50px;
+		height: calc(100% + 4px);
+		border-radius: 6px;
+		color: #fff;
+	}
+	.myInfo .btnWrap a.on {
+      border-color: #38bab2;
+    }
+    .myInfo .btnWrap a.on span {
+      background: #38bab2;
+    }
+    .myInfo .btnWrap a span::after {
+      content: 'OFF';
+    }
+    .myInfo .btnWrap a.on span::after {
+      content: 'ON';
+    }
+	.myInfo .rectify {
+		width: 90px;
+		margin-left: 10px;
+		background: #a6a6a6;
+		color: #fff;
+		font-size: 14px;
+		line-height: 26px;
+		text-align: center;
+		border-radius: 6px;
+	}
+	.myInfo + .myAdm {
+		width: calc(100% - 470px);
+		border-right: 1px solid #cbe3e2;
+	}
+	.myAdm + .myAdm {
+		width: 470px;
+	}
+	.myinfoWrap h3 {
+		margin: 20px 0;
+		color: #666666;
+		font-size: 14px;
+		font-weight: 400;
+	}
+	.myinfoWrap .myAdm {
+		padding: 0 28px;
+	}
+	.myinfoWrap .myAdm ul {
+		display: flex;
+		text-align: center;
+		justify-content: space-around;
+		margin-bottom: 20px;
+	}
+	.myinfoWrap .myAdm ul li a {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.myinfoWrap .myAdm ul li span.new::after {
+		content: 'N';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 25px;
+		height: 25px;
+		font-size: 14px;
+		line-height: 25px;
+		color: #fff;
+		border-radius: 100%;
+		background: #fb7a5c;
+	}
+	.myinfoWrap .myAdm ul li span {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 80px;
+		height: 80px;
+		background-color: #fff;
+		border-radius: 50%;
+		border: 1px solid #dddddd;
+		font-size: 24px;
+	}
+	.myinfoWrap .myAdm ul li p {
+		margin-top: 10px;
+		color: #222;
+		font-size: 16px;
+		line-height: 26px;
+	}
+	
+	
+	
+</style>
+<body>
+	
+		<h2 class="sr-only">마이페이지</h2>
+		<article>
+			<div class="innerSection">
+				<!-- 마이페이지 상단 -->
+				<div class="myinfoWrap">
+					<div class="myInfo">
+						<div class="myProfile">
+							<p class="name nameIcon">
+								개인회원<span>홍길동(kildong@gif.or.kr)</span>
+							</p>
+						</div>
+						<div class="btnWrap">
+							<a href="javascript:void(0);" class="on">공고추천 받기<span></span></a>
+    						<a href="javascript:void(0);">입사제의 받기<span></span></a>
+						</div>
+						<a href="javascript:void(0);" class="rectify">정보수정</a>
+					</div>
+					<div class="myAdm">
+						<h3>취업활동</h3>
+						<ul>
+							<li>
+								<a href="javascript:void(0);">
+									<span>1</span>
+									<p>이력서</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									<span>3</span>
+									<p>입사지원</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									<span class="empt">0</span>
+									<p>입사제의</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									<span class="new">1</span>
+									<p>공고추천</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									<span class="empt">0</span>
+									<p>온라인 면접</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="myAdm">
+						<h3>취업준비</h3>
+						<ul>
+							<li>
+								<a href="javascript:void(0);">
+									<span>3</span>
+									<p>취업진단</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									<span class="new">1</span>
+									<p>비대면 취업지원</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									<span>0</span>
+									<p>1:1 문의</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //마이페이지 상단 -->
+			</div>
+		</article>
+		<article>
+			<div class="innerSection">
+				
+			</div>
+		</article>
+
+
+	<!-- left menu -->
+	<div class="leftMenu">
+		<ul class="menuList">
+			<li>
+				<a href="#">마이페이지 메인</a>
+			</li>
+			<li>정책&정보
+				<ul class="subMenuList">
+					<li><a href="#">관심등록</a></li>
+					<li><a href="#">알림등록 정보</a></li>
+					<li><a href="#">정책등록</a></li>
+				</ul>
+			</li>
+			<li>취업준비
+				<ul class="subMenuList">
+					<li><a href="#">취업진단</a></li>
+					<li><a href="#">비대면 취업지원</a></li>
+				</ul>
+			</li>
+			<li>취업활동
+				<ul class="subMenuList">
+					<li><a href="#">공고추천 관리</a></li>
+					<li><a href="#">입사제의 관리</a></li>
+					<li><a href="#">이력서 관리</a></li>
+					<li><a href="#">온라인 면접</a></li>
+					<li><a href="#">구직 등록</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">1:1 문의</a>
+			</li>
+			<li>회원정보
+				<ul class="subMenuList">
+					<li><a href="#">개인정보 수정</a></li>
+					<li><a href="#">비밀번호 변경</a></li>
+					<li><a href="#">회원탈퇴</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- // left menu -->
+	<div class="my_wrap new">
+		<h2 class="sr-only">마이페이지</h2>
+		<div class="pic_box_wrap">
+			<div class="ct_box2">
+				<div class="profile_wrap_new2">
+					<div class="mypage-info">
+						<p class="photo">
+							<img src="/resource/images/ico_gender01.png" alt="남">
+						</p>
+						<p class="name">
+							개인회원 <span>최중일님</span>
+						</p>
+						<p>
+							<a href="javascript:;" onclick="openPswd_top();" class="btn btn-sm btn4">정보수정</a>
+							<a href="javascript:;" onclick="openPswd();" class="btn btn-sm btn3">비번변경</a>
+						</p>
+					</div>
+
+					<div class="mypage-adm">
+						<div class="adm-top">
+							<h3>취업활동</h3>
+							<a href="/mber/myPage/resume/jbhntRegForm.do">
+								구직등록
+							</a>
+						</div>
+						<ul>
+							<li class="ico06">
+								<a href="/mber/myPage/resume/list.do">
+									<span class="ico"></span>
+									<p><span class="num">3</span>이력서</p>
+								</a>
+							</li>
+							<li class="ico07">
+								<a href="/mber/myPage/sprt/list.do">
+									<span class="ico"></span>
+									<p><span class="num">4</span>입사<span>지원</span></p>
+								</a>
+							</li>
+							<li class="ico08">
+								<a href="/mber/myPage/suggest/list.do">
+									<span class="ico"></span>
+									<p><span class="num">1</span>제의<span>/추천</span></p>
+								</a>
+							</li>
+							<li class="ico09">
+								<a href="/mber/myPage/intvw/list.do">
+									<span class="ico"></span>
+									<p><span class="num">2</span>온라인<span>면접</span></p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					
+					
+					
+
+
+					<div class="mypage-adm">
+						<div class="adm-top">
+							<h3>회원활동</h3>
+							
+						</div>
+						<ul>
+							
+								
+								<li class="ico05">
+									<a href="https://www.jobaba.net/mber/myPage/eduInfo/introductionList.do">
+
+
+										<span class="ico"></span>
+										<p><span class="num">115</span>취업<span>역량강화</span></p>
+									</a>
+								</li>
+								
+								
+							
+							
+							<li class="ico01">
+								<a href="https://www.jobaba.net/mber/myPage/counsel/counselList.do">
+								<!-- <a href="javascript:alert('준비중입니다.');"> -->
+									<span class="ico"></span>
+									
+										
+										
+											<p><span class="num">4</span>개인<span>회원상담</span></p>
+										
+									
+								</a>
+							</li>
+							<li class="ico02">
+								<a href="https://www.jobaba.net/mber/myPage/joinEvent/joinEventList.do">
+									<span class="ico"></span>
+									<p><span class="num">0</span>이벤트<span>참여</span></p>
+								</a>
+							</li>
+							<li class="ico03">
+								<a href="https://www.jobaba.net/mber/myPage/inquiry/inquiryList.do">
+									<span class="ico"></span>
+									<p>
+										<span class="num">0/0</span>
+										1:1<span>문의</span>
+									</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="my_banner_wrap">
+
+					<ul>
+						<!-- 2차 오픈 -->
+						<!-- <li>
+							<a href="">
+								<span class="cate_txt">Employment</span>
+								<p>나를 위한 채용정보</p>
+								<h2>채용정보</h2>
+								<span class="detail_txt">자세히보기</span>
+							</a>
+						</li> -->
+						<!-- 2차 오픈 -->
+						<li>
+							<a href="/introduction/mainList.do?src=image&amp;kw=000005">
+								<span class="cate_txt">Consulting</span>
+								<p>취업에 핵심!</p>
+								<h2>자기소개서 컨설팅</h2>
+								<span class="detail_txt">자세히보기</span>
+							</a>
+						</li>
+						<li>
+							<a href="/mentoring/mainList.do">
+								<span class="cate_txt">Mentoring</span>
+								<p>현업 선배의 취업정보, 업무상담</p>
+								<h2>취업멘토링 서비스</h2>
+								<span class="detail_txt">자세히보기</span>
+							</a>
+						</li>
+						<li>
+							<a href="/interview/mainList.do">
+								<span class="cate_txt">AI-Interview</span>
+								<p>인공지능 면접 컨설팅</p>
+								<h2>AI 면접 컨설팅</h2>
+								<span class="detail_txt">자세히보기</span>
+							</a>
+						</li>
+						<li>
+							<a href="/psychology/mainList.do">
+								<span class="cate_txt">psychological counseling</span>
+								<p>내 마음을 알아주는</p>
+								<h2>심리상담 컨설팅</h2>
+								<span class="detail_txt">자세히보기</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+
+		
+		<div class="ct_box">
+			<div class="category_gnb">
+				<ul>
+					<li class="selected"><a href="https://www.jobaba.net/mber/myPage/rcmnInfo/list.do?cntntsTypeCd=01" title="추천정보 메뉴 이동" "="">추천정보</a>
+						<ul>
+							<li class="selected"><a href="https://www.jobaba.net/mber/myPage/rcmnInfo/list.do?cntntsTypeCd=01" title="지원정책 메뉴 이동" "="">지원정책</a></li>
+							<li class=""><a href="https://www.jobaba.net/mber/myPage/rcmnInfo/list.do?cntntsTypeCd=07" title="취업교육 메뉴 이동" "="">취업교육</a></li>
+							<li class=""><a href="https://www.jobaba.net/mber/myPage/rcmnInfo/list.do?cntntsTypeCd=02" title="대외활동 메뉴 이동" "="">대외활동</a></li>
+							<li class=""><a href="https://www.jobaba.net/mber/myPage/rcmnInfo/list.do?cntntsTypeCd=10" title="기업추천 메뉴 이동" "="">기업추천</a></li>
+							<li class=""><a href="https://www.jobaba.net/mber/myPage/rcmnInfo/list.do?cntntsTypeCd=09" title="창업지원 메뉴 이동" "="">창업지원</a></li>
+							<li class=""><a href="https://www.jobaba.net/mber/myPage/rcmnInfo/list.do?cntntsTypeCd=04" title="잡학사전 메뉴 이동" "="">잡학사전</a></li>
+						</ul>
+					</li>
+
+
+					<li><a href="https://www.jobaba.net/mber/myPage/intrsInfo/list.do?cntntsTypeCd=01" title="관심등록 메뉴 이동" "="">관심등록 정보</a>
+						<ul style="width: 740px;">
+							<li class=""><a href="https://www.jobaba.net/mber/myPage/intrsInfo/list.do?cntntsTypeCd=01" title="지원정책 메뉴 이동" "="">지원정책</a></li>
+							<li class=""><a href="https://www.jobaba.net/mber/myPage/intrsInfo/list.do?cntntsTypeCd=07" title="취업교육 메뉴 이동" "="">취업교육</a></li>
+							<li class=""><a href="https://www.jobaba.net/mber/myPage/intrsInfo/list.do?cntntsTypeCd=02" title="대외활동 메뉴 이동" "="">대외활동</a></li>
+							<li class=""><a href="https://www.jobaba.net/mber/myPage/intrsInfo/list.do?cntntsTypeCd=11" title="탐나는기업관 메뉴 이동" "="">탐나는기업관</a></li>
+							<li class=""><a href="https://www.jobaba.net/mber/myPage/intrsInfo/list.do?cntntsTypeCd=10" title="채용정보 메뉴 이동" "="">채용정보</a></li>
+							<li class=""><a href="https://www.jobaba.net/mber/myPage/intrsInfo/list.do?cntntsTypeCd=09" title="창업지원 메뉴 이동" "="">창업지원</a></li>
+							<li class=""><a href="https://www.jobaba.net/mber/myPage/intrsInfo/list.do?cntntsTypeCd=04" title="잡학사전 메뉴 이동" "="">잡학사전</a></li>
+							<li class=""><a href="https://www.jobaba.net/mber/myPage/intrsInfo/list.do?cntntsTypeCd=13" title="동영상교육 메뉴 이동" "="">동영상교육</a></li>
+							
+						</ul>
+					</li>
+					<li><a href="https://www.jobaba.net/mber/myPage/infrm/list.do?cntntsTypeCd=01" title="알림등록 정보 메뉴 이동" "="">알림등록 정보</a>
+						<ul>
+							<li class=""><a href="https://www.jobaba.net/mber/myPage/infrm/list.do?cntntsTypeCd=01" title="지원정책 메뉴 이동" "="">지원정책</a></li>
+							<li class=""><a href="https://www.jobaba.net/mber/myPage/infrm/list.do?cntntsTypeCd=07" title="취업교육 메뉴 이동" "="">취업교육</a></li>
+							<li class=""><a href="https://www.jobaba.net/mber/myPage/infrm/list.do?cntntsTypeCd=02" title="대외활동 메뉴 이동" "="">대외활동</a></li>
+							<li class=""><a href="https://www.jobaba.net/mber/myPage/infrm/list.do?cntntsTypeCd=09" title="창업지원 메뉴 이동" "="">창업지원</a></li>
+							<li class=""><a href="https://www.jobaba.net/mber/myPage/infrm/list.do?cntntsTypeCd=10" title="채용정보 메뉴 이동" "="">채용정보</a></li>
+						</ul>
+					</li>
+					<li><a href="https://www.jobaba.net/mber/myPage/usrReg/list.do" title="내가등록한 정보 메뉴 이동" "="">내가등록한 정보</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	<!--잡아바 js-->
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
+
+	<script>
+		// 스크롤 js
+	$(document).ready(function(){
+    
+	});
+	</script>
+</body></html>
