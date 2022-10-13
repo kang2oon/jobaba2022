@@ -38,6 +38,7 @@
 		position: relative;
 		display: flex;
 		flex-wrap: wrap;
+		margin-bottom: 60px;
 		padding: 20px 3px 3px;
 		background: linear-gradient(to bottom, #38bab2, #003281);
 		border-radius: 15px;
@@ -203,10 +204,10 @@
 </style>
 <body>
 	
-		<h2 class="sr-only">마이페이지</h2>
+		<!-- 마이페이지 상단 -->
 		<article>
+			<h2 class="sr-only">마이페이지</h2>
 			<div class="innerSection">
-				<!-- 마이페이지 상단 -->
 				<div class="myinfoWrap">
 					<div class="myInfo">
 						<div class="myProfile">
@@ -279,164 +280,155 @@
 						</ul>
 					</div>
 				</div>
-				<!-- //마이페이지 상단 -->
 			</div>
 		</article>
-		<article>
+		<!-- //마이페이지 상단 -->
+		<style>
+			.leftMenu {
+				width: 260px;
+				border: 1px solid red;
+			}
+			.contentsWrap {
+				display: flex;
+				justify-content: space-between;
+			}
+			.contentsBox {
+				width: 940px;
+			}
+			ul.categoryMenu {
+				width: 100%;
+				display: flex;
+			}
+			ul.categoryMenu li {
+				width: calc(100% / 6);
+				padding: 18px 0;
+				background: #f6f7f9;
+				font-size: 14px;
+				line-height: 24px;
+				text-align: center;
+				color: #222222;
+				border: 1px solid #dddddd;
+				border-bottom: 1px solid #000;
+				cursor: pointer;
+			}
+			ul.categoryMenu li.active {
+				background: #fff;
+				color: #38bab2;
+				font-weight: bold;
+				border: 1px solid #000;
+				border-bottom: none;
+			}
+		</style>
+		<article class="myConents">
 			<div class="innerSection">
-				
-			</div>
-		</article>
-
-
-	<!-- left menu -->
-	<div class="leftMenu">
-		<ul class="menuList">
-			<li>
-				<a href="#">마이페이지 메인</a>
-			</li>
-			<li>정책&정보
-				<ul class="subMenuList">
-					<li><a href="#">관심등록</a></li>
-					<li><a href="#">알림등록 정보</a></li>
-					<li><a href="#">정책등록</a></li>
-				</ul>
-			</li>
-			<li>취업준비
-				<ul class="subMenuList">
-					<li><a href="#">취업진단</a></li>
-					<li><a href="#">비대면 취업지원</a></li>
-				</ul>
-			</li>
-			<li>취업활동
-				<ul class="subMenuList">
-					<li><a href="#">공고추천 관리</a></li>
-					<li><a href="#">입사제의 관리</a></li>
-					<li><a href="#">이력서 관리</a></li>
-					<li><a href="#">온라인 면접</a></li>
-					<li><a href="#">구직 등록</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#">1:1 문의</a>
-			</li>
-			<li>회원정보
-				<ul class="subMenuList">
-					<li><a href="#">개인정보 수정</a></li>
-					<li><a href="#">비밀번호 변경</a></li>
-					<li><a href="#">회원탈퇴</a></li>
-				</ul>
-			</li>
-		</ul>
-	</div>
-	<!-- // left menu -->
-	<div class="my_wrap new">
-		<h2 class="sr-only">마이페이지</h2>
-		<div class="pic_box_wrap">
-			<div class="ct_box2">
-				<div class="profile_wrap_new2">
-					<div class="mypage-info">
-						<p class="photo">
-							<img src="/resource/images/ico_gender01.png" alt="남">
-						</p>
-						<p class="name">
-							개인회원 <span>최중일님</span>
-						</p>
-						<p>
-							<a href="javascript:;" onclick="openPswd_top();" class="btn btn-sm btn4">정보수정</a>
-							<a href="javascript:;" onclick="openPswd();" class="btn btn-sm btn3">비번변경</a>
-						</p>
-					</div>
-
-					<div class="mypage-adm">
-						<div class="adm-top">
-							<h3>취업활동</h3>
-							<a href="/mber/myPage/resume/jbhntRegForm.do">
-								구직등록
-							</a>
+				<div class="contentsWrap">
+					<!-- left menu -->
+					<div class="leftMenu">
+						<div>
+							<a href="#">마이페이지 메인</a>
 						</div>
-						<ul>
-							<li class="ico06">
-								<a href="/mber/myPage/resume/list.do">
-									<span class="ico"></span>
-									<p><span class="num">3</span>이력서</p>
-								</a>
+						<ul class="menuList">
+							<li>정책&정보
+								<ul class="subMenuList">
+									<li><a href="#">관심등록</a></li>
+									<li><a href="#">알림등록 정보</a></li>
+									<li><a href="#">정책등록</a></li>
+								</ul>
 							</li>
-							<li class="ico07">
-								<a href="/mber/myPage/sprt/list.do">
-									<span class="ico"></span>
-									<p><span class="num">4</span>입사<span>지원</span></p>
-								</a>
+							<li>취업준비
+								<ul class="subMenuList">
+									<li><a href="#">취업진단</a></li>
+									<li><a href="#">비대면 취업지원</a></li>
+								</ul>
 							</li>
-							<li class="ico08">
-								<a href="/mber/myPage/suggest/list.do">
-									<span class="ico"></span>
-									<p><span class="num">1</span>제의<span>/추천</span></p>
-								</a>
+							<li>취업활동
+								<ul class="subMenuList">
+									<li><a href="#">공고추천 관리</a></li>
+									<li><a href="#">입사제의 관리</a></li>
+									<li><a href="#">이력서 관리</a></li>
+									<li><a href="#">온라인 면접</a></li>
+									<li><a href="#">구직 등록</a></li>
+								</ul>
 							</li>
-							<li class="ico09">
-								<a href="/mber/myPage/intvw/list.do">
-									<span class="ico"></span>
-									<p><span class="num">2</span>온라인<span>면접</span></p>
-								</a>
+							<li>
+								<a href="#">1:1 문의</a>
+							</li>
+							<li>회원정보
+								<ul class="subMenuList">
+									<li><a href="#">개인정보 수정</a></li>
+									<li><a href="#">비밀번호 변경</a></li>
+									<li><a href="#">회원탈퇴</a></li>
+								</ul>
 							</li>
 						</ul>
 					</div>
-					
-					
-					
+					<!-- // left menu -->
 
-
-					<div class="mypage-adm">
-						<div class="adm-top">
-							<h3>회원활동</h3>
-							
+					<div class="contentsBox">
+						<div>
+							<h2>추천 정보</h2>
+							<a href="#">관신분야 설정</a>
 						</div>
-						<ul>
-							
-								
-								<li class="ico05">
-									<a href="https://www.jobaba.net/mber/myPage/eduInfo/introductionList.do">
-
-
-										<span class="ico"></span>
-										<p><span class="num">115</span>취업<span>역량강화</span></p>
+						<ul class="categoryMenu">
+							<li data-tab="tab1" class="active">지원정책</li>
+							<li data-tab="tab2">취업교육</li>
+							<li data-tab="tab3">대외활동</li>
+							<li data-tab="tab4">기업추천</li>
+							<li data-tab="tab5">창업지원</li>
+							<li data-tab="tab6">잡학사전</li>
+						</ul>
+						<div data-tab="tab1" class="infomationCont active">
+							<ul>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L9q+QYYHKm+ROs7XLt0/cH4Gzw3AvWd/4z1foMP2igIq" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
 									</a>
 								</li>
-								
-								
-							
-							
-							<li class="ico01">
-								<a href="https://www.jobaba.net/mber/myPage/counsel/counselList.do">
-								<!-- <a href="javascript:alert('준비중입니다.');"> -->
-									<span class="ico"></span>
-									
-										
-										
-											<p><span class="num">4</span>개인<span>회원상담</span></p>
-										
-									
-								</a>
-							</li>
-							<li class="ico02">
-								<a href="https://www.jobaba.net/mber/myPage/joinEvent/joinEventList.do">
-									<span class="ico"></span>
-									<p><span class="num">0</span>이벤트<span>참여</span></p>
-								</a>
-							</li>
-							<li class="ico03">
-								<a href="https://www.jobaba.net/mber/myPage/inquiry/inquiryList.do">
-									<span class="ico"></span>
-									<p>
-										<span class="num">0/0</span>
-										1:1<span>문의</span>
-									</p>
-								</a>
-							</li>
-						</ul>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L9q+QYYHKm+ROs7XLt0/cH4Gzw3AvWd/4z1foMP2igIq" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L9q+QYYHKm+ROs7XLt0/cH4Gzw3AvWd/4z1foMP2igIq" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L9q+QYYHKm+ROs7XLt0/cH4Gzw3AvWd/4z1foMP2igIq" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+							</ul>       
+						</div>
 					</div>
 				</div>
+			</div>
+		</article>
+
+
+	
+	
 				
 				<div class="my_banner_wrap">
 
@@ -539,7 +531,17 @@
 	<script>
 		// 스크롤 js
 	$(document).ready(function(){
-    
+		$('.btnWrap a').click(function(){
+            $(this).toggleClass('on');
+        });
+		
+		$('.lc_wrap .tab>span').click(function(){
+			var ctab = $(this).attr('data-tab');
+			$('.lc_wrap .tab>span').removeClass('active');
+			$(this).addClass('active');
+			$('.lc_wrap .tab_cont').removeClass('active');
+			$('.lc_wrap .tab_cont[data-tab='+ctab+']').addClass('active');
+    	});
 	});
 	</script>
 </body></html>
