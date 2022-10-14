@@ -142,6 +142,10 @@
 	.section02 .tn_wrap .item .intro li{font-size: 16px}
 	.section02 .tn_wrap .show_cont {bottom: 0;top: 120px;height: calc(100vh - 200px)}
 	.section02 .tn_wrap .show_cont .inner_cont{max-height: calc(100vh - 200px);height: 100%;overflow-y: auto;}
+	
+	.link_service .flex{display: block;}
+	.link_service .flex > div{width: 100%}
+}
 
 @media all and (max-width:768px){
 	.f20{font-size: 16px}
@@ -182,7 +186,15 @@
 	.section02 .tn_wrap .show_cont .sc_tit{font-size: 16px}
 	.section02 .tn_wrap .show_cont .quiz_wrap .sbm_btn{font-size: 16px}
 	.section02 .tn_wrap .show_cont:before{display: none}
-	
+	.ev_foot{padding: 30px 0}
+	.ev_foot h4{font-size: 22px;margin-bottom: 15px}
+	.ev_foot li,
+	.ev_foot p{font-size: 14px}
+	.link_service .flex > div{padding: 30px 20px}
+	.link_service .flex > div:nth-child(1){background-size: 150px}
+	.link_service .flex h4{font-size: 18px}
+	.link_service .flex p{font-size: 13px}
+	.link_service .flex .go_link{font-size: 11px}
 }
 
 @media all and (max-width:480px){
@@ -205,4 +217,6 @@
 	.section02 .tn_wrap .item .intro li{font-size: 14px;}
 	.section02 .tn_wrap .item .intro li strong{padding: 5px;width: 60px;}
 	.section02 .tn_wrap .item .intro li span{width: calc(100% - 70px)}
+	.link_service h3{font-size: 24px}
+	.link_service .flex > div:nth-child(2){background-size: 400px}
 }
