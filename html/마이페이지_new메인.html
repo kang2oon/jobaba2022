@@ -65,7 +65,7 @@
 		justify-content: space-between;
 		border-bottom: 1px solid #cbe3e2;
 	}
-	.myInfo .name.nameIcon {padding-left: 22px; background-image: url(./resource/images/mypage_icon01.png); background-position: 5px center;background-repeat: no-repeat;background-size: 13px; }
+	.myInfo .name.nameIcon {padding-left: 22px; background-image: url(./resource/images/mypage_icon01.png); background-position: 5px center;background-repeat: no-repeat;background-size: 13px;}
 
 	.myInfo .name {
 		font-size: 14px;
@@ -284,10 +284,22 @@
 		</article>
 		<!-- //마이페이지 상단 -->
 		<style>
-			.leftMenu {
-				width: 260px;
-				border: 1px solid red;
+			.bgRoseWhite {
+				background: #FDF3EF !important;
 			}
+			.bgGoldenPoppy {
+				background: #FAC400 !important;
+			}
+
+			.txtOrangeRed {
+				color: #FF4A12 !important;
+			}
+			.txtEasternBlue {
+				color: #09839D !important;
+			}
+
+
+			
 			.contentsWrap {
 				display: flex;
 				justify-content: space-between;
@@ -296,8 +308,9 @@
 				width: 940px;
 			}
 			ul.categoryMenu {
-				width: 100%;
 				display: flex;
+				width: 100%;
+				margin-bottom: 40px;
 			}
 			ul.categoryMenu li {
 				width: calc(100% / 6);
@@ -318,8 +331,118 @@
 				border: 1px solid #000;
 				border-bottom: none;
 			}
+			.myContents .titWrap {
+				display: flex;
+				align-items:flex-end;
+				justify-content: space-between;
+				margin-bottom: 40px;
+			}
+			.myContents .titWrap h2 {
+				color: #222222;
+				font-size: 24px;
+				font-weight: 400;	
+			}
+			.myContents .titWrap a {
+				color: #222222;
+				font-size: 14px;
+				line-height: 20px;
+			}
+			.myContents .titWrap a.setIcon {
+				background-image: url(./resource/images/mypage_icon02.png);
+				background-repeat: no-repeat;
+				background-position: right;
+    			padding-right: 20px;
+				background-size: 15px; 
+			}
+			.myContents .infoCont {
+				display: none;
+			}
+			.myContents .infoCont.active {
+				display: block;
+			}
+			.myContents .infoCont > ul {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 30px 20px;
+			}
+			.myContents .infoCont > ul li {
+				width: calc((100% - 60px) / 4);
+			}
+			.myContents .infoCont > ul li .thumb {
+				height: 140px;
+				border: 1px solid #ddd;
+				border-radius: 8px;
+				overflow: hidden;
+			}
+			.myContents .infoCont > ul li .thumb > img {
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+			}
+			.myContents .infoCont > ul li a div > p {
+				margin-top: 20px;
+				width: 100%;
+				height: 52px;
+				color: #222222;
+				font-size: 14px;
+				line-height: 24px;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+				word-wrap: break-word;
+			}
+			.myContents .infoBanner {
+				display: flex;
+				gap: 0 20px;
+				margin-top: 50px;
+				padding-top: 50px;
+				border-top: 1px solid #dddddd;
+			}
+			.myContents .infoBanner > div {
+				width: calc((100% - 20px) / 2);
+				border-radius: 8px;
+				overflow: hidden;
+			}
+			.myContents .infoBanner > div a {
+				display: flex;
+				align-items: center;
+				gap: 0 20px;
+				height: 120px;
+			}
+			.myContents .infoBanner > div a .thumb {
+				width: 160px;
+				height: 100%;
+			}
+			.myContents .infoBanner > div a .thumb > img {
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+			}
+			.myContents .infoBanner > div a strong {
+				font-size: 16px;
+				line-height: 24px;
+			}
+			.myContents .infoBanner > div a p {
+				color: #222222;
+				font-size: 14px;
+				line-height: 24px;
+			}
+
+			.leftMenu {
+				width: 260px;
+				border: 1px solid red;
+			}
+			.contents-wrap .list-wrap .category-wrap .sinario_btn {
+				width: 100%;
+				line-height: 60px;
+				border-radius: 5px;
+				background: #f6f7f9 url(/resource/images/main/go_sign03.png) no-repeat 90% 50%;
+				padding: 0 0 0 20px;
+			}
 		</style>
-		<article class="myConents">
+		<article class="myContents">
 			<div class="innerSection">
 				<div class="contentsWrap">
 					<!-- left menu -->
@@ -327,47 +450,71 @@
 						<div>
 							<a href="#">마이페이지 메인</a>
 						</div>
-						<ul class="menuList">
-							<li>정책&정보
-								<ul class="subMenuList">
-									<li><a href="#">관심등록</a></li>
-									<li><a href="#">알림등록 정보</a></li>
-									<li><a href="#">정책등록</a></li>
-								</ul>
-							</li>
-							<li>취업준비
-								<ul class="subMenuList">
-									<li><a href="#">취업진단</a></li>
-									<li><a href="#">비대면 취업지원</a></li>
-								</ul>
-							</li>
-							<li>취업활동
-								<ul class="subMenuList">
-									<li><a href="#">공고추천 관리</a></li>
-									<li><a href="#">입사제의 관리</a></li>
-									<li><a href="#">이력서 관리</a></li>
-									<li><a href="#">온라인 면접</a></li>
-									<li><a href="#">구직 등록</a></li>
-								</ul>
+						<ul class="menuList">	
+							<li>
+								<div class="category_area b_t mar-top">
+									<p class="s_tit">
+										<a href="javascript:void(0);">정책&정보</a>
+									</p>
+									<ul class="subMenuList">
+										<li><a href="#">관심등록</a></li>
+										<li><a href="#">알림등록 정보</a></li>
+										<li><a href="#">정책등록</a></li>
+									</ul>
+								</div>									
 							</li>
 							<li>
-								<a href="#">1:1 문의</a>
+								<div class="category_area b_t mar-top">
+									<p class="s_tit">
+										<a href="javascript:void(0);">취업준비</a>
+									</p>
+									<ul class="subMenuList">
+										<li><a href="#">취업진단</a></li>
+										<li><a href="#">비대면 취업지원</a></li>
+									</ul>
+								</div>									
 							</li>
-							<li>회원정보
-								<ul class="subMenuList">
-									<li><a href="#">개인정보 수정</a></li>
-									<li><a href="#">비밀번호 변경</a></li>
-									<li><a href="#">회원탈퇴</a></li>
-								</ul>
+							<li>
+								<div class="category_area b_t mar-top">
+									<p class="s_tit">
+										<a href="javascript:void(0);">취업활동</a>
+									</p>
+									<ul class="subMenuList">
+										<li><a href="#">공고추천 관리</a></li>
+										<li><a href="#">입사제의 관리</a></li>
+										<li><a href="#">이력서 관리</a></li>
+										<li><a href="#">온라인 면접</a></li>
+										<li><a href="#">구직 등록</a></li>
+									</ul>
+								</div>									
+							</li>
+							<li>
+								<div class="category_area b_t mar-top">
+									<p class="s_tit">
+										<a href="javascript:void(0);">1:1 문의</a>
+									</p>
+								</div>									
+							</li>
+							<li>
+								<div class="category_area b_t mar-top">
+									<p class="s_tit">
+										<a href="javascript:void(0);">회원정보</a>
+									</p>
+									<ul class="subMenuList">
+										<li><a href="#">개인정보 수정</a></li>
+										<li><a href="#">비밀번호 변경</a></li>
+										<li><a href="#">회원탈퇴</a></li>
+									</ul>
+								</div>									
 							</li>
 						</ul>
 					</div>
 					<!-- // left menu -->
 
 					<div class="contentsBox">
-						<div>
+						<div class="titWrap">
 							<h2>추천 정보</h2>
-							<a href="#">관신분야 설정</a>
+							<a href="javascript:void(0);" class="setIcon">관신분야 설정</a>
 						</div>
 						<ul class="categoryMenu">
 							<li data-tab="tab1" class="active">지원정책</li>
@@ -377,7 +524,7 @@
 							<li data-tab="tab5">창업지원</li>
 							<li data-tab="tab6">잡학사전</li>
 						</ul>
-						<div data-tab="tab1" class="infomationCont active">
+						<div data-tab="tab1" class="infoCont active">
 							<ul>
 								<li>
 									<a href="javascript:void(0);">
@@ -419,112 +566,619 @@
 										</div>
 									</a>
 								</li>
-							</ul>       
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L9q+QYYHKm+ROs7XLt0/cH4Gzw3AvWd/4z1foMP2igIq" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L9q+QYYHKm+ROs7XLt0/cH4Gzw3AvWd/4z1foMP2igIq" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L9q+QYYHKm+ROs7XLt0/cH4Gzw3AvWd/4z1foMP2igIq" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L9q+QYYHKm+ROs7XLt0/cH4Gzw3AvWd/4z1foMP2igIq" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<div class="infoBanner">
+								<div class="bgRoseWhite">
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="./resource/images/mypage_banner01.png" alt="" />
+										</div>
+										<div>
+											<strong class="txtOrangeRed">취업진로 진단검사</strong>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</div>
+								<div class="bgRoseWhite">
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="./resource/images/mypage_banner02.png" alt="" />
+										</div>
+										<div>
+											<strong class="txtEasternBlue">자기소개서 첨삭</strong>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</div>
+							</div>       
+						</div>
+						<div data-tab="tab2" class="infoCont">
+							<ul>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L8zFHGjhbJx6DOLHRgjjLW6UjVS/AO06MIz6yWkKstq+" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L8zFHGjhbJx6DOLHRgjjLW6UjVS/AO06MIz6yWkKstq+" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L8zFHGjhbJx6DOLHRgjjLW6UjVS/AO06MIz6yWkKstq+" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L8zFHGjhbJx6DOLHRgjjLW6UjVS/AO06MIz6yWkKstq+" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L8zFHGjhbJx6DOLHRgjjLW6UjVS/AO06MIz6yWkKstq+" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L8zFHGjhbJx6DOLHRgjjLW6UjVS/AO06MIz6yWkKstq+" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L8zFHGjhbJx6DOLHRgjjLW6UjVS/AO06MIz6yWkKstq+" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L8zFHGjhbJx6DOLHRgjjLW6UjVS/AO06MIz6yWkKstq+" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<div class="infoBanner">
+								<div class="bgGoldenPoppy">
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L0YIXNDiPrbOJxzzn0iuEqKpJ5cht4DCDwzv0awBu0t1" alt="" />
+										</div>
+										<div>
+											<strong class="txtOrangeRed">취업진로 진단검사</strong>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</div>
+								<div class="bgGoldenPoppy">
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L0YIXNDiPrbOJxzzn0iuEqKpJ5cht4DCDwzv0awBu0t1" alt="" />
+										</div>
+										<div>
+											<strong class="txtEasternBlue">자기소개서 첨삭</strong>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</div>
+							</div>       
+						</div>
+						<div data-tab="tab3" class="infoCont">
+							<ul>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L8exed4YVwpEHZgbgkUGCYWY0P9/gj9A6fXT24M8Z5xO" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L8exed4YVwpEHZgbgkUGCYWY0P9/gj9A6fXT24M8Z5xO" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L8exed4YVwpEHZgbgkUGCYWY0P9/gj9A6fXT24M8Z5xO" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L8exed4YVwpEHZgbgkUGCYWY0P9/gj9A6fXT24M8Z5xO" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L8exed4YVwpEHZgbgkUGCYWY0P9/gj9A6fXT24M8Z5xO" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L8exed4YVwpEHZgbgkUGCYWY0P9/gj9A6fXT24M8Z5xO" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L8exed4YVwpEHZgbgkUGCYWY0P9/gj9A6fXT24M8Z5xO" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L8exed4YVwpEHZgbgkUGCYWY0P9/gj9A6fXT24M8Z5xO" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<div class="infoBanner">
+								<div class="bgRoseWhite">
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="./resource/images/mypage_banner01.png" alt="" />
+										</div>
+										<div>
+											<strong class="txtOrangeRed">취업진로 진단검사</strong>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</div>
+								<div class="bgRoseWhite">
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="./resource/images/mypage_banner02.png" alt="" />
+										</div>
+										<div>
+											<strong class="txtEasternBlue">자기소개서 첨삭</strong>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</div>
+							</div>       
+						</div>
+						<div data-tab="tab4" class="infoCont">
+							<ul>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L7dvo/ZDb/zeRL78JXuxfP+aNaqxxazqICTId2KYE9UW" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L7dvo/ZDb/zeRL78JXuxfP+aNaqxxazqICTId2KYE9UW" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L7dvo/ZDb/zeRL78JXuxfP+aNaqxxazqICTId2KYE9UW" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L7dvo/ZDb/zeRL78JXuxfP+aNaqxxazqICTId2KYE9UW" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L7dvo/ZDb/zeRL78JXuxfP+aNaqxxazqICTId2KYE9UW" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L7dvo/ZDb/zeRL78JXuxfP+aNaqxxazqICTId2KYE9UW" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L7dvo/ZDb/zeRL78JXuxfP+aNaqxxazqICTId2KYE9UW" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L7dvo/ZDb/zeRL78JXuxfP+aNaqxxazqICTId2KYE9UW" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<div class="infoBanner">
+								<div class="bgRoseWhite">
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="./resource/images/mypage_banner01.png" alt="" />
+										</div>
+										<div>
+											<strong class="txtOrangeRed">취업진로 진단검사</strong>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</div>
+								<div class="bgRoseWhite">
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="./resource/images/mypage_banner02.png" alt="" />
+										</div>
+										<div>
+											<strong class="txtEasternBlue">자기소개서 첨삭</strong>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</div>
+							</div>       
+						</div>
+						<div data-tab="tab5" class="infoCont">
+							<ul>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L416hejtwyL/+5K3FaJ+RzxfcZUHTgqoQ9ll58g9JpOO" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L416hejtwyL/+5K3FaJ+RzxfcZUHTgqoQ9ll58g9JpOO" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L416hejtwyL/+5K3FaJ+RzxfcZUHTgqoQ9ll58g9JpOO" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L416hejtwyL/+5K3FaJ+RzxfcZUHTgqoQ9ll58g9JpOO" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L416hejtwyL/+5K3FaJ+RzxfcZUHTgqoQ9ll58g9JpOO" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L416hejtwyL/+5K3FaJ+RzxfcZUHTgqoQ9ll58g9JpOO" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L416hejtwyL/+5K3FaJ+RzxfcZUHTgqoQ9ll58g9JpOO" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L416hejtwyL/+5K3FaJ+RzxfcZUHTgqoQ9ll58g9JpOO" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<div class="infoBanner">
+								<div class="bgRoseWhite">
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="./resource/images/mypage_banner01.png" alt="" />
+										</div>
+										<div>
+											<strong class="txtOrangeRed">취업진로 진단검사</strong>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</div>
+								<div class="bgRoseWhite">
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="./resource/images/mypage_banner02.png" alt="" />
+										</div>
+										<div>
+											<strong class="txtEasternBlue">자기소개서 첨삭</strong>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</div>
+							</div>       
+						</div>
+						<div data-tab="tab6" class="infoCont">
+							<ul>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L6TTRIS1/+ZMgtZTeAljm/7hcOL4kJf+szYEYX7aF++3" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L6TTRIS1/+ZMgtZTeAljm/7hcOL4kJf+szYEYX7aF++3" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L6TTRIS1/+ZMgtZTeAljm/7hcOL4kJf+szYEYX7aF++3" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L6TTRIS1/+ZMgtZTeAljm/7hcOL4kJf+szYEYX7aF++3" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L6TTRIS1/+ZMgtZTeAljm/7hcOL4kJf+szYEYX7aF++3" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L6TTRIS1/+ZMgtZTeAljm/7hcOL4kJf+szYEYX7aF++3" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L6TTRIS1/+ZMgtZTeAljm/7hcOL4kJf+szYEYX7aF++3" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="https://www.jobaba.net/file/image.do?filePath=HOcqAmQnHGibHAZra8D4L6TTRIS1/+ZMgtZTeAljm/7hcOL4kJf+szYEYX7aF++3" alt="" />
+										</div>
+										<div>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<div class="infoBanner">
+								<div class="bgRoseWhite">
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="./resource/images/mypage_banner01.png" alt="" />
+										</div>
+										<div>
+											<strong class="txtOrangeRed">취업진로 진단검사</strong>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</div>
+								<div class="bgRoseWhite">
+									<a href="javascript:void(0);">
+										<div class="thumb">
+											<img src="./resource/images/mypage_banner02.png" alt="" />
+										</div>
+										<div>
+											<strong class="txtEasternBlue">자기소개서 첨삭</strong>
+											<p>게시물 제목이 출력되는 부분<br> 최대 2줄까지 허용</p>
+										</div>
+									</a>
+								</div>
+							</div>       
 						</div>
 					</div>
 				</div>
 			</div>
 		</article>
-
-
 	
 	
-				
-				<div class="my_banner_wrap">
-
-					<ul>
-						<!-- 2차 오픈 -->
-						<!-- <li>
-							<a href="">
-								<span class="cate_txt">Employment</span>
-								<p>나를 위한 채용정보</p>
-								<h2>채용정보</h2>
-								<span class="detail_txt">자세히보기</span>
-							</a>
-						</li> -->
-						<!-- 2차 오픈 -->
-						<li>
-							<a href="/introduction/mainList.do?src=image&amp;kw=000005">
-								<span class="cate_txt">Consulting</span>
-								<p>취업에 핵심!</p>
-								<h2>자기소개서 컨설팅</h2>
-								<span class="detail_txt">자세히보기</span>
-							</a>
-						</li>
-						<li>
-							<a href="/mentoring/mainList.do">
-								<span class="cate_txt">Mentoring</span>
-								<p>현업 선배의 취업정보, 업무상담</p>
-								<h2>취업멘토링 서비스</h2>
-								<span class="detail_txt">자세히보기</span>
-							</a>
-						</li>
-						<li>
-							<a href="/interview/mainList.do">
-								<span class="cate_txt">AI-Interview</span>
-								<p>인공지능 면접 컨설팅</p>
-								<h2>AI 면접 컨설팅</h2>
-								<span class="detail_txt">자세히보기</span>
-							</a>
-						</li>
-						<li>
-							<a href="/psychology/mainList.do">
-								<span class="cate_txt">psychological counseling</span>
-								<p>내 마음을 알아주는</p>
-								<h2>심리상담 컨설팅</h2>
-								<span class="detail_txt">자세히보기</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-				
-			</div>
-		</div>
-
 		
-		<div class="ct_box">
-			<div class="category_gnb">
-				<ul>
-					<li class="selected"><a href="https://www.jobaba.net/mber/myPage/rcmnInfo/list.do?cntntsTypeCd=01" title="추천정보 메뉴 이동" "="">추천정보</a>
-						<ul>
-							<li class="selected"><a href="https://www.jobaba.net/mber/myPage/rcmnInfo/list.do?cntntsTypeCd=01" title="지원정책 메뉴 이동" "="">지원정책</a></li>
-							<li class=""><a href="https://www.jobaba.net/mber/myPage/rcmnInfo/list.do?cntntsTypeCd=07" title="취업교육 메뉴 이동" "="">취업교육</a></li>
-							<li class=""><a href="https://www.jobaba.net/mber/myPage/rcmnInfo/list.do?cntntsTypeCd=02" title="대외활동 메뉴 이동" "="">대외활동</a></li>
-							<li class=""><a href="https://www.jobaba.net/mber/myPage/rcmnInfo/list.do?cntntsTypeCd=10" title="기업추천 메뉴 이동" "="">기업추천</a></li>
-							<li class=""><a href="https://www.jobaba.net/mber/myPage/rcmnInfo/list.do?cntntsTypeCd=09" title="창업지원 메뉴 이동" "="">창업지원</a></li>
-							<li class=""><a href="https://www.jobaba.net/mber/myPage/rcmnInfo/list.do?cntntsTypeCd=04" title="잡학사전 메뉴 이동" "="">잡학사전</a></li>
-						</ul>
-					</li>
-
-
-					<li><a href="https://www.jobaba.net/mber/myPage/intrsInfo/list.do?cntntsTypeCd=01" title="관심등록 메뉴 이동" "="">관심등록 정보</a>
-						<ul style="width: 740px;">
-							<li class=""><a href="https://www.jobaba.net/mber/myPage/intrsInfo/list.do?cntntsTypeCd=01" title="지원정책 메뉴 이동" "="">지원정책</a></li>
-							<li class=""><a href="https://www.jobaba.net/mber/myPage/intrsInfo/list.do?cntntsTypeCd=07" title="취업교육 메뉴 이동" "="">취업교육</a></li>
-							<li class=""><a href="https://www.jobaba.net/mber/myPage/intrsInfo/list.do?cntntsTypeCd=02" title="대외활동 메뉴 이동" "="">대외활동</a></li>
-							<li class=""><a href="https://www.jobaba.net/mber/myPage/intrsInfo/list.do?cntntsTypeCd=11" title="탐나는기업관 메뉴 이동" "="">탐나는기업관</a></li>
-							<li class=""><a href="https://www.jobaba.net/mber/myPage/intrsInfo/list.do?cntntsTypeCd=10" title="채용정보 메뉴 이동" "="">채용정보</a></li>
-							<li class=""><a href="https://www.jobaba.net/mber/myPage/intrsInfo/list.do?cntntsTypeCd=09" title="창업지원 메뉴 이동" "="">창업지원</a></li>
-							<li class=""><a href="https://www.jobaba.net/mber/myPage/intrsInfo/list.do?cntntsTypeCd=04" title="잡학사전 메뉴 이동" "="">잡학사전</a></li>
-							<li class=""><a href="https://www.jobaba.net/mber/myPage/intrsInfo/list.do?cntntsTypeCd=13" title="동영상교육 메뉴 이동" "="">동영상교육</a></li>
-							
-						</ul>
-					</li>
-					<li><a href="https://www.jobaba.net/mber/myPage/infrm/list.do?cntntsTypeCd=01" title="알림등록 정보 메뉴 이동" "="">알림등록 정보</a>
-						<ul>
-							<li class=""><a href="https://www.jobaba.net/mber/myPage/infrm/list.do?cntntsTypeCd=01" title="지원정책 메뉴 이동" "="">지원정책</a></li>
-							<li class=""><a href="https://www.jobaba.net/mber/myPage/infrm/list.do?cntntsTypeCd=07" title="취업교육 메뉴 이동" "="">취업교육</a></li>
-							<li class=""><a href="https://www.jobaba.net/mber/myPage/infrm/list.do?cntntsTypeCd=02" title="대외활동 메뉴 이동" "="">대외활동</a></li>
-							<li class=""><a href="https://www.jobaba.net/mber/myPage/infrm/list.do?cntntsTypeCd=09" title="창업지원 메뉴 이동" "="">창업지원</a></li>
-							<li class=""><a href="https://www.jobaba.net/mber/myPage/infrm/list.do?cntntsTypeCd=10" title="채용정보 메뉴 이동" "="">채용정보</a></li>
-						</ul>
-					</li>
-					<li><a href="https://www.jobaba.net/mber/myPage/usrReg/list.do" title="내가등록한 정보 메뉴 이동" "="">내가등록한 정보</a></li>
-				</ul>
-			</div>
-		</div>
-		
-	</div>
 	<!--잡아바 js-->
 	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
 
@@ -535,12 +1189,12 @@
             $(this).toggleClass('on');
         });
 		
-		$('.lc_wrap .tab>span').click(function(){
+		$('.contentsBox .categoryMenu li').click(function(){
 			var ctab = $(this).attr('data-tab');
-			$('.lc_wrap .tab>span').removeClass('active');
+			$('.contentsBox .categoryMenu li').removeClass('active');
 			$(this).addClass('active');
-			$('.lc_wrap .tab_cont').removeClass('active');
-			$('.lc_wrap .tab_cont[data-tab='+ctab+']').addClass('active');
+			$('.contentsBox .infoCont').removeClass('active');
+			$('.contentsBox .infoCont[data-tab='+ctab+']').addClass('active');
     	});
 	});
 	</script>
