@@ -90,6 +90,7 @@
 .section02 .tn_wrap .show_cont .quiz_area li.check a:before{content: '';display: block;background: url(../resource/images/thema/221013/check02.png) no-repeat;width: 22px;height: 25px;position: absolute;left: 0;top: -5px;}
 .section02 .tn_wrap .show_cont .quiz_area li:nth-child(2n){margin-right: 0}
 .section02 .tn_wrap .show_cont .quiz_wrap .sbm_btn{background: #27709e;color: #fff;font-size: 20px;border: 0;padding: 5px 10px;border-radius: 10px;display: inline-block}
+.section02 .tn_wrap .show_cont .top p{margin-bottom: 15px;font-size: 18px;font-weight: bold;display: none}
 
 .ev_foot{background: #1c496e;padding: 40px 0;color: #fff}
 .ev_foot h4{font-size: 24px;margin-bottom: 30px}
@@ -139,7 +140,8 @@
 	.section02 .tn_wrap .item .logo .tit{font-size: 22px}
 	.section02 .tn_wrap .item .desc{font-size: 16px}
 	.section02 .tn_wrap .item .intro li{font-size: 16px}
-}
+	.section02 .tn_wrap .show_cont {bottom: 0;top: 120px;height: calc(100vh - 200px)}
+	.section02 .tn_wrap .show_cont .inner_cont{max-height: calc(100vh - 200px);height: 100%;overflow-y: auto;}
 
 @media all and (max-width:768px){
 	.f20{font-size: 16px}
@@ -155,6 +157,31 @@
 	.section01 .evTip .desc{width: calc(100% - 70px)}
 	.section01 .evTip .desc p{font-size: 14px}
 	.section01 .goLink{font-size: 18px}
+	.section02 .tn_wrap .show_cont{padding:30px 20px;}
+	.section02 .tn_wrap .show_cont .wf_tit{font-size: 20px}
+	.section02 .tn_wrap .show_cont .flex{flex-direction: column;}
+	.section02 .tn_wrap .show_cont .flex > *{width: 100%;}
+	.section02 .tn_wrap .show_cont .flex > *:nth-child(1){margin-bottom: 20px}
+	.section02 .tn_wrap .show_cont .sc_tit{font-size: 20px;margin-bottom: 10px}
+	.section02 .tn_wrap .show_cont{font-size: 16px}
+	.section02 h3{margin-bottom: 10px}
+	.section02 h3 span{font-size: 26px;margin-left: 10px}
+	.section02 h3 img{width: 100px}
+	.section02{padding: 50px 0}
+	.section02 .highlight{font-size: 18px}
+	.tn_area{margin-top: 30px}
+	.section02 .tn_wrap{display: block;position: static}
+	.section02 .tn_wrap .item{width: 100%;margin-right: 0}
+	.section02 .tn_wrap .show_cont{top: 50%;left: 50%;transform: translate(-50%,-50%);width: calc(100% - 60px)}
+	.section02 .tn_wrap .show_cont .top p{display: block}
+	.section02 .tn_wrap .show_cont{position: fixed;height: calc(100vh - 100px)}
+	.section02 .tn_wrap .show_cont .close_btn{font-size: 16px;}
+	.section02 .tn_wrap .show_cont{font-size: 14px}
+	.section02 .tn_wrap .show_cont .cn_list strong{width: 100px}
+	.section02 .tn_wrap .show_cont .cn_list span{width: calc(100% - 110px)}
+	.section02 .tn_wrap .show_cont .sc_tit{font-size: 16px}
+	.section02 .tn_wrap .show_cont .quiz_wrap .sbm_btn{font-size: 16px}
+	.section02 .tn_wrap .show_cont:before{display: none}
 	
 }
 
@@ -164,4 +191,18 @@
 	.section01 .evTip .desc{width: 100%}
 	.section01 .evTip .tit br{display: none;}
 	.section01 .evTip .tit{margin-bottom: 10px}
+	
+	.section02 .tn_wrap .item .logo{flex-direction: column-reverse;}
+	.section02 .tn_wrap .item .logo .tit{font-size: 18px;margin-top: 15px}
+	.section02 .tn_wrap .item .hover p{font-size: 25px}
+	.section02 .tn_wrap .item{padding: 20px}
+	.section02 .tn_wrap .item .circle{width: 10px;height: 10px}
+	.section02 .tn_wrap .item .circle:nth-child(1){top: 10px;left: 10px}
+	.section02 .tn_wrap .item .circle:nth-child(2){top: 10px;right: 10px}
+	.section02 .tn_wrap .item .circle:nth-child(3){bottom: 10px;left: 10px}
+	.section02 .tn_wrap .item .circle:nth-child(4){bottom: 10px;right: 10px}
+	.section02 .tn_wrap .item .desc{font-size: 14px;text-align: center;}
+	.section02 .tn_wrap .item .intro li{font-size: 14px;}
+	.section02 .tn_wrap .item .intro li strong{padding: 5px;width: 60px;}
+	.section02 .tn_wrap .item .intro li span{width: calc(100% - 70px)}
 }
