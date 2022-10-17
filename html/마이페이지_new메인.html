@@ -112,6 +112,9 @@
 			<div class="innerSection">
 				<div class="contentsWrap">
 					<!-- left menu -->
+					<div class="btnMenuOpen">
+						<a href="javascript:void(0);"><span></span></a>
+					</div>
 					<div class="leftMenu">
 						<div class="mypageBtn">
 							<a href="#">마이페이지 메인</a>
@@ -433,6 +436,12 @@
 	$(document).ready(function(){
 		$('.btnWrap a').click(function(){
             $(this).toggleClass('on');
+        });
+
+		// left 메뉴
+		$('.btnMenuOpen a').click(function(){
+            $(this).toggleClass('on');
+			$('.leftMenu').toggleClass('on');
         });
 
 		// 마이페이지 메인 컨텐츠 텝 메뉴

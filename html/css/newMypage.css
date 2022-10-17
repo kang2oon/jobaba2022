@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 .bgRoseWhite { background: #FDF3EF !important; } 
 .bgGoldenPoppy { background: #FAC400 !important; } 
 
@@ -8,14 +7,14 @@
 .txtEasternBlue { color: #09839D !important; } 
 
 
-.innerSection { position: relative; max-width: 1300px; margin: 0 auto; padding: 0 20px;} 
+.innerSection { position: relative; max-width: 1300px; margin: 0 auto; padding: 0 20px; } 
 
 /* 마이 페이지 정보 */
 .mypageWrap .myinfoWrap { position: relative; display: flex; flex-wrap: wrap; margin-bottom: 60px; padding: 20px 3px 3px; background: linear-gradient(to bottom, #38bab2, #003281); border-radius: 15px; box-shadow: 3px 3px 7px 0 rgb(0 0 0 / 15%); z-index: 1; } 
 .mypageWrap .myinfoWrap:before { content: ''; display: block; width: calc(100% - 6px); height: calc(100% - 6px); background: #f7fafd; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); border-radius: 15px; z-index: -1; } 
 .mypageWrap .myInfo { display: flex; align-items: center; width: 100%; padding: 0 30px 14px; justify-content: space-between; border-bottom: 1px solid #cbe3e2; } 
 .mypageWrap .myInfo .name i.nameIcon { padding-left: 22px; background-image: url(../resource/images/mypage_icon01.png); background-position: 5px center; background-repeat: no-repeat; background-size: 13px; } 
-.mypageWrap .myInfo .name { font-size: 14px; color: #666; text-align: center;} 
+.mypageWrap .myInfo .name { font-size: 14px; color: #666; text-align: center; } 
 .mypageWrap .myInfo .name span { position: relative; margin-left: 20px; color: #000; font-size: 16px; } 
 .mypageWrap .myInfo .name span::before { position: absolute; content: ""; top: 6px; margin-left: -10px; height: 16px; width: 1px; background: #ddd; } 
 .mypageWrap .myInfo .btnWrap { margin-left: auto; } 
@@ -39,30 +38,29 @@
 .mypageWrap .myinfoWrap .myAdm ul li p { margin-top: 10px; color: #222; font-size: 16px; line-height: 26px; } 
 
 @media all and (max-width:1024px){
-    .mypageWrap .myInfo + .myAdm { width: calc(100% - 370px);} 
-    .mypageWrap .myAdm + .myAdm { width: 370px; } 
-}
+ .mypageWrap .myInfo + .myAdm { width: calc(100% - 370px); } 
+ .mypageWrap .myAdm + .myAdm { width: 370px; } 
+ }
 @media all and (max-width:860px){
-    .innerSection { padding: 0 10px;}
-    
-    .mypageWrap .myInfo { flex-direction: column; padding: 0 10px 10px;}
-    .mypageWrap .myInfo .btnWrap {margin-left: initial; margin: 20px 0; padding: 0;}
-    .mypageWrap .myinfoWrap .myAdm { padding: 0 10px;}
-    .mypageWrap .myInfo + .myAdm { width: 100%; border-bottom: 1px solid #cbe3e2; border-right: none;}
-    .mypageWrap .myAdm + .myAdm { width: 100%;} 
-}
+ .innerSection { padding: 0 10px; } 
+ 
+ .mypageWrap .myInfo { flex-direction: column; padding: 0 10px 10px; } 
+ .mypageWrap .myInfo .btnWrap { margin-left: initial; margin: 20px 0; padding: 0; } 
+ .mypageWrap .myinfoWrap .myAdm { padding: 0 10px; } 
+ .mypageWrap .myInfo + .myAdm { width: 100%; border-bottom: 1px solid #cbe3e2; border-right: none; } 
+ .mypageWrap .myAdm + .myAdm { width: 100%; } 
+ }
 @media all and (max-width:768px){
-    .mypageWrap .myInfo .btnWrap a {width: 134px; padding-left: 6px;}
-    .mypageWrap .myInfo .btnWrap a span {width: 38px;}
-    .mypageWrap .myinfoWrap .myAdm ul {flex-wrap: wrap; gap: 20px 10px;}
-    .mypageWrap .myinfoWrap .myAdm ul li span {width: 70px; height: 70px;}
-    .mypageWrap .myinfoWrap .myAdm ul li p {font-size: 14px;}
-}
+ .mypageWrap .myInfo .btnWrap a { width: 134px; padding-left: 6px; } 
+ .mypageWrap .myInfo .btnWrap a span { width: 38px; } 
+ .mypageWrap .myinfoWrap .myAdm ul { flex-wrap: wrap; gap: 20px 10px; } 
+ .mypageWrap .myinfoWrap .myAdm ul li p { font-size: 14px; } 
+ }
 
 
-.contentsWrap { display: flex; justify-content: space-between; gap: 0 20px;} 
-.contentsBox { position: relative; width: 940px; }
-.contentsBox .ct_box { width: 940px; }
+.contentsWrap { position: relative; display: flex; justify-content: space-between; gap: 0 20px; } 
+.contentsBox { width: 940px; } 
+.contentsBox .ct_box { width: 940px; } 
 /* 마이페이지 메인 컨텐츠 */
 .myContents ul.categoryMenu { display: flex; width: 100%; margin-bottom: 40px; } 
 .myContents ul.categoryMenu li { width: calc(100% / 6); padding: 18px 0; background: #f6f7f9; font-size: 14px; line-height: 24px; text-align: center; color: #222222; border: 1px solid #dddddd; border-bottom: 1px solid #000; cursor: pointer; } 
@@ -86,28 +84,42 @@
 .myContents .infoBanner > div a strong { font-size: 16px; line-height: 24px; } 
 .myContents .infoBanner > div a p { color: #222222; font-size: 14px; line-height: 24px; } 
 
+@media all and (max-width:1024px){
+ .contentsBox { width: 100%; } 
+ .contentsBox .ct_box { width: 100%; } 
+ }
 @media all and (max-width:768px){
-    .contentsBox { width: 100%; }
-    .contentsBox .ct_box { width: 100%; }
-}
-@media all and (max-width:768px){
-    .myContents ul.categoryMenu {flex-direction: column;}
-    .myContents .infoCont > ul {gap: 20px 10px;}
-    .myContents ul.categoryMenu li {width: 100%; border-bottom: none;}
-    .myContents .infoCont > ul li {width: calc((100% - 10px) / 2);}
-    .myContents .infoBanner {flex-direction: column; gap: 10px 0;}
-    .myContents .infoBanner > div {width: 100%;}
-}
+ .myContents ul.categoryMenu { flex-direction: column; } 
+ .myContents .infoCont > ul { gap: 20px 10px; } 
+ .myContents ul.categoryMenu li { width: 100%; border-bottom: none; } 
+ .myContents .infoCont > ul li { width: calc((100% - 10px) / 2); } 
+ .myContents .infoBanner { flex-direction: column; gap: 10px 0; } 
+ .myContents .infoBanner > div { width: 100%; } 
+ }
 /* left 메뉴 */
-.leftMenu { width: 260px; min-width: 260px;} 
-.leftMenu .mypageBtn { width: 100%; padding: 20px; margin-bottom: 30px; background: #f6f7f9; line-height: 26px; border-radius: 5px; } 
-.leftMenu ul.menuList > li { padding: 20px 0; border-top: 1px solid #dddddd; } 
-.leftMenu ul.menuList > li:last-child { border-bottom: 1px solid #dddddd; } 
-.leftMenu ul.menuList .sub_tit { margin-bottom: 16px; font-size: 18px; line-height: 26px; } 
-.leftMenu ul.menuList .sub_tit a { color: #3e332e; } 
-.leftMenu ul.subMenuList li { font-size: 14px; line-height: 26px; } 
-.leftMenu ul.subMenuList li.on a { font-weight: 700; color: #38bab2; } 
+.myContents .leftMenu { width: 260px; min-width: 260px; background: #fff; } 
+.myContents .leftMenu .mypageBtn { width: 100%; padding: 20px; margin-bottom: 30px; background: #f6f7f9; line-height: 26px; border-radius: 5px; } 
+.myContents .leftMenu ul.menuList > li { padding: 20px 0; border-top: 1px solid #dddddd; } 
+.myContents .leftMenu ul.menuList > li:last-child { border-bottom: 1px solid #dddddd; } 
+.myContents .leftMenu ul.menuList .sub_tit { margin-bottom: 16px; font-size: 18px; line-height: 26px; } 
+.myContents .leftMenu ul.menuList .sub_tit a { color: #3e332e; } 
+.myContents .leftMenu ul.subMenuList li { font-size: 14px; line-height: 26px; } 
+.myContents .leftMenu ul.subMenuList li.on a { font-weight: 700; color: #38bab2; } 
 
-@media all and (max-width:1024px){ 
-    .leftMenu {display: none;}
-}
+.myContents .leftMenu.on { display: block; position: absolute; top: 0; left: 0; width: 100%; } 
+.myContents .btnMenuOpen { position: absolute; top: -40px; right: 0; display: none;} 
+.myContents .btnMenuOpen a { position: relative; display: flex; align-items: center; justify-content: center; width: 45px; height: 45px; z-index: 1; } 
+.myContents .btnMenuOpen span,
+.myContents .btnMenuOpen span:after,
+.myContents .btnMenuOpen span:before { content: ""; position: absolute; display: block; width: 20px; height: 2px; border-radius: 1px; border-color: #d1d1d1; background: #202020; cursor: pointer; transition: all 0.3s ease-in-out; } 
+.myContents .btnMenuOpen span:before { top: -10px; width: 30px; } 
+.myContents .btnMenuOpen span:after { bottom: -10px; width: 30px; } 
+.myContents .btnMenuOpen a.on span { background-color: transparent; } 
+.myContents .btnMenuOpen a.on span:before { top: 0; transform: rotate(45deg); } 
+.myContents .btnMenuOpen a.on span:after { transform: translatey(-10px) rotate(-45deg); } 
+
+
+@media all and (max-width:1024px){
+ .leftMenu { display: none; } 
+ .myContents .btnMenuOpen { display: block;}
+ }
