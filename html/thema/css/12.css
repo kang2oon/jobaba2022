@@ -164,6 +164,8 @@
 	.section01 .evTip .desc{width: calc(100% - 70px)}
 	.section01 .evTip .desc p{font-size: 14px}
 	.section01 .goLink{font-size: 18px}
+	.section02 .tn_wrap .show_cont .job_post li a{width: 100%;display: block}
+	.section02 .tn_wrap .show_cont .job_post li .tit{width: 100%;margin-bottom: 5px}
 	.section02 .tn_wrap .show_cont{padding:30px 20px;}
 	.section02 .tn_wrap .show_cont .wf_tit{font-size: 20px}
 	.section02 .tn_wrap .show_cont .flex{flex-direction: column;}
