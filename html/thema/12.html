@@ -194,7 +194,7 @@
 								<div class="flex quiz_wrap">
 									<div class="video_wrap">
 										<div class="video">
-											<iframe width="437" height="246" src="https://basic-1.fms.wecandeo.com/100/1926/2022/04/04/09/V25638605.mp4?key=6H50r0pYcYpW8iBOPgkXleVoOsnLdIsVFSmepFx1LOUHiN3j2la0Pjl4AdbZZ7Bgqw2fDHguafYo7E41GqZfbv77YOCsc66%2BdumYW%2F%2BvNxE%3D&limit=185473&limit_rate_after=276000&packageId=1006605&videoId=13186055" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											<iframe width="897" height="505" src="//www.youtube.com/embed/XTFbWMw2px4?list=PL4MFkSYGnkQ_X5sp7XmGiXUUqDiGb-f3E" title="잡아바 탐나는 기업 [시코드 편]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 										</div>
 									</div>
 									<div class="quiz">
@@ -309,7 +309,7 @@
 								<div class="flex quiz_wrap">
 									<div class="video_wrap">
 										<div class="video">
-											<iframe src="https://basic-1.fms.wecandeo.com/100/1926/2022/04/04/08/V25638593.mp4?key=6H50r0pYcYpW8iBOPgkXlWkNuwJI7WqR8KdvCbeanJMItH0ANwQSDtMtiLOz%2FeNb1mVC28WxFbKizWjo1q3JPm9Y%2FyrMOejDQsXfM4MrGbw%3D&limit=187008&limit_rate_after=198400&packageId=1006605&videoId=13186051"></iframe>
+											<iframe width="897" height="505" src="//www.youtube.com/embed/NxIAlD7GxIs?list=PL4MFkSYGnkQ_X5sp7XmGiXUUqDiGb-f3E" title="잡아바 탐나는 기업 [이든팜 편]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 										</div>
 									</div>
 									<div class="quiz">
@@ -594,7 +594,7 @@
 									</div>
 									<div class="quiz">
 										<p class="q">Q. 동양인더스트리의 이색 복지혜택!
-000에서 마음껏 열매를 따먹을 수 있는데요! 000에 들어갈 단어는?</p>
+											000에서 마음껏 열매를 따먹을 수 있는데요! 000에 들어갈 단어는?</p>
 										<p class="view_btn">보기</p>
 										<ul class="quiz_area">
 											<li>
@@ -934,9 +934,10 @@
 									<div class="welfare">
 										<p class="wf_tit">탐나는 복지</p>
 										<ul class="bar_list">
-											<li>생일이 포함된 주에는 연차휴가일수와 상관없이 반차 휴가 제공!<li>
+											<li>생일이 포함된 주에는 연차휴가일수와 상관없이 반차 휴가 제공!
+											<li>
 											<li>직원들이 근무하며 지치지 않도록 탕비실 내 간식제공!
-</li>
+											</li>
 											<li>매년 기여도에 따라 스톡옵션 부여!</li>
 										</ul>
 										<a href="https://www.jobaba.net/empmn/desEntDtl.do?bizrno=4658800637&entCd=HV7556" target="_blank">기업 정보 자세히 알아보기</a>
@@ -1734,6 +1735,8 @@
 	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/imgLiquid-min.js"></script>
 	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/script.js"></script>
 	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/jquery.vticker-min.js"></script>
+	
+	<script src="//player.vimeo.com/api/player.js"></script>
 
 	<script>
 		function openModal(modalname) {
@@ -1759,18 +1762,19 @@
 			$('.close_btn').click(function() {
 				$(".tn_wrap .item").removeClass('active');
 				$('.show_cont').hide();
+				;
 			});
 
 			$('.quiz_area li a').click(function() {
 				$(this).parent().addClass('check')
 				$(this).parent().siblings().removeClass('check')
 			});
-			
+
 			if (window.innerWidth > 768) {
-				$(".tn_wrap .item").click(function(){
+				$(".tn_wrap .item").click(function() {
 					$('body').addClass('not_scr'); //display :none 일떄
 				});
-				
+
 			}
 
 
