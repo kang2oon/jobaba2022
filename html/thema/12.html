@@ -451,7 +451,7 @@
 								<div class="flex quiz_wrap">
 									<div class="video_wrap">
 										<div class="video">
-											<iframe src="https://basic-1.fms.wecandeo.com/100/1926/2022/03/31/17/V25611539.mp4?key=6H50r0pYcYpW8iBOPgkXleaJG0dtAFpd3YlCsGdQdv%2BUQlI76U%2B2DqYQkSi0W4nDlOwjkhvHdQpwKNfhXKajXXQ84VoEBW2gR8GGmk9LPDw%3D&limit=199296&limit_rate_after=483200&packageId=1006605&videoId=13176213"></iframe>
+											<iframe width="897" height="505" src="https://www.youtube.com/embed/1QLz_WXnOt0?list=PL4MFkSYGnkQ_X5sp7XmGiXUUqDiGb-f3E" title="잡아바 탐나는 기업 [(주)나아바코리아 편]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 										</div>
 									</div>
 									<div class="quiz">
@@ -1735,7 +1735,7 @@
 	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/imgLiquid-min.js"></script>
 	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/script.js"></script>
 	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/jquery.vticker-min.js"></script>
-	
+
 	<script src="//player.vimeo.com/api/player.js"></script>
 
 	<script>
@@ -1754,6 +1754,8 @@
 			if (LayerPopup.has(e.target).length === 0) {
 				LayerPopup.hide();
 				$(".tn_wrap .item").removeClass('active');
+				$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+
 			}
 		});
 
@@ -1762,12 +1764,13 @@
 			$('.close_btn').click(function() {
 				$(".tn_wrap .item").removeClass('active');
 				$('.show_cont').hide();
-				;
+				$('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*'); 
 			});
 
 			$('.quiz_area li a').click(function() {
-				$(this).parent().addClass('check')
-				$(this).parent().siblings().removeClass('check')
+				$(this).parent().addClass('check');
+				$(this).parent().siblings().removeClass('check');
+				
 			});
 
 			if (window.innerWidth > 768) {
