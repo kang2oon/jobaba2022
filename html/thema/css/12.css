@@ -56,6 +56,7 @@
 .section02 .tn_wrap .item .hover p{font-size: 40px;color: #fff;font-weight: bold;}
 .section02 .tn_wrap .item .hover p:before{content: '';display: block;background: url(../resource/images/thema/221013/check.png) no-repeat;width: 31px;height: 36px;margin: auto}
 .section02 .tn_wrap  .show_cont{position: absolute;bottom: -100px;background: #fff;bottom: -1010px;padding: 40px 30px;border-radius: 15px;border: 1px solid #333;width: 100%;font-size: 20px;letter-spacing: -1px;display: none;z-index: 5}
+.section02 .tn_wrap .show_cont .cn_intro{margin-bottom: 40px}
 .section02 .tn_wrap .show_cont .close_btn{font-size: 24px;position: absolute;right: 30px;top: 30px;display: flex;align-items: center;}
 .section02 .tn_wrap .show_cont .close_btn:after{content: '';display: inline-block;background: url(../resource/images/thema/221013/close_btn.png) no-repeat;width: 21px;height: 21px;margin-left: 6px;margin-top: 3px}
 .section02 .tn_wrap  .show_cont:before{content: '';display: block;background: url(../resource/images/thema/221013/triangle.png) no-repeat;width: 36px;height: 26px;position: absolute;top: -26px;}
@@ -71,12 +72,12 @@
 .section02 .tn_wrap .show_cont .wf_tit{color: #27709e;font-size: 24px;font-weight: bold;margin-bottom: 10px}
 .section02 .tn_wrap .show_cont .welfare a{display: inline-block;background: #eeeeee;padding: 5px 20px;margin-top: 15px;border-radius: 20px;border: 1px solid #888888}
 .section02 .tn_wrap .show_cont .welfare a:after{content: '';display: block;background: url(../resource/images/thema/221013/arrow.png) no-repeat;width: 29px;height: 13px;display: inline-block;margin-left: 10px}
-.section02 .tn_wrap .show_cont .job_postWrap{margin: 60px 0 40px  0}
+.section02 .tn_wrap .show_cont .job_postWrap{margin: 40px 0 40px  0}
 .section02 .tn_wrap .show_cont .job_post li{padding-bottom: 10px;margin-bottom: 10px;border-bottom: 1px solid #bbbbbb;}
 .section02 .tn_wrap .show_cont .job_post li a{display: flex;justify-content: space-between}
 .section02 .tn_wrap .show_cont .job_post li a:hover .tit{text-decoration: underline}
 .section02 .tn_wrap .show_cont .job_post li:last-child{margin-bottom: 0;}
-.section02 .tn_wrap .show_cont .job_post li .tit{width: calc(100% - 400px);text-overflow: ellipsis;white-space: nowrap;overflow: hidden}
+.section02 .tn_wrap .show_cont .job_post li .tit{width: calc(100% - 410px);text-overflow: ellipsis;white-space: nowrap;overflow: hidden}
 .section02 .tn_wrap .show_cont .job_post li .ect{display: flex;}
 .section02 .tn_wrap .show_cont .job_post li .ect span{margin-right: 30px}
 .section02 .tn_wrap .show_cont .video{position: relative;padding-top: 56%; width: 100%; height: 0}
@@ -140,8 +141,10 @@
 	.section02 .tn_wrap .item .logo .tit{font-size: 22px}
 	.section02 .tn_wrap .item .desc{font-size: 16px}
 	.section02 .tn_wrap .item .intro li{font-size: 16px}
+	.section02 .tn_wrap .show_cont .top {background: #fff}
+	.section02 .tn_wrap .show_cont .top p{display: block;}
 	.section02 .tn_wrap .show_cont {bottom: 0;top: 120px;height: calc(100vh - 200px)}
-	.section02 .tn_wrap .show_cont .inner_cont{max-height: calc(100vh - 200px);height: 100%;overflow-y: auto;}
+	.section02 .tn_wrap .show_cont .inner_cont{max-height: calc(100vh - 200px);height: 100%;overflow-y: auto;padding-bottom: 30px}
 	
 	.link_service .flex{display: block;}
 	.link_service .flex > div{width: 100%}
@@ -217,6 +220,6 @@
 	.section02 .tn_wrap .item .intro li{font-size: 14px;}
 	.section02 .tn_wrap .item .intro li strong{padding: 5px;width: 60px;}
 	.section02 .tn_wrap .item .intro li span{width: calc(100% - 70px)}
-	.link_service h3{font-size: 24px}
+	.link_service h3{font-size: 22px}
 	.link_service .flex > div:nth-child(2){background-size: 400px}
 }
