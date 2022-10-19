@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Document</title>
+	<title>마이페이지_new메인</title>
 	<!-- 잡아바 css-->
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
@@ -112,34 +112,20 @@
 			<div class="innerSection">
 				<div class="contentsWrap">
 					<!-- left menu -->
-					<div class="btnMenuOpen">
-						<a href="javascript:void(0);"><span></span></a>
-					</div>
 					<div class="leftMenu">
 						<div class="mypageBtn">
 							<a href="#">마이페이지 메인</a>
 						</div>
 						<ul class="menuList">	
-							<li>
+							<li class="selected">
 								<div>
 									<p class="sub_tit">
 										<a href="javascript:void(0);">정책&정보</a>
 									</p>
 									<ul class="subMenuList">
-										<li class="on"><a href="#">관심등록</a></li>
+										<li class="on"><a href="#">관심등록 정보</a></li>
 										<li><a href="#">알림등록 정보</a></li>
 										<li><a href="#">정책등록</a></li>
-									</ul>
-								</div>									
-							</li>
-							<li>
-								<div class="category_area b_t mar-top">
-									<p class="sub_tit">
-										<a href="javascript:void(0);">취업준비</a>
-									</p>
-									<ul class="subMenuList">
-										<li><a href="#">취업진단</a></li>
-										<li><a href="#">비대면 취업지원</a></li>
 									</ul>
 								</div>									
 							</li>
@@ -154,6 +140,17 @@
 										<li><a href="#">이력서 관리</a></li>
 										<li><a href="#">온라인 면접</a></li>
 										<li><a href="#">구직 등록</a></li>
+									</ul>
+								</div>									
+							</li>
+							<li>
+								<div class="category_area b_t mar-top">
+									<p class="sub_tit">
+										<a href="javascript:void(0);">취업준비</a>
+									</p>
+									<ul class="subMenuList">
+										<li><a href="#">취업진단</a></li>
+										<li><a href="#">비대면 취업지원</a></li>
 									</ul>
 								</div>									
 							</li>
@@ -181,10 +178,22 @@
 					<!-- // left menu -->
 
 					<div class="contentsBox">
-						<div class="titWrap">
-							<h2>추천 정보</h2>
+						<div class="my-total mgb30">
+							<h3 class="tit fl">추천 정보</h3>
 							<a href="javascript:void(0);" class="setIcon">관심분야 설정</a>
 						</div>
+						<!-- 모바일 탭 셀렉트 -->
+						<div class="categoryMobile">
+							<select name="" id="tabMobile" class="comm_select">
+								<option value="" data-tab="tab1">지원정책</option>
+								<option value="" data-tab="tab2">취업교육</option>
+								<option value="" data-tab="tab3">대외활동</option>
+								<option value="" data-tab="tab4">기업추천</option>
+								<option value="" data-tab="tab5">창업지원</option>
+								<option value="" data-tab="tab6">잡학사전</option>
+							</select>
+						</div>
+						<!-- 탭 메뉴 -->
 						<ul class="categoryMenu">
 							<li data-tab="tab1" class="active">지원정책</li>
 							<li data-tab="tab2">취업교육</li>
@@ -193,6 +202,7 @@
 							<li data-tab="tab5">창업지원</li>
 							<li data-tab="tab6">잡학사전</li>
 						</ul>
+						
 						<div data-tab="tab1" class="infoCont active">
 							<ul>
 								<li>
@@ -426,6 +436,7 @@
 			</div>
 		</article>
 	
+
 	
 		
 	<!--잡아바 js-->
@@ -444,14 +455,45 @@
 			$('.leftMenu').toggleClass('on');
         });
 
-		// 마이페이지 메인 컨텐츠 텝 메뉴
-		$('.contentsBox .categoryMenu li').click(function(){
+		// left 메뉴 모바일
+		$('ul.menuList > li .sub_tit a').on('click', function(e){
+			var $this = $(this);
+			$('ul.menuList > li').removeClass('selected');
+			$this.parents('li').addClass('selected');
+			if($(window).width() < 768){
+				e.preventDefault();
+			}else{
+				return true;
+			}
+		});
+
+
+		
+		
+
+		// 마이페이지 메인 컨텐츠 탭 메뉴
+		$('.contentsBox ul.categoryMenu li').click(function(){
 			var ctab = $(this).attr('data-tab');
-			$('.contentsBox .categoryMenu li').removeClass('active');
+			$('.contentsBox ul.categoryMenu li').removeClass('active');
 			$(this).addClass('active');
 			$('.contentsBox .infoCont').removeClass('active');
 			$('.contentsBox .infoCont[data-tab='+ctab+']').addClass('active');
-    	});
+		});
+
+		// 마이페이지 탭 모바일 메뉴
+		$("select#tabMobile").on("change",function(){
+		var select_data = $(this).find('option:selected').data('tab');
+			$('.contentsBox ul.categoryMenu li[data-tab='+select_data+']').addClass("active").siblings().removeClass('active');
+			$('.contentsBox .infoCont').removeClass('active');
+			$('.contentsBox .infoCont[data-tab='+select_data+']').addClass('active');
+		});
+		// 마이페이지 탭 모바일 메뉴
+		$("select#tabMobile").on("change",function(){
+			var select_data = $(this).find('option:selected').data('tab');
+			$('.contentsBox ul.categoryMenu li[data-tab='+select_data+']').addClass("active").siblings().removeClass('active');
+			$('.contentsBox .infoCont').removeClass('active');
+			$('.contentsBox .infoCont[data-tab='+select_data+']').addClass('active');
+		});
 
 	});
 	</script>
