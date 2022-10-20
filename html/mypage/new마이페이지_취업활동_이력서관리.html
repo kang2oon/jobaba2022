@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>마이페이지_취업활동_공고추천관리</title>
+	<title>마이페이지_취업활동_이력서관리</title>
 	<!-- 잡아바 css-->
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
@@ -112,9 +112,6 @@
 			<div class="innerSection">
 				<div class="contentsWrap">
 					<!-- left menu -->
-					<div class="btnMenuOpen">
-						<a href="javascript:void(0);">메뉴보기</a>
-					</div>
 					<div class="leftMenu">
 						<div class="mypageBtn">
 							<a href="#">마이페이지 메인</a>
@@ -182,111 +179,76 @@
 
 					<div class="contentsBox">
 						<div class="my-total mgb30">
-							<h3 class="tit fl">공고추천 관리</h3>
+							<h3 class="tit fl">이력서 관리</h3>
 						</div>
 						<!-- 컨텐츠 -->
 						<div class="ct_box">
-							<div class="my-total bd_b_none">
-								<select id="recordCountPerPage" name="recordCountPerPage" title="보기갯수선택" class="comm_select">	
-									<option value="10" selected="">10개씩 보기</option>	
-									<option value="25">25개씩 보기</option>	
-									<option value="50">50개씩 보기</option>	
-									<option value="100">100개씩 보기</option>
-								</select>
+							<div class="button-set2 ar">
+								<p class="red_txt f14 mr10 inline-block al">※ 이력서에 전형과 무관한 사생활 정보, 민감정보 등을 기재하지마세요</p>
+								<a href="/mber/myPage/resume/reg.do" class="btn bgPuertoRico">신규이력서 작성</a>
 							</div>
-							<div class="tbl-type2 m_t_hide">
-								<table>
-									<caption>입사제의 관리 목록</caption>
-									<colgroup>
-										<col style="width: 100px;">
-										<col style="width: 120px;">
-										<col>
-										<col style="width: 220px;">
-									</colgroup>
-									<thead>
-										<tr>
-											<th scope="col">구분</th>
-											<th scope="col">제의일자</th>
-											<th scope="col">채용공고 / 기업명</th>
-											<th scope="col">관리</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td class="ac">
-												<a href="javascript:void(0)">
-												취업추천
-												</a>
-												<input type="hidden" name="entNm" value="(주)뚜르드블루(주)">
-												<input type="hidden" name="empmnTitle" value="2022.09.29 관리자가 박람회 공고 직접 등록">
-												<input type="hidden" name="cnsltNm" value="상담사 : 장경석">
-												<input type="hidden" name="suggestTp" value="01">
-											</td>
-											<td class="ac">2022-10-13</td>
-											<td class="title">
-												<a href="javascript:void(0)" target="_blank" title="새창열림">2022.09.29 관리자가 박람회 공고 직접 등록</a>
-												[(주)뚜르드블루(주)]
-											</td>
-											<td class="ac">
-												<button type="button" class="btn btn-sm btn4 supportForm">입사지원</button>
-												<button type="button" class="btn btn-sm btn3 rejectForm">추천거절</button>
-											</td>
-										</tr>
-										<tr>
-											<td class="ac">
-												<a href="javascript:void(0)" data-toggle="modal" class="messageForm" data-target="#messagePopup" data-suggestseq="262" data-empmnseq="453">
-												취업추천
-												</a>
-												<input type="hidden" name="entNm" value="(주)(주)인키움">
-												<input type="hidden" name="empmnTitle" value="기업담당자 메일발송test">
-												<input type="hidden" name="cnsltNm" value="상담사 : 장경석">
-												<input type="hidden" name="suggestTp" value="01">
-											</td>
-											<td class="ac">2022-10-12</td>
-											<td class="title">
-												<a href="/empmn/jobEntDtl.do?seq=453&amp;previewYn=Y" target="_blank" title="새창열림">기업담당자 메일발송test</a><br>
-												(주)(주)인키움
-											</td>
-											<td class="ac">
-													<button type="button" class="btn btn-sm btn4 supportForm" data-toggle="modal" data-target="#supportPopup" data-suggestseq="262" data-empmnseq="453">입사지원</button>
-													<button type="button" class="btn btn-sm btn3 rejectForm" data-toggle="modal" data-target="#rejectPopup" data-suggestseq="262" data-empmnseq="453">제의거절</button>
-											</td>
-										</tr>
-										<tr>
-											<td class="ac">
-												<a href="javascript:void(0)" data-toggle="modal" class="messageForm" data-target="#messagePopup" data-suggestseq="260" data-empmnseq="404">
-						
-												취업추천
-												
-												</a>
-												<input type="hidden" name="entNm" value="(주)(주)인키움">
-												<input type="hidden" name="empmnTitle" value="인적성검사 API 연동 테스트">
-												<input type="hidden" name="cnsltNm" value="상담사 : 장경석">
-												<input type="hidden" name="suggestTp" value="01">
-											</td>
-											<td class="ac">2022-08-26</td>
-											<td class="title">
-												<a href="/empmn/jobEntDtl.do?seq=404&amp;previewYn=Y" target="_blank" title="새창열림">인적성검사 API 연동 테스트</a><br>
-												(주)(주)인키움
-											</td>
-											<td class="ac">
-												제의거절(2022-08-26)
-												<!-- 삭제 버튼 삭제 -->
-											</td>
-										</tr>
-									</tbody>
-								</table>
+							<div class="whiteBox nodata">
+								<a href="/mber/myPage/resume/reg.do">
+									<i><img src="../resource/images/mypage_icon03.png" alt="이력서"></i>
+									<b>신규 이력서 작성</b>
+								</a>
 							</div>
-							<!-- //목록 -->
-				
-							<!-- begin: paging -->
-							<div class="pagination_wrap"><div class="mo_paging"><p class="active_txt"><span class="cut">1</span> / <span>1</span></p></div>
-								<ul class="pagination list-paging">
-									<li class="paginate_button active list"><a href="#none" onclick="1({1}); return false;">1</a></li>
-			
-								</ul>
+							<div class="whiteBox boxItem">
+								<div class="titWrap">
+									<a href="javascript:void(0)">
+										<span class="btn-sm bgPuertoRico borderPuertoRico txtWhite">일반형</span>
+										<strong><span class="txtPuertoRico">[대표 이력서]</span> 저를 뽑아주시면 회사를 뿌리채 뽑아드리겠습니다.</strong>
+									</a>
+								</div>
+								<div class="txtWrap">
+									<ul>
+										<li>적규직, 계약직, 인턴직, 기타/아르바이트</li>
+										<li>회사내규에 따름(면접 후 협의)</li>
+										<li>대졸(4년)</li>
+										<li>5~10년</li>
+									</ul>
+									<p>판매 관리자(소규모 판매점장 제외)</p>
+									<p>경기전체</p>
+								</div>
+								<div class="btnBox">
+									<a href="javascript:void(0)" class="btn-sm borderPuertoRico txtPuertoRico">수정</a>
+									<a href="javascript:void(0)" class="btn-sm borderGray txtGray">복사</a>
+									<a href="javascript:void(0)" class="btn-sm borderPink txtPink">삭제</a>
+								</div>
+								<p>2022-06-30</p>
+								<!-- 등록 후 6개월 지나면 생성 -->
+								<div class="updateWord">
+									<p>이력서를 등록한지 <span class="red_txt">6개월</span>이 지났습니다. <span class="red_txt">이력서</span>를 <span class="red_txt">업데이트</span>하고 더 많은 <span class="red_txt">채용공고를 추천</span> 받으세요.</p>
+								</div>
 							</div>
-							<!-- end: paging -->
+
+							<div class="whiteBox boxItem">
+								<div class="titWrap">
+									<a href="javascript:void(0)">
+										<span class="btn-sm bgPuertoRico borderPuertoRico txtWhite">간략형</span>
+										<strong>저를 뽑아주시면 회사를 뿌리채 뽑아드리겠습니다.</strong>
+									</a>
+								</div>
+								<div class="txtWrap">
+									<ul>
+										<li>적규직, 계약직, 인턴직, 기타/아르바이트</li>
+										<li>회사내규에 따름(면접 후 협의)</li>
+										<li>대졸(4년)</li>
+										<li>5~10년</li>
+									</ul>
+									<p>판매 관리자(소규모 판매점장 제외)</p>
+									<p>경기전체</p>
+								</div>
+								<div class="btnBox">
+									<a href="javascript:void(0)" class="btn-sm borderPuertoRico txtPuertoRico">수정</a>
+									<a href="javascript:void(0)" class="btn-sm borderGray txtGray">복사</a>
+									<a href="javascript:void(0)" class="btn-sm borderPink txtPink">삭제</a>
+								</div>
+								<p>2022-06-30</p>
+							</div>
+
+
+
 						</div>
 						<!-- //컨텐츠 -->
 					</div>
@@ -311,6 +273,18 @@
             $(this).toggleClass('on');
 			$('.leftMenu').toggleClass('on');
         });
+
+		// left 메뉴 모바일
+		$('ul.menuList > li .sub_tit a').on('click', function(e){
+			var $this = $(this);
+			$('ul.menuList > li').removeClass('selected');
+			$this.parents('li').addClass('selected');
+			if($(window).width() < 768){
+				e.preventDefault();
+			}else{
+				return true;
+			}
+		});
 
 		// 마이페이지 메인 컨텐츠 텝 메뉴
 		$('.contentsBox .categoryMenu li').click(function(){
