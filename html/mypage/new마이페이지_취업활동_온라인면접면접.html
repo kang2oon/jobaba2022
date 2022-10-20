@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>new마이페이지_취업활동_구직등록</title>
+	<title>마이페이지_취업활동_온라인면접</title>
 	<!-- 잡아바 css-->
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
@@ -14,6 +14,8 @@
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/allnew_ia.css">
+
+
 
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/js/css/jquery-ui.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
@@ -174,153 +176,92 @@
 						</ul>
 					</div>
 					<!-- // left menu -->
-					
+
 					<div class="contentsBox">
-						<div class="my-total">
-							<h3 class="tit fl">구직등록<!--  및 취업추천 --></h3>
+						<div class="my-total mgb30">
+							<h3 class="tit fl">온라인 면접</h3>
 						</div>
 						<!-- 컨텐츠 -->
 						<div class="ct_box">
-							<div class="whiteBox">
-								<div class="listWrap listIcon">
-									<p>본인이 <span class="red_txt">희망</span>하는 <span class="red_txt">직종, 지역, 근무형태</span> 등을 선택하여 주시기 바랍니다.</p>
-									<p>상담사 추천요청 시 본인이 작성한 이력서 및 자기소개서, 취업활동이력, 상담정보를 상담사가 조회할 수 있습니다.</p>
+							<div class="my-total bd_b_none">
+								<select id="recordCountPerPage" name="recordCountPerPage" title="보기갯수선택" class="comm_select">	
+									<option value="10" selected="">10개씩 보기</option>	
+									<option value="25">25개씩 보기</option>	
+									<option value="50">50개씩 보기</option>	
+									<option value="100">100개씩 보기</option>
+								</select>
+							</div>
+							<div class="tbl-type">
+								<table class="table table-celled table-list txt-down online_list">
+									<caption>온라인면접관리 목록</caption>
+									<colgroup>
+										<col>
+										<col style="width: 90px;">
+										<col style="width: 220px;">
+										<col style="width: 170px;">
+										<col style="width: 120px;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">공고</th>
+											<th scope="col">면접방법</th>
+											<th scope="col">제출기한</th>
+											<th scope="col">파일등록</th>
+											<th scope="col">관리</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="title pdl20"><span class="onTitle">[VOD면접]</span>v2 실시간면접 공고 테스트</td>
+											<td class="ac">VOD면접</td>
+											<td class="ac">2022-10-20 1:00 ~ 15:00</td>
+											<td class="ac">
+												<a href="javascript:void(0)" class="btn-sm btnPuertoRico">VOD 파일 등록</a>
+											</td>
+											<td class="ac">미제출</td>
+										</tr>
+									
+										<tr>
+											<td class="title pdl20"><span class="onTitle">[VOD면접]</span>vod면접 공고 테스트</td>
+											<td class="ac">VOD 면접</td>
+											<td class="ac">2022-10-20 1:00 ~ 15:00</td>
+											<td class="ac">
+												<a href="javascript:void(0)" class="btn-sm btnPuertoRico on">VOD 파일 등록</a>
+											</td>
+											<td class="ac">제출</td>
+										</tr>
+										<tr>
+											<td class="title pdl20"><span class="onTitle">[실시간 면접]</span>실시간 면접 공고 테스트</td>
+											<td class="ac">실시간 면접</td>
+											<td class="ac">2022-10-20 1:00 ~ 15:00</td>
+											<td class="ac tReverse">-</td>
+											<td class="ac">
+												<a href="javascript:void(0)" class="btn-sm btnPuertoRico">면접보기</a>
+											</td>
+										</tr>
+										<tr>
+											<td class="title pdl20"><span class="onTitle">[실시간 면접]</span>실시간 면접 공고 테스트</td>
+											<td class="ac">실시간 면접</td>
+											<td class="ac">2022-10-20 1:00 ~ 15:00</td>
+											<td class="ac tReverse">-</td>
+											<td class="ac">
+												<a href="javascript:void(0)" class="btn-sm btnPuertoRico">면접보기</a>
+											</td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+							<!-- begin: paging -->
+							<div class="pagination_wrap">
+								<div class="mo_paging">
+									<p class="active_txt"><span class="cut">1</span> / <span>1</span></p>
 								</div>
+								<ul class="pagination list-paging">
+									<li class="paginate_button active list"><a href="#none">1</a></li>
+								</ul>
 							</div>
-							<div class="view mgb30 mgt30">
-								<dl>
-									<dt>
-										<span class="f_red" title="필수항목">*</span>
-										이력서 선택
-									</dt>
-									<dd>
-										<div class="select-set long">
-											<select class="comm_select" name="resumeSeq" id="resumeSeq">
-												<option value="">이력서 선택</option>
-												
-											</select>
-											<a href="/mber/myPage/resume/reg.do" class="btn btn_grey">새로운 이력서 작성</a>
-										</div>
-									</dd>
-								</dl>
-								<dl>
-									<dt>
-										희망직종
-									</dt>
-									<dd id="hopeJobNm">
-									</dd>
-								</dl>
-								<dl>
-									<dt>
-										근무희망지역
-									</dt>
-									<dd id="hopeAreaNm"></dd>
-								</dl>
-								<dl>
-									<dt>
-										근무형태
-									</dt>
-									<dd id="empTpNm"></dd>
-								</dl>
-								<dl>
-									<dt>
-										희망연봉
-									</dt>
-									<dd id="hopeAnslrySelectNm"> </dd>
-								</dl>
-								<dl>
-									<dt>
-										<span class="f_red" title="필수항목">*</span>
-										검색키워드
-									</dt>
-									<dd>
-										<input type="hidden" id="keyword" name="keyword" value="">
-										<input type="text" class="comm_input  w19p m_wide" id="keywordNm" name="keywordNm" value="" title="검색키워드">
-										<button id="keywordAddButton" type="button" class="btn btn_blue btn-sx">추가</button>
-										<div id="keywordDiv" class="add_Label">
-										</div>
-									</dd>
-								</dl>
-								<dl>
-									<dt>
-										<span class="f_red" title="필수항목">*</span>
-										현재상태
-									</dt>
-									<dd>
-										<div class="ele_inline">
-											<div class="radio">	<label for="epmtCd1">		<input type="radio" id="epmtCd1" name="epmtCd" value="01" title="" checked="">		<span class="text"><i></i>재직중</span>	</label></div><div class="radio">	<label for="epmtCd2">		<input type="radio" id="epmtCd2" name="epmtCd" value="02" title="">		<span class="text"><i></i>취업준비중</span>	</label></div><div class="radio">	<label for="epmtCd3">		<input type="radio" id="epmtCd3" name="epmtCd" value="03" title="">		<span class="text"><i></i>창업준비중</span>	</label></div><div class="radio">	<label for="epmtCd4">		<input type="radio" id="epmtCd4" name="epmtCd" value="07" title="">		<span class="text"><i></i>구직중</span>	</label></div><div class="radio">	<label for="epmtCd5">		<input type="radio" id="epmtCd5" name="epmtCd" value="04" title="">		<span class="text"><i></i>이직준비중</span>	</label></div><div class="radio">	<label for="epmtCd6">		<input type="radio" id="epmtCd6" name="epmtCd" value="05" title="">		<span class="text"><i></i>재학중</span>	</label></div><div class="radio">	<label for="epmtCd7">		<input type="radio" id="epmtCd7" name="epmtCd" value="06" title="">		<span class="text"><i></i>창업중</span>	</label></div><div class="radio">	<label for="epmtCd8">		<input type="radio" id="epmtCd8" name="epmtCd" value="99" title="">		<span class="text"><i></i>기타</span>	</label></div>
-										</div>
-									</dd>
-								</dl>
-								<dl>
-									<dt>
-										<span class="f_red" title="필수항목">*</span>
-										입사가능일
-									</dt>
-									<dd class="picker_wrap">
-										<div class="input-group">
-											<span class="input-group-addon">
-												<i class="fa fa-calendar"></i>
-											</span>
-											<input type="text" id="joinPossibeDe" name="joinPossibeDe" class="comm_input datepicker_cnts" data-date-format="dd-mm-yyyy" placeholder="yyyy-mm-dd" value="" title="입사가능일">
-										</div>
-										일 이후
-									</dd>
-								</dl>
-								<dl>
-									<dt>
-										<span class="f_red" title="필수항목">*</span>
-										인재정보 노출
-									</dt>
-									<dd>
-										<div class="ele_inline">
-											<div class="radio radio-inline">
-												<label for="useYn1">
-													<input type="radio" class="" name="useYn" id="useYn1" value="Y">
-													<span class="text">노출함</span>
-												</label>
-											</div>
-											<div class="radio radio-inline">
-												<label for="useYn2">
-													<input type="radio" class="" name="useYn" id="useYn2" value="N">
-													<span class="text">노출안함</span>
-												</label>
-											</div>
-											<span class="f_red">※ 인재정보 노출 시 기업인사담당자가 정보 확인 후 직접 면접 제의를 요청할 수 있습니다.</span>
-										</div>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tit4">기업인재 추천서비스 신청(선택 사항)</h4>
-							<div class="view">
-								<dl>
-									<dt>추천 내용</dt>
-									<dd><strong>회원에게 알맞은 기업의 채용정보를 매칭 추천합니다.</strong><br>
-									추천 채용공고를 확인 후 지원의사가 있으시면 입사지원하시면 됩니다.
-									</dd>
-								</dl>
-							</div>
-							<!-- 상담 방법 메뉴 삭제 -->
-							<p class="mgt20">※ 상담사의 개인정보 조회 및 관리 위탁에 동의하며, <strong>기업인재 추천서비스</strong>를 신청합니다.</p>
-							<div class="ele_inlines mgl20 mgt10">
-								<div class="radio radio-inline">
-									<label for="recReqYn1">
-										<input type="radio" class="" name="recReqYn" id="recReqYn1" value="Y">
-										<span class="text">신청합니다</span>
-									</label>
-								</div>
-								<div class="radio radio-inline">
-									<label for="recReqYn2">
-										<input type="radio" class="" name="recReqYn" id="recReqYn2" value="N">
-										<span class="text">신청안함</span>
-									</label>
-								</div>
-							</div>
-						
-							<div class="btnSet center">
-								<input type="button" id="regBtn" value="구직등록" class="btn btn-lg btn_blue">
-								<a href="/mber/myPage/rcmnInfo/list.do" class="btn btn-lg btn_grey">취소</a>
-							</div>
+							<!-- end: paging -->
 						</div>
 						<!-- //컨텐츠 -->
 					</div>
@@ -345,7 +286,7 @@
             $(this).toggleClass('on');
 			$('.leftMenu').toggleClass('on');
         });
-		
+
 		// left 메뉴 모바일
 		$('ul.menuList > li .sub_tit a').on('click', function(e){
 			var $this = $(this);
