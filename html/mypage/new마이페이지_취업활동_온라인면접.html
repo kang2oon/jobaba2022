@@ -178,11 +178,11 @@
 					<!-- // left menu -->
 
 					<div class="contentsBox">
-						<div class="my-total mgb30">
-							<h3 class="tit fl">온라인 면접</h3>
+						<div class="myTitle mgb30">
+							<h3 class="tit">온라인 면접</h3>
 						</div>
 						<!-- 컨텐츠 -->
-						<div class="ct_box">
+						<div class="container">
 							<div class="my-total bd_b_none">
 								<select id="recordCountPerPage" name="recordCountPerPage" title="보기갯수선택" class="comm_select">	
 									<option value="10" selected="">10개씩 보기</option>	
@@ -191,8 +191,8 @@
 									<option value="100">100개씩 보기</option>
 								</select>
 							</div>
-							<div class="tbl-type">
-								<table class="table table-celled table-list txt-down online_list">
+							<div class="mytbl-type">
+								<table class="table table-list online_list">
 									<caption>온라인면접관리 목록</caption>
 									<colgroup>
 										<col>
@@ -212,43 +212,43 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td class="title pdl20"><span class="onTitle">[VOD면접]</span>v2 실시간면접 공고 테스트</td>
+											<td class="title pdl20"><span class="moTitle">[VOD면접]</span>v2 실시간면접 공고 테스트</td>
 											<td class="ac">VOD면접</td>
 											<td class="ac">2022-10-20 1:00 ~ 15:00</td>
 											<td class="ac">
-												<a href="javascript:void(0)" class="btn-sm btnPuertoRico">VOD 파일 등록</a>
+												<a href="javascript:void(0)" class="btn_small btnPuertoRico">VOD 파일 등록</a>
 											</td>
 											<td class="ac">미제출</td>
 										</tr>
-									
+										<!-- vod 면접 파일 등록시 버튼에 on class 추가 -->
 										<tr>
-											<td class="title pdl20"><span class="onTitle">[VOD면접]</span>vod면접 공고 테스트</td>
+											<td class="title pdl20"><span class="moTitle">[VOD면접]</span>vod면접 공고 테스트</td>
 											<td class="ac">VOD 면접</td>
 											<td class="ac">2022-10-20 1:00 ~ 15:00</td>
 											<td class="ac">
-												<a href="javascript:void(0)" class="btn-sm btnPuertoRico on">VOD 파일 등록</a>
+												<a href="javascript:void(0)" class="btn_small btnPuertoRico on">VOD 파일 등록</a>
 											</td>
 											<td class="ac">제출</td>
 										</tr>
+										<!-- 실시간 면접일 경우 4번째 td에 class tReverse 생성 -->
 										<tr>
-											<td class="title pdl20"><span class="onTitle">[실시간 면접]</span>실시간 면접 공고 테스트</td>
+											<td class="title pdl20"><span class="moTitle">[실시간 면접]</span>실시간 면접 공고 테스트</td>
 											<td class="ac">실시간 면접</td>
 											<td class="ac">2022-10-20 1:00 ~ 15:00</td>
 											<td class="ac tReverse">-</td>
 											<td class="ac">
-												<a href="javascript:void(0)" class="btn-sm btnPuertoRico">면접보기</a>
+												<a href="javascript:void(0)" class="btn_small btnPuertoRico">면접보기</a>
 											</td>
 										</tr>
 										<tr>
-											<td class="title pdl20"><span class="onTitle">[실시간 면접]</span>실시간 면접 공고 테스트</td>
+											<td class="title pdl20"><span class="moTitle">[실시간 면접]</span>실시간 면접 공고 테스트</td>
 											<td class="ac">실시간 면접</td>
 											<td class="ac">2022-10-20 1:00 ~ 15:00</td>
 											<td class="ac tReverse">-</td>
 											<td class="ac">
-												<a href="javascript:void(0)" class="btn-sm btnPuertoRico">면접보기</a>
+												<a href="javascript:void(0)" class="btn_small btnPuertoRico">면접보기</a>
 											</td>
 										</tr>
-
 									</tbody>
 								</table>
 							</div>
@@ -269,51 +269,7 @@
 			</div>
 		</article>
 	
-	<style>
-		.desc{margin-bottom:16px;line-height:1.6;}
-		.desc strong{color:#38bab2;}
-		table.tbl_modal{width:100%;border-collapse:collapse;}
-		table.tbl_modal th{padding:12px 24px;background-color:#f5f5f5;border:1px solid #ccc;text-align:left;font-weight:400;width:160px;}
-		table.tbl_modal td{padding:12px 24px;border:1px solid #ccc;}
-		.noti{margin-top:16px;}
-	</style>
-	<div id="LayerPopup1" class="modal fade in" role="dialog" data-usrId= "${usrId}" aria-labelledby="Layer1ModalLabel" style="display:block;">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" id="btnLayerClose_top" class="close btn_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-					<h4 class="modal-title" id="recommModalLabel">실시간 면접 진행 안내</h4>
-				</div>
-				<div class="modal-body popLayer" id="viewRecomReqHtml">
-					<div class="desc">
-						귀사가 신청하신 기업법정의무교육이 <strong>승인</strong>되었습니다.<br/>
-						아래 제공된 정보를 참고하시어 교육을 수강하시면 수료증을 발급받을 수 있습니다.
-					</div>
-					<table class="tbl_modal">
-						<tbody>
-						<tr>
-							<th>아이디</th>
-							<td>bidory85@daum.net</td>
-						</tr>
-						<tr>
-							<th>패스워드</th>
-							<td>1942 (회원 휴대폰 번호 끝4자리)</td>
-						</tr>
-						<tr>
-							<th>면접시간</th>
-							<td>기업담당자와 협의 된 시간에 접속하여 진행</td>
-						</tr>
-						</tbody>
-					</table>
-					<div class="noti">※ <span class="red_txt">면접시간 10분전</span> 온라인 면접 사이트에서 로그인 후 면접에 참여해 주시기 바랍니다</div>
-				</div>
-				<div class="modal-footer">
-                    <button type="button" class="btn btn_blue">신청</button>
-                    <button type="button" class="btn btn_grey" data-dismiss="modal" aria-label="Close">취소</button>
-                </div>
-			</div>
-		</div>
-	</div>
+
 	<!--잡아바 js-->
 	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
 
