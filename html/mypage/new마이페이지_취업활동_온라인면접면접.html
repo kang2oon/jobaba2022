@@ -269,8 +269,51 @@
 			</div>
 		</article>
 	
-	
-		
+	<style>
+		.desc{margin-bottom:16px;line-height:1.6;}
+		.desc strong{color:#38bab2;}
+		table.tbl_modal{width:100%;border-collapse:collapse;}
+		table.tbl_modal th{padding:12px 24px;background-color:#f5f5f5;border:1px solid #ccc;text-align:left;font-weight:400;width:160px;}
+		table.tbl_modal td{padding:12px 24px;border:1px solid #ccc;}
+		.noti{margin-top:16px;}
+	</style>
+	<div id="LayerPopup1" class="modal fade in" role="dialog" data-usrId= "${usrId}" aria-labelledby="Layer1ModalLabel" style="display:block;">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" id="btnLayerClose_top" class="close btn_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="recommModalLabel">실시간 면접 진행 안내</h4>
+				</div>
+				<div class="modal-body popLayer" id="viewRecomReqHtml">
+					<div class="desc">
+						귀사가 신청하신 기업법정의무교육이 <strong>승인</strong>되었습니다.<br/>
+						아래 제공된 정보를 참고하시어 교육을 수강하시면 수료증을 발급받을 수 있습니다.
+					</div>
+					<table class="tbl_modal">
+						<tbody>
+						<tr>
+							<th>아이디</th>
+							<td>bidory85@daum.net</td>
+						</tr>
+						<tr>
+							<th>패스워드</th>
+							<td>1942 (회원 휴대폰 번호 끝4자리)</td>
+						</tr>
+						<tr>
+							<th>면접시간</th>
+							<td>기업담당자와 협의 된 시간에 접속하여 진행</td>
+						</tr>
+						</tbody>
+					</table>
+					<div class="noti">※ <span class="red_txt">면접시간 10분전</span> 온라인 면접 사이트에서 로그인 후 면접에 참여해 주시기 바랍니다</div>
+				</div>
+				<div class="modal-footer">
+                    <button type="button" class="btn btn_blue">신청</button>
+                    <button type="button" class="btn btn_grey" data-dismiss="modal" aria-label="Close">취소</button>
+                </div>
+			</div>
+		</div>
+	</div>
 	<!--잡아바 js-->
 	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
 
