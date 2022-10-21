@@ -178,9 +178,10 @@
 					<!-- // left menu -->
 
 					<div class="contentsBox">
-						<div class="my-total mgb30">
-							<h3 class="tit fl">관심등록 정책/정보</h3>
+						<div class="myTitle mgb30">
+							<h3 class="tit">관심등록 정책/정보</h3>
 						</div>
+						<!-- 모바일 카테고리 메뉴 -->
 						<div class="categoryMobile">
 							<select name="" id="tabMobile" class="comm_select">
 								<option value="" data-tab="tab1">지원정책</option>
@@ -193,6 +194,7 @@
 								<option value="" data-tab="tab8">동영상교육</option>
 							</select>
 						</div>
+						<!-- PC 카테고리 메뉴 -->
 						<ul class="categoryMenu">
 							<li data-tab="tab1" class="active"><a href="javascript:void(0);">지원정책</a></li>
 							<li data-tab="tab2"><a href="javascript:void(0);">취업교육</a></li>
@@ -204,7 +206,7 @@
 							<li data-tab="tab8"><a href="javascript:void(0);">동영상교육</a></li>
 						</ul>
 						<!-- 컨텐츠 -->
-						<div class="ct_box">
+						<div class="container">
 							<div class="my-total bd_b_none">
 								<select id="recordCountPerPage" name="recordCountPerPage" title="보기갯수선택" class="comm_select">	
 									<option value="10" selected="">10개씩 보기</option>	
@@ -213,8 +215,8 @@
 									<option value="100">100개씩 보기</option>
 								</select>
 							</div>
-							<div class="tbl-type">
-								<table class="table table-celled table-list txt-down" id="expandable-table">
+							<div class="mytbl-type">
+								<table class="table table-list">
 									<colgroup>
 										<col width="*">
 										<col width="140px">
