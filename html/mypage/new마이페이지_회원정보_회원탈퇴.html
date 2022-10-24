@@ -183,185 +183,155 @@
 						</div>
 						<!-- 컨텐츠 -->
 						<div class="container">
-								<style>
-									.myContents .whiteBox.listIcon  { position: relative; display: flex; flex-direction: column; justify-content: center; padding-left: 70px; } 
-									.myContents .whiteBox.listIcon::before {
-											content: "";
-											position: absolute;
-											top: 20px;
-											left: 10px;
-											width: 50px;
-											height: 50px;
-											background: url(../resource/images/mypage_icon04.png) center no-repeat;
-											border: 1px solid #ddd;
-											border-radius: 100%;
-									}
-									ul.bar_list li {
-											position: relative;
-											font-size: 14px;
-											margin-top: 5px;
-											padding-left: 10px;
-									}
-									ul.bar_list li:before {
-										content: '-';
-										display: block;
-										position: absolute;
-										left: 0;
-										top: 0;
-								}
-								</style>
-								<div class="whiteBox unregister">
-									<p class="listIcon">
-										회원 탈퇴를 신청하기 전에 안내 사항을 꼭 확인해주세요.
-									</p>
-									<p class="txtPink">
-										탈퇴 후에도 게시판형 서비스에 등록한 서비스물은 그대로 남아 있습니다.
-									</p>
-									<ul class="bar_list mgt10">
-										<li>삭제를 원하는 게시글이 있다면 반드시 탈퇴 전 삭제하시기 바랍니다.</li>
-										<li>탈퇴 후에는 회원정보가 삭제되어 본인 여부를 확인할 수 있는 방법이 없어, <span class="txtPink">게시글을 임의로 삭제해
-											드릴 수 없습니다.</span></li>
-									</ul>
-									<p class="f15 bold mgt30">* 게시판형 서비스</p>
-									<table class="board-view-tp02 mgt10">
-										<caption>게시판형 서비스</caption>
-										<colgroup>
-											<col style="width: 35%">
-											<col>
-										</colgroup>
-										<tbody>
-											<tr>
-												<th scope="row" class="f14 tlt pdl20 al">고객센터 Q&amp;A 게시판
-												</th>
-												<td class="f14">게시판 작성 내용</td>
-											</tr>
-											<tr>
-												<th scope="row" class="f14 tlt pdl20 al">이벤트 페이지</th>
-												<td class="f14">댓글, 첨부파일 등</td>
-											</tr>
-										</tbody>
-									</table>
-									
-									<p class="f14 txtBlack mgt20">
-										탈퇴 후엔 잡아바 이용내역(취업 활동, 회원 활동)은 모두 삭제됩니다.
-									</p>
-									<ul class="bar_list mgt10">
-										<li><span class="txtPink">탈퇴 후</span>에 <span class="txtPink">이용내역 복원은 불가</span>합니다.</li>
-									</ul>
-		
-									<p class="f15 bold mgt30">* 이용 내역</p>
-									<table class="board-view-tp02 mgt10">
-										<caption>이용 내역</caption>
-										<colgroup>
-											<col style="width: 35%">
-											<col>
-										</colgroup>
-										<tbody>
-											<tr>
-												<th scope="row" class="f14 tlt pdl20 al">취업 활동</th>
-												<td class="f14">
-													<ul class="bar_list">
-														<li class="f14">이력서 내용</li>
-														<li class="f14">입사지원 이력</li>
-														<li class="f14">입사제의 및 추천 이력</li>
-														<li class="f14">온라인 면접 이력</li>
-													</ul>
-												</td>
-											</tr>
-											<tr>
-												<th scope="row" class="f14 tlt pdl20 al">회원 활동</th>
-												<td class="f14">
-													<ul class="bar_list">
-														<li class="f14">취업역량강화(취업진단서비스 및 취업지원서비스)이력</li>
-														<li class="f14">직업상담사 상담이력</li>
-														<li class="f14">이벤트 참여이력</li>
-														<li class="f14">1:1 문의내역</li>
-													</ul>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-									<p class="f14 txtBlack mgt20">잡아바와 통합접수시스템, 청년 노동자 지원사업시스템(마이스터 통장, 청년 복지포인트, 청년연금 등)은 <span class="txtPink">통합 아이디</span>를 사용하므로, 잡아바 탈퇴시 통합접수 및 청년 노동자지원사업 관련 정보(신청내역 포함) <span class="txtPink">모두 삭제</span>됩니다.</p>
-								</div>
-								<style>
-									.reason .radio input[type="radio"] { display: none; }
-									.reason .radio label { display: flex; align-items: center;}
-								</style>
-								<p class="f15 bold mgt30">* 회원탈퇴 사유를 선택해 주세요.</p>
-								<div class="whiteBox mgt20">
-									<div class="reason">
-										<div class="radio">	
-											<label for="radioDeltReason1">		
-												<input type="radio" id="radioDeltReason1" name="radioDeltReason" value="01" title="">		
-												<span class="text">사생활 기록 삭제 목적</span>	
-											</label>
-										</div>
-										<div class="radio">	
-											<label for="radioDeltReason2">		
-												<input type="radio" id="radioDeltReason2" name="radioDeltReason" value="02" title="">		
-												<span class="text">서비스 이용 불편</span>	
-											</label>
-										</div>
-										<div class="radio">	
-											<label for="radioDeltReason3">		
-												<input type="radio" id="radioDeltReason3" name="radioDeltReason" value="03" title="">		
-												<span class="text">방문횟수 거의 없음</span>	
-											</label>
-										</div>
-										<div class="radio">	
-											<label for="radioDeltReason4">		
-												<input type="radio" id="radioDeltReason4" name="radioDeltReason" value="04" title="">		
-												<span class="text">고객서비스 불만</span>	
-											</label>
-										</div>
-										<div class="radio">	
-											<label for="radioDeltReason5">		
-												<input type="radio" id="radioDeltReason5" name="radioDeltReason" value="05" title="">		
-												<span class="text">개인정보 유출 우려</span>	
-											</label>
-										</div>
-										<div class="radio">	
-											<label for="radioDeltReason6">		
-												<input type="radio" id="radioDeltReason6" name="radioDeltReason" value="06" title="">		
-												<span class="text">이벤트 등의 목적으로 한시사용</span>	
-											</label>
-										</div>
-										<div class="radio">	
-											<label for="radioDeltReason7">		
-												<input type="radio" id="radioDeltReason7" name="radioDeltReason" value="07" title="">		
-												<span class="text">정보 부족</span>	
-											</label>
-										</div>
-										<div class="radio">	
-											<label for="radioDeltReason8">		
-												<input type="radio" id="radioDeltReason8" name="radioDeltReason" value="99" title="">		
-												<span class="text mgr10">기타</span>	
-												<input type="text" name="etcDeltReason" class="comm_input mar mg0" placeholder="기타사유" >
-											</label>
-										</div>
-										
+							<div class="whiteBox unregister">
+								<p class="listIcon">
+									<span class="txtPink">회원 탈퇴</span>를 신청하기 전에 <span class="txtPink">안내 사항</span>을 꼭 <span class="txtPink">확인</span>해주세요.
+								</p>
+								<p class="txtPink">
+									탈퇴 후에도 게시판형 서비스에 등록한 서비스물은 그대로 남아 있습니다.
+								</p>
+								<ul class="bar_list mgt10">
+									<li>삭제를 원하는 게시글이 있다면 반드시 탈퇴 전 삭제하시기 바랍니다.</li>
+									<li>탈퇴 후에는 회원정보가 삭제되어 본인 여부를 확인할 수 있는 방법이 없어, <span class="txtPink">게시글을 임의로 삭제해
+										드릴 수 없습니다.</span></li>
+								</ul>
+								<p class="f15 bold mgt30">* 게시판형 서비스</p>
+								<table class="board-view-tp02 mgt10">
+									<caption>게시판형 서비스</caption>
+									<colgroup>
+										<col style="width: 35%">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row" class="f14 tlt pdl20 al">고객센터 Q&amp;A 게시판
+											</th>
+											<td class="f14">게시판 작성 내용</td>
+										</tr>
+										<tr>
+											<th scope="row" class="f14 tlt pdl20 al">이벤트 페이지</th>
+											<td class="f14">댓글, 첨부파일 등</td>
+										</tr>
+									</tbody>
+								</table>
+								
+								<p class="f14 txtBlack mgt20">
+									탈퇴 후엔 잡아바 이용내역(취업 활동, 회원 활동)은 모두 삭제됩니다.
+								</p>
+								<ul class="bar_list mgt10">
+									<li><span class="txtPink">탈퇴 후</span>에 <span class="txtPink">이용내역 복원은 불가</span>합니다.</li>
+								</ul>
+	
+								<p class="f15 bold mgt30">* 이용 내역</p>
+								<table class="board-view-tp02 mgt10">
+									<caption>이용 내역</caption>
+									<colgroup>
+										<col style="width: 35%">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row" class="f14 tlt pdl20 al">취업 활동</th>
+											<td class="f14">
+												<ul class="bar_list">
+													<li class="f14">이력서 내용</li>
+													<li class="f14">입사지원 이력</li>
+													<li class="f14">입사제의 및 추천 이력</li>
+													<li class="f14">온라인 면접 이력</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" class="f14 tlt pdl20 al">회원 활동</th>
+											<td class="f14">
+												<ul class="bar_list">
+													<li class="f14">취업역량강화(취업진단서비스 및 취업지원서비스)이력</li>
+													<li class="f14">직업상담사 상담이력</li>
+													<li class="f14">이벤트 참여이력</li>
+													<li class="f14">1:1 문의내역</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<p class="f14 txtBlack mgt20">잡아바와 통합접수시스템, 청년 노동자 지원사업시스템(마이스터 통장, 청년 복지포인트, 청년연금 등)은 <span class="txtPink">통합 아이디</span>를 사용하므로, 잡아바 탈퇴시 통합접수 및 청년 노동자지원사업 관련 정보(신청내역 포함) <span class="txtPink">모두 삭제</span>됩니다.</p>
+							</div>
+							<p class="f15 bold mgt30">* 회원탈퇴 사유를 선택해 주세요.</p>
+							<div class="whiteBox mgt20">
+								<div class="reason">
+									<div class="radio">	
+										<label for="radioDeltReason1">		
+											<input type="radio" id="radioDeltReason1" name="radioDeltReason" value="01" title="">		
+											<span class="text">사생활 기록 삭제 목적</span>	
+										</label>
 									</div>
+									<div class="radio">	
+										<label for="radioDeltReason2">		
+											<input type="radio" id="radioDeltReason2" name="radioDeltReason" value="02" title="">		
+											<span class="text">서비스 이용 불편</span>	
+										</label>
+									</div>
+									<div class="radio">	
+										<label for="radioDeltReason3">		
+											<input type="radio" id="radioDeltReason3" name="radioDeltReason" value="03" title="">		
+											<span class="text">방문횟수 거의 없음</span>	
+										</label>
+									</div>
+									<div class="radio">	
+										<label for="radioDeltReason4">		
+											<input type="radio" id="radioDeltReason4" name="radioDeltReason" value="04" title="">		
+											<span class="text">고객서비스 불만</span>	
+										</label>
+									</div>
+									<div class="radio">	
+										<label for="radioDeltReason5">		
+											<input type="radio" id="radioDeltReason5" name="radioDeltReason" value="05" title="">		
+											<span class="text">개인정보 유출 우려</span>	
+										</label>
+									</div>
+									<div class="radio">	
+										<label for="radioDeltReason6">		
+											<input type="radio" id="radioDeltReason6" name="radioDeltReason" value="06" title="">		
+											<span class="text">이벤트 등의 목적으로 한시사용</span>	
+										</label>
+									</div>
+									<div class="radio">	
+										<label for="radioDeltReason7">		
+											<input type="radio" id="radioDeltReason7" name="radioDeltReason" value="07" title="">		
+											<span class="text">정보 부족</span>	
+										</label>
+									</div>
+									<div class="radio">	
+										<label for="radioDeltReason8">		
+											<input type="radio" id="radioDeltReason8" name="radioDeltReason" value="99" title="">		
+											<span class="text mwd50 mgr10">기타</span>	
+											<input type="text" name="etcDeltReason" class="comm_input mar mg0" placeholder="기타사유" >
+										</label>
+									</div>
+									
 								</div>
-		
-								<div class="checks02 mgt20">
+							</div>
+							<div class="agreeWrap mgt20">
+								<div>
 									<input type="checkbox" id="deltChkAgree"> 
 									<label for="deltChkAgree" class="f14">안내 사항을 모두 확인하였으며, 이에 동의합니다.</label>
 								</div>
+							</div>
 
-								<div class="">
-									<p class="f16">
-										잡아바를 <span class="txtPink">탈퇴</span> 하시겠습니까?<br>
-										<span class="txtGray f14">타인에게 비밀번호가 노출되지 않도록 주의하세요.</span>
-									</p>
-									<div class="center mgt20">
-										<label class="mgr10" for="pswd">비밀번호</label>
-										<input type="password" id="pswd" name="pswd" class="comm_input" placeholder="현재 비밀번호 입력" maxlength="20" autocomplete="off">
-									</div>
-									<div class="center mgt20">
-										<button type="submit" class="btn_medium btn_puertoRico">확인</button>
-										<button type="button" class="btn_medium btn_athensGray mgl10">취소</button>
-									</div>
+							<div class="confirmWrap">
+								<p class="f16">
+									잡아바를 <span class="txtPink">탈퇴</span> 하시겠습니까?<br>
+									<span class="txtGray f14">타인에게 비밀번호가 노출되지 않도록 주의하세요.</span>
+								</p>
+								<div class="mgt20">
+									<label class="mgr10" for="pswd">비밀번호</label>
+									<input type="password" id="pswd" name="pswd" class="comm_input" placeholder="현재 비밀번호 입력" maxlength="20" autocomplete="off">
 								</div>
+								<div class="mgt20">
+									<button type="submit" class="btn_medium btn_puertoRico">확인</button>
+									<button type="button" class="btn_medium btn_athensGray mgl10">취소</button>
+								</div>
+							</div>
 
 						</div>
 						<!-- //컨텐츠 -->
