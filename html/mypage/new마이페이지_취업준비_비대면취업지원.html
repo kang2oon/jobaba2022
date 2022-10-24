@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Document</title>
+	<title>new마이페이지_취업준비_비대면취업지원</title>
 	<!-- 잡아바 css-->
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
@@ -112,9 +112,6 @@
 			<div class="innerSection">
 				<div class="contentsWrap">
 					<!-- left menu -->
-					<div class="btnMenuOpen">
-						<a href="javascript:void(0);">메뉴보기</a>
-					</div>
 					<div class="leftMenu">
 						<div class="mypageBtn">
 							<a href="#">마이페이지 메인</a>
@@ -181,79 +178,98 @@
 					<!-- // left menu -->
 
 					<div class="contentsBox">
-						<div class="titWrap">
-							<h2>비대면 취업지원</h2>
+						<div class="myTitle mgb30">
+							<h3 class="tit">비대면 취업지원</h3>
 						</div>
+						<!-- 모바일 카테고리 메뉴 -->
+						<div class="categoryMobile">
+							<select name="" id="tabMobile" class="comm_select">
+								<option value="" data-tab="tab1">진로,취업상담(<span>1</span>)</option>
+								<option value="" data-tab="tab2">자기소개서 첨삭(<span>0</span>)</option>
+								<option value="" data-tab="tab3">AI 역량검사(<span>0</span>)</option>
+								<option value="" data-tab="tab4">취업멘토링(<span>0</span>)</option>
+							</select>
+						</div>
+						<!-- PC 카테고리 메뉴 -->
 						<ul class="categoryMenu">
-							<li class="active"><a href="javascript:void(0);">진로,취업상담(0)</a></li>
-							<li><a href="javascript:void(0);">자기소개서 첨삭(0)</a></li>
-							<li><a href="javascript:void(0);">AI 역량검사(0)</a></li>
-							<li><a href="javascript:void(0);">취업멘토링(0)</a></li>
+							<li data-tab="tab1" class="active"><a href="javascript:void(0);">진로,취업상담(<span>1</span>)</a></li>
+							<li data-tab="tab2"><a href="javascript:void(0);">자기소개서 첨삭(<span>0</span>)</a></li>
+							<li data-tab="tab3"><a href="javascript:void(0);">AI 역량검사(<span>0</span>)</a></li>
+							<li data-tab="tab4"><a href="javascript:void(0);">취업멘토링(<span>0</span>)</a></li>
 						</ul>
 						<!-- 컨텐츠 -->
-						<div class="ct_box">
-							<!-- 리스트 -->
-							<div id="page-content" class="coverletter mar0" style="background:none;">
-								<div class="ct_box private">
-									<div class="row listTop mgt0">
-										<div class="cell w100p">
-											<ul>
-												<li class="temporary">임시저장 <span>0건</span></li>
-												<li class="standby">답변대기 <span>0건</span></li>
-												<li class="complete">컨설팅 완료 <span>0건</span></li>
-											</ul>
-										</div>
-										<div class="cell w100p mgt20 ar">
-											<a href="https://www.jobaba.net/psychology/mainList.do" class="btn btn-sm btn3">취업, 취업상담 신청</a>
-											<!-- <a href="https://www.jobaba.net/introduction/mainList.do" class="btn btn-sm btn3">자기소개서 첨삭</a>
-											<a href="https://www.jobaba.net/interview/mainList.do" class="btn btn-sm btn3">AI 역량검사 신청</a>
-											<a href="https://www.jobaba.net/mentoring/mainList.do" class="btn btn-sm btn3">취업멘토링 신청</a> -->
-										</div>
+
+								<div class="container">
+
+										
+									<ul class="untactList mgb10">
+										<li>임시저장 <span class="txtBlue">0건</span></li>
+										<li>답변대기 <span class="txtRed">1건</span></li>
+										<li>컨설팅 완료 <span class="txtDoveGray">0건</span></li>
+									</ul>
+									<div class="ar mgb20">
+										<a href="https://www.jobaba.net/epmtDiag/jobPrfrnc/jobPrfrncMain.do" target="_blank" class="btn_nomal btn_puertoRico">취업선호도 진단 &gt;</a>
+										<!-- 
+										<a href="https://www.jobaba.net/jobInfo/jobInfoMain.do" class="btn_nomal btn_puertoRico">취업가능성 진단 &gt;</a>
+										<a href="https://www.jobaba.net/epmtDiag/epmtPrep/epmtPrepMain.do" class="btn_nomal btn_puertoRico">취업준비도 진단 &gt;</a>
+										<a href="https://www.jobaba.net/auland/mainList.do" class="btn_nomal btn_puertoRico">취업진로 진단검사 &gt;</a> 
+										<a href="https://www.jobaba.net/jobInfoNcs/jobInfoNcsMain.do" class="btn_nomal btn_puertoRico">NCS직업역량 진단 &gt;</a>
+										-->
 									</div>
-									<div class="tbl-type2 tbl-btn m_t_hide">
-										<table>
+									<div class="mytb2-type">
+										<table class="table table-list untact_list">
 											<colgroup>
-												<col width="90px" class="m_hide">
+												<col width="90px">
 												<col width="*">
-												<col width="100px" class="m_hide">
-												<col width="110px" class="m_hide">
-												<col width="150px" class="m_hide">
+												<col width="100px">
+												<col width="110px">
+												<col width="150px">
 											</colgroup>
 											<thead>
 												<tr>
-													<th class="m_hide">번호</th>
-													<th class="m_hide">제목</th>
-													<th class="m_hide">진행상태</th>
-													<th class="m_hide">등록일</th>
-													<th class="m_hide">자세히 보기</th>
+													<th>번호</th>
+													<th>제목</th>
+													<th>진행상태</th>
+													<th>등록일</th>
+													<th>자세히 보기</th>
 												</tr>
 											</thead>
-											<tbody id="crwlData">
-											
+											<tbody>
 												<tr>
-													<td colspan="5" style="text-align:center; height:50px;">등록된 데이터가 없습니다.</td>
+													<td class="center">2</td>
+													<td class="center"><a href="javascript:void(0);">테스트자기소개서</a></td>
+													<td class="center"><span class="txtRed">답변대기</span></td>
+													<td class="center"><span>2022-10-23</span></td>
+													<td class="center"><a href="javascript:void(0);" class="btn_small dsm btnPuertoRico">컨설팅 확인</a></td>
 												</tr>
-											
+												<tr>
+													<td class="center">1</td>
+													<td class="center"><a href="javascript:void(0);">테스트자기소개서</a></td>
+													<td class="center"><span class="txtBlue">임시저장</span></td>
+													<td class="center"><span>2022-10-23</span></td>
+													<td class="center"><a href="javascript:void(0);" class="btn_small dsm btnPuertoRico">수정하기</a></td>
+												</tr>
 											</tbody>
 										</table>
 									</div>
 				
-									<div class="pagination_wrap"><div class="mo_paging"><p class="active_txt"><span class="cut"></span> / <span></span></p></div>
-										<div class="mo_paging" id="crwlPagingMoDiv">
+									<!-- begin: paging -->
+									<div class="pagination_wrap">
+										<div class="mo_paging">
+											<p class="active_txt"><span class="cut">1</span> / <span>1</span></p>
 										</div>
-										<ul class="pagination list-paging" id="crwlPagingPcDiv">
+										<ul class="pagination list-paging">
+											<li class="paginate_button active list"><a href="#none">1</a></li>
 										</ul>
 									</div>
+									<!-- end: paging -->
 				
-									<div>
-										<p class="red_txt f14">※ 자기소개서에 전형과 무관한 사생활 정보, 민감정보 등을 기재하지마세요</p>
-										<p class="f14">작성하신 자기소개서와 전문가의 컨설팅 내용은 모두 비공개 됩니다.</p>
-										<p class="f14">※자기소개서 컨설팅을 이용하시면 AI면접을 바로 이용하실 수 있습니다.</p>
+									<div class="mgt20">
+										<p class="f14 txtRed mgb10">※ 자기소개서에 전형과 무관한 사생활 정보, 민감정보 등을 기재하지마세요</p>
+										<p class="f14 infoIcon mgb10">작성하신 자기소개서와 전문가의 컨설팅 내용은 모두 비공개 됩니다.</p>
+										<p class="f14 txtPuertoRico">※자기소개서 컨설팅을 이용하시면 AI면접을 바로 이용하실 수 있습니다.</p>
 									</div>
 								</div>
-							</div>
-							<!-- 리스트 -->
-						</div>
 						<!-- //컨텐츠 -->
 					</div>
 				</div>
