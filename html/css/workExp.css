@@ -28,6 +28,7 @@
 .workExpWrap .item:last-child{margin-bottom: 0}
 .workExpWrap .item .top{display: flex;justify-content: space-between;align-items: center}
 .workExpWrap .item .top .more_btn{background: url(../images/we_arrow.png) no-repeat;width: 12px;height: 8px;text-indent: -9999px}
+.workExpWrap .item .top .more_btn.active{transform: rotate(180deg)}
 .workExpWrap .item .name{font-size: 16px;color: #787878;}
 .workExpWrap .item .tit{font-size: 20px;font-weight: 500;margin: 5px 0 20px 0}
 .workExpWrap .item .bottom{display: flex;justify-content: space-between;}
@@ -70,6 +71,7 @@
 	.workExpWrap .ex_lower > div > div a .desc{font-size: 14px}
 }
 @media all and (max-width:768px){
+	.workExpWrap{background: linear-gradient(180deg, rgba(217,240,254,1) 0%, rgba(255,255,255,1) 10%);}
 	.workExpWrap{padding-top: 50px}
 	.workExpWrap .we_tit{font-size: 30px;}
 	.workExpWrap .we_desc{font-size: 16px}
