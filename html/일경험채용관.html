@@ -58,7 +58,7 @@
 
 						<!--스위치-->
 						<div class="switch_area">
-							<a href="javascript:void()" class="switch_btn">
+							<a href="#" class="switch_btn" id="activate">
 								<span></span>
 								전체 열기</a>
 						</div>
@@ -211,7 +211,7 @@
 
 						<!--스위치-->
 						<div class="switch_area">
-							<a href="javascript:void()" class="switch_btn">
+							<a href="javascript:void()" class="switch_btn" id="activate02">
 								<span></span>
 								전체 열기</a>
 						</div>
@@ -303,7 +303,7 @@
 
 						<!--스위치-->
 						<div class="switch_area">
-							<a href="javascript:void()" class="switch_btn">
+							<a href="javascript:void()" class="switch_btn" id="activate03">
 								<span></span>
 								전체 열기</a>
 						</div>
@@ -334,7 +334,7 @@
 									<p>자격요건</p>
 									<div class="flex">
 										<p>Build up sales strategy for assigned customer; area to achieve target of section.Expand business scale with current customer. Create new business.Promote the company’s products;services addressing or predicting clients’ objectives.Follow budget information announced by upper level and try to achieve budget set up. Support staffs to achieve their budget.
-</p>
+										</p>
 										<button type="button">지원하기</button>
 									</div>
 								</div>
@@ -378,41 +378,41 @@
 			</div>
 			<div class="ex_lower">
 				<div class="containerNew">
-				<div>
-					<a href="https://www.jobaba.net/introduction/mainList.do">
-						<p class="tit">자기소개서 첨삭</p>
-						<p class="desc">항상 고민되는 자기소개서<br>
-							전문가에게 컨설팅 받아보세요.
-						</p>
-						<p class="link">바로가기 →</p>
-					</a>
-					<a href="https://www.jobaba.net/psychology/mainList.do">
-						<p class="tit">진로,취업상담</p>
-						<p class="desc">심리,진로,취업 관련 상담이<br>
-							필요할때 전문 상담사와 1:1<br>
-							상담해보세요.
-						</p>
-						
-						<p class="link">바로가기 →</p>
-					</a>
-					<a href="https://www.jobaba.net/auland/mainList.do">
-						<p class="tit">취업진로 진단검사
-						</p>
-						<p class="desc">나에게 적합한 진로,직업 직무가<br>
-							고민될때, 나 자신을 알아보세요.
-						</p>
-						
-						<p class="link">바로가기 →</p>
-					</a>
-					<a href="https://www.jobaba.net/mentoring/mainList.do">
-						<p class="tit">취업멘토링</p>
-						<p class="desc">직무의 생생한 이야기가 <br>
-							궁금하다면? 원하는 멘토에게
-							직접 질문해보세요.
-						</p>
-						
-						<p class="link">바로가기 →</p>
-					</a>
+					<div>
+						<a href="https://www.jobaba.net/introduction/mainList.do">
+							<p class="tit">자기소개서 첨삭</p>
+							<p class="desc">항상 고민되는 자기소개서<br>
+								전문가에게 컨설팅 받아보세요.
+							</p>
+							<p class="link">바로가기 →</p>
+						</a>
+						<a href="https://www.jobaba.net/psychology/mainList.do">
+							<p class="tit">진로,취업상담</p>
+							<p class="desc">심리,진로,취업 관련 상담이<br>
+								필요할때 전문 상담사와 1:1<br>
+								상담해보세요.
+							</p>
+
+							<p class="link">바로가기 →</p>
+						</a>
+						<a href="https://www.jobaba.net/auland/mainList.do">
+							<p class="tit">취업진로 진단검사
+							</p>
+							<p class="desc">나에게 적합한 진로,직업 직무가<br>
+								고민될때, 나 자신을 알아보세요.
+							</p>
+
+							<p class="link">바로가기 →</p>
+						</a>
+						<a href="https://www.jobaba.net/mentoring/mainList.do">
+							<p class="tit">취업멘토링</p>
+							<p class="desc">직무의 생생한 이야기가 <br>
+								궁금하다면? 원하는 멘토에게
+								직접 질문해보세요.
+							</p>
+
+							<p class="link">바로가기 →</p>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -420,27 +420,32 @@
 	</div>
 
 	<!--잡아바 js-->
-	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://www.jobaba.net//resource/bxslider/slick.js"></script>
 
 	<script>
 		$(document).ready(function() {
 			$('.workExpWrap .switch_btn').click(function() {
-				if ($(this).html() == '전체 열기') {
-					$(this).html('전체 닫기');
-					$(this).addClass('active');
-					$(this).parent().next().find('.contact').slideDown();
-
-				} else {
+				var text = '전체 닫기';
+				if ($(this).html() === text) {
 					$(this).html('전체 열기');
 					$(this).removeClass('active');
 					$(this).parent().next().find('.contact').slideUp();
+					$(this).parent().next().find('.more_btn').removeClass('active');
+				} else {
+					$(this).text('전체 닫기');
+					$(this).addClass('active');
+					$(this).parent().next().find('.more_btn').removeClass('active');
+					$(this).parent().next().find('.contact').slideDown();
+					
+					$(this).parent().next().find('.more_btn').addClass('active');
 				}
-			});
+			})
 
 			// 아코디언
 			$('.workExpWrap .item .top .more_btn').click(function() {
-				$(this).parent().parent().find('.contact').slideToggle()
+				$(this).parent().parent().find('.contact').slideToggle();
+				$(this).toggleClass('active');
 			});
 
 			/*관심공고 등록*/
