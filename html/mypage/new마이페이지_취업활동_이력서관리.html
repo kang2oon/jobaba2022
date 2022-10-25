@@ -193,7 +193,8 @@
 									<b>신규 이력서 작성</b>
 								</a>
 							</div>
-							<div class="whiteBox boxItem">
+							<!-- 대표이력서 active 클레스 추가 -->
+							<div class="whiteBox boxItem active">
 								<div class="titWrap">
 									<a href="javascript:void(0)">
 										<span class="btn-sm bgPuertoRico borderPuertoRico txtWhite">일반형</span>
@@ -271,9 +272,6 @@
 	<script>
 		// 스크롤 js
 	$(document).ready(function(){
-		$('.btnWrap a').click(function(){
-            $(this).toggleClass('on');
-        });
 
 		// left 메뉴
 		$('.btnMenuOpen a').click(function(){
