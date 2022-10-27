@@ -239,6 +239,7 @@
 @media all and (max-width:768px) { 
     .m_al {text-align: left !important;}
     .m_ar {text-align: right !important;}
+    .m_wd100 { width: 100px !important;}
     .m_ellips { display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-align: left !important; }
 
     /* 테이블 모바일 */
@@ -246,9 +247,6 @@
     .mytbl-type .table > thead > tr > th, .mytbl-type .table > tbody > tr > td { padding: 10px 7px 10px 0px !important; font-size: 14px; background: none; border-left: none !important;}
     .mytb2-type .table > thead > tr > th, .mytb2-type .table > tbody > tr > td { padding: 10px 7px 10px 0px !important; font-size: 14px; background: none; border-left: none !important;}
     
-    /* 관심등록 모바일 */
-    .mytbl-type .interest_list thead tr th:nth-child(2) {text-align: right;}
-    .mytbl-type .interest_list tbody tr td:nth-child(2) {text-align: right !important;}
 
     /* 알림등록 모바일 */
     .mytbl-type .newAlam_list colgroup, .mytbl-type .newAlam_list thead { display:none; } 
