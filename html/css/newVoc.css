@@ -66,6 +66,7 @@
 	.new_voc .ico_list > div{margin-right: 20px;width: calc(33.333% - 13.333px);}
 	.new_voc .ico_list > div p {word-break: keep-all}
 	.new_voc .ico_list > div br{display: none}
+	.new_voc .new_edu_list ul li .media_info{margin-top: 10px}
 	.new_voc .new_edu_list ul li{width: calc(50% - 10px);margin-right: 20px;margin-top: 20px}
 	.new_voc .new_edu_list ul li:nth-child(2n){margin-right: 0}
 	.new_voc .new_edu_list ul li:nth-child(5n){margin-right: auto}
@@ -74,6 +75,7 @@
 	.new_voc .new_edu_list ul li .thumb{height: 260px}
 	.new_voc .dream_top{display: block;}
 	.new_voc .dream_top .link{margin-top: 10px}
+	
 }
 
 
