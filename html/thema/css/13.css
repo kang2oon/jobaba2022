@@ -158,18 +158,22 @@
   .themaWrap .f40 { font-size: 22px; } 
   .themaWrap .f45 { font-size: 24px; } 
   .themaWrap .section01 { padding: 100px 0 150px; } 
+  .themaWrap .section02 .textWrap {word-break: keep-all;}
   .themaWrap .section02 .textWrap h3::before,
   .themaWrap .section02 .textWrap h3::after { content: none; } 
   .themaWrap .section03 { padding-bottom: 20px; } 
-  .themaWrap .section03 ul.entryList li { gap: 0 10px; padding: 10px; border-radius: 20px; } 
+  .themaWrap .section03 ul.entryList li { gap: 0 10px; padding: 10px; border-radius: 20px; word-break: keep-all;} 
   .themaWrap .section03 ul.entryList li > span { min-width: 100px; height: 100px; line-height: 100px; } 
 
+  .themaWrap h3, .themaWrap .textWrap {word-break: keep-all;}
   .themaWrap .section03 .itemBox { padding-top: 20px; } 
   .themaWrap .section03 .itemBox .linkBox a { flex-direction: column; gap: 20px 0; font-size: 22px; } 
   .themaWrap .section03 .itemBox .linkBox .imageWrap { width: 100%; } 
+  .themaWrap .section03 .itemBox p {word-break: keep-all;}
   .themaWrap .bannerWrap .textWrap { padding: 20px 0 150px; } 
   .themaWrap .bannerWrap .textWrap::before { width: 221px; height: 130px; } 
   .themaWrap .consultingWrap ul.consultingList li { width: 100%; } 
+  .themaWrap .section03 .itemBox ul.faqList li {word-break: keep-all;}
 }
 
 @media all and (max-width:640px){
