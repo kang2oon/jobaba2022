@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+.themaWrap { letter-spacing: -0.5px; } 
+.themaWrap .innerSection { position: relative; padding: 0 20px; max-width: 1240px; height: 100%; margin: 0 auto; } 
+.themaWrap img { object-fit: cover; height: inherit; } 
+
+.themaWrap .mgb10 { margin-bottom: 10px; } 
+.themaWrap .mgb20 { margin-bottom: 20px; } 
+.themaWrap .mgt40 { margin-top: 40px; } 
+
+.themaWrap .f20 { font-size: 20px; } 
+.themaWrap .f25 { font-size: 25px; } 
+.themaWrap .f30 { font-size: 30px; } 
+.themaWrap .f35 { font-size: 35px; } 
+.themaWrap .f40 { font-size: 40px; } 
+.themaWrap .f45 { font-size: 45px; } 
+
+.themaWrap .txtRed { color: #ff0000; } 
+.themaWrap .txtWhite { color: #fff; } 
+.themaWrap .txtYellow { color: #fcff00; } 
+.themaWrap .txtOrange { color: #ff7200; } 
+
+.themaWrap .bgYellow { background: #ffd600; } 
+.themaWrap .bgOrange { background: #ff7200; } 
+
+.themaWrap .tct { text-align: center; } 
+.themaWrap .brb { padding-bottom: 40px; margin-bottom: 30px; border-bottom: 2px solid #cdcdcd; } 
+.forPc { display: none; } 
+
+.themaWrap h3.red { background: #ff432a; } 
+.themaWrap h3.red:before { background: #ff432a; } 
+.themaWrap h3.red:after { background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2211/thema13_icon01.png) center no-repeat; } 
+.themaWrap h3.green { background: #26c27e; } 
+.themaWrap h3.green:before { background: #26c27e; } 
+.themaWrap h3.green:after { background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2211/thema13_icon02.png) center no-repeat; } 
+.themaWrap h3.blue { width: 250px; background: #3690ff; } 
+.themaWrap h3.blue:before { background: #3690ff; } 
+.themaWrap h3.blue:after { background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2211/thema13_icon03.png) center no-repeat; } 
+
+.themaWrap .section01 { width: 100%; padding: 211px 0 288px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2211/thema13_bg.png) center no-repeat; background-size: cover; } 
+.themaWrap .section01 .mainTitleWrap { position: relative; } 
+.themaWrap .section01 .mainTitleWrap::before { content: ""; position: absolute; top: -116px; width: 100%; height: 453px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2211/thema13_bg2.png) center no-repeat; background-size: contain; } 
+.themaWrap .section02 { background: #48cbc3; } 
+.themaWrap .section02 .textWrap { padding: 30px 0; text-align: center; } 
+.themaWrap .section02 .textWrap h3 { position: relative; display: inline-block; } 
+.themaWrap .section02 .textWrap h3::after { content: ""; position: absolute; top: 50%; right: -80px; transform: translateY(-50%); width: 70px; height: 2px; background: #fff; } 
+.themaWrap .section02 .textWrap h3::before { content: ""; position: absolute; top: 50%; left: -80px; transform: translateY(-50%); width: 70px; height: 2px; background: #fff; } 
+.themaWrap .section02 .textWrap b { color: #005ae2; border-bottom: 1px solid #005ae2; } 
+.themaWrap .section03 { background: #fffaeb url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2211/thema13_bg3.png) top no-repeat; padding-bottom: 100px; } 
+.themaWrap .section03 ul.entryList { display: flex; flex-direction: column; gap: 20px 0; } 
+.themaWrap .section03 ul.entryList li { position: relative; display: flex; align-items: center; gap: 0 24px; padding: 20px 40px 20px 20px; border-radius: 100px; } 
+.themaWrap .section03 ul.entryList li > span { min-width: 140px; height: 140px; background: #fff; font-weight: 600; text-align: center; line-height: 140px; border-radius: 100%; } 
+.themaWrap .section03 ul.entryList li:nth-child(odd) { margin-right: 100px; } 
+.themaWrap .section03 ul.entryList li:nth-child(odd)::before { content: ""; position: absolute; bottom: 0; right: 60px; } 
+.themaWrap .section03 ul.entryList li:nth-child(even) { margin-left: 100px; } 
+.themaWrap .section03 ul.entryList li:nth-child(even)::before { content: ""; position: absolute; bottom: 0; right: 100px; } 
+.themaWrap .section03 ul.entryList li:nth-child(1) { background: #ffd800; } 
+.themaWrap .section03 ul.entryList li:nth-child(1)::before { width: 297px; height: 165px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2211/thema13_entry01.png) no-repeat; } 
+.themaWrap .section03 ul.entryList li:nth-child(2) { background: #ffe552; } 
+.themaWrap .section03 ul.entryList li:nth-child(2)::before { width: 210px; height: 160px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2211/thema13_entry02.png) no-repeat; } 
+.themaWrap .section03 ul.entryList li:nth-child(3) { background: #ffeb7c; } 
+.themaWrap .section03 ul.entryList li:nth-child(3)::before { width: 172px; height: 169px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2211/thema13_entry03.png) no-repeat; } 
+.themaWrap .section03 ul.entryList li:nth-child(4) { background: #fff09f; } 
+.themaWrap .section03 ul.entryList li:nth-child(4)::before { width: 298px; height: 170px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2211/thema13_entry04.png) no-repeat; } 
+.themaWrap .section03 .itemBox { padding-top: 100px;; } 
+.themaWrap .section03 .itemBox .titWrap { text-align: center; } 
+.themaWrap .section03 .itemBox .titWrap h3 { position: relative; display: inline-block; width: 460px; padding: 15px; margin-bottom: 60px; border-radius: 50px; z-index: 1; } 
+.themaWrap .section03 .itemBox .titWrap h3:before { content: ''; display: block; width: calc(100% - 12px); height: calc(100% - 12px); border: 3px solid #fff; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); border-radius: 50px; z-index: -1; } 
+.themaWrap .section03 .itemBox .titWrap h3:after { content: ''; display: block; position: absolute; left: 50%; bottom: -18px; width: 25px; height: 26px; transform: translateX(-50%); } 
+.themaWrap .section03 .itemBox .linkBox { width: 800px; text-align: center; margin: 0 auto; } 
+.themaWrap .section03 .itemBox .linkBox a { display: flex; align-items: center; gap: 0 30px; padding: 20px; font-size: 40px; background: #ffcf29; border-radius: 20px; overflow: hidden; box-shadow: inset 0 3px 2px rgb(255 255 255 / 22%), inset 0 -3px 2px rgb(0 0 0 / 17%), inset 0 20px 10px rgb(255 255 255 / 12%), 0 0 4px 1px rgb(0 0 0 / 10%); } 
+.themaWrap .section03 .itemBox .linkBox .imageWrap { width: 350px; padding-top: 6px; background: #fff; border-radius: 20px; text-align: center; } 
+.themaWrap .section03 .itemBox .linkBox > p { position: relative; margin-bottom: 20px; } 
+.themaWrap .section03 .itemBox .linkBox > p::after { content: ""; position: absolute; bottom: -10px; right: -22px; width: 131px; height: 120px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2211/thema13_icon10.png) no-repeat; background-size: contain; } 
+.themaWrap .section03 .itemBox ul.faqList { position: relative; } 
+.themaWrap .section03 .itemBox ul.faqList::before { content: ""; position: absolute; top: -175px; left: 134px; width: 235px; height: 175px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2211/thema13_icon11.png) no-repeat; } 
+.themaWrap .section03 .itemBox ul.faqList::after { content: ""; position: absolute; top: -178px; right: 100px; width: 280px; height: 178px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2211/thema13_icon12.png) no-repeat; } 
+.themaWrap .section03 .itemBox ul.faqList li { padding: 30px; background: #fff5c1; border-radius: 20px; } 
+.themaWrap .section03 .itemBox ul.faqList li:not(:first-child) { margin-top: 20px; } 
+.themaWrap .section03 .itemBox ul.faqList .faqBox { display: flex; gap: 0 15px; } 
+.themaWrap .section03 .itemBox ul.faqList .faqBox:first-child { align-items: center; } 
+.themaWrap .section03 .itemBox ul.faqList .faqBox span { display: flex; align-items: center; justify-content: center; min-width: 46px; height: 46px; border-radius: 15px; } 
+.themaWrap .section03 .itemBox ul.faqList .faqBox p { font-weight: 600; } 
+.themaWrap .section04 { padding: 100px 0; background: #48cbc3; } 
+.themaWrap .section04 .titWrap h3 { position: relative; padding-left: 100px; } 
+.themaWrap .section04 .titWrap h3::before { content: ""; position: absolute; top: -44px; left: 0; width: 126px; height: 115px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2211/thema13_icon18.png) no-repeat; background-size: contain; } 
+.themaWrap .section04 .insurWrap { position: relative; padding: 40px; background: #fff; text-align: center; border-radius: 20px; border: 1px solid #b0b0b0; } 
+.themaWrap .section04 .insurWrap .circle { position: absolute; display: block; width: 15px; height: 15px; background: #48cbc3; border-radius: 50%; box-shadow: inset 0px 2px 6px 0px rgb(0 0 0 / .4); } 
+.themaWrap .section04 .insurWrap .circle:nth-child(1) { top: 20px; left: 20px; } 
+.themaWrap .section04 .insurWrap .circle:nth-child(2) { top: 20px; right: 20px; } 
+.themaWrap .section04 .insurWrap .circle:nth-child(3) { bottom: 20px; left: 20px; } 
+.themaWrap .section04 .insurWrap .circle:nth-child(4) { bottom: 20px; right: 20px; } 
+.themaWrap .section04 ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; } 
+.themaWrap .section04 ul li { width: calc((100% - 80px) / 3); padding: 20px 0; border: 2px solid #48cbc3; box-shadow: 0px 3px #48cbc3; border-radius: 20px; } 
+.themaWrap .section04 ul li p { margin-top: 20px; } 
+.themaWrap .section04 ul li.myData { border: 2px dashed #ffa800; box-shadow: 0px 3px #ffa800; } 
+.themaWrap .section04 ul li.myData strong { position: relative; display: inline-block; width: 100%; padding: 15px; margin: 40px 0; border-radius: 10px; background: #ffa800; transform: rotate(-5deg); z-index: 1; } 
+.themaWrap .section04 ul li.myData strong:before { content: ''; display: block; width: calc(100% - 10px); height: calc(100% - 10px); border: 3px solid #fff; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); border-radius: 10px; z-index: -1; } 
+.themaWrap .bannerWrap { background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2211/thema13_banner.png) center no-repeat; background-size: cover; } 
+.themaWrap .bannerWrap .textWrap { position: relative; padding: 100px 30px; } 
+.themaWrap .bannerWrap .textWrap::before { content: ""; position: absolute; bottom: 0; right: 20px; width: 483px; height: 284px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2211/thema13_icon04.png) no-repeat; background-size: contain; } 
+.themaWrap .consultingWrap { padding: 100px 0; background: #fffaeb; } 
+.themaWrap .consultingWrap ul.consultingList { display: flex; align-items: center; justify-content: center; gap: 0 20px; text-align: center; } 
+.themaWrap .consultingWrap ul.consultingList li a { display: block; padding: 20px; background: #fff; border-radius: 20px; } 
+.themaWrap .consultingWrap ul.consultingList li a:hover { background: #fff5c1; transition: all 0.2s; } 
+.themaWrap .consultingWrap ul.consultingList .imageWrap { max-width: 300px; margin: 0 auto 20px; border-radius: 15px; overflow: hidden; } 
+.themaWrap .consultingWrap ul.consultingList .textWrap p { font-size: 16px; margin: 10px 0 28px; } 
+.themaWrap .consultingWrap ul.consultingList .textWrap .link { color: #000; font-size: 16px; font-weight: 700; border-bottom: 1px solid #666; } 
+
+@media all and (max-width:1199px){
+
+  .themaWrap .f45 { font-size: 35px; } 
+  .themaWrap .section03 ul.entryList li:nth-child(odd) { margin-right: 0; } 
+  .themaWrap .section03 ul.entryList li:nth-child(even) { margin-left: 0; } 
+}
+@media all and (max-width:1024px){
+
+  .themaWrap .f20 { font-size: 18px; } 
+  .themaWrap .f25 { font-size: 22px; } 
+  .themaWrap .f30 { font-size: 24px; } 
+  .themaWrap .f35 { font-size: 26px; } 
+  .themaWrap .f40 { font-size: 30px; } 
+  .themaWrap .f45 { font-size: 28px; } 
+
+  .themaWrap .section01 .mainTitleWrap::before { content: none; } 
+  .themaWrap .section03 ul.entryList li::before { content: none !important; } 
+  .themaWrap .section03 .itemBox { padding-top: 40px; } 
+  .themaWrap .section03 .itemBox .linkBox { width: 100%; } 
+  .themaWrap .section03 .itemBox .linkBox > p::after { height: 85px; } 
+  .themaWrap .section03 .itemBox ul.faqList::before,
+  .themaWrap .section03 .itemBox ul.faqList::after { content: none; } 
+  .themaWrap .section04 { padding: 50px 0; } 
+  .themaWrap .section04 .titWrap h3::before { height: 86px; top: -32px; } 
+  .themaWrap .bannerWrap .textWrap { padding: 80px 0 100px; } 
+  .themaWrap .bannerWrap .textWrap::before { width: 342px; height: 200px; right: 0; } 
+  .themaWrap .consultingWrap { padding: 40px 0; } 
+  .themaWrap .consultingWrap ul.consultingList { flex-wrap: wrap; gap: 20px; } 
+  .themaWrap .consultingWrap ul.consultingList li { width: calc((100% - 20px) / 2); } 
+  .themaWrap .consultingWrap ul.consultingList .imageWrap img { width: 100%; } 
+}
+@media all and (max-width:860px){
+
+  .themaWrap .mgt40 { margin-top: 20px !important; } 
+  .themaWrap .section04 ul { flex-direction: column; gap: 20px 0; } 
+  .themaWrap .section04 ul li { width: 100%; } 
+  .themaWrap .section04 ul li.myData strong { margin: 0; transform: initial; } 
+  .themaWrap .section04 ul li span { display: inline-block; } 
+  .themaWrap .section04 ul li span img { width: 50%; } 
+}
+@media all and (max-width:768px){
+
+  .forMobile { display: none; } 
+  .forPc { display: block; } 
+  .themaWrap .f20 { font-size: 14px; } 
+  .themaWrap .f25 { font-size: 16px; } 
+  .themaWrap .f30 { font-size: 18px; } 
+  .themaWrap .f35 { font-size: 20px; } 
+  .themaWrap .f40 { font-size: 22px; } 
+  .themaWrap .f45 { font-size: 24px; } 
+  .themaWrap .section01 { padding: 100px 0 150px; } 
+  .themaWrap .section02 .textWrap h3::before,
+  .themaWrap .section02 .textWrap h3::after { content: none; } 
+  .themaWrap .section03 { padding-bottom: 20px; } 
+  .themaWrap .section03 ul.entryList li { gap: 0 10px; padding: 10px; border-radius: 20px; } 
+  .themaWrap .section03 ul.entryList li > span { min-width: 100px; height: 100px; line-height: 100px; } 
+
+  .themaWrap .section03 .itemBox { padding-top: 20px; } 
+  .themaWrap .section03 .itemBox .linkBox a { flex-direction: column; gap: 20px 0; font-size: 22px; } 
+  .themaWrap .section03 .itemBox .linkBox .imageWrap { width: 100%; } 
+  .themaWrap .bannerWrap .textWrap { padding: 20px 0 150px; } 
+  .themaWrap .bannerWrap .textWrap::before { width: 221px; height: 130px; } 
+  .themaWrap .consultingWrap ul.consultingList li { width: 100%; } 
+}
+
+@media all and (max-width:640px){
+
+  .themaWrap .f25 { font-size: 16px; } 
+  .themaWrap .f30 { font-size: 16px; } 
+  .themaWrap .f35 { font-size: 18px; } 
+  .themaWrap .f40 { font-size: 20px; } 
+  .themaWrap .f45 { font-size: 22px; } 
+  .themaWrap .section01 { padding: 50px 0 100px; } 
+  .themaWrap .section03 .itemBox .linkBox > p::after { content: none; } 
+  .themaWrap .section03 .itemBox .titWrap h3 { width: 100%; margin-bottom: 30px; } 
+  .themaWrap .section03 ul.entryList li > span { min-width: 80px; height: 80px; line-height: 80px; } 
+  .themaWrap .section04 .titWrap h3::before { content: none; } 
+  .themaWrap .section04 .titWrap h3 { padding: 0; text-align: center; } 
+}
