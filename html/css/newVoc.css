@@ -100,14 +100,14 @@
 	.new_voc .gray_hr{margin: 40px 0 20px 0}
 	.new_voc .dream_top{margin-bottom: 15px}
 	.new_voc .dream_top .count{font-size: 14px}
-	.new_voc .dream_top .link{font-size: 14px}
+	.new_voc .dream_top .link{font-size: 14px} 
+	.new_voc .tabs ul li a .num{display: block}
 }
 
 @media all and (max-width:480px){
 	.new_voc .new_education_list_top .select_area li{width: calc(50% - 5px)}
 	.new_voc .visual .containerNew{padding: 50px 0 170px 0;background-size: 150px;background-position: top 120px right}
 	.new_voc .tabs ul li a{padding: 10px 5px;font-size: 13px}
-	.new_voc .tabs ul li a .num{display: block}
 	.new_voc .new_edu_list ul li .thumb{height: 100px}
 	.new_voc .new_edu_list ul li{width: calc(50% - 5px);margin-right: 10px}
 }
