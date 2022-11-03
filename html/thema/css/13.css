@@ -38,9 +38,9 @@
 .themaWrap h3.blue:before { background: #3690ff; } 
 .themaWrap h3.blue:after { background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2211/thema13_icon03.png) center no-repeat; } 
 
-.themaWrap .section01 { width: 100%; padding: 211px 0 288px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2211/thema13_bg.png) center no-repeat; background-size: cover; } 
-.themaWrap .section01 .mainTitleWrap { position: relative; text-align: center;} 
-.themaWrap .section01 .mainTitleWrap::before { content: ""; position: absolute; top: -116px; left: 0; width: 100%; height: 453px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2211/thema13_bg2.png) center no-repeat; background-size: contain; } 
+.themaWrap .section01 { width: 100%; height: 270px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2211/thema13_bg01.png) center no-repeat; background-size: cover; } 
+.themaWrap .section01 .innerSection { position: relative; display: flex; align-items: center; justify-content: center; }
+.themaWrap .section01 .mainTitleWrap::before { content: ""; position: absolute; top: 35px; left: 0; width: 100%; height: 217px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/2211/thema13_bg4.png) center no-repeat; background-size: contain;} 
 .themaWrap .section02 { background: #48cbc3; } 
 .themaWrap .section02 .textWrap { padding: 30px 0; text-align: center; } 
 .themaWrap .section02 .textWrap h3 { position: relative; display: inline-block; } 
@@ -164,7 +164,6 @@
   .themaWrap .f35 { font-size: 20px; } 
   .themaWrap .f40 { font-size: 22px; } 
   .themaWrap .f45 { font-size: 24px; } 
-  .themaWrap .section01 { padding: 100px 0 150px; } 
   .themaWrap .section02 .textWrap {word-break: keep-all;}
   .themaWrap .section02 .textWrap h3::before,
   .themaWrap .section02 .textWrap h3::after { content: none; } 
@@ -190,7 +189,7 @@
   .themaWrap .f35 { font-size: 18px; } 
   .themaWrap .f40 { font-size: 20px; } 
   .themaWrap .f45 { font-size: 22px; } 
-  .themaWrap .section01 { padding: 50px 0 100px; } 
+  .themaWrap .section01 { height: 200px; } 
   .themaWrap .section03 .itemBox .linkBox > p::after { content: none; } 
   .themaWrap .section03 .itemBox .titWrap h3 { width: 100%; margin-bottom: 30px; } 
   .themaWrap .section03 ul.entryList li > span { min-width: 80px; height: 80px; line-height: 80px; } 
