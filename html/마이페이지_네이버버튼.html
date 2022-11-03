@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>마이페이지_네이버버튼</title>
+	<!-- 잡아바 css-->
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/allnew_ia.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/app.min.css">
+	
+
+
+
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/js/css/jquery-ui.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css">
+	<!-- //잡아바 css-->
+
+	<!--추가 css-->
+	<link rel="stylesheet" href="css/newMypage.css">
+
+</head>
+<body>
+	<style>
+	/* 이력서 네이버 자격증 버튼 추가  */
+	.view > dl > dd.dd_list button.btn_naver { position: relative; padding-left: 36px; background: #03c75a; border-radius: 4px; color: #fff; }
+	.view > dl > dd.dd_list button.btn_naver:before { content: '';position: absolute; top: 0; left: 2px; margin: 0;  background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/resource/images/icon_my_naverlogo3.png) no-repeat; width: 32px; height: 32px; background-size: contain; }
+	.icon_naver {padding-left: 30px !important;background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/resource/images/icon_my_naverlogo3.png) center no-repeat ; background-size: contain;}
+	</style>
+	
+	<div class="ct_box">
+		<div class="viewList">
+			<h4 class="type1">교육/자격증/수상내역/어학능력</h4>
+			<div class="view type1 a">
+				<dl>
+					<dt>
+						교육
+					</dt>
+					<dd class="dd_list">
+						<ul class="mgb8" id="eduArea">
+						
+						</ul>
+						<button type="button" class="btn btn_grey" onclick="addEdu();">+ 교육추가</button>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						자격증
+					</dt>
+					<dd class="dd_list">
+						<!-- 2022.10.11 네이버 api 연동 버튼 추가 -->
+						<input type="hidden" id="naverKey" name="naverKey" value="skxx6lxb3asm">
+						<button type="button" class="btn btn_grey" onclick="addCert();">+ 자격증추가</button>
+						<button type="button" class="btn btn_naver" onclick="naverCert('license');">자격증 불러오기</button>
+						<button type="button" class="btn_tip btn_popNaver"><span>?</span></button>
+						<ul class="mgt8" id="certArea">
+						
+						<li class="certAreaCnt" id="addCertArea1" option-id="1"><input type="text" id="certNm1" name="certNm1" class="comm_input" value="" placeholder="자격증명" title="자격증명"> <input type="text" id="certPubNm1" name="certPubNm1" class="comm_input" value="" placeholder="발행처" title="자격증 발행처"> <input type="text" id="certGetDt1" name="certGetDt1" class="comm_input year dateChk" value="" placeholder="취득년월 yyyymm" title="자격증 취득년월" maxlength="6"><input type="hidden" id="certNaverYn1" name="certNaverYn1" value="N"> <button type="button" class="btn fr" onclick="delArea('addCertArea','1');">- 자격증삭제</button></li><li class="certAreaCnt" id="addCertArea2" option-id="2"><input type="text" id="certNm2" name="certNm2" class="comm_input icon_naver" value="웹디자인기능사" placeholder="시험명" title="시험명" disabled=""> <input type="text" id="certPubNm2" name="certPubNm2" class="comm_input" value="한국산업인력공단" placeholder="기관명" title="기관명" disabled=""> <input type="text" id="certGetDt2" name="certGetDt2" class="comm_input year dateChk" value="201406" placeholder="취득년월" title="자격증 취득년월" disabled=""><input type="hidden" id="certNaverYn2" name="certNaverYn2" value="Y"> <button type="button" class="btn fr" onclick="delArea('addCertArea','2');">- 자격증삭제</button></li></ul>
+						<!-- //2022.10.11 네이버 api 연동 버튼 추가 -->
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						수상내역
+					</dt>
+					<dd class="dd_list">
+						<ul class="mgb8" id="awdArea">
+						
+						</ul>
+						<button type="button" class="btn btn_grey" onclick="addAwd();">+ 수상추가</button>
+
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						어학능력
+					</dt>
+					<dd class="dd_list">
+						<!-- 2022.10.11 네이버 api 연동 버튼 추가 -->
+						<button type="button" class="btn btn_grey" onclick="addLang();">+ 언어추가</button>
+						<button type="button" class="btn btn_naver" onclick="naverCert('lang');">어학성적 불러오기</button>
+						<button type="button" class="btn_tip btn_popNaver2"><span>?</span></button>
+						<ul class="mgt8" id="langArea">
+						
+						</ul>
+						<!-- //2022.10.11 네이버 api 연동 버튼 추가 -->
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+			
+
+
+
+
+
+
+
+	
+
+	
+		
+	<!--잡아바 js-->
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
+
+	
+</body>
+</html>
