@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<title>동영상교육_위캔디오</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        *{font-family: 'Noto Sans KR', sans-serif;box-sizing:border-box;}
+        html,body{position:relative;width:100%;height:100%;margin:0;padding:24px;font-weight:400;font-size:16px;}
+
+        #search{border:1px solid #ccc;background:#f9f9f9;padding:24px;margin-bottom:32px;display:flex;flex-wrap:wrap;}
+        #search > div{width:50%;padding:8px;}
+        #search > div.db{width:100%;text-align:center;}
+        #search > div input{width:100%;border:1px solid #ccc;padding:8px;font-size:14px;}
+        #search > div button{font-size:16px;padding:16px;border:#262626;background-color:#333;color:#fff;min-width:33%;cursor:pointer;}
+        #search > hr{width:100%;border-style:solid;border-style:solid none none;border-color:#ccc;margin:16px 0;}
+        #search h2{font-size:24px;margin:0;}
+        
+        #pageInfo{margin-bottom:8px;position:relative;}
+        #pageInfo span{display:inline-block;}
+        #pageInfo span:nth-child(2){position:absolute;right:0;}
+
+        table{width:100%;border-collapse:collapse;margin-bottom:24px;}
+        table th, table td{border:1px solid #ccc;padding:8px 16px;}
+        table th{background:#262626;color:#fff;}
+        table tr:nth-child(even){background:#f5f5f5;}
+        table td:first-child{text-align:center;}
+        table td:last-child{text-align:right;}
+        table .url{cursor:pointer;}
+    </style>
+</head>
+<body>
+    <div id="search">
+        <div><input type="text" id="key" placeholder="API KEY 값을 입력하세요." value="b5182c8a89eff9a96c20a722302732f2"></div>
+        <div><input type="text" id="pkg" placeholder="배포패키지 ID 값을 입력하세요." value="1018897"></div>
+        <div><input type="number" id="size" placeholder="한 페이지에 출력할 수량을 입력하세요." value="20" ></div>
+        <div><input type="number" id="pg" placeholder="출력희망 페이지를 입력하세요." value="1"></div>
+        <div class="db"><button>검색</button></div>
+        <hr/>
+        <div>
+            <h2>잡아바 정보</h2>
+            <ul>
+                <li>API Key : b5182c8a89eff9a96c20a722302732f2</li>
+                <li>배포패키지 ID
+                    <ul>
+                        <li>동영상교육_2022 : 1018897</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>강원일자리정보망 정보</h2>
+            <ul>
+                <li>API Key : </li>
+                <li>배포패키지 ID
+                    <ul>
+                        <li>-</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="pageInfo">
+
+    </div>
+    <table id="mov_list_wrap">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>제목</th>
+                <th>ACCESS KEY</th>
+                <th>재생시간</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <br/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" ></script>
+    <script>
+    $("#search button").click(function(){
+        var key = $("#key").val();
+        var pkg = $("#pkg").val();
+        var pageSize = $("#size").val();
+        var page = $("#pg").val();
+
+        const xmlhttp = new XMLHttpRequest(); 
+        var url = "https://api.wecandeo.com/info/v1/videos.json";
+        //var key = "b5182c8a89eff9a96c20a722302732f2";
+        //var pkg = "1018897"
+        //var pageSize = "10";
+        //var page = "100";
+        var fullUrl = url + "?key=" + key + "&pkg=" + pkg + "&pagesize=" + pageSize + "&page=" + page;
+        xmlhttp.open("GET", fullUrl, true);
+        xmlhttp.onload = function(){
+            const movObj = JSON.parse(this.responseText);        
+            var movListWrap = movObj.videoInfoList;
+            var cntInfo = movListWrap.paging;
+            var pageView = cntInfo.page;
+            var pageSize = cntInfo.pagesize;
+            var totalCnt = cntInfo.totalcount;
+            var totalPg = cntInfo.totalpage;
+            var pageInfo = "<span>전체 : " + totalCnt + "개</span>";
+                pageInfo += "<span>페이지 : " + pageView + "/" + totalPg + "</span>";
+            $("#pageInfo").html(pageInfo);
+            var movList = movListWrap.videoInfoList;
+            var movCnt = movList.length;
+            var list = "";
+            for(var i=0; i<movCnt; i++){
+                var id = movList[i].id;
+                var access_key = movList[i].access_key;
+                var title = movList[i].title;
+                var duration = movList[i].duration;
+                list += "<tr><td>"+id+"</td>";
+                list += "<td>"+title+"</td>";
+                list += "<td class='url' onclick='copyUrl(this)'><input type='hidden' value='http://api.wecandeo.com/video/default/"+access_key+"'>"+access_key+"</td>";
+                list += "<td>"+duration+"</td></tr>";
+            }
+            $("#mov_list_wrap tbody").html(list);
+        }
+        xmlhttp.send();
+    });
+
+    function copyUrl(e){
+        $(e).find("input").attr("type","text");
+        $(e).find("input").select();
+        var copy = document.execCommand('copy');
+        $(e).find("input").attr("type","hidden");
+        if(copy){
+            alert('URL이 복사되었습니다.');
+        }
+    }
+    </script>
+</body>
+</html>
