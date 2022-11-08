@@ -117,6 +117,7 @@
             $("#pageInfo").html(pageInfo);
             var movList = movListWrap.videoInfoList;
             var movCnt = movList.length;
+            var hms = "";
             var list = "";
             for(var i=0; i<movCnt; i++){
                 var id = movList[i].id;
@@ -128,8 +129,11 @@
                 list += "<td>"+title+"</td>";
                 list += "<td class='url' onclick='copyUrl(this)'><input type='hidden' value='http://api.wecandeo.com/video/default/"+access_key+"'>http://api.wecandeo.com/video/default/"+access_key+"</td>";
                 //list += "<td class='url' onclick='copyUrl(this)'><input type='hidden' value='"+access_key+"'>"+access_key+"</td>";
-                list += "<td class='seconds'><span>"+duration+"</span></td></tr>";
-                //list += "<td class='seconds' onclick='cvTime(this)'><span>"+duration+"</span></td></tr>";
+                //list += "<td class='seconds'><span>"+duration+"</span></td></tr>";
+                hms = cvTime1(duration);
+                console.log(hms);
+                list += "<td class='seconds'><span>"+hms+"</span></td></tr>";
+                //list += "<td class='seconds' onclick='cvTime(this)'><span>"+hms+"</span></td></tr>";
             }
             $("#mov_list_wrap tbody").html(list);
         }
@@ -147,8 +151,18 @@
         }
     }
 
+    function cvTime1(duration){
+        var seconds = duration/998;
+        console.log(seconds);
+        var hour = parseInt(seconds/3600);
+        var min = parseInt((seconds%3600)/60);
+        var sec = seconds%60;
+            sec = Math.round(sec);
+        var hms = (hour+":"+min+":"+sec);
+        return hms;
+    }
     function cvTime(el){
-        var seconds = $(el).find("span").text();
+        var seconds = $(el).find("span").text()/1000;
         console.log(seconds);
         var hour = parseInt(seconds/3600);
         var min = parseInt((seconds%3600)/60);
@@ -158,10 +172,14 @@
 
     $(".export").click(function(){
         $("#mov_list_wrap").table2excel({
-            exclude: ".excludeThisClass",
-            name: "Worksheet Name",
-            filename: "movList.xls", // do include extension
-            preserveColors: false // set to true if you want background colors and font colors preserved
+            exclude: ".excludeThisClass", // 제외할 클래스
+            name: "movList", // 저장할 시트명
+            filename: "movList", // 저장할 파일명
+            fileext: ".xls", // file extension
+            preserveColors: true, // 배경 및 글꼴 색상 보존
+            //exclude_img:true, // 이미지 포함
+            //exclude_links:true, // 링크 포함
+            //exclude_inputs:true // input 포함
         });
     });
     </script>
