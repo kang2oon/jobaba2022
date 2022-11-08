@@ -131,7 +131,7 @@
                 //list += "<td class='url' onclick='copyUrl(this)'><input type='hidden' value='"+access_key+"'>"+access_key+"</td>";
                 //list += "<td class='seconds'><span>"+duration+"</span></td></tr>";
                 hms = cvTime1(duration);
-                console.log(hms);
+                //console.log(hms);
                 list += "<td class='seconds'><span>"+hms+"</span></td></tr>";
                 //list += "<td class='seconds' onclick='cvTime(this)'><span>"+hms+"</span></td></tr>";
             }
@@ -153,7 +153,7 @@
 
     function cvTime1(duration){
         var seconds = duration/998;
-        console.log(seconds);
+        //console.log(seconds);
         var hour = parseInt(seconds/3600);
         var min = parseInt((seconds%3600)/60);
         var sec = seconds%60;
@@ -163,7 +163,7 @@
     }
     function cvTime(el){
         var seconds = $(el).find("span").text()/1000;
-        console.log(seconds);
+        //console.log(seconds);
         var hour = parseInt(seconds/3600);
         var min = parseInt((seconds%3600)/60);
         var sec = seconds%60;
