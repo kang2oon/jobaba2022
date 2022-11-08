@@ -52,10 +52,11 @@
         <div>
             <h2>강원일자리정보망 정보</h2>
             <ul>
-                <li>API Key : </li>
+                <li>API Key : 108f79931857bc638850a7d14d27ef3c</li>
                 <li>배포패키지 ID
                     <ul>
-                        <li>-</li>
+                        <li>이러닝 2022(인키움) : 1018939</li>
+                        <li>이러닝 2022-2(인키움) : 1016005</li>
                     </ul>
                 </li>
             </ul>
@@ -93,7 +94,7 @@
         //var pkg = "1018897"
         //var pageSize = "10";
         //var page = "100";
-        var fullUrl = url + "?key=" + key + "&pkg=" + pkg + "&pagesize=" + pageSize + "&page=" + page;
+        var fullUrl = url + "?key=" + key + "&pkg=" + pkg + "&pagesize=" + pageSize + "&page=" + page + "&sort_direction=asc";
         xmlhttp.open("GET", fullUrl, true);
         xmlhttp.onload = function(){
             const movObj = JSON.parse(this.responseText);        
@@ -116,7 +117,8 @@
                 var duration = movList[i].duration;
                 list += "<tr><td>"+id+"</td>";
                 list += "<td>"+title+"</td>";
-                list += "<td class='url' onclick='copyUrl(this)'><input type='hidden' value='http://api.wecandeo.com/video/default/"+access_key+"'>"+access_key+"</td>";
+                list += "<td class='url' onclick='copyUrl(this)'><input type='hidden' value='http://api.wecandeo.com/video/default/"+access_key+"'>http://api.wecandeo.com/video/default/"+access_key+"</td>";
+                //list += "<td class='url' onclick='copyUrl(this)'><input type='hidden' value='"+access_key+"'>"+access_key+"</td>";
                 list += "<td>"+duration+"</td></tr>";
             }
             $("#mov_list_wrap tbody").html(list);
