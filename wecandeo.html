@@ -100,10 +100,10 @@
             const movObj = JSON.parse(this.responseText);        
             var movListWrap = movObj.videoInfoList;
             var cntInfo = movListWrap.paging;
-            var pageView = cntInfo.page;
+            var pageView = cntInfo.page.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
             var pageSize = cntInfo.pagesize;
-            var totalCnt = cntInfo.totalcount;
-            var totalPg = cntInfo.totalpage;
+            var totalCnt = cntInfo.totalcount.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+            var totalPg = cntInfo.totalpage.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
             var pageInfo = "<span>전체 : " + totalCnt + "개</span>";
                 pageInfo += "<span>페이지 : " + pageView + "/" + totalPg + "</span>";
             $("#pageInfo").html(pageInfo);
@@ -115,11 +115,13 @@
                 var access_key = movList[i].access_key;
                 var title = movList[i].title;
                 var duration = movList[i].duration;
+                //duration = duration/86400;
                 list += "<tr><td>"+id+"</td>";
                 list += "<td>"+title+"</td>";
                 list += "<td class='url' onclick='copyUrl(this)'><input type='hidden' value='http://api.wecandeo.com/video/default/"+access_key+"'>http://api.wecandeo.com/video/default/"+access_key+"</td>";
                 //list += "<td class='url' onclick='copyUrl(this)'><input type='hidden' value='"+access_key+"'>"+access_key+"</td>";
-                list += "<td>"+duration+"</td></tr>";
+                list += "<td class='seconds'><span>"+duration+"</span></td></tr>";
+                //list += "<td class='seconds' onclick='cvTime(this)'><span>"+duration+"</span></td></tr>";
             }
             $("#mov_list_wrap tbody").html(list);
         }
@@ -127,6 +129,7 @@
     });
 
     function copyUrl(e){
+        //console.log(e);
         $(e).find("input").attr("type","text");
         $(e).find("input").select();
         var copy = document.execCommand('copy');
@@ -134,6 +137,15 @@
         if(copy){
             alert('URL이 복사되었습니다.');
         }
+    }
+    
+    function cvTime(el){
+        var seconds = $(el).find("span").text();
+        console.log(seconds);
+        var hour = parseInt(seconds/3600);
+        var min = parseInt((seconds%3600)/60);
+        var sec = seconds%60;
+        $(el).html(hour+":"+min+":"+sec);
     }
     </script>
 </body>
