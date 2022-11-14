@@ -1,6 +1,10 @@
 @charset "utf-8"; 
 
-.bgRoseWhite { background: #FDF3EF !important; } 
+.bgRoseWhite { background: #FDF3EF !important; }
+.bgSpringWood { background: #f3f3e6 !important; }
+.bgWhiteRock1 { background: #eeedde !important; }
+.bgWhiteRock2 { background: #f1f0e3 !important; }
+.bgMerino { background: #F6F0E6 !important; } 
 .bgGoldenPoppy { background: #FAC400 !important; } 
 .bgPuertoRico { background: #38bab2 !important; } 
 
@@ -119,8 +123,8 @@
 .myContents .infoCont > ul li a div > p { margin-top: 20px; width: 100%; height: 52px; color: #222222; font-size: 14px; line-height: 24px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-wrap: break-word; } 
 .myContents .infoBanner { display: flex; gap: 0 20px; margin-top: 50px; padding-top: 50px; border-top: 1px solid #dddddd; } 
 .myContents .infoBanner > div { width: calc((100% - 20px) / 2); border-radius: 8px; overflow: hidden; } 
-.myContents .infoBanner > div a { display: flex; align-items: center; gap: 0 20px; height: 120px; padding: 0 10px; } 
-.myContents .infoBanner > div a .thumb { width: 160px; min-width: 160px; height: 100%; } 
+.myContents .infoBanner > div a { display: flex; align-items: center; height: 120px; padding: 0 10px; word-break: keep-all;} 
+.myContents .infoBanner > div a .thumb { width: 160px; min-width: 160px; height: 100%; margin-right: 20px; } 
 .myContents .infoBanner > div a .thumb > img { object-fit: cover; width: 100%; height: 100%; } 
 .myContents .infoBanner > div a strong { font-size: 16px; line-height: 24px; } 
 .myContents .infoBanner > div a p { color: #222222; font-size: 14px; line-height: 24px; } 
@@ -144,7 +148,19 @@
  .myContents .infoBanner { flex-direction: column; gap: 10px 0; } 
  .myContents .infoBanner > div { width: 100%; } 
  }
-
+ @media all and (max-width:480px){
+    .myContents .infoBanner > div {
+        padding-bottom: 10px;
+    }
+    .myContents .infoBanner > div a {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    .myContents .infoBanner > div a .thumb {
+        margin-bottom: 10px;
+    }
+ }
 /* left 메뉴 */
 .myContents .leftMenu { width: 260px; background: #fff; } 
 .myContents .leftMenu .mypageBtn { width: 100%; padding: 20px; margin-bottom: 30px; background: #f6f7f9; line-height: 26px; border-radius: 5px; } 
