@@ -191,7 +191,8 @@
 
 /* 이력서 관리 */
 .myContents .whiteBox.active { border: 2px solid #38bab2;}
-.myContents .whiteBox.boxItem { display: flex; flex-wrap: wrap; } 
+.myContents .whiteBox.boxItem { display: flex; flex-wrap: wrap; }
+.myContents .whiteBox .titWrap {width: 100%;}
 .myContents .whiteBox .titWrap a > span { display: inline-block; margin-bottom: 10px; } 
 .myContents .whiteBox .txtWrap { width: calc(100% - 184px); font-size: 14px; line-height: 26px; } 
 .myContents .whiteBox .txtWrap ul { display: flex; flex-wrap: wrap; } 
