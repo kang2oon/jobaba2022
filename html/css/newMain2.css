@@ -1,0 +1,77 @@
+@charset "utf-8"; 
+
+    #quickMenu > div { display: flex; justify-content: space-between; } 
+    #quickMenu .quickService { width: calc(100% - 400px); padding: 34px 0 22px; } 
+    #quickMenu .quickService h2 { display: none; } 
+    #quickMenu .quickService > ul { display: flex; margin-right: 50px; } 
+    #quickMenu .quickService > ul li { width: 100%; } 
+    #quickMenu .quickService > ul a { display: flex; flex-direction: column; align-items: center; } 
+    #quickMenu .quickService > ul a:hover span::before { content: ""; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 98px; height: 100%; background: url(../images/newMain/quick_menu_hover.png) no-repeat; background-size: contain; } 
+    #quickMenu .quickService > ul a:hover strong { color: #00a7cd; border-bottom: 2px solid #00a7cd; } 
+    #quickMenu .quickService > ul a span { position: relative; display: flex; align-items: center; justify-content: center; height: 98px; margin-bottom: 20px; } 
+    #quickMenu .quickService > ul a span img { position: relative; } 
+    #quickMenu .quickService > ul a strong { color: #000000; font-size: 16px; } 
+
+    #quickMenu .quickLogin { width: 400px; margin-bottom: 16px; overflow: hidden; } 
+    #quickMenu .loginWrap { padding: 30px 0 10px; background: #f8f8f8; } 
+    #quickMenu .quickControls { position: relative; display: flex; height: 44px; width: 100%; background: #e9e9e9; overflow: hidden; justify-content: space-between; border-radius: 0 0 15px 15px; } 
+    #quickMenu .quickControls .slide { height: 100%; width: 100%; color: #666666; font-size: 15px; font-weight: 500; text-align: center; line-height: 44px; cursor: pointer; z-index: 1; } 
+    #quickMenu .quickControls input[type="radio"] { display: none; } 
+    #quickMenu .slider-tab { position: absolute; height: 100%; width: 50%; left: 0; z-index: 0; background: #f8f8f8; } 
+    #companyLogin:checked ~ .slider-tab { left: 50%; } 
+    #companyLogin:checked ~ label.quickCompany,
+    #userLogin:checked ~ label.quickUser { color: #000; cursor: default; user-select: none; } 
+    #quickMenu .loginBox { display: flex; flex-wrap: wrap; justify-content: space-between; padding: 0 20px; } 
+    #quickMenu .loginBox > ul { width: calc(100% - 116px); } 
+    #quickMenu .quickInput { display: inline-block; height: 34px; width: 100%; padding: 0 0 0 10px; background: #fff; font-size: 14px; border: 1px solid #c8c8c8; border-radius: 6px; vertical-align: middle; } 
+    #quickMenu .btn_quickLogin { width: 106px; height: 75px; line-height: 75px; background: #38bab2; color: #fff; font-size: 15px; text-align: center; border-radius: 6px; } 
+    #quickMenu .formInner { display: flex; width: 200%; } 
+    #quickMenu .formInner form { width: 50%; } 
+    
+    #quickMenu .quickBtnWrap { padding: 0 34px; text-align: center; } 
+    #quickMenu .quickBtnWrap .tit { font-size: 16px; margin-bottom: 30px; } 
+    #quickMenu .quickBtnWrap strong { font-size: 24px; } 
+    #quickMenu .quickBtnWrap a { display: inline-block; width: 160px; height: 40px; margin-bottom: 30px; background: #bcbcbc; color: #fff; font-size: 14px; line-height: 40px; border-radius: 6px; } 
+    #quickMenu .quickBtnWrap p + a { margin-right: 8px; background: #38bab2; } 
+    
+    #covetousNews { padding: 40px 0 10px; background: #f8f8f8; } 
+    #covetousNews > div .covetNewsWrap { position: relative; } 
+    #covetousNews > div .covetNewsWrap .slick-dots { display:inline-block!important; width:auto; top:-26px; right:20px; bottom:auto; } 
+    #covetousNews > div .covetNewsWrap .slick-dots li { width:36px; height:24px; line-height:24px; font-size:14px; letter-spacing:2px; display:none; } 
+    #covetousNews > div .covetNewsWrap .slick-dots li.slick-active { display:inline-block; } 
+    #covetousNews > div .navi { position:absolute; top:-8px; right:0; } 
+    #covetousNews > div .navi span { display:inline-block; cursor:pointer; font-size:18px; } 
+    #covetousNews > div .navi span.prev { margin-right:48px; } 
+    #covetousNews > div h2 { font-size: 20px; } 
+    #covetousNews > div span { display: block; margin-top: 10px; font-size: 14px; color: #666666; } 
+    #covetousNews > div .covetNewsWrap .slick-list { margin: 0 -15px; } 
+    #covetousNews > div .covetNewsWrap .slick-slide { margin: 20px 15px; } 
+    #covetousNews > div .covetNewsWrap .slick-slide > div > div > a { display: block; width: 100%; height: 120px; position: relative; background: #fff; border: 1px solid #e0e0e0; border-radius: 15px; padding: 20px; } 
+    #covetousNews > div .covetNewsWrap .slick-slide > div > div > a h3 { font-size: 16px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; width: 100%; display: block; } 
+    #covetousNews > div .covetNewsWrap .slick-slide > div > div > a p { font-size: 16px; } 
+    #covetousNews .covetNewsWrap .slick-slide > div > div:hover > a { border: 2px solid #38bab2; box-shadow: 1px 2px 5px rgb(0 0 0 / 20%); } 
+
+@media screen and (max-width : 1024px){
+    #quickMenu .quickService { padding: 10px 0; } 
+    #quickMenu .quickService > ul { flex-wrap: wrap; } 
+    #quickMenu .quickService > ul li:nth-child(n+4) { margin-top: 10px; } 
+    #quickMenu .quickService > ul li { width: calc(100% / 3); } 
+    #quickMenu .quickService > ul a:hover span::before { width: 64px; } 
+    #quickMenu .quickService > ul a span { height: 64px; margin-bottom: 0; } 
+    #quickMenu .quickService > ul a span img { width: 80%; } 
+    #quickMenu .quickService > ul a strong { font-size: 14px; } 
+ }
+@media screen and (max-width : 768px){
+    #quickMenu .quickLogin { display: none; } 
+    #quickMenu .quickService { width: 100%; padding: 30px 0; } 
+    #quickMenu .quickService h2 { display: block; margin-bottom: 20px; font-size: 20px; text-align: center; } 
+    #quickMenu .quickService > ul { margin-right: 0; }
+    #quickMenu .quickService > ul a span { margin-bottom: 10px;} 
+    #quickMenu .quickService > ul a:hover span::before { content: none; } 
+    #quickMenu .quickService > ul a:hover strong { color: #003281; border-bottom: none; } 
+    #covetousNews > div .navi { display: none; } 
+    #covetousNews > div h2 { text-align: center; } 
+    #covetousNews > div .covetNewsWrap .slick-slide > div > div > a h3 {font-size: 14px;}
+    #covetousNews > div .covetNewsWrap .slick-slide > div > div > a p {font-size: 14px;}
+    #covetousNews > div span {font-size: 12px;}
+ }
