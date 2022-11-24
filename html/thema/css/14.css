@@ -1,0 +1,249 @@
+
+.themaWrap { letter-spacing: -0.5px; } 
+.themaWrap .innerSection { position: relative; padding: 0 20px; max-width: 1240px; height: 100%; margin: 0 auto; } 
+.themaWrap img { object-fit: cover; height: inherit; } 
+
+.themaWrap .mgt10 { margin-top: 10px; } 
+.themaWrap .tr { text-align: right; } 
+.themaWrap .f16 { font-size: 16px; } 
+.themaWrap .f20 { font-size: 20px; } 
+.themaWrap .f25 { font-size: 25px; } 
+.themaWrap .f30 { font-size: 30px; } 
+.themaWrap .f35 { font-size: 35px; } 
+.themaWrap .f40 { font-size: 40px; } 
+.themaWrap .f45 { font-size: 45px; } 
+.themaWrap .f60 { font-size: 60px; } 
+
+.themaWrap .bgmilk { background: #fff7e8; } 
+.themaWrap .bgGray { background: #f8f4f4; } 
+.themaWrap .txtGray { color: #888888; } 
+.themaWrap .txtPink { color: #c44c56; } 
+.listBg01 { background: #528c90; } 
+.listBg02 { background: #5d799d; } 
+.listBg03 { background: #b5cbb7; } 
+.listBg04 { background: #f8cf91; } 
+.listBg05 { background: #deadb4; } 
+.listBg06 { background: #e0d789; } 
+
+.themaWrap .visualWrap { padding: 90px 0 100px; background: url(../resource/images/thema/221122/thema14_visual_bg.png) no-repeat; background-size: cover; } 
+.themaWrap .visualWrap .titleWrap { position: relative; } 
+.themaWrap .visualWrap .titleWrap::after { content: ""; position: absolute; top: 18px; right: -86px; width: 466px; height: 341px; background: url(../resource/images/thema/221122/thema14_visual_icon01.png) center no-repeat; background-size: contain; } 
+.themaWrap .visualWrap .titleWrap strong { font-size: 70px; color: #003281; } 
+.themaWrap .visualWrap .titleWrap span { font-size: 55px; color: #fd8595; } 
+.themaWrap .visualWrap .titleWrap ul { position: relative; display: inline-block; margin-top: 30px; } 
+.themaWrap .visualWrap .titleWrap ul::before { content: ""; position: absolute; right: -170px; bottom: 0; width: 153px; height: 140px; background: url(../resource/images/thema/221122/thema14_visual_icon02.png) center no-repeat; background-size: contain; } 
+.themaWrap .visualWrap .titleWrap ul li { display: flex; align-items: center; font-weight: 600; line-height: 60px; } 
+.themaWrap .visualWrap .titleWrap ul li::before { content: ""; flex: none; margin-right: 8px; width: 35px; height: 27px; background: url(../resource/images/thema/221122/icon_check.png) center no-repeat; background-size: contain; } 
+.themaWrap .visualWrap .contentsWrap { display: flex; align-items: center; margin-top: 60px; } 
+.themaWrap .visualWrap .contentsWrap .imgWrap { width: calc(100% - 750px); margin-right: 20px; } 
+.themaWrap .visualWrap .contentsWrap ul.contentsList { display: flex; flex-wrap: wrap; width: 730px; } 
+.themaWrap .visualWrap .contentsWrap ul.contentsList li.new::before { content: ""; position: absolute; width: 96px; height: 52px; top: -46px; left: 50%; transform: translateX(-50%); background: url(../resource/images/thema/221122/thema14_icon_new01.png) center no-repeat; background-size: contain; } 
+.themaWrap .visualWrap .contentsWrap ul.contentsList li { position: relative; width: calc((100% - 40px) / 3); margin-right: 20px; border-radius: 30px; } 
+.themaWrap .visualWrap .contentsWrap ul.contentsList li:nth-child(3n) { margin-right: 0; } 
+.themaWrap .visualWrap .contentsWrap ul.contentsList li:nth-child(-n+3) { margin-bottom: 20px; } 
+.themaWrap .visualWrap .contentsWrap ul.contentsList li a { display: block; padding: 20px 0; text-align: center; } 
+.themaWrap .visualWrap .contentsWrap ul.contentsList li a p { margin-bottom: 20px; color: #000000; font-size: 25px; font-weight: 600; } 
+
+.themaWrap .educationContents { position: relative; } 
+.themaWrap .educationContents .leftMenu.fixed { position: fixed; } 
+.themaWrap .educationContents .leftMenu { position: absolute; top: 50px; left: 100px; width: auto; z-index: 10; } 
+.themaWrap .educationContents .leftMenu ul.menuList li { margin-bottom: 5px; } 
+.themaWrap .educationContents .leftMenu ul.menuList li:last-child { margin-bottom: 0; } 
+.themaWrap .educationContents .leftMenu ul.menuList li a { display: flex; align-items: center; justify-content: center; width: 150px; height: 40px; background: #f6f6f6; color: #aaaaaa; font-size: 16px; font-weight: 400; border-radius: 20px; } 
+.themaWrap .educationContents .leftMenu ul.menuList li.on a { color: #000000; font-weight: 700; box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 2.6px; } 
+.themaWrap .educationContents .leftMenu ul.menuList li:nth-child(1).on a { background: #528c90; } 
+.themaWrap .educationContents .leftMenu ul.menuList li:nth-child(2).on a { background: #5d799d; } 
+.themaWrap .educationContents .leftMenu ul.menuList li:nth-child(3).on a { background: #b5cbb7; } 
+.themaWrap .educationContents .leftMenu ul.menuList li:nth-child(4).on a { background: #f8cf91; } 
+.themaWrap .educationContents .leftMenu ul.menuList li:nth-child(5).on a { background: #deadb4; } 
+.themaWrap .educationContents .leftMenu ul.menuList li:nth-child(6).on a { background: #e0d789; } 
+
+.themaWrap .bgType01 { background: url(../resource/images/thema/221122/thema14_course_bg01.png) center no-repeat; background-size: cover; } 
+.themaWrap .bgType02 { background: url(../resource/images/thema/221122/thema14_course_bg02.png) center no-repeat; background-size: cover; } 
+.themaWrap .bgType03 { background: url(../resource/images/thema/221122/thema14_course_bg03.png) center no-repeat; background-size: cover; } 
+.themaWrap .bgType04 { background: url(../resource/images/thema/221122/thema14_course_bg04.png) center no-repeat; background-size: cover; } 
+.themaWrap .bgType05 { background: url(../resource/images/thema/221122/thema14_course_bg05.png) center no-repeat; background-size: cover; } 
+.themaWrap .bgType06 { background: url(../resource/images/thema/221122/thema14_course_bg06.png) center no-repeat; background-size: cover; } 
+.themaWrap .bgType07 { background: url(../resource/images/thema/221122/thema14_course_bg07.png) center no-repeat; background-size: cover; } 
+.themaWrap .bgType08 { background: url(../resource/images/thema/221122/thema14_course_bg08.png) center no-repeat; background-size: cover; } 
+.themaWrap .bgType09 { background: url(../resource/images/thema/221122/thema14_course_bg08.png) center no-repeat; background-size: cover; } 
+.themaWrap .bgType10 { background: url(../resource/images/thema/221122/thema14_course_bg10.png) center no-repeat; background-size: cover; } 
+.themaWrap .bgType11 { background: url(../resource/images/thema/221122/thema14_course_bg11.png) center no-repeat; background-size: cover; } 
+.themaWrap .bgType12 { background: url(../resource/images/thema/221122/thema14_course_bg12.png) center no-repeat; background-size: cover; } 
+.themaWrap .bgType07::after { content: ""; position: absolute; width: 330px; height: 312px; right: 0; bottom: -18px; background: url(../resource/images/thema/221122/thema14_course_icon01.png) center no-repeat; background-size: contain; z-index: 1; } 
+.themaWrap .bgType08::after { content: ""; position: absolute; width: 419px; height: 315px; right: 0; bottom: 0; background: url(../resource/images/thema/221122/thema14_course_icon02.png) center no-repeat; background-size: contain; z-index: 1; } 
+.themaWrap .bgType09::after { content: ""; position: absolute; width: 320px; height: 306px; right: 0; bottom: -18px; background: url(../resource/images/thema/221122/thema14_course_icon03.png) center no-repeat; background-size: contain; z-index: 1; } 
+.themaWrap .bgType10::after { content: ""; position: absolute; width: 404px; height: 331px; right: 0; bottom: -18px; background: url(../resource/images/thema/221122/thema14_course_icon04.png) center no-repeat; background-size: contain; z-index: 1; } 
+.themaWrap .bgType11::after { content: ""; position: absolute; width: 368px; height: 550px; right: 0; bottom: -240px; background: url(../resource/images/thema/221122/thema14_course_icon05.png) center no-repeat; background-size: contain; z-index: 1; } 
+.themaWrap .bgType12::after { content: ""; position: absolute; width: 501px; height: 383px; right: 0; bottom: 0; background: url(../resource/images/thema/221122/thema14_course_icon06.png) center no-repeat; background-size: contain; z-index: 1; } 
+.themaWrap .bdType01 { padding-bottom: 4px; color: #528c90; font-weight: 600; border-bottom: 1px solid #528c90; } 
+.themaWrap .bdType02 { padding-bottom: 4px; color: #5d799d; font-weight: 600; border-bottom: 1px solid #5d799d; } 
+.themaWrap .bdType03 { padding-bottom: 4px; color: #b5cbb7; font-weight: 600; border-bottom: 1px solid #b5cbb7; } 
+.themaWrap .bdType04 { padding-bottom: 4px; color: #f8cf91; font-weight: 600; border-bottom: 1px solid #f8cf91; } 
+.themaWrap .bdType05 { padding-bottom: 4px; color: #deadb4; font-weight: 600; border-bottom: 1px solid #deadb4; } 
+.themaWrap .bdType06 { padding-bottom: 4px; color: #e0d789; font-weight: 600; border-bottom: 1px solid #e0d789; } 
+.themaWrap .courseWrap { padding: 60px 0 50px; } 
+.themaWrap .courseWrap strong { position: relative; display: block; color: #fff; text-align: center; text-shadow: 2px 2px 3px rgba(0,0,0,0.2); } 
+.themaWrap .courseWrap strong i { position: relative; } 
+.themaWrap .courseWrap strong i.new:before { content: ""; position: absolute; width: 70px; height: 31px; top: 8px; left: -80px; background: url(../resource/images/thema/221122/thema14_icon_new02.png) center no-repeat; background-size: contain; } 
+.themaWrap .courseWrap .whiteBox { position: relative; display: flex; align-items: center; margin-top: 40px; padding: 20px; background: #fff; border-radius: 30px; } 
+.themaWrap .courseWrap .whiteBox .imgBox { margin-right: 40px; } 
+.themaWrap .courseWrap .whiteBox .cont { width: calc(100% - 420px); } 
+.themaWrap .courseWrap .whiteBox .cont p { color: #000000; font-weight: 400; line-height: 60px; word-break: keep-all; } 
+.themaWrap .courseWrap .whiteBox .moveLink { position: absolute; right: 40px; bottom: 40px; } 
+
+.themaWrap .courseList { padding: 50px 0; background: #fff; } 
+.themaWrap .courseList .innerSection > strong { display: block; margin-bottom: 40px; color: #000; text-align: center; } 
+.themaWrap .courseType01 { display: flex; justify-content: space-between; padding: 0 40px; } 
+.themaWrap .courseType01 .imgWrap { width: calc(100% - 540px); margin-top: -20px; margin-right: 40px; } 
+.themaWrap .courseType01 .tableWrap { width: 500px; } 
+.themaWrap .courseType01 .tableWrap table { width: 100%; text-align: center; } 
+.themaWrap .courseType01 .tableWrap thead { background: #7fbec6; } 
+.themaWrap .courseType01 .tableWrap tbody { background: #f4f4f4; } 
+.themaWrap .courseType01 .tableWrap th { padding: 4px 0; color: #000; font-size: 20px; font-weight: 600; border-bottom: 1px solid #fff; border-left: 1px solid #fff; } 
+.themaWrap .courseType01 .tableWrap td { padding: 4px 0; color: #333333; font-size: 20px; border-bottom: 1px solid #fff; border-left: 1px solid #fff; } 
+.themaWrap .courseType01 .tableWrap th:first-child { border-left: none; border-radius: 10px 0 0 0; } 
+.themaWrap .courseType01 .tableWrap th:last-child { border-radius: 0 10px 0 0; } 
+.themaWrap .courseType01 .tableWrap td:first-child { border-left: none; } 
+.themaWrap .courseType01 .tableWrap tbody tr:last-child td { border-bottom: none; } 
+.themaWrap .courseType01 .tableWrap tbody tr:last-child td:first-child { border-radius: 0 0 0 10px; } 
+.themaWrap .courseType01 .tableWrap tbody tr:last-child td:last-child { border-radius: 0 0 10px 0; } 
+
+.themaWrap .videoWrap { position: relative; display: flex; justify-content: space-between; z-index: 2; } 
+.themaWrap .videoWrap .videoBox:first-child { margin-right: 40px; } 
+.themaWrap .videoBox { max-width: 580px; width: 100%; padding: 20px; background: #eee; border-radius: 20px; } 
+
+.themaWrap .videoWrap strong { width: 100%; } 
+.themaWrap .video { position: relative; padding-top: 56.3%; width: 100%; height: 0; } 
+.themaWrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 20px; } 
+
+.themaWrap .courseType02 { padding: 0 20px; display: flex; flex-wrap: wrap; justify-content: center; } 
+
+.themaWrap .courseType02 .listBox > div { padding: 12px; background: #afc9f6; border-radius: 20px; } 
+.themaWrap .courseType02 .listBox > div:first-child { margin-bottom: 20px; } 
+.themaWrap .courseType02 .listBox p { margin-bottom: 10px; color: #000; font-weight: 600; text-align: center; } 
+.themaWrap .courseType02 > .imgWrap { display: flex; width: calc(100% - 763px); align-items: center; } 
+.themaWrap .courseType02 > p { width: 100%; margin-top: 10px; padding-right: 20px; color: #888888; text-align: right; } 
+
+.themaWrap .courseType03 { display: flex; } 
+.themaWrap .courseType03 .tableWrap { width: calc((100% - 80px) / 3); margin-right: 40px; } 
+.themaWrap .courseType03 .tableWrap:last-child { margin-right: 0; } 
+.themaWrap .courseType03 .tableWrap table { width: 100%; } 
+.themaWrap .courseType03 .tableWrap th { padding: 10px 0; color: #000; font-size: 25px; font-weight: 600; border-radius: 10px 10px 0 0; } 
+.themaWrap .courseType03 .tableWrap td { padding: 10px; color: #000000; font-size: 20px; word-break: keep-all; } 
+.themaWrap .courseType03 .tableWrap tr td:first-child { border-left: none; } 
+.themaWrap .courseType03 .tableWrap tbody tr:last-child td { border-bottom: none; } 
+.themaWrap .courseType03 .tableWrap tbody tr:last-child td:first-child { border-radius: 0 0 0 10px; } 
+.themaWrap .courseType03 .tableWrap tbody tr:last-child td:last-child { border-radius: 0 0 10px 0; } 
+.themaWrap .courseType03 .tableWrap:nth-child(1) th { background: #dfa87f; } 
+.themaWrap .courseType03 .tableWrap:nth-child(1) td { background: #ffefe3; border-left: 1px solid #dfa87f; border-bottom: 1px solid #dfa87f; } 
+.themaWrap .courseType03 .tableWrap:nth-child(2) th { background: #74a5e1; } 
+.themaWrap .courseType03 .tableWrap:nth-child(2) td { background: #e5f1ff; border-left: 1px solid #74a5e1; border-bottom: 1px solid #74a5e1; } 
+.themaWrap .courseType03 .tableWrap:nth-child(3) th { background: #e3c082; } 
+.themaWrap .courseType03 .tableWrap:nth-child(3) td { background: #fff5e4; border-left: 1px solid #e3c082; border-bottom: 1px solid #e3c082; } 
+
+.themaWrap .courseType04 ul { display: flex; } 
+.themaWrap .courseType04 ul li { width: calc((100% - 60px) / 4); margin-right: 20px; border-radius: 20px; overflow: hidden; } 
+.themaWrap .courseType04 ul li:last-child { margin-right: 0; } 
+.themaWrap .courseType04 ul li a { display: block; padding: 10px 10px 20px; text-align: center; } 
+.themaWrap .courseType04 ul li a .imgWrap { margin-bottom: 20px; } 
+
+.themaWrap .courseType05 ul { display: flex; flex-wrap: wrap; } 
+.themaWrap .courseType05 ul li { display: flex; align-items: center; width: calc((100% - 20px) / 2); } 
+.themaWrap .courseType05 ul li:nth-child(odd) { margin-right: 20px; } 
+.themaWrap .courseType05 ul li:nth-child(-n+2) { margin-bottom: 20px; } 
+.themaWrap .courseType05 ul li .imgWrap { margin-right: 20px; } 
+.themaWrap .courseType05 ul li .txtWrap { width: calc(100% - 194px); } 
+.themaWrap .courseType05 ul li .txtWrap strong { color: #000; word-break: keep-all; } 
+.themaWrap .courseType05 ul li .txtWrap p { margin-top: 20px; color: #333333; word-break: keep-all; } 
+
+.themaWrap .educationVideo { position: relative; padding: 50px 0 30px; overflow: hidden; } 
+.themaWrap .educationVideo .innerSection > strong { display: block; margin-bottom: 50px; color: #fff; text-shadow: 2px 2px 3px rgba(0,0,0,0.2); } 
+.themaWrap .educationVideo .videoBox p { margin-top: 30px; color: #000000; font-weight: 600; text-align: center; } 
+.themaWrap .educationVideo .moreVideo { position: relative; margin-top: 20px; text-align: right; z-index: 2; } 
+.themaWrap .educationVideo .moreVideo a { display: inline-block; width: 180px; height: 40px; font-weight: 600; line-height: 40px; background: #fff; border-radius: 20px; text-align: center; } 
+
+@media all and (max-width:1700px){
+ .themaWrap .educationContents .leftMenu { display: none; } 
+ .themaWrap .bgType07::after,
+ .themaWrap .bgType08::after,
+ .themaWrap .bgType09::after,
+ .themaWrap .bgType10::after,
+ .themaWrap .bgType11::after,
+ .themaWrap .bgType12::after { content: none; } 
+ }
+@media all and (max-width:1200px){
+ .themaWrap .visualWrap .titleWrap::after { content: none; } 
+ }
+@media all and (max-width:1024px){
+ .themaWrap .f60 { font-size: 50px; } 
+ .themaWrap .f40 { font-size: 30px; } 
+ .themaWrap .f30 { font-size: 26px; } 
+ .themaWrap .visualWrap { padding: 30px 0 50px; } 
+ .themaWrap .visualWrap .contentsWrap .imgWrap { display: none; } 
+ .themaWrap .visualWrap .contentsWrap ul.contentsList { width: 100%; } 
+ .themaWrap .courseWrap .whiteBox { flex-direction: column; margin-top: 20px; } 
+ .themaWrap .courseWrap .whiteBox .imgBox { margin-right: 0; margin-bottom: 20px; } 
+ .themaWrap .courseWrap .whiteBox .cont { width: 80%; } 
+ .themaWrap .courseWrap .whiteBox .cont p { line-height: 40px; text-align: center; } 
+ .themaWrap .courseWrap .whiteBox .moveLink { margin-top: 20px; position: static; text-align: center; } 
+
+ .themaWrap .courseType01 { flex-direction: column; align-items: center; padding: 0; } 
+ .themaWrap .courseType01 .imgWrap { width: 80%; margin: 0 0 20px 0; text-align: center; } 
+ .themaWrap .courseType02 > .imgWrap { display: none; } 
+ .themaWrap .courseType02 .listBox:first-child { margin-right: 10px; } 
+ .themaWrap .courseType02 > p { text-align: center; } 
+ .themaWrap .courseType03 { flex-direction: column; } 
+ .themaWrap .courseType03 .tableWrap { width: 100%; margin-bottom: 20px; } 
+ .themaWrap .courseType03 .tableWrap:last-child { margin-bottom: 0; } 
+ }
+@media all and (max-width:860px){
+ .themaWrap .innerSection { padding: 0 10px; } 
+ .themaWrap .f60 { font-size: 30px; } 
+ .themaWrap .f40 { font-size: 20px; } 
+ .themaWrap .f30 { font-size: 20px; } 
+ .themaWrap .f20 { font-size: 16px; } 
+ .forMobile { display: none; } 
+ .themaWrap .visualWrap .titleWrap strong { font-size: 50px; } 
+ .themaWrap .visualWrap .titleWrap span { font-size: 35px; } 
+ .themaWrap .visualWrap .titleWrap ul::before { content: none; } 
+ .themaWrap .visualWrap .titleWrap ul li { align-items: baseline; } 
+ .themaWrap .visualWrap .titleWrap ul li::before { width: 25px; height: 20px; } 
+ .themaWrap .visualWrap .contentsWrap ul.contentsList li { width: calc((100% - 20px) / 3); margin-right: 10px; } 
+ .themaWrap .visualWrap .contentsWrap ul.contentsList li:nth-child(3n) { margin-right: 0; } 
+ .themaWrap .visualWrap .contentsWrap ul.contentsList li a p { font-size: 22px; } 
+ .themaWrap .visualWrap .contentsWrap ul.contentsList li.new::before { width: 70px; top: -42px; } 
+ .themaWrap .visualWrap .contentsWrap ul.contentsList li a .iconBox img { width: 60px; } 
+ .themaWrap .courseType01 .tableWrap { width: 100%; } 
+ .themaWrap .educationVideo .innerSection > strong { margin-bottom: 20px; text-align: center; } 
+ .themaWrap .videoWrap { flex-direction: column; align-items: center; } 
+ .themaWrap .videoWrap .videoBox:first-child { margin-right: 0; margin-bottom: 20px; } 
+ .themaWrap .educationVideo .moreVideo { text-align: center; } 
+ .themaWrap .courseType02 .listBox:first-child { margin-bottom: 20px; } 
+ .themaWrap .courseType04 ul { flex-wrap: wrap; } 
+ .themaWrap .courseType04 ul li { width: calc((100% - 20px) / 2); margin-right: 20px; } 
+ .themaWrap .courseType04 ul li:nth-child(-n+2) { margin-bottom: 20px; } 
+ .themaWrap .courseType04 ul li:nth-child(even) { margin-right: 0; } 
+ .themaWrap .courseType05 ul { flex-direction: column; } 
+ .themaWrap .courseType05 ul li { width: 100%; margin-bottom: 20px; margin-right: 0 !important; } 
+ .themaWrap .courseType05 ul li:last-child { margin-bottom: 0; } 
+ .themaWrap .courseType01 .imgWrap { width: 60%; } 
+ .themaWrap .courseWrap { padding: 30px 0 30px; } 
+ .themaWrap .courseType03 .tableWrap th { font-size: 20px; } 
+ .themaWrap .courseType03 .tableWrap td { font-size: 16px; } 
+ .themaWrap .educationVideo { padding: 30px 0 20px; } 
+ }
+
+@media all and (max-width:640px){
+ .themaWrap .visualWrap .titleWrap strong { font-size: 35px; } 
+ .themaWrap .visualWrap .titleWrap span { font-size: 25px; } 
+ .themaWrap .visualWrap .titleWrap ul li { line-height: 40px; word-break: keep-all; } 
+ .themaWrap .courseWrap { padding: 30px 0 30px; } 
+ .themaWrap .visualWrap .contentsWrap ul.contentsList li a { padding: 10px 0; } 
+ .themaWrap .visualWrap .contentsWrap ul.contentsList li a p { margin-bottom: 10px; font-size: 16px; } 
+ .themaWrap .courseType04 ul { flex-direction: column; align-items: center; } 
+ .themaWrap .courseType04 ul li { width: 100%; margin-right: 0; margin-bottom: 20px; } 
+ .themaWrap .courseType05 ul li { flex-direction: column; } 
+ .themaWrap .courseType05 ul li .imgWrap { margin-right: 0; margin-bottom: 20px; } 
+ .themaWrap .courseType05 ul li .txtWrap { width: 100%; text-align: center; } 
+ }
