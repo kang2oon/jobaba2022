@@ -37,8 +37,12 @@
 
 .btn_puertoRico { background: #38bab2; color: #fff !important; border: 1px solid #38bab2; border-radius: 4px;}
 .btn_athensGray { background: #f6f7f9; color: #666666 !important; border: 1px solid #eeeeee; border-radius: 4px;}
+.btn_Gray { background: #888; color: #fff !important; border: 1px solid #888; border-radius: 4px;}
 
-
+.tableField input[type=checkbox]~.text:before {width: 20px;height: 20px;border-radius: 3px;box-shadow: none;background-color: #fff;}
+.tableField input[type=checkbox] + span::after {width: 20px;height: 20px;}
+.tableField input[type="checkbox"]:checked ~ .text::before {background: #38bab2 url(http://jobabadev.jobaba.net/resource/images/member/ico_check.png) 50% 50% no-repeat;border: 1px solid #38bab2;}
+.tableField input[type="checkbox"] + span::after{outline:0px !important;}
 .infoIcon { padding-left: 20px; background: url(https://www.jobaba.net/resource/images/coverletter/icon_info.png) no-repeat left;}
 .mwd50 { min-width: 50px;}
 .innerSection { position: relative; max-width: 1300px; margin: 0 auto; padding: 0 20px; } 
@@ -253,7 +257,8 @@
 .mytbl-type .table > tbody > tr > td { padding: 15px 5px; border-top: 1px solid #ddd; vertical-align: middle; line-height: 1.5; } 
 
 .mytb2-type .table.table-list { width: 100%; table-layout: fixed; border-top: 2px solid #666; border-bottom: 1px solid #ddd; }
-.mytb2-type .table > thead > tr > th:first-child { border-left: none;}
+.mytb2-type .table > thead > tr:first-child > th:first-child { border-left: none; }
+.mytb2-type .table th.tLine { border-top: 1px solid #ddd;}
 .mytb2-type .table > thead > tr > th { padding: 10px 10px; background: #ececec; font-weight: 600; border-left: 1px solid #ccc;}
 .mytb2-type .table > tbody > tr > td:first-child { border-left: none;} 
 .mytb2-type .table > tbody > tr > td { padding: 15px 5px; border-top: 1px solid #ddd; border-left: 1px solid #ccc; vertical-align: middle; line-height: 1.5; } 
@@ -330,5 +335,15 @@
     .myContents .whiteBox p.listIcon::before { content: none;} 
     .myContents .confirmWrap { text-align: center; } 
     .myContents .confirmWrap>div { width: 100%; } 
+
+    /* 입사지원 모바일 */
+    .mytb2-type .enter_list colgroup, .mytb2-type .enter_list thead { display:none; }
+    .mytb2-type .enter_list tbody tr { display: flex; flex-wrap: wrap; align-items: center;}
+    .mytb2-type .enter_list tbody tr + tr { border-top: 1px solid #ddd; }  
+    .mytb2-type .enter_list tbody tr td { font-size:14px !important; border-top: none !important; } 
+    .mytb2-type .enter_list tbody tr td:nth-child(1) { width: 50px; } 
+    .mytb2-type .enter_list tbody tr td:nth-child(2) { width: calc(100% - 50px) } 
+    .mytb2-type .enter_list tbody tr td:nth-child(3) { margin-left: 50px; }
+    .mytb2-type .enter_list tbody tr td:last-child { margin-left: auto; }
 }
 
