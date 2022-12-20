@@ -39,7 +39,7 @@
 .themaWrap .visualWrap { position: relative; padding: 90px 0 80px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221215/thema_bg01.png) top no-repeat; background-size: cover; } 
 .themaWrap .visualWrap .leftMenu.fixed { position: fixed; top: 100px; } 
 .themaWrap .visualWrap .leftMenu { position: absolute; bottom: 110px; left: 90px; width: 181px; height: 333px; padding: 100px 0 0 20px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221215/thema_bg_left.png) top no-repeat; background-size: contain; box-shadow: 20px 20px 10px rgb(0,0,0,0.5); z-index: 10; } 
-.themaWrap .visualWrap ul.menuList li { margin-bottom: 14px; } 
+.themaWrap .visualWrap ul.menuList li { margin-bottom: 10px; } 
 .themaWrap .visualWrap ul.menuList li:last-child { margin-bottom: 0; } 
 .themaWrap .visualWrap ul.menuList li:hover { margin-top: -1px; } 
 .themaWrap .visualWrap ul.menuList li a { position: relative; color: #7a7773; font-size: 18px; } 
@@ -69,13 +69,16 @@
 .themaWrap .visualWrap .contentsWrap .titleWrap span { font-size: 65px; line-height: 95px; } 
 .themaWrap .visualWrap .contentsWrap .titleWrap span strong { color: #ff439c; font-family: 'GmarketSansBold'; font-size: 80px; } 
 .themaWrap .visualWrap .contentsWrap ul.contentsList { display: flex; margin-top: 50px; } 
-.themaWrap .visualWrap .contentsWrap ul.contentsList li { width: calc(100% / 6); margin-right: 20px; border-radius: 10px; text-align: center; overflow: hidden; } 
+.themaWrap .visualWrap .contentsWrap ul.contentsList li { position: relative; width: calc(100% / 6); margin-right: 20px; border-radius: 10px; text-align: center; overflow: hidden; } 
+.themaWrap .visualWrap .contentsWrap ul.contentsList li.new::before { content: "NEW"; position: absolute; top:0; left: 0; padding: 4px; color: #fff; font-size: 10px; font-family: 'GmarketSansBold'; background: #ff439c; border-radius: 0 0 10px 0; } 
+.themaWrap .visualWrap .contentsWrap ul.contentsList li.new:hover::before { margin: -4px; } 
 .themaWrap .visualWrap .contentsWrap ul.contentsList li:last-child { margin-right: 0; } 
 .themaWrap .visualWrap .contentsWrap ul.contentsList li:hover { border: 4px solid #ff439c; } 
 .themaWrap .visualWrap .contentsWrap ul.contentsList li:hover a { margin: -4px; } 
 .themaWrap .visualWrap .contentsWrap ul.contentsList li a { display: block; padding: 27px 0 20px; background: #f0ede8; } 
-.themaWrap .visualWrap .contentsWrap ul.contentsList li a .imgWrap { margin-bottom: 16px; } 
-.themaWrap .visualWrap .contentsWrap ul.contentsList li a p { color: #000; font-size: 18px; } 
+.themaWrap .visualWrap .contentsWrap ul.contentsList li a .imgWrap { margin-bottom: 16px; }
+.themaWrap .visualWrap .contentsWrap ul.contentsList li a .imgWrap img {height: 30px;} 
+.themaWrap .visualWrap .contentsWrap ul.contentsList li a p { color: #000; font-size: 18px; line-height: 22px;} 
 
 .themaWrap .educationWrap { padding: 60px 0 0; } 
 .themaWrap .educationWrap .titWrap { text-align: center; margin-bottom: 40px; } 
@@ -159,13 +162,13 @@
 .themaWrap .courseType05 ul li .tWrap p { margin-top: 10px; color: #2f2d2a; font-size: 16px; word-break: keep-all; } 
 
 
-@media all and (max-width:1700px) {
+@media all and (max-width:1700px){
  .themaWrap .leftMenu { display: none; } 
-}
+ }
 @media all and (max-width:1200px){
  .themaWrap .courseList.bgImg::before { content: none; } 
  }
-@media all and (max-width:1024px) { 
+@media all and (max-width:1024px){
  .themaWrap .courseWrap { flex-direction: column; align-items: center; } 
  .themaWrap .courseWrap .imgBox { margin-right: 0; } 
  .themaWrap .courseWrap .cont { width: 100%; text-align: center; } 
@@ -173,6 +176,13 @@
  .themaWrap .courseWrap .cont .moveLink a { position: static; } 
  .themaWrap .courseType05 ul li { flex-direction: column; align-items: center; } 
  .themaWrap .courseType05 ul li .tWrap { width: 100%; text-align: center; } 
+ .themaWrap .visualWrap .contentsWrap .contBox { padding: 60px 85px 0; } 
+ .themaWrap .visualWrap .contentsWrap ul.contentsList li a p { font-size: 14px; } 
+ .themaWrap .visualWrap .contentsWrap ul.contentsList li a { padding: 15px 0; } 
+ .themaWrap .visualWrap .contentsWrap .titleWrap p { font-size: 24px; margin-bottom: 10px; } 
+ .themaWrap .visualWrap .contentsWrap .titleWrap span { font-size: 50px; line-height: 75px; } 
+.themaWrap .visualWrap .contentsWrap .titleWrap span strong { font-size: 60px; } 
+
  }
 @media all and (max-width:860px){
  .themaWrap .visualWrap { padding: 45px 0 40px; } 
@@ -181,8 +191,8 @@
  .themaWrap .visualWrap .titWrap ul { margin: 40px 0 40px; } 
  .themaWrap .visualWrap .titWrap ul li { padding-left: 30px; font-size: 22px; } 
  .themaWrap .visualWrap .titWrap ul li::before { min-width: 24px; height: 24px; } 
- .themaWrap .visualWrap .contentsWrap { text-align: center; } 
- .themaWrap .visualWrap .contentsWrap > img { width: 80%; border-radius: 30px; box-shadow: 20px 20px 0 rgb(0,0,0,0.2); } 
+ /* .themaWrap .visualWrap .contentsWrap { text-align: center; } 
+ .themaWrap .visualWrap .contentsWrap > img { width: 80%; border-radius: 30px; box-shadow: 20px 20px 0 rgb(0,0,0,0.2); } */
  .themaWrap .educationWrap { padding: 30px 0 0; } 
  .themaWrap .educationWrap .titWrap strong { font-size: 30px; } 
  .themaWrap .courseWrap .cont .txt p { font-size: 18px; } 
@@ -210,13 +220,25 @@
  .themaWrap .courseType05 ul { margin-top: 30px; } 
  .themaWrap .courseType05 ul li .tWrap strong { font-size: 18px; } 
  .themaWrap .courseType05 ul li .tWrap p { font-size: 14px; } 
- 
+ .themaWrap .visualWrap .contentsWrap { background: #fff; border-radius: 30px; border: 10px solid #000; box-shadow: 20px 20px 0 rgb(0,0,0,0.2); } 
+ .themaWrap .visualWrap .contentsWrap > img { display: none; } 
+ .themaWrap .visualWrap .contentsWrap .contBox { position: static; padding: 20px 10px; text-align: center; } 
+ .themaWrap .visualWrap .contentsWrap ul.contentsList li a .imgWrap { margin-bottom: 8px; } 
+
 }
 
 @media all and (max-width:640px){
  .themaWrap .visualWrap .titWrap strong { font-size: 20px; } 
  .themaWrap .visualWrap .titWrap > p::before { bottom: -10px; height: 40px; } 
  .themaWrap .visualWrap .titWrap ul li { margin-bottom: 4px; font-size: 16px; } 
+ .themaWrap .visualWrap .contentsWrap .titleWrap p { font-size: 17px; } 
+ .themaWrap .visualWrap .contentsWrap .titleWrap span { font-size: 22px; line-height: 32px; } 
+ .themaWrap .visualWrap .contentsWrap .titleWrap span strong { font-size: 28px; } 
+ .themaWrap .visualWrap .contentsWrap ul.contentsList { margin-top: 20px; flex-wrap: wrap; } 
+ .themaWrap .visualWrap .contentsWrap ul.contentsList li { width: calc((100% - 8px) / 3); margin-right: 4px; } 
+ .themaWrap .visualWrap .contentsWrap ul.contentsList li:nth-child(3n) { margin-right: 0; } 
+ .themaWrap .visualWrap .contentsWrap ul.contentsList li:nth-child(-n+3) { margin-bottom: 10px; } 
+
  .themaWrap .courseWrap .cont .moveLink a { width: 100%; font-size: 14px; border-radius: 30px; } 
  .themaWrap .courseType01 .tableWrap { width: 100%; margin: 0; } 
  .themaWrap .educationVideo .videoWrap { flex-direction: column; align-items: center; } 
@@ -234,4 +256,6 @@
  .themaWrap .courseType05 ul li br { display: none; } 
  .themaWrap .courseType05 ul li { width: 100%; margin-bottom: 20px; } 
  .themaWrap .courseType05 ul li:nth-child(odd) { margin-right: 0; } 
+
+
  }
