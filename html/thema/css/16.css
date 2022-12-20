@@ -1,0 +1,237 @@
+
+@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; } 
+@font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; } 
+
+.themaWrap * { font-family: 'GmarketSansMedium'; } 
+.themaWrap { letter-spacing: -0.5px; } 
+.themaWrap .innerSection { position: relative; padding: 0 20px; max-width: 1160px; height: 100%; margin: 0 auto; } 
+.themaWrap img { object-fit: cover; height: inherit; } 
+.themaWrap .bLine { border-bottom: 1px solid #302e2b !important; } 
+.themaWrap .bg01 { background: #f2f8ff !important; } 
+.themaWrap .bg02 { background: #f9fff4 !important; } 
+.themaWrap .bg03 { background: #fffdf4 !important; } 
+.themaWrap .bg04 { background: #f6f4ff !important; } 
+.themaWrap .bg05 { background: #ecf4ff !important; } 
+.themaWrap .bg06 { background: #ffeff7 !important; } 
+.themaWrap strong.titBg01::after { background: #43b2ff !important; } 
+.themaWrap strong.titBg02::after { background: #08bd6a !important; } 
+.themaWrap strong.titBg03::after { background: #ff8420 !important; } 
+.themaWrap strong.titBg04::after { background: #b25bef !important; } 
+.themaWrap strong.titBg05::after { background: #1763cb !important; } 
+.themaWrap strong.titBg06::after { background: #f95ea7 !important; } 
+.themaWrap .bgStyle01 { background: #08bd6a !important; } 
+.themaWrap .bgStyle02 { background: #4d19c3 !important; } 
+.themaWrap .bgStyle03 { background: #ff8420 !important; } 
+.themaWrap .bgStyle04 { background: #0a467c !important; } 
+.themaWrap .bgStyle05 { background: #731212 !important; } 
+.themaWrap .bgStyle06 { background: #fa6f3f !important; } 
+.themaWrap .bgStyle07 { background: #b25bef !important; } 
+.themaWrap .bgStyle08 { background: #501b82 !important; } 
+.themaWrap .bgStyle09 { background: #438aff !important; } 
+.themaWrap .bgStyle10 { background: #1763cb !important; } 
+.themaWrap .bgStyle11 { background: #ff6243 !important; } 
+.themaWrap .bgStyle12 { background: #f95ea7 !important; } 
+.themaWrap .bgStyle13 { background: #302e2b !important; } 
+.themaWrap .txtColor01 { color: #0c7e8e !important; border-bottom: 1px solid #0c7e8e !important; } 
+.themaWrap .txtColor02 { color: #b25bef !important; border-bottom: 1px solid #b25bef !important; } 
+.themaWrap .txtColor03 { color: #c11a69 !important; border-bottom: 1px solid #c11a69 !important; } 
+
+.themaWrap .visualWrap { position: relative; padding: 90px 0 80px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221215/thema_bg01.png) top no-repeat; background-size: cover; } 
+.themaWrap .visualWrap .leftMenu.fixed { position: fixed; top: 100px; } 
+.themaWrap .visualWrap .leftMenu { position: absolute; bottom: 110px; left: 90px; width: 181px; height: 333px; padding: 100px 0 0 20px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221215/thema_bg_left.png) top no-repeat; background-size: contain; box-shadow: 20px 20px 10px rgb(0,0,0,0.5); z-index: 10; } 
+.themaWrap .visualWrap ul.menuList li { margin-bottom: 14px; } 
+.themaWrap .visualWrap ul.menuList li:last-child { margin-bottom: 0; } 
+.themaWrap .visualWrap ul.menuList li:hover { margin-top: -1px; } 
+.themaWrap .visualWrap ul.menuList li a { position: relative; color: #7a7773; font-size: 18px; } 
+.themaWrap .visualWrap ul.menuList li.on a,
+.themaWrap .visualWrap ul.menuList li:hover a { color: #383633; font-family: 'GmarketSansBold'; z-index: 1; } 
+
+.themaWrap .visualWrap ul.menuList li.on a::after,
+.themaWrap .visualWrap ul.menuList li:hover a::after { content: ""; position: absolute; right: -30px; bottom: 0; width: 23px; height: 29px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221215/thema_icon_left.png) center no-repeat; } 
+.themaWrap .visualWrap ul.menuList li.on a::before,
+.themaWrap .visualWrap ul.menuList li:hover a::before { content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 7px; background: #e9e4dc; z-index: -1; } 
+.themaWrap .visualWrap .titWrap { display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: 10px; } 
+.themaWrap .visualWrap .titWrap > p { position: relative; } 
+.themaWrap .visualWrap .titWrap > p::before { content: ""; position: absolute; right: 20px; bottom: -16px; width: 90%; height: 60px; background: #a8a79b; border-radius: 10px; } 
+.themaWrap .visualWrap .titWrap strong { position: relative; display: block; padding: 4px 24px; background: #383633; color: #fff; font-size: 50px; border-radius: 10px; transform: rotateZ(-3deg); } 
+.themaWrap .visualWrap .titWrap strong::before { content: ""; position: absolute; top: -24px; right: -24px; width: 66px; height: 54px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221215/thema_icon_visual01.png) center no-repeat; background-size: contain; } 
+.themaWrap .visualWrap .titWrap strong span { color: #ff95c7; } 
+.themaWrap .visualWrap .titWrap ul { margin: 50px 0 60px; } 
+.themaWrap .visualWrap .titWrap ul li { position: relative; padding-left: 40px; font-size: 28px; } 
+.themaWrap .visualWrap .titWrap ul li:last-child { margin-bottom: 0; } 
+.themaWrap .visualWrap .titWrap ul li::before { content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%); min-width: 31px; height: 31px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221215/thema_icon_checkbox.png) center no-repeat; background-size: contain; vertical-align: sub; } 
+.themaWrap .visualWrap .titWrap ul li span { position: relative; font-family: 'GmarketSansBold'; font-style: italic; z-index: 1; } 
+.themaWrap .visualWrap .titWrap ul li span::after { content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 8px; background: #fff; z-index: -1; } 
+.themaWrap .visualWrap .contentsWrap { position: relative; max-width: 1022px; margin: 0 auto; } 
+.themaWrap .visualWrap .contentsWrap > img { border-radius: 30px; box-shadow: 40px 40px 0 rgb(0,0,0,0.2); } 
+.themaWrap .visualWrap .contentsWrap .contBox { position: absolute; top: 0; left: 0; width: 100%; padding: 80px 85px 0; } 
+.themaWrap .visualWrap .contentsWrap .titleWrap p { margin-bottom: 20px; font-size: 30px; font-style: italic; } 
+.themaWrap .visualWrap .contentsWrap .titleWrap span { font-size: 65px; line-height: 95px; } 
+.themaWrap .visualWrap .contentsWrap .titleWrap span strong { color: #ff439c; font-family: 'GmarketSansBold'; font-size: 80px; } 
+.themaWrap .visualWrap .contentsWrap ul.contentsList { display: flex; margin-top: 50px; } 
+.themaWrap .visualWrap .contentsWrap ul.contentsList li { width: calc(100% / 6); margin-right: 20px; border-radius: 10px; text-align: center; overflow: hidden; } 
+.themaWrap .visualWrap .contentsWrap ul.contentsList li:last-child { margin-right: 0; } 
+.themaWrap .visualWrap .contentsWrap ul.contentsList li:hover { border: 4px solid #ff439c; } 
+.themaWrap .visualWrap .contentsWrap ul.contentsList li:hover a { margin: -4px; } 
+.themaWrap .visualWrap .contentsWrap ul.contentsList li a { display: block; padding: 27px 0 20px; background: #f0ede8; } 
+.themaWrap .visualWrap .contentsWrap ul.contentsList li a .imgWrap { margin-bottom: 16px; } 
+.themaWrap .visualWrap .contentsWrap ul.contentsList li a p { color: #000; font-size: 18px; } 
+
+.themaWrap .educationWrap { padding: 60px 0 0; } 
+.themaWrap .educationWrap .titWrap { text-align: center; margin-bottom: 40px; } 
+.themaWrap .educationWrap .titWrap strong { position: relative; font-family: 'GmarketSansBold'; font-size: 40px; -webkit-text-stroke: 1px #fff; z-index: 1; } 
+.themaWrap .educationWrap .titWrap strong::after { content: ""; position: absolute; bottom: 4px; left: 50%; transform: translateX(-50%); width: 106%; height: 13px; z-index: -1; } 
+.themaWrap .courseWrap { display: flex; padding-bottom: 50px; border-bottom: 2px solid #cbcfd4; } 
+.themaWrap .courseWrap .imgBox { margin-right: 40px; } 
+.themaWrap .courseWrap .cont { position: relative; width: calc(100% - 570px); } 
+.themaWrap .courseWrap .cont .txt { margin-top: 40px; } 
+.themaWrap .courseWrap .cont .txt p { color: #302e2b; font-size: 22px; } 
+.themaWrap .courseWrap .cont .txt b { color: #302e2b; font-family: 'GmarketSansBold'; font-size: 34px; font-style: italic; } 
+.themaWrap .courseWrap .cont .moveLink a { display: inline-block; position: absolute; width: 368px; right: 0; bottom: 0; padding: 10px 0; background: #43b2ff; color: #fff; font-family: 'GmarketSansBold'; font-size: 20px; text-align: center; border-radius: 30px; } 
+
+.themaWrap .courseList { position: relative; padding: 48px 0 38px; } 
+.themaWrap .courseList.bgImg::before { content: ""; position: absolute; left: -350px; bottom: 0; width: 453px; height: 352px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221215/thema_item01_img03.png) no-repeat; background-size: contain; } 
+.themaWrap .courseList .txtWrap { text-align: center; margin-bottom: 35px; } 
+.themaWrap .courseList .txtWrap strong { color: #2f2d2a; font-family: 'GmarketSansBold'; font-size: 24px; text-align: center; border-bottom: 1px solid #2f2d2a; } 
+.themaWrap .courseList .txtWrap strong span { font-family: inherit; } 
+.themaWrap .courseType01 { display: flex; align-items: center; justify-content: flex-end; } 
+.themaWrap .courseType01 .tableWrap { width: 412px; margin: 0 100px; } 
+.themaWrap .courseType01 .tableWrap table { width: 100%; text-align: center; } 
+.themaWrap .courseType01 .tableWrap thead { background: #0a5ca7; } 
+.themaWrap .courseType01 .tableWrap tbody { background: #fff; } 
+.themaWrap .courseType01 .tableWrap th { padding: 8px 0; color: #fff; font-size: 20px; font-weight: 600; border-bottom: 2px solid #f2f8ff; border-left: 2px solid #f2f8ff; } 
+.themaWrap .courseType01 .tableWrap th:last-child { border-right: none; } 
+.themaWrap .courseType01 .tableWrap td { padding: 8px 0; color: #2f2d2a; font-size: 20px; border-right: 2px solid #f2f8ff; } 
+.themaWrap .courseType01 .tableWrap td:last-child { border-right: none; } 
+.themaWrap .courseType01 .tableWrap p { margin-top: 14px; color: #aaadb1; font-size: 14px; text-align: right; } 
+
+.themaWrap .educationVideo { padding: 40px 0; } 
+.themaWrap .educationVideo .txtWrap { margin-bottom: 25px; text-align: center; } 
+.themaWrap .educationVideo .txtWrap strong { color: #fff; font-family: 'GmarketSansBold'; font-size: 24px; border-bottom: 1px solid #fff; } 
+.themaWrap .educationVideo .videoWrap { display: flex; justify-content: center; text-align: center; } 
+.themaWrap .educationVideo .videoWrap .videoBox:first-child { margin-right: 40px; } 
+.themaWrap .educationVideo .videoBox { max-width: 450px; width: 100%; } 
+.themaWrap .educationVideo .video { position: relative; padding-top: 56.3%; width: 100%; height: 0; border-radius: 20px; overflow: hidden; } 
+.themaWrap .educationVideo .video img { position: absolute; height: 100%; top: 0; left: 0; z-index: 1; cursor: pointer; } 
+.themaWrap .educationVideo iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 20px; } 
+.themaWrap .educationVideo .videoBox p { margin-top: 20px; color: #fff; font-size: 20px; letter-spacing: -0.75px; } 
+.themaWrap .educationVideo .moreVideo { margin-top: 35px; text-align: center; } 
+.themaWrap .educationVideo .moreVideo a { display: inline-block; width: 180px; padding: 8px 0; background: #ff4397; color: #fff; font-size: 20px; font-family: 'GmarketSansBold'; border-radius: 30px; } 
+
+.themaWrap .courseType02 { height: 510px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221215/thema_item01_bg.png) bottom no-repeat; background-size: contain; } 
+.themaWrap .courseType02 ul { display: flex; flex-wrap: wrap; justify-content: space-between; padding: 0 140px; } 
+.themaWrap .courseType02 ul li { width: calc( 100% / 2 ); } 
+.themaWrap .courseType02 ul li:nth-child(-n + 2) { margin-bottom: 28px; } 
+.themaWrap .courseType02 ul li:nth-child(even) { text-align: right; } 
+.themaWrap .courseType02 ul li span { color: #80d2d8; font-size: 50px; font-family: 'GmarketSansBold'; } 
+.themaWrap .courseType02 ul li p { color: #000000; font-size: 20px; } 
+
+.themaWrap .courseType03 { display: flex; } 
+.themaWrap .courseType03 .tableWrap { margin-right: 26px; } 
+.themaWrap .courseType03 .tableWrap th { padding: 8px 0; color: #fff; font-size: 20px; border-bottom: 2px solid #fffdf4; word-break: keep-all; } 
+.themaWrap .courseType03 .tableWrap td { padding: 8px 10px; color: #2f2d2a; font-size: 16px; text-align: center; border-bottom: 2px solid #fffdf4; word-break: keep-all; } 
+.themaWrap .courseType03 .tableWrap:nth-child(1) { width: 346px; } 
+.themaWrap .courseType03 .tableWrap:nth-child(1) th { background: #f6514d; } 
+.themaWrap .courseType03 .tableWrap:nth-child(1) td:first-child { background: #fbf1c3; } 
+.themaWrap .courseType03 .tableWrap:nth-child(1) td:last-child { background: #fdf8de; } 
+.themaWrap .courseType03 .tableWrap:nth-child(2) { width: 378px; } 
+.themaWrap .courseType03 .tableWrap:nth-child(2) th { background: #5766b4; } 
+.themaWrap .courseType03 .tableWrap:nth-child(2) td:first-child { background: #d2d7f0; } 
+.themaWrap .courseType03 .tableWrap:nth-child(2) td:last-child { background: #f1f3ff; } 
+.themaWrap .courseType03 .tableWrap:nth-child(3) { width: 346px; margin-right: 0; } 
+.themaWrap .courseType03 .tableWrap:nth-child(3) th { background: #14b99c; } 
+.themaWrap .courseType03 .tableWrap:nth-child(3) td:first-child { background: #b5eec1; } 
+.themaWrap .courseType03 .tableWrap:nth-child(3) td:last-child { background: #e1fae7; } 
+
+.themaWrap .courseType04 ul { display: flex; margin-top: 70px; } 
+.themaWrap .courseType04 ul li { width: calc((100% - 60px) / 4); margin-right: 20px; border-radius: 20px; overflow: hidden; } 
+.themaWrap .courseType04 ul li:last-child { margin-right: 0; } 
+.themaWrap .courseType04 ul li a { display: block; color: #2f2d2a; font-size: 20px; text-align: center; } 
+.themaWrap .courseType04 ul li a .imgWrap { margin-bottom: 20px; } 
+
+.themaWrap .courseType05 ul { display: flex; flex-wrap: wrap; margin-top: 70px; } 
+.themaWrap .courseType05 ul li { display: flex; width: calc((100% - 20px) / 2); } 
+.themaWrap .courseType05 ul li:nth-child(odd) { margin-right: 20px; } 
+.themaWrap .courseType05 ul li:nth-child(-n+2) { margin-bottom: 20px; } 
+.themaWrap .courseType05 ul li .imgWrap { margin-right: 20px; } 
+.themaWrap .courseType05 ul li .tWrap { width: calc(100% - 270px); margin-top: 20px; line-height: 22px; } 
+.themaWrap .courseType05 ul li .tWrap strong { color: #2f2d2a; font-family: 'GmarketSansBold'; font-size: 20px; word-break: keep-all; } 
+.themaWrap .courseType05 ul li .tWrap p { margin-top: 10px; color: #2f2d2a; font-size: 16px; word-break: keep-all; } 
+
+
+@media all and (max-width:1700px) {
+ .themaWrap .leftMenu { display: none; } 
+}
+@media all and (max-width:1200px){
+ .themaWrap .courseList.bgImg::before { content: none; } 
+ }
+@media all and (max-width:1024px) { 
+ .themaWrap .courseWrap { flex-direction: column; align-items: center; } 
+ .themaWrap .courseWrap .imgBox { margin-right: 0; } 
+ .themaWrap .courseWrap .cont { width: 100%; text-align: center; } 
+ .themaWrap .courseWrap .cont .moveLink { margin-top: 20px; } 
+ .themaWrap .courseWrap .cont .moveLink a { position: static; } 
+ .themaWrap .courseType05 ul li { flex-direction: column; align-items: center; } 
+ .themaWrap .courseType05 ul li .tWrap { width: 100%; text-align: center; } 
+ }
+@media all and (max-width:860px){
+ .themaWrap .visualWrap { padding: 45px 0 40px; } 
+ .themaWrap .visualWrap .titWrap strong { font-size: 35px; } 
+ .themaWrap .visualWrap .titWrap strong::before { width: 50px; height: 40px; } 
+ .themaWrap .visualWrap .titWrap ul { margin: 40px 0 40px; } 
+ .themaWrap .visualWrap .titWrap ul li { padding-left: 30px; font-size: 22px; } 
+ .themaWrap .visualWrap .titWrap ul li::before { min-width: 24px; height: 24px; } 
+ .themaWrap .visualWrap .contentsWrap { text-align: center; } 
+ .themaWrap .visualWrap .contentsWrap > img { width: 80%; border-radius: 30px; box-shadow: 20px 20px 0 rgb(0,0,0,0.2); } 
+ .themaWrap .educationWrap { padding: 30px 0 0; } 
+ .themaWrap .educationWrap .titWrap strong { font-size: 30px; } 
+ .themaWrap .courseWrap .cont .txt p { font-size: 18px; } 
+ .themaWrap .courseWrap .cont .txt b { font-size: 22px; } 
+ .themaWrap .courseType01 { flex-direction: column; } 
+ .themaWrap .courseType01 .imgWrap { margin-bottom: 20px; text-align: center; } 
+ .themaWrap .courseType01 .imgWrap img { width: 80%; } 
+ .themaWrap .courseType01 .tableWrap th { font-size: 16px; } 
+ .themaWrap .courseType01 .tableWrap td { font-size: 16px; } 
+ .themaWrap .educationVideo .txtWrap strong { font-size: 20px; } 
+ .themaWrap .educationVideo .videoBox p { font-size: 16px; } 
+ .themaWrap .courseType02 { background: none; height: auto; } 
+ .themaWrap .courseType02 ul { max-width: 500px; padding: 0; margin: 0 auto; } 
+ .themaWrap .courseType02 ul li { display: flex; align-items: center; text-align: left !important; } 
+ .themaWrap .courseType02 ul li span { display: flex; align-items: center; width: 40px; font-size: 40px; } 
+ .themaWrap .courseType02 ul li p { font-size: 16px; } 
+ .themaWrap .courseList .txtWrap strong { font-size: 18px; } 
+ .themaWrap .courseType03 { flex-direction: column; } 
+ .themaWrap .courseType03 .tableWrap { width: 100% !important; margin-bottom: 10px; } 
+ .themaWrap .courseType03 .tableWrap table { width: 100%; } 
+ .themaWrap .courseType04 ul { margin-top: 30px; flex-wrap: wrap; } 
+ .themaWrap .courseType04 ul li { width: calc((100% - 20px) / 2 ); } 
+ .themaWrap .courseType04 ul li:nth-child(-n + 2) { margin-bottom: 20px; } 
+ .themaWrap .courseType04 ul li:nth-child(even) { margin-right: 0; } 
+ .themaWrap .courseType05 ul { margin-top: 30px; } 
+ .themaWrap .courseType05 ul li .tWrap strong { font-size: 18px; } 
+ .themaWrap .courseType05 ul li .tWrap p { font-size: 14px; } 
+ 
+}
+
+@media all and (max-width:640px){
+ .themaWrap .visualWrap .titWrap strong { font-size: 20px; } 
+ .themaWrap .visualWrap .titWrap > p::before { bottom: -10px; height: 40px; } 
+ .themaWrap .visualWrap .titWrap ul li { margin-bottom: 4px; font-size: 16px; } 
+ .themaWrap .courseWrap .cont .moveLink a { width: 100%; font-size: 14px; border-radius: 30px; } 
+ .themaWrap .courseType01 .tableWrap { width: 100%; margin: 0; } 
+ .themaWrap .educationVideo .videoWrap { flex-direction: column; align-items: center; } 
+ .themaWrap .educationVideo .videoWrap .videoBox:first-child { margin-right: 0; margin-bottom: 20px; } 
+ .themaWrap .courseType02 ul { flex-direction: column; } 
+ .themaWrap .courseType02 ul li { width: 100%; align-items: center; margin-bottom: 10px !important; } 
+ .themaWrap .courseType02 li p br { display: none; } 
+ .themaWrap .courseType02 li:nth-child(2) { order: 3; } 
+ .themaWrap .courseType02 li:nth-child(4) { order: 4; } 
+ .themaWrap .courseType02 ul { max-width: 400px; } 
+ .themaWrap .educationVideo { padding: 20px 0; } 
+ .themaWrap .educationVideo .moreVideo a { font-size: 16px; } 
+ .themaWrap .courseType04 ul li p { font-size: 14px; } 
+ .themaWrap .courseType05 ul { flex-direction: column; align-items: center; } 
+ .themaWrap .courseType05 ul li br { display: none; } 
+ .themaWrap .courseType05 ul li { width: 100%; margin-bottom: 20px; } 
+ .themaWrap .courseType05 ul li:nth-child(odd) { margin-right: 0; } 
+ }
