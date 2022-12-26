@@ -1,0 +1,167 @@
+@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; } 
+@font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; } 
+
+.themaWrap * { font-family: 'GmarketSansMedium'; } 
+.themaWrap { background: linear-gradient(#d2e8ff, #89f9fb); letter-spacing: -0.5px; } 
+.themaWrap .innerSection { position: relative; padding: 0 20px; max-width: 1300px; height: 100%; margin: 0 auto; } 
+.themaWrap img { object-fit: cover; height: inherit; } 
+.themaWrap strong { font-family: 'GmarketSansBold'; } 
+.themaWrap em { font-family: 'GmarketSansBold'; } 
+.themaWrap .txtColor01 { color: #fe6a63 !important; } 
+.themaWrap .txtColor02 { color: #d62219 !important; } 
+.themaWrap .txtColor03 { color: #136e8f !important; } 
+.themaWrap .bgColor01 { background: #fe6a63 !important; } 
+.themaWrap .bgColor02 { background: #ffc5b1 !important; } 
+.themaWrap .bgColor03 { background: #ffefe9 !important; } 
+.themaWrap .bgColor04 { background: #fffbe2 !important; } 
+.themaWrap .bgColor05 { background: #fff !important; } 
+
+.themaWrap .visualWrap { padding-top: 60px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221223/thema_visual_bg.png) top center no-repeat; background-size: cover; } 
+.themaWrap .visualWrap .titleWrap { display: flex; flex-direction: column; align-items: center; margin-bottom: 390px; } 
+.themaWrap .visualWrap .titleWrap strong { padding: 0 30px; margin-bottom: 30px; background: #fb774a; color: #fff; font-size: 30px; border: 4px solid #f9572f; border-radius: 30px;; } 
+.themaWrap .visualWrap .chartWrap { position: relative; padding: 50px 60px 45px; margin-bottom: 50px; background: #fff; border-radius: 20px; box-shadow: 12px 12px 0 rgb(0,0,0,0.2); } 
+.themaWrap .visualWrap .chartWrap::before { content: ""; position: absolute; top: -403px; left: 53%; width: 652px; height: 403px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221223/thema_img01.png) no-repeat; background-size: contain; transform: translateX(-50%); } 
+.themaWrap .visualWrap .titWrap { margin-bottom: 40px; text-align: center; } 
+.themaWrap .visualWrap .titWrap strong { position: relative; font-size: 30px; z-index: 1; } 
+.themaWrap .visualWrap .titWrap strong::after { content: ""; position: absolute; left: 50%; bottom: 3px; width: 102%; height: 16px; background: #fdee88; transform: translateX(-50%); z-index: -1; } 
+.themaWrap .visualWrap .titWrap p { margin-top: 18px; font-size: 24px; } 
+.themaWrap .visualWrap .chartBox { display: flex; align-items: center; } 
+.themaWrap .visualWrap .chartBox .cont { text-align: right; } 
+.themaWrap .visualWrap .chartBox p { margin-right: 30px; color: #000000; font-size: 22px; line-height: 1; } 
+.themaWrap .visualWrap .chartBox p:first-child { margin-bottom: 40px; } 
+.themaWrap .visualWrap .chartBox p span { display: inline-block; width: 20px; height: 20px; background: #0ac6c9; border-radius: 50%; vertical-align: unset; } 
+.themaWrap .visualWrap .chartBox .imgWrap { width: calc(100% - 170px); } 
+
+.themaWrap .contensWrap .infoList { margin-bottom: 50px; } 
+.themaWrap .contensWrap .infoList li { display: flex; align-items: center; text-align: center; margin-bottom: 20px; } 
+.themaWrap .contensWrap .infoList li strong { min-width: 165px; padding: 12px 0; margin-right: 28px; background: #16a8d9; color: #fff; font-size: 28px; border-radius: 10px; } 
+.themaWrap .contensWrap .infoList li p { color: #111f02; font-size: 26px; text-align: left; } 
+.themaWrap .contensWrap .infoList li p a { display: inline-block; width: 128px; padding: 4px 0; background: #fff9d3; color: #ff6714; border: 4px solid #fdee88; border-radius: 30px; text-align: center; vertical-align: middle; } 
+.themaWrap .contensWrap .eduList { position: relative; background: #fff; border: 4px solid #00688b; border-radius: 20px; } 
+.themaWrap .contensWrap .eduList::before { content: ""; position: absolute; right: 280px; top: -107px; width: 156px; height: 107px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221223/thema_img02.png) no-repeat; background-size: contain; } 
+.themaWrap .contensWrap .eduList::after { content: ""; position: absolute; right: -18px; top: -360px; width: 340px; height: 379px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221223/thema_img03.png) no-repeat; background-size: contain; } 
+.themaWrap .contensWrap .eduList strong { position: absolute; left: -4px; top: -30px; min-width: 165px; padding: 12px 0; background: #00688b; color: #fff; font-size: 28px; text-align: center; border-radius: 10px; } 
+.themaWrap .contensWrap .eduList ul { display: flex; flex-direction: column; flex-wrap: wrap; height: 320px; padding: 60px 30px 0; } 
+.themaWrap .contensWrap .eduList ul li { display: flex; align-items: baseline; width: calc((100% - 20px) / 2); min-height: 70px; margin-right: 20px; } 
+.themaWrap .contensWrap .eduList ul li:nth-child(n+4) { margin-right: 0; } 
+.themaWrap .contensWrap .eduList ul li > span { display: flex; align-items: center; justify-content: center; min-width: 50px; height: 50px; margin-right: 20px; background: #fdee88; font-family: 'GmarketSansBold'; font-size: 24px; border-radius: 50%; } 
+.themaWrap .contensWrap .eduList ul li p { color: #111f02; font-size: 24px; } 
+.themaWrap .contensWrap .eduList ul li p span { color: #858585; font-size: 18px; } 
+.themaWrap .contensWrap .eduList { position: relative; background: #fff; border: 4px solid #00688b; border-radius: 20px; } 
+.themaWrap .contensWrap .eduList::before { content: ""; position: absolute; right: 280px; top: -107px; width: 156px; height: 107px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221223/thema_img02.png) no-repeat; background-size: contain; } 
+.themaWrap .contensWrap .eduList::after { content: ""; position: absolute; right: -18px; top: -360px; width: 340px; height: 379px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221223/thema_img03.png) no-repeat; background-size: contain; } 
+.themaWrap .contensWrap .eduList strong { position: absolute; left: -4px; top: -30px; min-width: 165px; padding: 12px 0; background: #00688b; color: #fff; font-size: 28px; text-align: center; border-radius: 10px; } 
+
+.themaWrap .eduWrap { margin: 40px 0 80px; } 
+.themaWrap .eduWrap table { width: 100%; background: #fff; text-align: center; } 
+.themaWrap .eduWrap table th { padding: 12px 0; background: #f4521b; color: #fff; font-family: 'GmarketSansBold'; font-size: 26px; border-right: 4px solid #d2e8ff; border-bottom: 4px solid #d2e8ff; line-height: 1; } 
+.themaWrap .eduWrap table th:last-child { border-right: none; } 
+.themaWrap .eduWrap table td { padding: 16px 10px; color: #111f02; font-size: 18px; border-right: 4px solid #d2e8ff; border-bottom: 4px solid #d2e8ff; } 
+.themaWrap .eduWrap table td:last-child { border-right: none; } 
+.themaWrap .eduWrap table tr:last-child td { border-bottom: none; } 
+.themaWrap .eduWrap table td.link { position: relative; text-align: left; } 
+.themaWrap .eduWrap table a { position: absolute; top: 50%; right: 10px; padding: 2px 6px; background: #00688b; color: #fff; font-size: 16px; transform: translateY(-50%); } 
+.themaWrap .eduWrap .txtWrap { margin-top: 20px; color: #665853; font-size: 18px; } 
+
+.themaWrap .eduCourse .leftMenu { position: absolute; top: 161px; left: 0; } 
+.themaWrap .eduCourse .leftMenu.fixed { position: fixed; top: 261px; } 
+.themaWrap .eduCourse .leftMenu .titWrap { position: relative; padding: 20px 10px; background: #1693bb; border-radius: 0 20px 0 0; } 
+.themaWrap .eduCourse .leftMenu .titWrap::before { content: ''; position: absolute; left: 50%; top: -143px; width: 253px; height: 161px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221223/thema_img05.png) no-repeat; background-size: contain; transform: translateX(-50%); } 
+.themaWrap .eduCourse .leftMenu .titWrap strong { color: #fff; font-size: 20px; } 
+.themaWrap .eduCourse .leftMenu .menuList { background: #fff; } 
+.themaWrap .eduCourse .leftMenu .menuList li { padding: 10px 8px; border: 2px solid #1e458c; } 
+.themaWrap .eduCourse .leftMenu .menuList li:not(:last-child) { border-bottom: none; } 
+.themaWrap .eduCourse .leftMenu .menuList li a { color: #6b84b1; font-size: 15px; } 
+.themaWrap .eduCourse .leftMenu .menuList li.on { background: #fdee88; } 
+.themaWrap .eduCourse .leftMenu .menuList li.on a { color: #1e458c; } 
+.themaWrap .eduCourse { position: relative; padding-bottom: 60px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221223/thema_visual_bg02.png) bottom center no-repeat; background-size: contain; } 
+.themaWrap .eduCourse::before { content: ''; position: absolute; right: 0; bottom: 0; width: 403px; height: 280px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221223/thema_img04.png) no-repeat; background-size: contain; } 
+.themaWrap .eduCourse .titWrap strong { color: #292929; font-size: 34px; } 
+.themaWrap .eduCourse .whiteBox { position: relative; margin-top: 26px; padding: 30px 34px; background: #fff; border: 4px solid #00688b; border-radius: 0 20px 0 20px; } 
+.themaWrap .eduCourse .whiteBox strong { color: #00688b; font-size: 24px; } 
+.themaWrap .eduCourse .whiteBox p { margin: 25px 0 30px; color: #111f02; font-size: 18px; } 
+.themaWrap .eduCourse .whiteBox.bg01 { background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221223/thema_edu_bg01.png) #fff center no-repeat; background-size: cover; } 
+.themaWrap .eduCourse .whiteBox.bg02 { background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221223/thema_edu_bg02.png) #fff center no-repeat; background-size: cover; } 
+.themaWrap .eduCourse .whiteBox.bg03 { background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221223/thema_edu_bg03.png) #fff center no-repeat; background-size: cover; } 
+.themaWrap .eduCourse .whiteBox.bg04 { background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221223/thema_edu_bg04.png) #fff center no-repeat; background-size: cover; } 
+.themaWrap .eduCourse .whiteBox.item01::before { content: ''; position: absolute; right: 20px; bottom: 0; width: 200px; height: 176px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221223/thema_edu_img01.png) no-repeat; background-size: contain; } 
+.themaWrap .eduCourse .whiteBox.item02::before { content: ''; position: absolute; right: 30px; bottom: 10px; width: 292px; height: 221px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221223/thema_edu_img02.png) no-repeat; background-size: contain; } 
+.themaWrap .eduCourse .whiteBox.item03::before { content: ''; position: absolute; right: 30px; bottom: 0; width: 310px; height: 220px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221223/thema_edu_img03.png) no-repeat; background-size: contain; } 
+.themaWrap .eduCourse .whiteBox.item04::before { content: ''; position: absolute; right: 50px; bottom: 30px; width: 211px; height: 169px; background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221223/thema_edu_img04.png) no-repeat; background-size: contain; } 
+.themaWrap .eduCourse table { width: 100%; border-spacing: 3px; border-collapse: separate; } 
+.themaWrap .eduCourse table th { padding: 12px 0; background: #0e9cd8; color: #fff; font-size: 18px; text-align: center; } 
+.themaWrap .eduCourse table td { padding: 12px 18px; background: #f3f3f3; color: #292929; font-size: 16px; } 
+.themaWrap .eduCourse .btnWrap { margin-top: 30px; text-align: center; } 
+.themaWrap .eduCourse .btnWrap a { display: inline-block; width: 220px; padding: 5px 0; background: #00688b; color: #fdee88; font-family: 'GmarketSansBold'; font-size: 24px; border: 3px solid #07465b; border-radius: 30px; } 
+
+
+
+
+ @media all and (max-width:1820px){
+ .themaWrap .leftMenu { display: none; } 
+ }
+@media all and (max-width:1200px){
+ .themaWrap .contensWrap .eduList::after { content: none; } 
+ .themaWrap .contensWrap .eduList::before { content: none; } 
+ .themaWrap .eduCourse::before { content: none; } 
+ .themaWrap .eduCourse .whiteBox.item01::before,
+ .themaWrap .eduCourse .whiteBox.item02::before,
+ .themaWrap .eduCourse .whiteBox.item03::before,
+ .themaWrap .eduCourse .whiteBox.item04::before { content: none; } 
+ }
+@media all and (max-width:1024px){
+ .themaWrap .visualWrap .chartBox { flex-direction: column-reverse; } 
+ .themaWrap .visualWrap .chartBox .cont { display: flex; margin-top: 40px; } 
+ .themaWrap .visualWrap .chartBox p:first-child { margin-bottom: 0; } 
+ .themaWrap .visualWrap .chartBox p span { width: 12px; height: 12px; } 
+ .themaWrap .visualWrap .chartBox .imgWrap { width: 100%; } 
+ .themaWrap .visualWrap .chartBox p:last-child { margin-right: 0; } 
+ .themaWrap .contensWrap .eduList ul { height: auto; padding: 60px 30px 20px; } 
+ .themaWrap .contensWrap .eduList ul li { width: 100%; } 
+ .themaWrap .eduWrap .tHide { display: none; } 
+ }
+@media all and (max-width:860px){
+ .themaWrap .visualWrap .titleWrap { margin-bottom: 263px; } 
+ .themaWrap .visualWrap .titleWrap strong { padding: 0 10px; font-size: 22px; } 
+ .themaWrap .visualWrap .chartWrap::before { top: -260px; width: 400px; height: 259px; } 
+ .themaWrap .visualWrap .chartWrap { padding: 20px 10px; } 
+ .themaWrap .visualWrap .titWrap strong { font-size: 24px; } 
+ .themaWrap .visualWrap .titWrap p { font-size: 18px; } 
+ .themaWrap .visualWrap .chartBox p { font-size: 14px; } 
+ .themaWrap .contensWrap .infoList li strong { min-width: 140px; font-size: 24px; } 
+ .themaWrap .contensWrap .infoList li p { font-size: 20px; } 
+ .themaWrap .contensWrap .eduList ul li { align-items: center; margin-right: 0; } 
+ .themaWrap .contensWrap .eduList ul li p { font-size: 20px; } 
+ .themaWrap .eduWrap .mHide { display: none; } 
+ .themaWrap .eduWrap table th { width: 120px; font-size: 20px; } 
+ .themaWrap .eduWrap table td { padding: 12px 10px; font-size: 16px; } 
+ .themaWrap .eduWrap .txtWrap { font-size: 14px; } 
+ .themaWrap .eduWrap { margin: 40px 0; } 
+ .themaWrap .eduCourse .titWrap { text-align: center; } 
+ .themaWrap .eduCourse .titWrap strong { font-size: 26px; } 
+ .themaWrap .eduCourse .whiteBox strong { font-size: 20px; } 
+ .themaWrap .eduCourse .whiteBox p { margin: 10px 0 20px; font-size: 16px; } 
+ .themaWrap .eduCourse .whiteBox { padding: 20px; } 
+ }
+@media all and (max-width:640px){
+ .themaWrap .visualWrap .titleWrap strong { font-size: 18px; } 
+ .themaWrap .visualWrap .chartWrap::before { content: none; } 
+ .themaWrap .visualWrap .titleWrap { margin-bottom: 20px; } 
+ .themaWrap .visualWrap .titWrap strong { display: block; font-size: 18px; background: #fdee88; word-break: keep-all; } 
+ .themaWrap .visualWrap .titWrap strong::after { content: none; } 
+ .themaWrap .visualWrap .titWrap p { font-size: 14px; word-break: keep-all; } 
+ .themaWrap .contensWrap .infoList li { flex-direction: column; } 
+ .themaWrap .contensWrap .infoList li strong { width: 100%; margin-right: 0; margin-bottom: 10px; padding: 8px 0; font-size: 18px; } 
+ .themaWrap .contensWrap .infoList li p { font-size: 16px; text-align: center; } 
+ .themaWrap .contensWrap .infoList li p a { width: 80px; border: 2px solid #fdee88; font-size: 14px; } 
+ .themaWrap .contensWrap .eduList ul li > span { min-width: 36px; height: 36px; font-size: 18px; } 
+ .themaWrap .contensWrap .eduList ul li p { font-size: 16px; } 
+ .themaWrap .contensWrap .eduList ul li p span { font-size: 14px; } 
+ .themaWrap .eduWrap table a { display: block; position: static; margin-top: 10px; transform: none; text-align: center; } 
+ .themaWrap .eduWrap table td.link { text-align: center; } 
+ .themaWrap .eduCourse table th { display: block; } 
+ .themaWrap .eduCourse table td { display: block; } 
+ .themaWrap .eduCourse .btnWrap a { width: 100%; font-size: 16px; } 
+ .themaWrap .eduCourse .titWrap strong { font-size: 18px; } 
+ .themaWrap .eduCourse .whiteBox { margin-top: 12px; } 
+ }
