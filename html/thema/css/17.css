@@ -54,7 +54,7 @@
 
 .themaWrap .eduWrap { margin: 40px 0 80px; } 
 .themaWrap .eduWrap table { width: 100%; background: #fff; text-align: center; } 
-.themaWrap .eduWrap table th { padding: 12px 0; background: #f4521b; color: #fff; font-family: 'GmarketSansBold'; font-size: 26px; border-right: 4px solid #d2e8ff; border-bottom: 4px solid #d2e8ff; line-height: 1; } 
+.themaWrap .eduWrap table th { padding: 12px 10px; background: #f4521b; color: #fff; font-family: 'GmarketSansBold'; font-size: 26px; border-right: 4px solid #d2e8ff; border-bottom: 4px solid #d2e8ff; line-height: 1; } 
 .themaWrap .eduWrap table th:last-child { border-right: none; } 
 .themaWrap .eduWrap table td { padding: 16px 10px; color: #111f02; font-size: 18px; border-right: 4px solid #d2e8ff; border-bottom: 4px solid #d2e8ff; } 
 .themaWrap .eduWrap table td:last-child { border-right: none; } 
@@ -133,7 +133,7 @@
  .themaWrap .contensWrap .eduList ul li { align-items: center; margin-right: 0; } 
  .themaWrap .contensWrap .eduList ul li p { font-size: 20px; } 
  .themaWrap .eduWrap .mHide { display: none; } 
- .themaWrap .eduWrap table th { width: 120px; font-size: 20px; } 
+ .themaWrap .eduWrap table th { width: 120px; font-size: 16px; } 
  .themaWrap .eduWrap table td { padding: 12px 10px; font-size: 16px; } 
  .themaWrap .eduWrap .txtWrap { font-size: 14px; } 
  .themaWrap .eduWrap { margin: 40px 0; } 
@@ -141,8 +141,11 @@
  .themaWrap .eduCourse .titWrap strong { font-size: 26px; } 
  .themaWrap .eduCourse .whiteBox strong { font-size: 20px; } 
  .themaWrap .eduCourse .whiteBox p { margin: 10px 0 20px; font-size: 16px; } 
- .themaWrap .eduCourse .whiteBox { padding: 20px; } 
- }
+ .themaWrap .eduCourse .whiteBox { padding: 20px; }
+ .themaWrap .contensWrap .eduList strong { min-width: 140px; padding: 8px 0; font-size: 24px; } 
+ .themaWrap .contensWrap .eduList ul { padding: 30px 20px 20px; } 
+}
+
 @media all and (max-width:640px){
  .themaWrap .visualWrap .titleWrap strong { font-size: 18px; } 
  .themaWrap .visualWrap .chartWrap::before { content: none; } 
@@ -164,4 +167,7 @@
  .themaWrap .eduCourse .btnWrap a { width: 100%; font-size: 16px; } 
  .themaWrap .eduCourse .titWrap strong { font-size: 18px; } 
  .themaWrap .eduCourse .whiteBox { margin-top: 12px; } 
+ .themaWrap .contensWrap .eduList strong { top: -22px; font-size: 18px;}
+ .themaWrap .contensWrap .eduList ul li { min-height: auto; margin-bottom: 10px;}
+ .themaWrap .contensWrap .eduList ul li:last-child { margin-bottom: 0;}
  }
