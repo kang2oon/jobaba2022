@@ -28,7 +28,7 @@
 .themaWrap .bar_list li:last-child { margin-bottom: 0 } 
 .themaWrap .bar_list li:before { content: '-'; position: absolute; left: 0; top: 0 } 
 
-.themaWrap .section01{background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221222/bg.png) no-repeat center #56db8c;padding: 50px 0}
+.themaWrap .section01{background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221222/bg.png) no-repeat top center #56db8c;padding: 50px 0}
 .themaWrap .section01 .img_tit{text-align: center;}
 .themaWrap .section01 .check_list li{font-size: 22px;font-weight: bold;width: 600px;margin: auto;background: #fff;margin-bottom: 15px;padding: 20px 10px 20px 80px;border-radius: 50px;color: #275441;position: relative;box-shadow: 0px 5px 0 #275441 ;border: 3px solid #275441}
 .themaWrap .section01 .check_list li:before{content: '';display: block;background: url(https://cdn.jsdelivr.net/gh/kang2oon/jobaba2022/html/thema/resource/images/thema/221222/check_img02.png) no-repeat;width: 52px;height: 56px;position: absolute;left: 20px;top: 50%;transform: translateY(-50%)}
